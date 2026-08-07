@@ -29,6 +29,14 @@
   </div>
 </section>
 
+<section id="ofertas" class="deals-section">
+  <div class="container">
+    <h2>🔥 Ofertas do Dia</h2>
+    <p class="section-sub">Preços por tempo limitado, direto da Amazon — toca pra ver.</p>
+  </div>
+  <div class="deals-rail" id="dealsRail"></div>
+</section>
+
 <section id="categorias" class="categories">
   <div class="container">
     <h2>Categorias</h2>
@@ -116,6 +124,48 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Ofertas do Dia — edite esta lista pra trocar as ofertas.
+  // Campos: asin (código do produto na Amazon), title (nome curto), img (foto),
+  // price/oldPrice (em texto, ex "1.234,56"), discount (número), expires ("AAAA-MM-DD").
+  // Ofertas com "expires" no passado somem sozinhas do site — não precisa apagar na mão.
+  const AFFILIATE_TAG = "techaprovad0f-20";
+  const DEALS = [
+    { asin: "B0GQW2J4SK", title: "iPhone 17 256GB", img: "https://m.media-amazon.com/images/I/31E5Kb0mqHL._AC_SR400,400_.jpg", price: "5.887,78", oldPrice: "7.999,00", discount: 26, expires: "2026-08-09" },
+    { asin: "B0DJFTCKNN", title: "iPhone 16 128GB", img: "https://m.media-amazon.com/images/I/3152nENdGTL._AC_SR400,400_.jpg", price: "5.110,00", oldPrice: "6.799,00", discount: 24, expires: "2026-08-09" },
+    { asin: "B0F5X6Y8R6", title: "Samsung TV 55\" QLED 4K", img: "https://m.media-amazon.com/images/I/41v1KRJz87L._AC_SR400,400_.jpg", price: "2.799,00", oldPrice: "3.299,99", discount: 15, expires: "2026-08-09" },
+    { asin: "B0F5X5CP4G", title: "Samsung TV 50\" QLED 4K", img: "https://m.media-amazon.com/images/I/41qosmBOziL._AC_SR400,400_.jpg", price: "2.499,00", oldPrice: "2.999,99", discount: 16, expires: "2026-08-09" },
+    { asin: "B0FNXZZTDW", title: "Hisense TV 55\" 4K", img: "https://m.media-amazon.com/images/I/51zuKDxkSZL._AC_SR400,400_.jpg", price: "2.099,95", oldPrice: "2.599,00", discount: 19, expires: "2026-08-09" },
+    { asin: "B0BLS36SHC", title: "Echo Show 8 (3ª geração)", img: "https://m.media-amazon.com/images/I/41o7uagQFCL._AC_SR400,400_.jpg", price: "999,00", oldPrice: "1.399,00", discount: 28, expires: "2026-08-09" },
+    { asin: "B0BRLBBYLT", title: "Airfryer Philips Walita XL 6,2L", img: "https://m.media-amazon.com/images/I/41GECCa8AAL._AC_SR400,400_.jpg", price: "464,20", oldPrice: "899,90", discount: 48, expires: "2026-08-09" },
+    { asin: "B0CG6SQPK5", title: "Aspirador Liectroux i7 Pro", img: "https://m.media-amazon.com/images/I/31b9d5isAXL._AC_SR400,400_.jpg", price: "1.954,88", oldPrice: "2.769,00", discount: 29, expires: "2026-08-09" },
+    { asin: "B0FRHSY74T", title: "Soundbar Samsung HW-B450F", img: "https://m.media-amazon.com/images/I/11SVBAepAjL._AC_SR400,400_.jpg", price: "910,00", oldPrice: "1.399,00", discount: 34, expires: "2026-08-09" },
+    { asin: "B0FNWCYLZN", title: "Fone soundcore P31i (Anker)", img: "https://m.media-amazon.com/images/I/31Py0ZyI4EL._AC_SR400,400_.jpg", price: "299,00", oldPrice: "499,00", discount: 40, expires: "2026-08-09" },
+    { asin: "B0CRTYZG5C", title: "Fone soundcore P30i (Anker)", img: "https://m.media-amazon.com/images/I/21KKr6VQU7L._AC_SR400,400_.jpg", price: "196,90", oldPrice: "369,00", discount: 46, expires: "2026-08-09" },
+    { asin: "B097J19HZ3", title: "Liquidificador Britânia 1400W", img: "https://m.media-amazon.com/images/I/41Z1lW8tAJL._AC_SR400,400_.jpg", price: "131,91", oldPrice: "239,00", discount: 44, expires: "2026-08-09" },
+    { asin: "B0F4114HWJ", title: "Processador de Alimentos Philco", img: "https://m.media-amazon.com/images/I/31l49vQIN+L._AC_SR400,400_.jpg", price: "132,90", oldPrice: "229,00", discount: 41, expires: "2026-08-09" },
+    { asin: "B09LD7ZMZZ", title: "Torradeira Oster Inox", img: "https://m.media-amazon.com/images/I/41XXS60D2qL._AC_SR400,400_.jpg", price: "112,86", oldPrice: "179,90", discount: 37, expires: "2026-08-09" },
+    { asin: "B0B7K8JCL6", title: "Grill Philco 1000W", img: "https://m.media-amazon.com/images/I/41iVHEelM7L._AC_SR400,400_.jpg", price: "124,43", oldPrice: "176,80", discount: 29, expires: "2026-08-09" }
+  ];
+
+  function renderDeals() {
+    const today = new Date().toISOString().slice(0, 10);
+    const active = DEALS.filter(d => d.expires >= today);
+    const section = document.getElementById('ofertas');
+    if (!active.length) { section.style.display = 'none'; return; }
+    document.getElementById('dealsRail').innerHTML = active.map(d => `
+      <a class="deal-card" href="https://www.amazon.com.br/dp/${d.asin}?tag=${AFFILIATE_TAG}" target="_blank" rel="noopener sponsored">
+        <span class="deal-discount">-${d.discount}%</span>
+        <img class="deal-img" src="${d.img}" alt="${d.title}">
+        <div class="deal-info">
+          <span class="deal-title">${d.title}</span>
+          <span class="deal-price">R$ ${d.price}</span>
+          <span class="deal-old-price">R$ ${d.oldPrice}</span>
+        </div>
+      </a>
+    `).join('');
+  }
+  renderDeals();
 </script>
 </body>
 </html>

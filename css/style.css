@@ -97,6 +97,85 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
   transform: translateY(-1px);
 }
 
+/* Ofertas do Dia — horizontal scroll rail */
+.deals-section { padding: 40px 0 48px; }
+
+.deals-section h2 { font-size: 1.5rem; margin-bottom: 4px; }
+
+.deals-rail {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding: 20px 24px 8px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.deals-rail::-webkit-scrollbar { height: 6px; }
+.deals-rail::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+
+.deal-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 150px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.deal-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+.deal-discount {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: var(--accent);
+  color: #06120a;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 3px 7px;
+  border-radius: 999px;
+  z-index: 1;
+}
+
+.deal-img {
+  width: 100%;
+  height: 110px;
+  object-fit: contain;
+  background: #fff;
+  padding: 8px;
+  display: block;
+}
+
+.deal-info { padding: 8px 10px 12px; }
+
+.deal-title {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+}
+
+.deal-price { display: block; font-size: 1rem; font-weight: 800; color: var(--text); }
+
+.deal-old-price {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+@media (max-width: 640px) {
+  .deals-rail { padding-left: 16px; padding-right: 16px; }
+}
+
 /* Categories */
 .categories { padding: 64px 0; background: var(--bg-alt); }
 
