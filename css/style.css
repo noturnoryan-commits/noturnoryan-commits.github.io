@@ -210,3 +210,138 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
   .main-nav { display: none; }
   .hero { padding: 64px 0 48px; }
 }
+
+/* Banner shown on old yearly editions, pointing to the newer one */
+.update-banner {
+  background: var(--accent);
+  color: #06120a;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.update-banner a { text-decoration: underline; color: #06120a; }
+
+/* Article / guide pages */
+.article-hero {
+  padding: 72px 0 40px;
+  max-width: 780px;
+}
+
+.article-hero .container { max-width: 780px; }
+
+.article-hero h1 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  margin: 16px 0 16px;
+}
+
+.article-sub { color: var(--text-muted); font-size: 1.05rem; }
+
+.publish-date {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 6px 14px;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.article-intro { padding: 24px 0 56px; background: var(--bg-alt); }
+
+.article-inner { max-width: 720px; }
+
+.article-inner h2 { font-size: 1.5rem; margin-bottom: 16px; }
+
+.article-inner h3 { font-size: 1.1rem; margin: 28px 0 8px; color: var(--accent); }
+
+.article-inner p { color: var(--text-muted); font-size: 1rem; margin-bottom: 8px; }
+
+.spec-list { list-style: none; margin-top: 8px; }
+
+.spec-list li {
+  color: var(--text-muted);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.spec-list li strong { color: var(--text); }
+
+.rank-section { padding: 56px 0; }
+
+.rank-card {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.rank-number {
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #06120a;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.rank-img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.rank-body h3 { font-size: 1.15rem; margin-bottom: 10px; }
+
+.mini-badge {
+  display: inline-block;
+  background: rgba(34, 197, 94, 0.12);
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.rank-meta {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.rank-price { font-size: 1.2rem; font-weight: 800; color: var(--text); }
+
+.rank-rating { color: var(--text-muted); font-size: 0.9rem; }
+
+.rank-body p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px; }
+
+.rank-body .btn-primary { padding: 10px 22px; font-size: 0.9rem; }
+
+.price-disclaimer { color: var(--text-muted); font-size: 0.8rem; text-align: center; }
+
+@media (max-width: 640px) {
+  .rank-card { grid-template-columns: 1fr; }
+  .rank-img { height: 200px; }
+}
