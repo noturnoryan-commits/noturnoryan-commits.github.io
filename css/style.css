@@ -102,6 +102,8 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
 .deals-section h2 { font-size: 1.5rem; margin-bottom: 4px; }
 
+.deals-section .section-sub { margin-top: 4px; margin-bottom: 0; }
+
 .deals-rail {
   display: flex;
   gap: 14px;
