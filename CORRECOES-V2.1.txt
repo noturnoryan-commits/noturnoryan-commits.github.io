@@ -1,0 +1,11 @@
+TechAprovado V2.1 — correções
+
+1. Corrigidos fechamentos </img> inválidos encontrados nos rankings.
+2. Imagens dos produtos dos artigos agora usam um contêiner .rank-media.
+3. Grid dos rankings usa minmax(0, ...) para impedir overflow por tamanho intrínseco da imagem.
+4. Regras globais de contenção para imagens, containers e conteúdo editorial.
+5. Número do ranking movido para dentro do card, evitando largura negativa/lateral.
+6. Elementos decorativos (blobs) removidos e superfícies escuras levemente puxadas para azul-marinho, reduzindo formas pretas.
+7. Mobile <= 540px usa uma única coluna no ranking e imagem limitada ao viewport.
+
+Substitua os arquivos do repositório pelos deste pacote e faça novo deploy.

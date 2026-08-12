@@ -39,3 +39,84 @@ body.menu-open{overflow:hidden} img{max-width:100%} a{color:inherit;text-decorat
 @media(max-width:760px){.container{width:min(100% - 28px,var(--container))}.header-inner{height:66px}.brand-copy{font-size:1.06rem}.main-nav{position:fixed;left:14px;right:14px;top:76px;display:none;flex-direction:column;align-items:stretch;gap:2px;padding:12px;border:1px solid var(--border);border-radius:17px;background:#081321;box-shadow:0 25px 70px rgba(0,0,0,.55)}.main-nav.is-open{display:flex}.main-nav>a{padding:12px;border-radius:10px}.main-nav>a:hover{background:rgba(255,255,255,.035)}.main-nav .nav-cta{text-align:center;margin-top:5px}.menu-toggle{display:flex}.site-banner img{max-height:none;aspect-ratio:14/9;object-fit:cover}.banner-caption{display:none}.hero{padding:52px 0 60px}.hero h1{font-size:clamp(2.2rem,11.5vw,3.4rem)}.hero-proof{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column;gap:12px}.category-grid{grid-template-columns:repeat(2,1fr)}.method-grid{grid-template-columns:1fr}.product-grid{grid-template-columns:1fr}.about{padding:58px 0}.about-panel{padding:25px}.trust-list{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr;gap:28px}.footer-col:last-child{grid-column:auto}.disclosure{flex-direction:column;gap:10px}.article-hero{padding:40px 0 34px}.article-hero h1{font-size:clamp(2rem,10vw,2.85rem)}.rank-card{grid-template-columns:160px minmax(0,1fr);gap:18px}.rank-img{height:170px}.related-links{grid-template-columns:1fr}}
 @media(max-width:540px){.category-grid{grid-template-columns:1fr}.category-card{min-height:0}.hero-actions{align-items:stretch;flex-direction:column}.hero-actions .btn-primary,.hero-actions .btn-secondary{width:100%}.deal-card{flex-basis:168px}.rank-card{grid-template-columns:1fr;padding:18px}.rank-img{height:230px}.rank-number{left:9px;top:9px;border-radius:12px}.rank-body h3{padding-right:2px}.article-meta{gap:6px}.quick-nav{display:grid;grid-template-columns:1fr 1fr}.quick-nav a{justify-content:center}.about-mark{width:90px;height:90px;border-radius:22px}.about-mark img{width:62px;height:62px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* =========================================================
+   TechAprovado V2.1 — correções de renderização / overflow
+   - imagens nunca podem determinar a largura do grid
+   - elimina elementos decorativos que podiam parecer blocos pretos
+   - reforça contenção em telas estreitas
+   ========================================================= */
+html,body{width:100%;max-width:100%;overflow-x:clip}
+img,picture,video,iframe,svg{max-width:100%}
+img{display:block;height:auto}
+
+/* Mantém a identidade escura, mas evita áreas visualmente pretas demais. */
+:root{
+  --bg:#07111f;
+  --bg-soft:#091629;
+  --bg-alt:#0b192c;
+  --surface:#0e1c31;
+  --surface-2:#132540;
+}
+
+/* Os antigos blobs/fades decorativos não acrescentavam informação e
+   podiam aparecer como formas escuras dependendo do navegador/GPU. */
+.hero::before,.category-card::after{display:none!important}
+.site-banner::after{height:46px;background:linear-gradient(transparent,rgba(7,17,31,.72))}
+
+/* Toda região de conteúdo precisa poder encolher dentro do viewport. */
+main,section,.container,.hero-grid,.product-grid,.product-card,.product-media,
+.article-main,.article-main section,.article-main .container,.article-inner,
+.rank-section,.rank-section>.container,.rank-card,.rank-body,.article-end-panel{
+  min-width:0;
+  max-width:100%;
+}
+.article-main,.rank-section{overflow-x:clip}
+
+/* Cards da home */
+.product-card{isolation:isolate}
+.product-media{width:100%;max-width:100%;overflow:hidden}
+.product-img-placeholder{
+  width:100%;max-width:100%;min-width:0;height:100%;
+  object-fit:contain;object-position:center;
+}
+
+/* Ranking: a imagem agora vive dentro de um contêiner próprio. */
+.rank-card{
+  grid-template-columns:minmax(0,210px) minmax(0,1fr);
+  overflow:hidden;
+}
+.rank-media{
+  width:100%;max-width:100%;min-width:0;height:210px;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;border-radius:14px;background:#fff;
+}
+.rank-media .rank-img,.rank-card>.rank-img{
+  display:block;width:100%;max-width:100%;min-width:0;height:100%;max-height:100%;
+  object-fit:contain;object-position:center;padding:12px;border-radius:0;background:#fff;
+}
+/* O número fica dentro do card para não gerar overflow lateral. */
+.rank-number{left:10px;top:10px}
+.rank-body{overflow-wrap:anywhere;word-break:normal}
+.rank-body .btn-primary{max-width:100%;white-space:normal;text-align:center}
+
+/* Conteúdo editorial e links longos também não podem alargar a página. */
+.article-inner p,.article-inner li,.breadcrumb,.quick-nav,.fast-pick-links,
+.related-links,.rank-body h3,.rank-body p{min-width:0;max-width:100%}
+.fast-pick-links a,.related-links a{overflow-wrap:anywhere}
+
+@media(max-width:760px){
+  .rank-card{grid-template-columns:minmax(0,150px) minmax(0,1fr);gap:16px;padding:18px}
+  .rank-media{height:170px}
+  .rank-media .rank-img,.rank-card>.rank-img{height:100%;max-height:100%;padding:10px}
+}
+@media(max-width:540px){
+  .container{width:calc(100% - 28px);max-width:100%}
+  .rank-card{grid-template-columns:minmax(0,1fr);width:100%;max-width:100%;gap:16px;padding:16px}
+  .rank-media{width:100%;height:min(62vw,250px)}
+  .rank-media .rank-img,.rank-card>.rank-img{width:100%;height:100%;padding:14px}
+  .rank-body{width:100%;max-width:100%}
+  .rank-body .btn-primary{width:100%}
+  .quick-nav{grid-template-columns:minmax(0,1fr)}
+}
+
