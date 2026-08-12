@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
 :root {
   --bg: #0f1115;
   --bg-alt: #161922;
   --card: #1c202b;
   --text: #eef0f4;
   --text-muted: #9aa1b1;
-  --accent: #22c55e;
-  --accent-dark: #16a34a;
+  --accent: #1976D2;
+  --accent-dark: #0D47A1;
+  --accent-yellow: #FFD600;
+  --accent-yellow-dark: #e6c200;
   --border: #2a2f3d;
   --radius: 14px;
 }
@@ -15,7 +19,7 @@
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -74,7 +78,7 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
   margin-bottom: 20px;
 }
 
-.highlight { color: var(--accent); }
+.highlight { color: var(--accent-yellow); }
 
 .hero p {
   color: var(--text-muted);
@@ -84,7 +88,7 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
 .btn-primary {
   display: inline-block;
-  background: var(--accent);
+  background: var(--accent-yellow);
   color: #06120a;
   font-weight: 700;
   padding: 14px 28px;
@@ -93,7 +97,7 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 }
 
 .btn-primary:hover {
-  background: var(--accent-dark);
+  background: var(--accent-yellow-dark);
   transform: translateY(-1px);
 }
 
@@ -135,7 +139,7 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
   position: absolute;
   top: 8px;
   left: 8px;
-  background: var(--accent);
+  background: var(--accent-yellow);
   color: #06120a;
   font-size: 0.7rem;
   font-weight: 800;
@@ -211,6 +215,31 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
 .category-card p { color: var(--text-muted); font-size: 0.9rem; }
 
+.category-links {
+  list-style: none;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.category-links li + li { margin-top: 8px; }
+
+.category-links a {
+  font-size: 0.85rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.15s ease;
+}
+
+.category-links a::before {
+  content: "→";
+  color: var(--accent);
+}
+
+.category-links a:hover { color: var(--accent); }
+
 /* Approved products */
 .approved { padding: 64px 0; }
 
@@ -232,8 +261,8 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
 .product-badge {
   display: inline-block;
-  background: rgba(34, 197, 94, 0.12);
-  color: var(--accent);
+  background: rgba(255, 214, 0, 0.14);
+  color: var(--accent-yellow);
   font-size: 0.75rem;
   font-weight: 700;
   padding: 4px 10px;
@@ -294,7 +323,7 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
 /* Banner shown on old yearly editions, pointing to the newer one */
 .update-banner {
-  background: var(--accent);
+  background: var(--accent-yellow);
   color: #06120a;
   font-weight: 700;
   font-size: 0.9rem;
@@ -323,8 +352,8 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
   display: inline-block;
   margin-top: 16px;
   padding: 6px 14px;
-  background: rgba(34, 197, 94, 0.12);
-  border: 1px solid rgba(34, 197, 94, 0.35);
+  background: rgba(25, 118, 210, 0.14);
+  border: 1px solid rgba(25, 118, 210, 0.4);
   border-radius: 999px;
   color: var(--accent);
   font-size: 0.85rem;
@@ -372,7 +401,7 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
   width: 36px;
   height: 36px;
   border-radius: 999px;
-  background: var(--accent);
+  background: var(--accent-yellow);
   color: #06120a;
   font-weight: 800;
   display: flex;
@@ -394,8 +423,8 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
 .mini-badge {
   display: inline-block;
-  background: rgba(34, 197, 94, 0.12);
-  color: var(--accent);
+  background: rgba(255, 214, 0, 0.14);
+  color: var(--accent-yellow);
   font-size: 0.7rem;
   font-weight: 700;
   padding: 2px 8px;
