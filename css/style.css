@@ -51,12 +51,19 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
 
+.logo img { height: 32px; width: 32px; display: block; }
+
 .logo span { color: var(--accent); }
+
+.footer-brand .logo { margin-bottom: 4px; }
 
 .main-nav { display: flex; gap: 28px; }
 
@@ -67,6 +74,14 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 }
 
 .main-nav a:hover { color: var(--text); }
+
+/* Banner / capa */
+.site-banner img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+}
 
 /* Hero */
 .hero { padding: 96px 0 72px; }
@@ -180,6 +195,25 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
 @media (max-width: 640px) {
   .deals-rail { padding-left: 16px; padding-right: 16px; }
+}
+
+/* Nosso Processo */
+.process { padding: 48px 0 16px; }
+
+.process h2 { font-size: 1.5rem; margin-bottom: 4px; }
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.process-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
 }
 
 /* Categories */
