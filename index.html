@@ -3,253 +3,131 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TechAprovado — Curadoria de tecnologia e eletrônicos</title>
-<meta name="description" content="TechAprovado indica os melhores eletrônicos e produtos tech com boa relação custo-benefício: PCs, periféricos, casa inteligente, celulares e mais.">
+<title>TechAprovado — Melhores eletrônicos e eletrodomésticos para sua casa</title>
+<meta name="description" content="Rankings e guias de compra de eletrônicos, eletrodomésticos e tecnologia para casa, com foco em custo-benefício, avaliações e escolhas que realmente valem a pena.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#07101f">
+<link rel="canonical" href="https://techaprovado.com.br/">
 <link rel="icon" type="image/png" href="img/favicon-32.png">
 <link rel="apple-touch-icon" href="img/favicon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<meta property="og:locale" content="pt_BR">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TechAprovado">
+<meta property="og:title" content="TechAprovado — Melhores eletrônicos e eletrodomésticos para sua casa">
+<meta property="og:description" content="Rankings e guias de compra de eletrônicos, eletrodomésticos e tecnologia para casa, com foco em custo-benefício, avaliações e escolhas que realmente valem a pena.">
+<meta property="og:url" content="https://techaprovado.com.br/">
+<meta property="og:image" content="https://techaprovado.com.br/img/banner.jpg">
+<meta property="og:image:alt" content="TechAprovado — tecnologia e energia para facilitar sua casa">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TechAprovado — Melhores eletrônicos e eletrodomésticos para sua casa">
+<meta name="twitter:description" content="Rankings e guias de compra de eletrônicos, eletrodomésticos e tecnologia para casa, com foco em custo-benefício, avaliações e escolhas que realmente valem a pena.">
+<meta name="twitter:image" content="https://techaprovado.com.br/img/banner.jpg">
 
-<header class="site-header">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://techaprovado.com.br/#website","url":"https://techaprovado.com.br/","name":"TechAprovado","description":"Rankings e guias de compra de eletrônicos, eletrodomésticos e tecnologia para casa, com foco em custo-benefício, avaliações e escolhas que realmente valem a pena.","inLanguage":"pt-BR"},{"@type":"Organization","@id":"https://techaprovado.com.br/#organization","name":"TechAprovado","url":"https://techaprovado.com.br/","logo":{"@type":"ImageObject","url":"https://techaprovado.com.br/img/logo-icon.png"}}]}</script>
+</head>
+<body id="top">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header" data-header>
   <div class="container header-inner">
-    <a href="#" class="logo"><img src="img/logo-icon.png" alt="">Tech<span>Aprovado</span></a>
-    <nav class="main-nav">
+    <a href="#top" class="brand" aria-label="TechAprovado — página inicial">
+      <img src="img/logo-icon.png" alt="" width="38" height="38">
+      <span class="brand-copy"><strong>Tech</strong><b>Aprovado</b></span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
       <a href="#categorias">Categorias</a>
-      <a href="#aprovados">Aprovados</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
+      <a href="#aprovados">Rankings</a>
+      <a href="#metodo">Como aprovamos</a>
+      <a class="nav-cta" href="#aprovados">Ver guias</a>
     </nav>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="main-nav" aria-expanded="false" data-menu-toggle>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
   </div>
 </header>
-
-<div class="site-banner">
-  <img src="img/banner.jpg" alt="TechAprovado — os melhores produtos para sua casa, aprovados por quem entende de tecnologia">
-</div>
-
-<section class="hero">
-  <div class="container hero-inner">
-    <h1>Só indicamos o que <span class="highlight">realmente aprovamos</span></h1>
-    <p>Curadoria de eletrônicos e tecnologia com bom custo-benefício — de PCs a geladeiras, de fones a lâmpadas inteligentes.</p>
-    <a href="#categorias" class="btn-primary">Ver categorias</a>
-  </div>
-</section>
-
-<section id="ofertas" class="deals-section">
-  <div class="container">
-    <h2>🔥 Ofertas do Dia</h2>
-    <p class="section-sub">Preços por tempo limitado, direto da Amazon — toca pra ver.</p>
-  </div>
-  <div class="deals-rail" id="dealsRail"></div>
-</section>
-
-<section id="categorias" class="categories">
-  <div class="container">
-    <h2>Categorias</h2>
-    <div class="category-grid">
-      <div class="category-card">
-        <span class="cat-icon">🏠</span>
-        <h3>Casa</h3>
-        <p>Geladeiras, TVs, cozinha, limpeza</p>
-        <ul class="category-links">
-          <li><a href="geladeiras-2026.html">Geladeiras</a></li>
-          <li><a href="smarttv-2026.html">Smart TVs</a></li>
-          <li><a href="airfryer-2026.html">Air Fryer</a></li>
-          <li><a href="microondas-2026.html">Micro-ondas</a></li>
-          <li><a href="maquinadelavar-2026.html">Máquina de Lavar</a></li>
-          <li><a href="roboaspirador-2026.html">Robô Aspirador</a></li>
-          <li><a href="umidificador-2026.html">Umidificador de Ar</a></li>
-        </ul>
-      </div>
-      <div class="category-card">
-        <span class="cat-icon">💻</span>
-        <h3>Escritório &amp; PC</h3>
-        <p>Notebooks, monitores, mouses, teclados</p>
-        <ul class="category-links">
-          <li><a href="notebook-2026.html">Notebooks</a></li>
-        </ul>
-      </div>
-      <div class="category-card">
-        <span class="cat-icon">⌚</span>
-        <h3>Vestível</h3>
-        <p>Relógios, smartbands, fones de ouvido</p>
-        <ul class="category-links">
-          <li><a href="smartwatch-2026.html">Smartwatch</a></li>
-          <li><a href="fonebluetooth-2026.html">Fone Bluetooth</a></li>
-        </ul>
-      </div>
-      <div class="category-card">
-        <span class="cat-icon">💡</span>
-        <h3>Casa Inteligente</h3>
-        <p>Lâmpadas, fitas LED e tomadas smart</p>
-        <ul class="category-links">
-          <li><a href="casainteligente-2026.html">Iluminação Inteligente</a></li>
-        </ul>
-      </div>
-      <div class="category-card">
-        <span class="cat-icon">📱</span>
-        <h3>Mobilidade</h3>
-        <p>Smartphones, caixas de som e acessórios</p>
-        <ul class="category-links">
-          <li><a href="smartphone-2026.html">Celular</a></li>
-          <li><a href="caixadesom-2026.html">Caixa de Som Bluetooth</a></li>
-        </ul>
-      </div>
+<main id="conteudo">
+  <section class="site-banner" aria-label="Identidade visual TechAprovado">
+    <picture><source media="(max-width:760px)" srcset="img/banner-mobile.jpg"><img src="img/banner.jpg" alt="TechAprovado — Top 10, análises e escolhas inteligentes para sua casa" width="1920" height="768" fetchpriority="high"></picture>
+    <span class="banner-caption">Tecnologia e energia para facilitar sua casa</span>
+  </section>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div><span class="eyebrow">Curadoria prática de tecnologia</span><h1>Escolher bem não precisa virar uma <em>pesquisa infinita.</em></h1><p class="hero-copy">O TechAprovado filtra opções, compara pontos importantes e organiza rankings para você entender rápido o que faz sentido para sua casa e para o seu bolso.</p><div class="hero-actions"><a class="btn-primary" href="#aprovados">Ver rankings <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></a><a class="btn-secondary" href="#metodo">Como escolhemos</a></div></div>
+      <div class="hero-proof" aria-label="Como o TechAprovado ajuda"><div class="proof-card"><span class="proof-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg></span><strong>Menos ruído</strong><span>Filtramos a categoria antes de montar o ranking.</span></div><div class="proof-card"><span class="proof-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v18M5 6h14M6 6l-3 6h6L6 6Zm12 0-3 6h6l-3-6Z"/></svg></span><strong>Comparação direta</strong><span>Preço, recursos e avaliações no mesmo contexto.</span></div><div class="proof-card"><span class="proof-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3 5 6v5c0 5 3.5 8.5 7 10 3.5-1.5 7-5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></span><strong>Transparência</strong><span>Links de afiliado não mudam o valor pago por você.</span></div></div>
     </div>
-  </div>
-</section>
-
-<section id="aprovados" class="approved">
-  <div class="container">
-    <h2>Aprovados da semana</h2>
-    <p class="section-sub">Guias completos com comparação real de preço, nota e avaliações.</p>
-    <div class="product-grid">
-      <a href="geladeiras-2026.html" class="product-card">
-        <div class="product-badge">✅ Aprovado</div>
-        <img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/416IUMGUCyL._AC_UL480_.jpg" alt="Melhores Geladeiras 2026" style="object-fit:contain;background:#fff;">
-        <h3>Melhores Geladeiras 2026</h3>
-        <p class="product-note">Do melhor custo-benefício ao médio-alto padrão, com comparação item a item.</p>
-      </a>
-      <a href="airfryer-2026.html" class="product-card">
-        <div class="product-badge">✅ Aprovado</div>
-        <img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/81zsB76GT2L._AC_UL480_.jpg" alt="Melhores Air Fryers 2026" style="object-fit:contain;background:#fff;">
-        <h3>Melhores Air Fryers 2026</h3>
-        <p class="product-note">Do custo-benefício ao modelo híbrido de fritar e grelhar, com guia completo de compra.</p>
-      </a>
-      <a href="smarttv-2026.html" class="product-card">
-        <div class="product-badge">✅ Aprovado</div>
-        <img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/61RGkr3wqEL._AC_UL480_.jpg" alt="Melhores Smart TVs 2026" style="object-fit:contain;background:#fff;">
-        <h3>Melhores Smart TVs 2026</h3>
-        <p class="product-note">Do tamanho de entrada ao modelo com processador de imagem por IA, com guia completo de compra.</p>
-      </a>
-      <a href="fonebluetooth-2026.html" class="product-card">
-        <div class="product-badge">✅ Aprovado</div>
-        <img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/61ZSBXxJNYL._AC_UL480_.jpg" alt="Melhores Fones de Ouvido Bluetooth 2026" style="object-fit:contain;background:#fff;">
-        <h3>Fone Bluetooth Custo-Benefício 2026</h3>
-        <p class="product-note">Do TWS básico ao modelo com cancelamento de ruído adaptativo, com guia completo de compra.</p>
-      </a>
-      <a href="roboaspirador-2026.html" class="product-card">
-        <div class="product-badge">✅ Aprovado</div>
-        <img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/716GA5MQQkL._AC_UL480_.jpg" alt="Robô Aspirador Custo-Benefício 2026" style="object-fit:contain;background:#fff;">
-        <h3>Robô Aspirador 2026</h3>
-        <p class="product-note">Do modelo mais indicado da faixa de entrada ao topo de linha com autoesvaziamento.</p>
-      </a>
-      <a href="smartwatch-2026.html" class="product-card">
-        <div class="product-badge">✅ Aprovado</div>
-        <img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/61o3-pf41tL._AC_UL480_.jpg" alt="Smartwatch Custo-Benefício 2026" style="object-fit:contain;background:#fff;">
-        <h3>Smartwatch 2026</h3>
-        <p class="product-note">Do modelo mais acessível ao topo de linha com GPS e bateria de 21 dias.</p>
-      </a>
-      <a href="notebook-2026.html" class="product-card">
-        <div class="product-badge">✅ Aprovado</div>
-        <img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/71qOQOgOZUL._AC_UL480_.jpg" alt="Notebook Custo-Benefício 2026" style="object-fit:contain;background:#fff;">
-        <h3>Notebook 2026</h3>
-        <p class="product-note">Do 2 em 1 mais básico ao modelo com placa de vídeo dedicada, pra trabalho, estudo e dia a dia.</p>
-      </a>
-      <a href="smartphone-2026.html" class="product-card">
-        <div class="product-badge">✅ Aprovado</div>
-        <img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/51G6kqI5BQL._AC_UL480_.jpg" alt="Celular Custo-Benefício 2026" style="object-fit:contain;background:#fff;">
-        <h3>Celular 2026</h3>
-        <p class="product-note">Do modelo de entrada ao iPhone com desconto, explicando o truque do "RAM Boost".</p>
-      </a>
-      <a href="microondas-2026.html" class="product-card">
-        <div class="product-badge">✅ Aprovado</div>
-        <img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/61+2T8DkW7L._AC_UL480_.jpg" alt="Micro-ondas Custo-Benefício 2026" style="object-fit:contain;background:#fff;">
-        <h3>Micro-ondas Custo-Benefício 2026</h3>
-        <p class="product-note">Do compacto de 20L ao modelo de 36L, com um pick validado pela imprensa especializada.</p>
-      </a>
-      <a href="maquinadelavar-2026.html" class="product-card">
-        <div class="product-badge">✅ Aprovado</div>
-        <img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/61Tv1lExs7L._AC_UL480_.jpg" alt="Máquina de Lavar Custo-Benefício 2026" style="object-fit:contain;background:#fff;">
-        <h3>Máquina de Lavar Custo-Benefício 2026</h3>
-        <p class="product-note">Da capacidade de 12kg ao modelo de 18kg com tripla filtragem.</p>
-      </a>
-      <a href="caixadesom-2026.html" class="product-card">
-        <div class="product-badge">✅ Aprovado</div>
-        <img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/71HdLDJEEUL._AC_UL480_.jpg" alt="Caixa de Som Bluetooth Custo-Benefício 2026" style="object-fit:contain;background:#fff;">
-        <h3>Caixa de Som Bluetooth 2026</h3>
-        <p class="product-note">Da caixa compacta de bolso à caixa de festa portátil, com dois picks JBL validados pela imprensa.</p>
-      </a>
-      <a href="casainteligente-2026.html" class="product-card">
-        <div class="product-badge">✅ Aprovado</div>
-        <img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/51sXUs-tZiL._AC_UL480_.jpg" alt="Lâmpada e Iluminação Inteligente Custo-Benefício 2026" style="object-fit:contain;background:#fff;">
-        <h3>Iluminação Inteligente Custo-Benefício 2026</h3>
-        <p class="product-note">Da lâmpada mais simples à luminária de teto, com a mais vendida do mercado (100 mil+ avaliações).</p>
-      </a>
-      <a href="umidificador-2026.html" class="product-card">
-        <div class="product-badge">✅ Aprovado</div>
-        <img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/71a+5LPb9EL._AC_UL480_.jpg" alt="Umidificador de Ar Custo-Benefício 2026" style="object-fit:contain;background:#fff;">
-        <h3>Umidificador de Ar Custo-Benefício 2026</h3>
-        <p class="product-note">Prós, contras e um pick validado pela imprensa — do mais em conta ao mais completo.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section id="sobre" class="about">
-  <div class="container about-inner">
-    <h2>Por que "Aprovado"?</h2>
-    <p>Não listamos tudo que existe — filtramos. Cada produto que aparece aqui passou por uma análise de preço, avaliações reais e custo-benefício antes de receber o selo <strong>✅ Aprovado</strong>. Se não vale a pena, a gente não indica.</p>
-  </div>
-</section>
-
+  </section>
+  <section id="ofertas" class="deals-section"><div class="container section-head"><div><p class="section-kicker">Oportunidades</p><h2>Ofertas selecionadas</h2><p>Uma vitrine rápida para produtos com preço promocional no momento da nossa checagem. Sempre confirme o valor final na loja.</p></div><span class="deals-status" data-deals-verified>Preços verificados recentemente</span></div><div class="deals-rail" id="dealsRail" aria-label="Ofertas selecionadas"></div></section>
+  <section id="categorias" class="categories"><div class="container"><div class="section-head"><div><p class="section-kicker">Encontre por uso</p><h2>Categorias</h2><p>Do eletrodoméstico grande ao acessório que fica na tomada: se usa energia dentro de casa, faz sentido estar aqui.</p></div></div><div class="category-grid"><article class="category-card"><span class="cat-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10"/><path d="M9.5 20v-6h5v6"/></svg></span><h3>Casa</h3><p>Eletrodomésticos, cozinha, limpeza e entretenimento.</p><ul class="category-links"><li><a href="geladeiras-2026.html">Geladeiras</a></li><li><a href="smarttv-2026.html">Smart TVs</a></li><li><a href="airfryer-2026.html">Air Fryer</a></li><li><a href="microondas-2026.html">Micro-ondas</a></li><li><a href="maquinadelavar-2026.html">Máquinas de lavar</a></li><li><a href="roboaspirador-2026.html">Robôs aspiradores</a></li></ul></article><article class="category-card"><span class="cat-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2.5 19h19"/></svg></span><h3>Escritório & PC</h3><p>Equipamentos para estudar, trabalhar e produzir.</p><ul class="category-links"><li><a href="notebook-2026.html">Notebooks</a></li></ul></article><article class="category-card"><span class="cat-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="7" y="5" width="10" height="14" rx="3"/><path d="M9 5V2h6v3M9 19v3h6v-3"/></svg></span><h3>Vestíveis</h3><p>Tecnologia para usar no pulso ou no ouvido.</p><ul class="category-links"><li><a href="smartwatch-2026.html">Smartwatches</a></li><li><a href="fonebluetooth-2026.html">Fones Bluetooth</a></li></ul></article><article class="category-card"><span class="cat-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 18h6M10 22h4"/><path d="M8.5 14.5A6 6 0 1 1 15.5 14.5c-1 .8-1.5 1.7-1.5 3.5h-4c0-1.8-.5-2.7-1.5-3.5Z"/></svg></span><h3>Casa inteligente</h3><p>Automação e iluminação para uma casa conectada.</p><ul class="category-links"><li><a href="casainteligente-2026.html">Iluminação inteligente</a></li></ul></article><article class="category-card"><span class="cat-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10.5 5h3M11 18.5h2"/></svg></span><h3>Mobilidade</h3><p>Tecnologia portátil para o dia a dia.</p><ul class="category-links"><li><a href="smartphone-2026.html">Smartphones</a></li><li><a href="caixadesom-2026.html">Caixas de som</a></li></ul></article></div></div></section>
+  <section id="metodo" class="method"><div class="container"><div class="section-head"><div><p class="section-kicker">Nosso método</p><h2>Por que um produto recebe o “Aprovado”?</h2><p>O selo não significa “o mais caro” nem “o mais completo”. Significa que a escolha faz sentido dentro da faixa e do perfil de uso.</p></div></div><div class="method-grid"><article class="method-card"><span class="method-number">01</span><span class="method-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg></span><h3>Filtramos o mercado</h3><p>Começamos eliminando opções que não entregam uma relação convincente entre proposta, preço e reputação.</p></article><article class="method-card"><span class="method-number">02</span><span class="method-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v18M5 6h14M6 6l-3 6h6L6 6Zm12 0-3 6h6l-3-6Z"/></svg></span><h3>Comparamos o que importa</h3><p>Recursos, capacidade, avaliações e posicionamento de preço são colocados lado a lado, sem ficha técnica por ficha técnica.</p></article><article class="method-card"><span class="method-number">03</span><span class="method-icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 4 4L19 6"/></svg></span><h3>Explicamos a escolha</h3><p>Cada item entra no ranking com contexto: para quem ele serve, onde ganha e onde a próxima faixa pode valer mais.</p></article></div></div></section>
+  <section id="aprovados" class="approved"><div class="container"><div class="section-head"><div><p class="section-kicker">Guias 2026</p><h2>Rankings TechAprovado</h2><p>Guias completos para comparar antes de comprar, do custo-benefício ao patamar mais completo.</p></div><a class="text-link" href="#categorias">Ver categorias <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></a></div><div class="product-grid"><a href="geladeiras-2026.html" class="product-card">
+  <div class="product-media"><span class="product-badge">✓ Aprovado</span><img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/416IUMGUCyL._AC_UL480_.jpg" alt="Melhores Geladeiras 2026" width="480" height="300" loading="lazy" decoding="async"></div>
+  <div class="product-content"><span class="product-category">Casa</span><h3>Melhores Geladeiras 2026</h3><p class="product-note">Do melhor custo-benefício ao médio-alto padrão, com comparação item a item.</p><span class="product-more">Abrir ranking <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></div>
+</a><a href="airfryer-2026.html" class="product-card">
+  <div class="product-media"><span class="product-badge">✓ Aprovado</span><img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/81zsB76GT2L._AC_UL480_.jpg" alt="Melhores Air Fryers 2026" width="480" height="300" loading="lazy" decoding="async"></div>
+  <div class="product-content"><span class="product-category">Casa</span><h3>Melhores Air Fryers 2026</h3><p class="product-note">Do custo-benefício ao modelo híbrido de fritar e grelhar, com guia completo de compra.</p><span class="product-more">Abrir ranking <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></div>
+</a><a href="smarttv-2026.html" class="product-card">
+  <div class="product-media"><span class="product-badge">✓ Aprovado</span><img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/61RGkr3wqEL._AC_UL480_.jpg" alt="Melhores Smart TVs 2026" width="480" height="300" loading="lazy" decoding="async"></div>
+  <div class="product-content"><span class="product-category">Casa</span><h3>Melhores Smart TVs 2026</h3><p class="product-note">Do tamanho de entrada ao modelo com processador de imagem por IA, com guia completo de compra.</p><span class="product-more">Abrir ranking <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></div>
+</a><a href="fonebluetooth-2026.html" class="product-card">
+  <div class="product-media"><span class="product-badge">✓ Aprovado</span><img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/61ZSBXxJNYL._AC_UL480_.jpg" alt="Melhores Fones de Ouvido Bluetooth 2026" width="480" height="300" loading="lazy" decoding="async"></div>
+  <div class="product-content"><span class="product-category">Vestíveis</span><h3>Fone Bluetooth Custo-Benefício 2026</h3><p class="product-note">Do TWS básico ao modelo com cancelamento de ruído adaptativo, com guia completo de compra.</p><span class="product-more">Abrir ranking <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></div>
+</a><a href="roboaspirador-2026.html" class="product-card">
+  <div class="product-media"><span class="product-badge">✓ Aprovado</span><img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/716GA5MQQkL._AC_UL480_.jpg" alt="Robô Aspirador Custo-Benefício 2026" width="480" height="300" loading="lazy" decoding="async"></div>
+  <div class="product-content"><span class="product-category">Casa</span><h3>Robô Aspirador 2026</h3><p class="product-note">Do modelo mais indicado da faixa de entrada ao topo de linha com autoesvaziamento.</p><span class="product-more">Abrir ranking <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></div>
+</a><a href="smartwatch-2026.html" class="product-card">
+  <div class="product-media"><span class="product-badge">✓ Aprovado</span><img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/61o3-pf41tL._AC_UL480_.jpg" alt="Smartwatch Custo-Benefício 2026" width="480" height="300" loading="lazy" decoding="async"></div>
+  <div class="product-content"><span class="product-category">Vestíveis</span><h3>Smartwatch 2026</h3><p class="product-note">Do modelo mais acessível ao topo de linha com GPS e bateria de 21 dias.</p><span class="product-more">Abrir ranking <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></div>
+</a><a href="notebook-2026.html" class="product-card">
+  <div class="product-media"><span class="product-badge">✓ Aprovado</span><img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/71qOQOgOZUL._AC_UL480_.jpg" alt="Notebook Custo-Benefício 2026" width="480" height="300" loading="lazy" decoding="async"></div>
+  <div class="product-content"><span class="product-category">Escritório & PC</span><h3>Notebook 2026</h3><p class="product-note">Do 2 em 1 mais básico ao modelo com placa de vídeo dedicada, pra trabalho, estudo e dia a dia.</p><span class="product-more">Abrir ranking <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></div>
+</a><a href="smartphone-2026.html" class="product-card">
+  <div class="product-media"><span class="product-badge">✓ Aprovado</span><img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/51G6kqI5BQL._AC_UL480_.jpg" alt="Celular Custo-Benefício 2026" width="480" height="300" loading="lazy" decoding="async"></div>
+  <div class="product-content"><span class="product-category">Mobilidade</span><h3>Celular 2026</h3><p class="product-note">Do modelo de entrada ao iPhone com desconto, explicando o truque do &quot;RAM Boost&quot;.</p><span class="product-more">Abrir ranking <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></div>
+</a><a href="microondas-2026.html" class="product-card">
+  <div class="product-media"><span class="product-badge">✓ Aprovado</span><img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/61+2T8DkW7L._AC_UL480_.jpg" alt="Micro-ondas Custo-Benefício 2026" width="480" height="300" loading="lazy" decoding="async"></div>
+  <div class="product-content"><span class="product-category">Casa</span><h3>Micro-ondas Custo-Benefício 2026</h3><p class="product-note">Do compacto de 20L ao modelo de 36L, com um pick validado pela imprensa especializada.</p><span class="product-more">Abrir ranking <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></div>
+</a><a href="maquinadelavar-2026.html" class="product-card">
+  <div class="product-media"><span class="product-badge">✓ Aprovado</span><img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/61Tv1lExs7L._AC_UL480_.jpg" alt="Máquina de Lavar Custo-Benefício 2026" width="480" height="300" loading="lazy" decoding="async"></div>
+  <div class="product-content"><span class="product-category">Casa</span><h3>Máquina de Lavar Custo-Benefício 2026</h3><p class="product-note">Da capacidade de 12kg ao modelo de 18kg com tripla filtragem.</p><span class="product-more">Abrir ranking <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></div>
+</a><a href="caixadesom-2026.html" class="product-card">
+  <div class="product-media"><span class="product-badge">✓ Aprovado</span><img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/71HdLDJEEUL._AC_UL480_.jpg" alt="Caixa de Som Bluetooth Custo-Benefício 2026" width="480" height="300" loading="lazy" decoding="async"></div>
+  <div class="product-content"><span class="product-category">Mobilidade</span><h3>Caixa de Som Bluetooth 2026</h3><p class="product-note">Da caixa compacta de bolso à caixa de festa portátil, com dois picks JBL validados pela imprensa.</p><span class="product-more">Abrir ranking <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></div>
+</a><a href="casainteligente-2026.html" class="product-card">
+  <div class="product-media"><span class="product-badge">✓ Aprovado</span><img class="product-img-placeholder" src="https://m.media-amazon.com/images/I/51sXUs-tZiL._AC_UL480_.jpg" alt="Lâmpada e Iluminação Inteligente Custo-Benefício 2026" width="480" height="300" loading="lazy" decoding="async"></div>
+  <div class="product-content"><span class="product-category">Casa inteligente</span><h3>Iluminação Inteligente Custo-Benefício 2026</h3><p class="product-note">Da lâmpada mais simples à luminária de teto, com a mais vendida do mercado (100 mil+ avaliações).</p><span class="product-more">Abrir ranking <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></div>
+</a></div></div></section>
+  <section id="sobre" class="about"><div class="container"><div class="about-panel"><div class="about-mark"><img src="img/logo-icon.png" alt="Símbolo TechAprovado" width="82" height="82" loading="lazy"></div><div><p class="section-kicker">A ideia da marca</p><h2>Não listamos tudo que existe. <span style="color:var(--yellow)">Filtramos.</span></h2><p>O TechAprovado foi pensado como um atalho para quem quer comprar melhor. Nosso papel é reduzir o excesso de opções e transformar especificações em diferenças que realmente importam no uso.</p><div class="trust-list"><span class="trust-item"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 4 4L19 6"/></svg> Comparações com contexto</span><span class="trust-item"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 4 4L19 6"/></svg> Custo-benefício por faixa</span><span class="trust-item"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 4 4L19 6"/></svg> Transparência de afiliados</span><span class="trust-item"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 4 4L19 6"/></svg> Conteúdo direto ao ponto</span></div></div></div></div></section>
+</main>
 <footer id="contato" class="site-footer">
-  <div class="container footer-inner">
+  <div class="container footer-grid">
     <div class="footer-brand">
-      <span class="logo"><img src="img/logo-icon.png" alt="">Tech<span>Aprovado</span></span>
-      <p>Curadoria de tecnologia e eletrônicos com bom custo-benefício.</p>
+      <a href="index.html" class="brand" aria-label="TechAprovado — página inicial">
+        <img src="img/logo-icon.png" alt="" width="40" height="40">
+        <span class="brand-copy"><strong>Tech</strong><b>Aprovado</b></span>
+      </a>
+      <p>Curadoria independente para escolher tecnologia, eletrônicos e eletrodomésticos com mais segurança e menos enrolação.</p>
     </div>
-    <div class="footer-links">
-      <a href="#" target="_blank" rel="noopener">Instagram</a>
-      <a href="#" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="#" target="_blank" rel="noopener">YouTube</a>
+    <div class="footer-col">
+      <strong>Explorar</strong>
+      <a href="index.html#categorias">Categorias</a>
+      <a href="index.html#aprovados">Rankings</a>
+      <a href="index.html#metodo">Como aprovamos</a>
+    </div>
+    <div class="footer-col">
+      <strong>Transparência</strong>
+      <a href="index.html#sobre">Sobre o TechAprovado</a>
+      <span>Links de afiliado são identificados</span>
+      <span>Preços podem mudar após a publicação</span>
     </div>
   </div>
   <div class="container disclosure">
-    <p>Como participante do Programa de Associados da Amazon, o TechAprovado pode ganhar comissão sobre compras qualificadas feitas através dos links deste site, sem custo adicional para você.</p>
-    <p>&copy; <span id="year"></span> TechAprovado. Todos os direitos reservados.</p>
+    <p><strong>Transparência:</strong> como participante do Programa de Associados da Amazon, o TechAprovado pode receber comissão por compras qualificadas realizadas através dos links do site, sem custo adicional para você.</p>
+    <p>© <span data-current-year>2026</span> TechAprovado. Todos os direitos reservados.</p>
   </div>
 </footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Ofertas do Dia — edite esta lista pra trocar as ofertas.
-  // Campos: asin (código do produto na Amazon), title (nome curto), img (foto),
-  // price/oldPrice (em texto, ex "1.234,56"), discount (número), expires ("AAAA-MM-DD").
-  // Ofertas com "expires" no passado somem sozinhas do site — não precisa apagar na mão.
-  const AFFILIATE_TAG = "techaprovad0f-20";
-  const DEALS = [
-    { asin: "B0B9PSBNYL", title: "Robô Aspirador WAP W90 3em1", img: "https://m.media-amazon.com/images/I/716GA5MQQkL._AC_UL480_.jpg", price: "329,00", oldPrice: "549,90", discount: 40, expires: "2026-08-19" },
-    { asin: "B0CRTYZG5C", title: "Fone soundcore P30i (Anker)", img: "https://m.media-amazon.com/images/I/21KKr6VQU7L._AC_SR400,400_.jpg", price: "187,05", oldPrice: "369,00", discount: 49, expires: "2026-08-19" },
-    { asin: "B0849PHXW1", title: "Robô Aspirador WAP W100 3em1", img: "https://m.media-amazon.com/images/I/81w-AyhZt-L._AC_UL480_.jpg", price: "377,99", oldPrice: "799,90", discount: 53, expires: "2026-08-19" },
-    { asin: "B0BRLBBYLT", title: "Airfryer Philips Walita XL 6,2L", img: "https://m.media-amazon.com/images/I/41GECCa8AAL._AC_SR400,400_.jpg", price: "488,28", oldPrice: "899,90", discount: 46, expires: "2026-08-19" },
-    { asin: "B0F9Z2DV83", title: "Robô Aspirador WAP W310", img: "https://m.media-amazon.com/images/I/61QHYk962EL._AC_UL480_.jpg", price: "660,00", oldPrice: "1.199,90", discount: 45, expires: "2026-08-19" },
-    { asin: "B0FRHSY74T", title: "Soundbar Samsung HW-B450F", img: "https://m.media-amazon.com/images/I/11SVBAepAjL._AC_SR400,400_.jpg", price: "970,95", oldPrice: "1.399,00", discount: 31, expires: "2026-08-19" },
-    { asin: "B09SVT5X8N", title: "Robô Aspirador Electrolux ERB30", img: "https://m.media-amazon.com/images/I/51d+bwNHcaL._AC_UL480_.jpg", price: "845,00", oldPrice: "1.299,90", discount: 35, expires: "2026-08-19" },
-    { asin: "B0F8KQ2QXV", title: "Smart TV LG 55\" UHD AI", img: "https://m.media-amazon.com/images/I/61RZPtim4kL._AC_UL480_.jpg", price: "2.374,05", oldPrice: "2.999,00", discount: 21, expires: "2026-08-19" },
-    { asin: "B0F4K1H6X5", title: "Robô Aspirador Xiaomi S40C", img: "https://m.media-amazon.com/images/I/61K3M5gPZPL._AC_UL480_.jpg", price: "1.075,00", oldPrice: "2.699,99", discount: 60, expires: "2026-08-19" },
-    { asin: "B0F5X6Y8R6", title: "Samsung TV 55\" QLED 4K", img: "https://m.media-amazon.com/images/I/61tjjPyts8L._AC_UL480_.jpg", price: "2.821,40", oldPrice: "3.299,99", discount: 15, expires: "2026-08-19" }
-  ];
-
-  function renderDeals() {
-    const today = new Date().toISOString().slice(0, 10);
-    const active = DEALS.filter(d => d.expires >= today);
-    const section = document.getElementById('ofertas');
-    if (!active.length) { section.style.display = 'none'; return; }
-    document.getElementById('dealsRail').innerHTML = active.map(d => `
-      <a class="deal-card" href="https://www.amazon.com.br/dp/${d.asin}?tag=${AFFILIATE_TAG}" target="_blank" rel="noopener sponsored">
-        <span class="deal-discount">-${d.discount}%</span>
-        <img class="deal-img" src="${d.img}" alt="${d.title}">
-        <div class="deal-info">
-          <span class="deal-title">${d.title}</span>
-          <span class="deal-price">R$ ${d.price}</span>
-          <span class="deal-old-price">R$ ${d.oldPrice}</span>
-        </div>
-      </a>
-    `).join('');
-  }
-  renderDeals();
-</script>
-</body>
-</html>
+<script src="js/site.js" defer></script><script src="js/home.js" defer></script>
+</body></html>
