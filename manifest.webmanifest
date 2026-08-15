@@ -3,8 +3,8 @@
   "short_name": "TechAprovado",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#050b14",
-  "theme_color": "#07101f",
+  "background_color": "#0f1115",
+  "theme_color": "#0f1115",
   "lang": "pt-BR",
   "icons": [
     {

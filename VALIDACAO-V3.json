@@ -1,0 +1,22 @@
+{
+  "version": "V3 Git-ready",
+  "date": "2026-08-14",
+  "html_pages": 20,
+  "ranking_pages": 18,
+  "ranking_cards": 180,
+  "ranking_images_wrapped": 180,
+  "ranking_images_lazy": 180,
+  "pages_with_canonical": 19,
+  "pages_with_open_graph": 19,
+  "pages_with_jsonld": 19,
+  "pages_with_mobile_menu": 19,
+  "required_files": {
+    "robots.txt": true,
+    "sitemap.xml": true,
+    "manifest.webmanifest": true,
+    "404.html": true,
+    "img/banner-mobile.jpg": true,
+    "js/site.js": true,
+    "js/read-more.js": true
+  }
+}

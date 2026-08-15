@@ -6,5 +6,5 @@ document.addEventListener('click', function (e) {
   if (!more) return;
   var expanded = more.classList.toggle('is-expanded');
   btn.textContent = expanded ? 'Ler menos' : 'Ler mais';
-  btn.setAttribute('aria-expanded', expanded);
+  btn.setAttribute('aria-expanded', String(expanded));
 });

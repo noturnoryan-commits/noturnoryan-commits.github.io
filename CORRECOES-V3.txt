@@ -1,0 +1,21 @@
+TechAprovado V3 — pacote corrigido para teste no Git
+
+Preservado:
+- 18 rankings e todo o conteúdo editorial da versão recebida
+- sistema Ler mais e considerações finais
+- ofertas e estrutura visual atual
+
+Corrigido/restaurado:
+- contenção das imagens e grids (sem overflow lateral)
+- números dos rankings trazidos para dentro dos cards
+- menu mobile funcional
+- banner específico para celular
+- lazy loading, decoding assíncrono e dimensões em imagens de produto
+- canonical, robots meta, Open Graph e Twitter Cards
+- Schema.org (Organization/WebSite/Article/ItemList/BreadcrumbList)
+- sitemap.xml, robots.txt, manifest.webmanifest e 404.html
+- cálculo de validade das ofertas usando America/Sao_Paulo em vez de UTC
+- aria-expanded/aria-controls nos botões Ler mais
+- posicionamento textual da home ampliado para produtos e soluções de casa tecnológica
+
+Data da correção: 2026-08-14
