@@ -1371,6 +1371,18 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   .link-btn-hero .link-btn-text strong { font-size: 1.08rem; }
 }
 
+/* === Guias "qual versão?" (23/10/2026) === */
+.rank-tag {
+  display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 0.74rem; font-weight: 800;
+  color: var(--accent-yellow); background: rgba(255, 214, 0, 0.08); border: 1px solid rgba(255, 214, 0, 0.28);
+}
+.guide-note {
+  padding: 22px 24px; border-radius: 16px;
+  background: rgba(25, 118, 210, 0.10); border: 1px solid rgba(25, 118, 210, 0.38); border-left: 4px solid var(--accent-yellow);
+}
+.guide-note h2 { font-size: 1.25rem; margin-bottom: 10px; }
+.guide-note p { margin-bottom: 0; }
+
 /* === Páginas de categoria (gerado por gerar_categorias.py) === */
 .main-nav a[aria-current="page"] { color: var(--text); }
 
