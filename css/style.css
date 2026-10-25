@@ -1384,8 +1384,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 .guide-note p { margin-bottom: 0; }
 
 /* === Banners dos guias (25/10/2026) ===
-   Cada guia aponta para a própria imagem em img/banners-guias/<slug>.webp.
-   Desktop: produtos à esquerda, título à direita. Até 900px: faixa da imagem no topo e texto abaixo. */
+   Mesmo método da prévia aprovada (Artes/site-cafeteira-banner-teste-2026-10-25/previa.html):
+   imagem como fundo, produtos à esquerda, degradê para o azul e título à direita.
+   Cada guia aponta para a própria imagem no style do .guide-banner (img/banners-guias/<slug>.webp).
+   Até 900px: faixa da imagem no topo e texto abaixo. */
 .article-hero.has-banner {
   --guide-hero-h: clamp(460px, 42vw, 600px);
   position: relative;
@@ -1397,69 +1399,74 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   max-width: none;
   min-height: var(--guide-hero-h);
   padding: 0;
-  background: linear-gradient(90deg, #081C3A 45%, #0D47A1 150%);
+  background: #081C3A;
 }
 .guide-banner {
   position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 0;
-  height: var(--guide-hero-h);
-  transform: translateY(-50%);
+  inset: 0;
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-size: auto var(--guide-hero-h);
+  background-position: left center;
   pointer-events: none;
 }
-.guide-banner img {
-  width: auto;
-  max-width: none;
-  height: 100%;
-  -webkit-mask-image: linear-gradient(90deg, #000 66%, transparent 99%), linear-gradient(180deg, transparent 0, #000 7%, #000 90%, transparent 100%);
-  -webkit-mask-composite: source-in;
-  mask-image: linear-gradient(90deg, #000 66%, transparent 99%), linear-gradient(180deg, transparent 0, #000 7%, #000 90%, transparent 100%);
-  mask-composite: intersect;
+.article-hero.has-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, #081C3A 0, transparent calc(50% - var(--guide-hero-h) / 2 + 36px), transparent calc(50% + var(--guide-hero-h) / 2 - 36px), #081C3A 100%),
+    linear-gradient(90deg, transparent calc(var(--guide-hero-h) * 0.9), rgba(8, 28, 58, 0.18) calc(var(--guide-hero-h) * 1.05), #081C3A calc(var(--guide-hero-h) * 1.45), #0B3170 100%);
 }
 .article-hero.has-banner .container {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  column-gap: 48px;
+  column-gap: 40px;
   align-content: center;
   width: 100%;
-  max-width: 1120px;
-  padding-top: 56px;
-  padding-bottom: 56px;
+  max-width: 1240px;
+  padding: 64px 32px;
 }
 .article-hero.has-banner .container > * { grid-column: 2; justify-self: start; }
-.article-hero.has-banner .article-sub { color: #D5DEEA; }
-.article-hero.has-banner .publish-date { background: rgba(8, 28, 58, 0.72); border-color: rgba(100, 165, 240, 0.5); color: #8EC2FF; }
+.article-hero.has-banner h1 { font-size: clamp(30px, 3.2vw, 46px); line-height: 1.12; letter-spacing: -0.02em; margin: 18px 0 22px; }
+.article-hero.has-banner .article-sub { color: #DBE5F3; font-size: 17px; line-height: 1.65; }
+.article-hero.has-banner .publish-date { margin-top: 24px; background: rgba(8, 28, 58, 0.72); border-color: rgba(100, 165, 240, 0.5); color: #8EC2FF; }
 
 @media (max-width: 900px) {
   .article-hero.has-banner {
     --guide-hero-h: clamp(260px, 90vw, 420px);
     display: block;
     min-height: 0;
-    background: #081C3A;
   }
   .guide-banner {
     position: relative;
+    inset: auto;
     display: block;
-    top: auto;
-    transform: none;
-    overflow: hidden;
+    height: var(--guide-hero-h);
+    background-position: left top;
   }
-  .guide-banner img {
-    -webkit-mask-image: linear-gradient(90deg, #000 66%, transparent 99%), linear-gradient(180deg, #000 72%, transparent 100%);
-    mask-image: linear-gradient(90deg, #000 66%, transparent 99%), linear-gradient(180deg, #000 72%, transparent 100%);
+  .article-hero.has-banner::after {
+    background:
+      linear-gradient(180deg, transparent calc(var(--guide-hero-h) * 0.6), #081C3A var(--guide-hero-h)),
+      linear-gradient(90deg, transparent calc(var(--guide-hero-h) * 1.05), #081C3A calc(var(--guide-hero-h) * 1.48));
   }
   .article-hero.has-banner .container {
     display: block;
     position: relative;
     width: auto;
     margin-top: -24px;
-    padding-top: 0;
-    padding-bottom: 40px;
+    padding: 0 24px 40px;
   }
+  .article-hero.has-banner h1 { font-size: 32px; line-height: 1.14; margin: 14px 0 18px; }
+  .article-hero.has-banner .article-sub { font-size: 16px; }
 }
 @media (max-width: 760px) {
-  .article-hero.has-banner .container { width: calc(100% - 28px); }
+  .article-hero.has-banner .container { width: calc(100% - 28px); padding-left: 0; padding-right: 0; }
+}
+@media (max-width: 360px) {
+  .article-hero.has-banner h1 { font-size: 28px; }
 }
 
 /* === Páginas de categoria (gerado por gerar_categorias.py) === */
