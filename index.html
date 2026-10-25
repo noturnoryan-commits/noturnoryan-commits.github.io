@@ -33,9 +33,24 @@
 </nav>
 </div>
 </header>
-<div class="site-banner">
-
-<picture><source media="(max-width: 900px)" srcset="img/banner-mobile.jpg"/><img alt="TechAprovado — os melhores produtos para sua casa, aprovados por quem entende de tecnologia" decoding="async" fetchpriority="high" height="793" src="img/banner.jpg" width="1983"/></picture></div>
+<div class="site-banner" data-banner="">
+<div aria-label="Ofertas do dia em destaque" class="banner-deals" hidden="" id="bannerDeals" role="region">
+<a class="banner-deals-label" href="#ofertas">🔥 Ofertas do dia</a>
+<div class="banner-deals-viewport"><div class="banner-deals-track" id="bannerDealsTrack"></div></div>
+</div>
+<picture><source media="(max-width: 900px)" srcset="img/banner-mobile.jpg"/><img alt="TechAprovado — os melhores produtos para sua casa, aprovados por quem entende de tecnologia" decoding="async" fetchpriority="high" height="793" src="img/banner.jpg" width="1983"/></picture>
+<div aria-hidden="true" class="banner-glow"></div>
+<div aria-hidden="true" class="banner-spark"></div>
+<nav aria-label="Atalhos do banner" class="banner-hotspots">
+<a class="banner-hot is-blue" data-spot="1" href="#categorias"><span class="banner-hot-tip">Ver os rankings →</span><span class="sr-only">Top 10: melhores produtos para sua casa</span></a>
+<a class="banner-hot is-blue" data-spot="2" href="sobre.html"><span class="banner-hot-tip">Como analisamos →</span><span class="sr-only">Análises completas e confiáveis</span></a>
+<a class="banner-hot is-blue" data-spot="3" href="#aprovados"><span class="banner-hot-tip">Ver as Escolhas →</span><span class="sr-only">Escolhas inteligentes e econômicas</span></a>
+<a class="banner-hot is-yellow" data-spot="4" href="#ofertas"><span class="banner-hot-tip">Ofertas do dia →</span><span class="sr-only">Aprovados: só o que vale a pena</span></a>
+<a class="banner-hot is-yellow" data-spot="5" href="categorias.html"><span class="banner-hot-tip">Todas as categorias →</span><span class="sr-only">Eletrônicos, eletrodomésticos e muito mais</span></a>
+<a class="banner-hot is-yellow" data-spot="6" href="redes-sociais.html"><span class="banner-hot-tip">Dicas no WhatsApp →</span><span class="sr-only">Dicas de tecnologia para o dia a dia</span></a>
+<a class="banner-hot" data-spot="logo" href="#categorias" tabindex="-1"><span class="sr-only">Ver categorias</span></a>
+</nav>
+</div>
 <section class="hero">
 <div class="container hero-inner">
 <h1>Só indicamos o que <span class="highlight">realmente aprovamos</span></h1>
@@ -276,6 +291,48 @@
     `).join('');
   }
   renderDeals();
+
+  // Mini carrossel no topo do banner: as 12 ofertas ativas com maior desconto (mesma lista acima).
+  function renderBannerDeals() {
+    const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year:'numeric', month:'2-digit', day:'2-digit' }).format(new Date());
+    const top = DEALS.filter(d => d.expires >= today).sort((a, b) => b.discount - a.discount).slice(0, 12);
+    const box = document.getElementById('bannerDeals');
+    if (!top.length || !box) return;
+    const card = (d, dup) => `
+      <a class="mini-deal" href="https://www.amazon.com.br/dp/${d.asin}?tag=${AFFILIATE_TAG}" target="_blank" rel="noopener sponsored"${dup ? ' aria-hidden="true" tabindex="-1"' : ''} title="${d.title} — ver na Amazon">
+        <span class="mini-deal-off">-${d.discount}%</span>
+        <img src="${d.img}" alt="" width="44" height="44" decoding="async">
+        <span class="mini-deal-text"><span class="mini-deal-title">${d.title}</span><span class="mini-deal-price">R$ ${d.price}</span></span>
+      </a>`;
+    // A lista vai duplicada para o giro ser contínuo, sem "pulo" no fim.
+    const track = document.getElementById('bannerDealsTrack');
+    track.innerHTML = top.map(d => card(d, false)).join('') + top.map(d => card(d, true)).join('');
+    track.style.setProperty('--marquee-time', (top.length * 4.5) + 's');
+    box.hidden = false;
+  }
+  renderBannerDeals();
+
+  // Banner interativo: brilho que segue o mouse e leve movimento da arte (só com mouse).
+  (() => {
+    const banner = document.querySelector('[data-banner]');
+    if (!banner || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const img = banner.querySelector('picture img');
+    let raf = 0;
+    banner.addEventListener('pointermove', e => {
+      if (e.target.closest('.banner-deals')) { banner.classList.remove('is-live'); return; }
+      const r = banner.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        banner.style.setProperty('--mx', (x * 100) + '%');
+        banner.style.setProperty('--my', (y * 100) + '%');
+        img.style.transform = `scale(1.035) translate(${(0.5 - x) * 14}px, ${(0.5 - y) * 8}px)`;
+        banner.classList.add('is-live');
+      });
+    });
+    banner.addEventListener('pointerleave', () => { banner.classList.remove('is-live'); img.style.transform = ''; });
+  })();
 </script>
 <script defer="" src="js/site.js"></script></body>
 </html>
