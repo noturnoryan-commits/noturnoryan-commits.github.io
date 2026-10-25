@@ -1383,6 +1383,85 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 .guide-note h2 { font-size: 1.25rem; margin-bottom: 10px; }
 .guide-note p { margin-bottom: 0; }
 
+/* === Banners dos guias (25/10/2026) ===
+   Cada guia aponta para a própria imagem em img/banners-guias/<slug>.webp.
+   Desktop: produtos à esquerda, título à direita. Até 900px: faixa da imagem no topo e texto abaixo. */
+.article-hero.has-banner {
+  --guide-hero-h: clamp(460px, 42vw, 600px);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: none;
+  min-height: var(--guide-hero-h);
+  padding: 0;
+  background: linear-gradient(90deg, #081C3A 45%, #0D47A1 150%);
+}
+.guide-banner {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+  height: var(--guide-hero-h);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.guide-banner img {
+  width: auto;
+  max-width: none;
+  height: 100%;
+  -webkit-mask-image: linear-gradient(90deg, #000 66%, transparent 99%), linear-gradient(180deg, transparent 0, #000 7%, #000 90%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, #000 66%, transparent 99%), linear-gradient(180deg, transparent 0, #000 7%, #000 90%, transparent 100%);
+  mask-composite: intersect;
+}
+.article-hero.has-banner .container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 48px;
+  align-content: center;
+  width: 100%;
+  max-width: 1120px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.article-hero.has-banner .container > * { grid-column: 2; justify-self: start; }
+.article-hero.has-banner .article-sub { color: #D5DEEA; }
+.article-hero.has-banner .publish-date { background: rgba(8, 28, 58, 0.72); border-color: rgba(100, 165, 240, 0.5); color: #8EC2FF; }
+
+@media (max-width: 900px) {
+  .article-hero.has-banner {
+    --guide-hero-h: clamp(260px, 90vw, 420px);
+    display: block;
+    min-height: 0;
+    background: #081C3A;
+  }
+  .guide-banner {
+    position: relative;
+    display: block;
+    top: auto;
+    transform: none;
+    overflow: hidden;
+  }
+  .guide-banner img {
+    -webkit-mask-image: linear-gradient(90deg, #000 66%, transparent 99%), linear-gradient(180deg, #000 72%, transparent 100%);
+    mask-image: linear-gradient(90deg, #000 66%, transparent 99%), linear-gradient(180deg, #000 72%, transparent 100%);
+  }
+  .article-hero.has-banner .container {
+    display: block;
+    position: relative;
+    width: auto;
+    margin-top: -24px;
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 760px) {
+  .article-hero.has-banner .container { width: calc(100% - 28px); }
+}
+
 /* === Páginas de categoria (gerado por gerar_categorias.py) === */
 .main-nav a[aria-current="page"] { color: var(--text); }
 
