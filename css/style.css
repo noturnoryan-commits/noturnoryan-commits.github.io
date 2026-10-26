@@ -1977,3 +1977,19 @@ body.menu-open .float-dock { opacity: 0; pointer-events: none; }
 .link-btn-youtube .link-btn-icon { background: rgba(255, 0, 0, 0.14); }
 .link-btn-tiktok { border-color: rgba(37, 244, 238, 0.4); }
 .link-btn-tiktok .link-btn-icon { background: rgba(254, 44, 85, 0.14); }
+
+/* Formulário de contato (Sobre) — Web3Forms */
+.contact-form { display: flex; flex-direction: column; gap: 6px; margin: 16px 0 32px; padding: 24px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+.contact-form label { color: var(--text); font-weight: 600; font-size: 0.95rem; margin-top: 8px; }
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea { width: 100%; font: inherit; color: var(--text); background: var(--bg-alt); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+.contact-form textarea { resize: vertical; min-height: 140px; }
+.contact-form input:focus, .contact-form textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+.contact-form .contact-hp { display: none; }
+.article-inner .contact-note { font-size: 0.85rem; margin: 8px 0 4px; }
+.article-inner .contact-note a { color: var(--accent); }
+.contact-submit { align-self: flex-start; border: 0; cursor: pointer; font: inherit; font-weight: 700; margin-top: 8px; }
+.contact-submit:disabled { opacity: 0.6; cursor: wait; transform: none; }
+.article-inner .contact-status { margin: 8px 0 0; font-weight: 600; min-height: 1.5em; }
+.article-inner .contact-status.is-ok { color: #66bb6a; }
+.article-inner .contact-status.is-error { color: #ef5350; }
+@media (max-width: 600px) { .contact-form { padding: 16px; } .contact-submit { align-self: stretch; text-align: center; } }
