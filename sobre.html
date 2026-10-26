@@ -29,7 +29,7 @@
 <a href="categorias.html">Categorias</a>
 <a href="index.html#aprovados">Escolhas</a>
 <a href="sobre.html">Sobre</a>
-<a href="index.html#contato">Contato</a>
+<a href="contato.html">Contato</a>
 <a class="nav-cta" href="redes-sociais.html">📲 WhatsApp e redes</a>
 </nav>
 </div>
@@ -77,22 +77,9 @@
 </ul>
 
 <h2 id="fale-conosco">Fale com a gente</h2>
-<p>Dúvida, sugestão de guia, correção ou parceria? Mande sua mensagem por aqui — a resposta chega no e-mail que você informar.</p>
-<form action="https://api.web3forms.com/submit" class="contact-form" data-contact-form="" method="POST">
-<input name="access_key" type="hidden" value="8f1be69f-dbdd-4997-a30e-1c1b8fc73095"/>
-<input name="subject" type="hidden" value="Nova mensagem pelo site TechAprovado"/>
-<input name="from_name" type="hidden" value="Site TechAprovado"/>
-<input autocomplete="off" class="contact-hp" name="botcheck" tabindex="-1" type="checkbox"/>
-<label for="contato-nome">Nome</label>
-<input autocomplete="name" id="contato-nome" maxlength="100" name="name" required="" type="text"/>
-<label for="contato-email">E-mail</label>
-<input autocomplete="email" id="contato-email" maxlength="150" name="email" required="" type="email"/>
-<label for="contato-msg">Mensagem</label>
-<textarea id="contato-msg" maxlength="3000" name="message" required="" rows="6"></textarea>
-<p class="contact-note">Usamos seu nome e e-mail só para responder a esta mensagem. Veja a <a href="privacidade.html#formulario-contato">Política de Privacidade</a>.</p>
-<button class="btn-primary contact-submit" type="submit">Enviar mensagem</button>
-<p aria-live="polite" class="contact-status" data-contact-status="" role="status"></p>
-</form>
+<p>Dúvida, sugestão de guia, correção ou parceria? Use o formulário da nossa <a href="contato.html">página de contato</a> — a resposta chega no e-mail que você informar.</p>
+<p><a class="btn-primary" href="contato.html">Enviar uma mensagem</a></p>
+
 
 <p>Veja também a nossa <a href="privacidade.html">Política de Privacidade e Cookies</a>.</p>
 <p><a class="btn-primary" href="categorias.html">Ver todos os guias</a></p>
@@ -134,33 +121,6 @@
 </footer>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-<script>
-  (function () {
-    var form = document.querySelector('[data-contact-form]');
-    if (!form || !window.fetch) return;
-    var status = form.querySelector('[data-contact-status]');
-    var btn = form.querySelector('button[type="submit"]');
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      btn.disabled = true;
-      status.className = 'contact-status';
-      status.textContent = 'Enviando...';
-      fetch(form.action, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form) })
-        .then(function (r) { return r.json(); })
-        .then(function (d) {
-          if (!d.success) throw new Error(d.message || 'erro');
-          status.className = 'contact-status is-ok';
-          status.textContent = 'Mensagem enviada! Vamos responder no e-mail que você informou.';
-          form.reset();
-        })
-        .catch(function () {
-          status.className = 'contact-status is-error';
-          status.textContent = 'Não foi possível enviar agora. Tente de novo ou escreva para techaprovado@gmail.com.';
-        })
-        .then(function () { btn.disabled = false; });
-    });
-  })();
 </script>
 <script defer="" src="js/site.js"></script></body>
 </html>
