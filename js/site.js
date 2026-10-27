@@ -31,10 +31,10 @@
   const TA_PICKS = [
     { asin: 'B0GXFFSVYM', name: 'Dreame D15 Plus', badge: 'Automação em destaque', img: 'https://m.media-amazon.com/images/I/61N-ZmR2MxL._AC_UL480_.jpg', guide: 'roboaspirador-2026.html#produto-10' },
     { asin: 'B085W72XZK', name: 'EKAZA Tomada Inteligente T005', badge: 'Casa inteligente acessível', img: 'https://m.media-amazon.com/images/I/61uj62cx-bL._AC_UL480_.jpg', guide: 'tomadainteligente-2026.html#produto-1' },
-    { asin: 'B0DF2WSGF6', name: 'Monitor LG 24MS500 IPS 100Hz', badge: 'Custo-benefício no escritório', img: 'https://m.media-amazon.com/images/I/61EXtxtW1gL._AC_UL480_.jpg', guide: 'monitor-2026.html#produto-4' },
-    { asin: 'B0F4884LN3', name: 'soundcore Q20i da Anker', badge: 'Upgrade que vale a pena', img: 'https://m.media-amazon.com/images/I/61UAFRru23L._AC_UL480_.jpg', guide: 'foneoverear-2026.html#produto-5' },
+    { asin: 'B0DF2WSGF6', name: 'Monitor LG 24MS500 IPS 100Hz', badge: 'Custo-benefício no escritório', img: 'https://m.media-amazon.com/images/I/61EXtxtW1gL._AC_UL480_.jpg', guide: 'monitor-2026.html#produto-2' },
+    { asin: 'B0C3KWT5V6', name: 'soundcore Q20i da Anker', badge: 'Upgrade que vale a pena', img: 'https://m.media-amazon.com/images/I/61cfZHdnvzL._AC_UL480_.jpg', guide: 'foneoverear-2026.html#produto-3' },
     { asin: 'B0CVCLGV1W', name: 'Samsung Galaxy Fit3', badge: 'Melhor custo-benefício vestível', img: 'https://m.media-amazon.com/images/I/61o3-pf41tL._AC_UL480_.jpg', guide: 'smartwatch-2026.html#produto-4' },
-    { asin: 'B0F7T2Y46Y', name: 'Caixa de Som JBL Flip 7', badge: 'Melhor custo-benefício em som', img: 'https://m.media-amazon.com/images/I/61S6CABfB7L._AC_UL480_.jpg', guide: 'caixadesom-2026.html#produto-8' }
+    { asin: 'B0F7T2Y46Y', name: 'Caixa de Som JBL Flip 7', badge: 'Melhor custo-benefício em som', img: 'https://m.media-amazon.com/images/I/61S6CABfB7L._AC_UL480_.jpg', guide: 'caixadesom-2026.html#produto-4' }
   ];
 
   const nav = document.getElementById('main-nav');
@@ -320,4 +320,46 @@
     if (e.target.closest('[data-cookie-prefs]')) { e.preventDefault(); open(); }
   });
   if (!read()) open();
+})();
+
+/* Ficha técnica em pop-up (27/10/2026): cada card de guia tem um botão [data-ficha]
+   que abre a tabela guardada no próprio card (div.spec-data). */
+(() => {
+  const cards = document.querySelectorAll('[data-ficha]');
+  if (!cards.length) return;
+  let dlg = null, lastBtn = null;
+  const close = () => { if (dlg?.open) dlg.close(); };
+  const build = () => {
+    dlg = document.createElement('dialog');
+    dlg.className = 'spec-dialog';
+    dlg.setAttribute('aria-labelledby', 'spec-title');
+    dlg.innerHTML = '<div class="spec-head"><img alt="" decoding="async"><div class="spec-head-text"><p class="spec-eyebrow">Ficha técnica</p><p class="spec-title" id="spec-title"></p></div>' +
+      '<button type="button" class="spec-close" aria-label="Fechar ficha técnica">×</button></div><div class="spec-body"></div>' +
+      '<div class="spec-foot"><a class="btn-primary" target="_blank" rel="noopener sponsored">Ver preço atual na Amazon</a></div>';
+    document.body.appendChild(dlg);
+    dlg.querySelector('.spec-close').addEventListener('click', close);
+    dlg.addEventListener('click', e => { if (e.target === dlg) close(); });
+    dlg.addEventListener('close', () => { document.body.classList.remove('spec-open'); lastBtn?.focus(); });
+  };
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('[data-ficha]');
+    if (!btn) return;
+    const card = btn.closest('.rank-card');
+    const data = document.getElementById(btn.getAttribute('data-ficha'));
+    if (!card || !data) return;
+    if (!dlg) build();
+    lastBtn = btn;
+    const img = card.querySelector('.rank-img');
+    const head = dlg.querySelector('.spec-head img');
+    head.src = img ? img.currentSrc || img.src : ''; head.hidden = !img;
+    dlg.querySelector('.spec-title').textContent = (card.querySelector('h3')?.childNodes[0]?.textContent || '').trim();
+    dlg.querySelector('.spec-body').innerHTML = data.innerHTML;
+    const buy = card.querySelector('a.btn-primary');
+    const foot = dlg.querySelector('.spec-foot a');
+    if (buy) { foot.href = buy.href; foot.hidden = false; } else foot.hidden = true;
+    document.body.classList.add('spec-open');
+    if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
+    dlg.querySelector('.spec-body').scrollTop = 0;
+    if (typeof window.gtag === 'function') window.gtag('event', 'ficha_tecnica', { item: dlg.querySelector('.spec-title').textContent });
+  });
 })();
