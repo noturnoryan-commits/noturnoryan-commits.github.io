@@ -1,3 +1,48 @@
+/* ==========================================================================
+   TechAprovado — folha de estilos única do site (css/style.css)
+   Comentários organizados em 28/10/2026.
+
+   COMO ESTE ARQUIVO ESTÁ ORGANIZADO
+   O arquivo cresceu em camadas: cada melhoria foi adicionada no fim e,
+   muitas vezes, reescreve regras de uma parte anterior. Por isso a ORDEM
+   IMPORTA: no CSS, quando duas regras valem para o mesmo elemento, vence a
+   que vem depois. Antes de apagar ou mover algo, confira as notas
+   "Sobrescrito em" de cada seção.
+
+   SUMÁRIO
+   PARTE 1 — Base: fonte, cores, reset e estrutura
+   PARTE 2 — Layout original (home, guias e rodapé)
+     2.1 Cabeçalho          2.6 Produtos aprovados (legado)  2.11 Guias (ranking)
+     2.2 Banner da home     2.7 Escolhas TechAprovado         2.12 "Ler mais"
+     2.3 Hero               2.8 Sobre (home)                  2.13 Considerações finais
+     2.4 Ofertas do Dia     2.9 Rodapé
+     2.5 Categorias (home)  2.10 Faixa de aviso
+   PARTE 3 — Correções V3: responsividade e acessibilidade
+   PARTE 4 — Refinos da home: banner largo e Escolhas em 2 colunas
+   PARTE 5 — Páginas e componentes adicionados (21 a 25/10/2026)
+   PARTE 6 — Melhorias de 25/10/2026: menus, banner interativo, carrossel
+   PARTE 7 — Ajustes de 27/10/2026: navegação e ficha técnica
+
+   CORES (variáveis em :root)
+   --bg preto #0f1115 · --accent azul #1976D2 · --accent-dark azul escuro
+   #0D47A1 · --accent-yellow amarelo #FFD600 (CTA e destaques) · --text branco.
+
+   PONTOS DE QUEBRA USADOS (larguras de tela)
+   1100px desktop largo · 900px tablet · 760px celular/menu ☰ · 600/540px
+   celular pequeno · 360px telas muito estreitas.
+
+   CLASSES SEM USO HOJE (mantidas para não quebrar restaurações)
+   .product-*, .social-*, .page-hero*, .cat-tile*, .hub-jump,
+   .links-head/-logo/-sub e as classes do WhatsApp (.wa-*, .link-btn-channel,
+   .link-btn-hero, .links-groups, .links-hint), removido do site em 28/10/2026.
+   ========================================================================== */
+
+/* ==========================================================================
+   PARTE 1 — BASE: FONTE, CORES, RESET E ESTRUTURA
+   Fonte Montserrat (Google Fonts), variáveis de cor, zeragem de margens,
+   corpo da página, largura máxima do conteúdo (.container) e títulos.
+   ========================================================================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 
 :root {
@@ -33,7 +78,17 @@ a { color: inherit; text-decoration: none; }
 
 h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
-/* Header */
+/* ==========================================================================
+   PARTE 2 — LAYOUT ORIGINAL (HOME, GUIAS E RODAPÉ)
+   Primeira versão do visual. Várias seções foram refinadas depois
+   (ver Partes 3, 4, 6 e 7), mas continuam sendo a base.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   2.1  Cabeçalho fixo no topo: logo e links do menu
+   Onde: todas as páginas (<header class="site-header">)
+   Obs.: sobrescrito em 3 (menu ☰ do celular), 6.1 (menus com painel) e 7.1.
+   -------------------------------------------------------------------------- */
 .site-header {
   position: sticky;
   top: 0;
@@ -75,7 +130,11 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
 .main-nav a:hover { color: var(--text); }
 
-/* Banner / capa */
+/* --------------------------------------------------------------------------
+   2.2  Banner principal da home (arte 1983 × 793)
+   Onde: index.html (.site-banner)
+   Obs.: sobrescrito em 3, 4.1 e 4.5; áreas clicáveis em 6.5.
+   -------------------------------------------------------------------------- */
 .site-banner img {
   display: block;
   width: 100%;
@@ -83,7 +142,10 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
   object-fit: cover;
 }
 
-/* Hero */
+/* --------------------------------------------------------------------------
+   2.3  Hero: título e chamada abaixo do banner + botão amarelo padrão (.btn-primary)
+   Onde: index.html; .btn-primary é usado no site todo
+   -------------------------------------------------------------------------- */
 .hero { padding: 96px 0 72px; }
 
 .hero-inner { max-width: 640px; }
@@ -116,7 +178,10 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
   transform: translateY(-1px);
 }
 
-/* Ofertas do Dia — horizontal scroll rail */
+/* --------------------------------------------------------------------------
+   2.4  Ofertas do Dia: trilho horizontal de cards com desconto
+   Onde: index.html (#ofertas)
+   -------------------------------------------------------------------------- */
 .deals-section { padding: 40px 0 48px; }
 
 .deals-section h2 { font-size: 1.5rem; margin-bottom: 4px; }
@@ -197,7 +262,10 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
   .deals-rail { padding-left: 16px; padding-right: 16px; }
 }
 
-/* Categories */
+/* --------------------------------------------------------------------------
+   2.5  Categorias: grade de cards com ícone e links dos guias
+   Onde: index.html (#categorias)
+   -------------------------------------------------------------------------- */
 .categories { padding: 64px 0; background: var(--bg-alt); }
 
 .categories h2, .approved h2, .about h2 {
@@ -255,7 +323,11 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
 .category-links a:hover { color: var(--accent); }
 
-/* Approved products */
+/* --------------------------------------------------------------------------
+   2.6  Produtos aprovados (versão antiga da home)
+   Onde: nenhuma página usa hoje (.product-*)
+   Obs.: pode ser removido numa limpeza futura.
+   -------------------------------------------------------------------------- */
 .approved { padding: 64px 0; }
 
 .section-sub { color: var(--text-muted); margin-bottom: 32px; margin-top: -20px; }
@@ -296,7 +368,11 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
 .product-note { color: var(--text-muted); font-size: 0.85rem; }
 
-/* Escolhas TechAprovado — curadoria editorial da home */
+/* --------------------------------------------------------------------------
+   2.7  Escolhas TechAprovado: destaques editoriais da home
+   Onde: index.html (#aprovados, .choice-card)
+   Obs.: redesenhado na Parte 4 (4.2 a 4.4), que vence estas regras.
+   -------------------------------------------------------------------------- */
 .choices-section {
   padding: 72px 0;
   background:
@@ -462,14 +538,20 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
   .choice-media img { width: 100%; height: 174px; min-height: 174px; }
 }
 
-/* About */
+/* --------------------------------------------------------------------------
+   2.8  Bloco "Sobre" e aviso de preços
+   Onde: home e fim dos guias (.about)
+   -------------------------------------------------------------------------- */
 .about { padding: 64px 0; background: var(--bg-alt); }
 
 .about-inner { max-width: 680px; }
 
 .about p { color: var(--text-muted); font-size: 1.05rem; }
 
-/* Footer */
+/* --------------------------------------------------------------------------
+   2.9  Rodapé: marca, links das redes e aviso de afiliado
+   Onde: todas as páginas (.site-footer)
+   -------------------------------------------------------------------------- */
 .site-footer { padding: 56px 0 24px; border-top: 1px solid var(--border); }
 
 .footer-inner {
@@ -502,7 +584,10 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
   .hero { padding: 64px 0 48px; }
 }
 
-/* Banner shown on old yearly editions, pointing to the newer one */
+/* --------------------------------------------------------------------------
+   2.10  Faixa de aviso que aponta para outra edição ou guia relacionado
+   Onde: guias (.update-banner)
+   -------------------------------------------------------------------------- */
 .update-banner {
   background: var(--accent-yellow);
   color: #06120a;
@@ -514,7 +599,11 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
 .update-banner a { text-decoration: underline; color: #06120a; }
 
-/* Article / guide pages */
+/* --------------------------------------------------------------------------
+   2.11  Páginas de guia: topo, introdução e cards do ranking
+   Onde: todos os *-2026.html (.rank-card, .rank-img, .rank-body)
+   Obs.: ajustado em 3.4/3.5 (mídia do ranking) e 5.5 (banners dos guias).
+   -------------------------------------------------------------------------- */
 .article-hero {
   padding: 72px 0 40px;
   max-width: 780px;
@@ -632,7 +721,10 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
 .price-disclaimer { color: var(--text-muted); font-size: 0.8rem; text-align: center; }
 
-/* Ler mais — texto extra dos itens do ranking */
+/* --------------------------------------------------------------------------
+   2.12  "Ler mais": texto extra escondido nos itens do ranking
+   Onde: guias (.more-text, .read-more-btn; script js/read-more.js)
+   -------------------------------------------------------------------------- */
 .more-text { display: none; }
 .more-text.is-expanded { display: inline; }
 
@@ -651,7 +743,10 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 
 .read-more-btn:hover { color: var(--accent-dark); }
 
-/* Considerações finais */
+/* --------------------------------------------------------------------------
+   2.13  Considerações finais e escolhas por perfil
+   Onde: fim dos guias (.final-thoughts)
+   -------------------------------------------------------------------------- */
 .final-thoughts { padding: 8px 0 56px; }
 
 .final-thoughts .container { max-width: 720px; }
@@ -680,6 +775,16 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
 }
 
 
+/* ==========================================================================
+   PARTE 3 — CORREÇÕES V3: RESPONSIVIDADE E ACESSIBILIDADE
+   Impede que algo alargue a tela no celular, cria o menu ☰ e melhora o
+   foco do teclado. Sobrescreve partes da Parte 2.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   3.1  Contenção geral: nada pode passar da largura da tela
+   Onde: todas as páginas
+   -------------------------------------------------------------------------- */
 /* =========================================================
    TechAprovado V3 — correções técnicas e de responsividade
    Preserva o visual atual e reforça contenção, mobile e acessibilidade.
@@ -693,7 +798,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 .rank-section, .rank-section > .container, .rank-card, .rank-body, .rank-media,
 .final-thoughts, .final-thoughts .container { min-width: 0; max-width: 100%; }
 
-/* Header mobile real — o menu não desaparece mais. */
+/* --------------------------------------------------------------------------
+   3.2  Botão do menu ☰ no celular
+   Onde: todas as páginas (.menu-toggle; abre/fecha via js/site.js)
+   -------------------------------------------------------------------------- */
 .menu-toggle {
   display: none;
   width: 42px;
@@ -709,17 +817,26 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 }
 .menu-toggle svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
 
-/* Banner com versão dedicada para telas estreitas. */
+/* --------------------------------------------------------------------------
+   3.3  Banner com arte própria para telas estreitas
+   Onde: index.html
+   -------------------------------------------------------------------------- */
 .site-banner { overflow: hidden; background: var(--bg); }
 .site-banner picture { display: block; width: 100%; max-width: 1536px; margin: 0 auto; }
 .site-banner picture img { display: block; width: 100%; }
 .site-banner img { height: auto; }
 
-/* Cards da home nunca podem alargar o viewport. */
+/* --------------------------------------------------------------------------
+   3.4  Cards da home nunca alargam a tela
+   Onde: index.html
+   -------------------------------------------------------------------------- */
 .product-card { min-width: 0; overflow: hidden; }
 .product-img-placeholder { width: 100%; max-width: 100%; object-fit: contain; background: #fff; }
 
-/* Ranking: a mídia vive em uma coluna que pode encolher sem empurrar o texto. */
+/* --------------------------------------------------------------------------
+   3.5  Ranking: coluna da imagem encolhe sem empurrar o texto
+   Onde: guias (.rank-media)
+   -------------------------------------------------------------------------- */
 .rank-card {
   grid-template-columns: minmax(0, 190px) minmax(0, 1fr);
   overflow: hidden;
@@ -754,7 +871,11 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 .rank-body h3, .rank-body p, .rank-meta { min-width: 0; max-width: 100%; }
 .rank-body .btn-primary { max-width: 100%; white-space: normal; text-align: center; }
 
-/* 'Ler mais' com foco visível e estado acessível. */
+/* --------------------------------------------------------------------------
+   3.6  "Ler mais" com foco visível + regras de celular (760px e 540px) + menos animação
+   Onde: todas as páginas
+   Obs.: contém o menu ☰ aberto (.main-nav.is-open) e o modo "reduzir movimento" do sistema.
+   -------------------------------------------------------------------------- */
 .read-more-btn:focus-visible, .menu-toggle:focus-visible, a:focus-visible {
   outline: 3px solid rgba(255,214,0,.82);
   outline-offset: 3px;
@@ -800,12 +921,21 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
 
+/* ==========================================================================
+   PARTE 4 — REFINOS DA HOME: BANNER LARGO E ESCOLHAS EM 2 COLUNAS
+   Nova composição das Escolhas TechAprovado e banner de ponta a ponta.
+   Estas regras vencem as das seções 2.2 e 2.7.
+   ========================================================================== */
+
 /* =========================================================
    Home refinements — wide banner + Curadoria Editorial 2x2
    Identidade TechAprovado: azul, amarelo, preto e branco
    ========================================================= */
 
-/* O banner ocupa toda a largura disponível, inclusive em monitores ultrawide. */
+/* --------------------------------------------------------------------------
+   4.1  Banner ocupa toda a largura, inclusive em monitores ultrawide
+   Onde: index.html (.site-banner)
+   -------------------------------------------------------------------------- */
 .site-banner {
   width: 100%;
   max-width: none;
@@ -831,7 +961,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   object-position: center center;
 }
 
-/* Curadoria editorial: composição mais compacta e alinhada à identidade visual. */
+/* --------------------------------------------------------------------------
+   4.2  Escolhas: cabeçalho da seção e link "ver todas"
+   Onde: index.html (.choices-section)
+   -------------------------------------------------------------------------- */
 .choices-section {
   position: relative;
   isolation: isolate;
@@ -958,7 +1091,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   transform: translateY(-1px);
 }
 
-/* Desktop: sempre duas escolhas por linha. */
+/* --------------------------------------------------------------------------
+   4.3  Escolhas no desktop: sempre dois cards por linha
+   Onde: index.html (.choices-grid, .choice-card)
+   -------------------------------------------------------------------------- */
 .choices-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1102,7 +1238,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   line-height: 1.55;
 }
 
-/* Tablet e celular: um card por linha. */
+/* --------------------------------------------------------------------------
+   4.4  Escolhas no tablet e celular: um card por linha
+   Onde: index.html (760px e 520px)
+   -------------------------------------------------------------------------- */
 @media (max-width: 760px) {
   .site-banner picture img,
   .site-banner img {
@@ -1195,7 +1334,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   }
 }
 
-/* Em tablets, usa a arte dedicada que preserva a leitura da marca. */
+/* --------------------------------------------------------------------------
+   4.5  Banner no tablet: arte dedicada (até 900px)
+   Onde: index.html
+   -------------------------------------------------------------------------- */
 @media (max-width: 900px) {
   .site-banner picture img,
   .site-banner img {
@@ -1207,7 +1349,16 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   }
 }
 
-/* Aviso de cookies + links legais do rodapé */
+/* ==========================================================================
+   PARTE 5 — PÁGINAS E COMPONENTES ADICIONADOS (21 A 25/10/2026)
+   Cookies, redes sociais, faixa "Siga", guias "qual versão?", banners dos
+   guias e páginas de categoria.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   5.1  Aviso de cookies e links legais do rodapé
+   Onde: todas as páginas (.cookie-banner; criado pelo js/site.js)
+   -------------------------------------------------------------------------- */
 .cookie-banner {
   position: fixed; z-index: 60; left: 16px; right: 16px; bottom: 16px;
   max-width: 760px; margin: 0 auto;
@@ -1237,7 +1388,11 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   .cookie-actions .cookie-btn { flex: 1; }
 }
 
-/* === Página Redes sociais (redes-sociais.html) === */
+/* --------------------------------------------------------------------------
+   5.2  Página Redes sociais: versão antiga em cards
+   Onde: nenhuma página usa hoje (.social-*)
+   Obs.: substituída pela página de links da seção 5.3.
+   -------------------------------------------------------------------------- */
 .footer-links { flex-wrap: wrap; }
 .social-section { padding: 56px 0; }
 .social-section-alt { background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
@@ -1282,7 +1437,11 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   .social-grid { grid-template-columns: minmax(0, 1fr); }
 }
 
-/* === Botão de redes no menu + faixa "Siga" + página de links (21/10/2026) === */
+/* --------------------------------------------------------------------------
+   5.3  Botão amarelo do menu, faixa "Siga o TechAprovado" e página de links (21/10/2026)
+   Onde: menu de todas as páginas (.nav-cta), fim das páginas (.follow-cta) e redes-sociais.html (.links-page, .link-btn)
+   Obs.: as classes .link-btn-channel, .link-btn-hero, .links-groups e .links-hint eram da seção do WhatsApp (sem uso desde 28/10/2026).
+   -------------------------------------------------------------------------- */
 .main-nav a.nav-cta {
   color: #06120a; background: var(--accent-yellow); font-weight: 700;
   padding: 7px 14px; border-radius: 999px; white-space: nowrap;
@@ -1371,7 +1530,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   .link-btn-hero .link-btn-text strong { font-size: 1.08rem; }
 }
 
-/* === Guias "qual versão?" (23/10/2026) === */
+/* --------------------------------------------------------------------------
+   5.4  Guias "qual versão?": etiqueta e nota do item
+   Onde: kindle, fire-tv-stick, echo-alexa (.rank-tag, .guide-note)
+   -------------------------------------------------------------------------- */
 .rank-tag {
   display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 0.74rem; font-weight: 800;
   color: var(--accent-yellow); background: rgba(255, 214, 0, 0.08); border: 1px solid rgba(255, 214, 0, 0.28);
@@ -1383,6 +1545,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 .guide-note h2 { font-size: 1.25rem; margin-bottom: 10px; }
 .guide-note p { margin-bottom: 0; }
 
+/* --------------------------------------------------------------------------
+   5.5  Banners no topo dos guias (25/10/2026)
+   Onde: todos os *-2026.html (.article-hero.has-banner, .guide-banner)
+   -------------------------------------------------------------------------- */
 /* === Banners dos guias (25/10/2026) ===
    Mesmo método da prévia aprovada (Artes/site-cafeteira-banner-teste-2026-10-25/previa.html):
    imagem como fundo, produtos à esquerda, degradê para o azul e título à direita.
@@ -1469,6 +1635,12 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   .article-hero.has-banner h1 { font-size: 28px; }
 }
 
+/* --------------------------------------------------------------------------
+   5.6  Páginas de categoria: topo e trilha "Você está em" (gerado por gerar_categorias.py)
+   Onde: categoria-*.html (.breadcrumb)
+   Obs.: .page-hero* sem uso hoje: as páginas usam o banner da seção 7.1.
+   Obs.: NÃO EDITE à mão de 5.6 a 5.9: o gerar_categorias.py reescreve tudo entre a linha "Páginas de categoria (gerado por…)" e a linha "Fim das páginas de categoria". Não apague nem mude essas duas linhas.
+   -------------------------------------------------------------------------- */
 /* === Páginas de categoria (gerado por gerar_categorias.py) === */
 .main-nav a[aria-current="page"] { color: var(--text); }
 
@@ -1494,7 +1666,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 .breadcrumb a { color: var(--accent); }
 .breadcrumb a:hover { color: #58a6ff; }
 
-/* Hub: um quadrado grande por categoria */
+/* --------------------------------------------------------------------------
+   5.7  Hub com um quadrado grande por categoria (versão antiga)
+   Onde: nenhuma página usa hoje (.cat-tile*)
+   -------------------------------------------------------------------------- */
 .cat-hub { padding: 48px 0 72px; }
 .cat-tile-grid {
   display: grid;
@@ -1533,7 +1708,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 .cat-tile-link { margin-top: auto; color: var(--accent); font-weight: 700; font-size: 0.9rem; }
 .cat-tile:hover .cat-tile-link { color: #58a6ff; }
 
-/* Lista de guias de uma categoria */
+/* --------------------------------------------------------------------------
+   5.8  Lista de guias de uma categoria
+   Onde: categoria-*.html (.guide-grid, .guide-card)
+   -------------------------------------------------------------------------- */
 .guide-list { padding: 48px 0 72px; }
 .guide-grid {
   display: grid;
@@ -1587,7 +1765,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   .guide-card-media { height: 210px; }
 }
 
-/* Hub de categorias: lista de guias dentro de cada categoria */
+/* --------------------------------------------------------------------------
+   5.9  Hub de categorias: categorias com seus guias dentro
+   Onde: categorias.html (.hub-grid, .hub-cat)
+   -------------------------------------------------------------------------- */
 .hub-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
 .hub-jump a {
   padding: 7px 14px; border-radius: 999px; font-size: 0.85rem; font-weight: 700;
@@ -1646,12 +1827,23 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   .hub-cat { padding: 20px 16px 18px; }
 }
 
+/* === Fim das páginas de categoria (gerado por gerar_categorias.py) === */
+
+/* ==========================================================================
+   PARTE 6 — MELHORIAS DE 25/10/2026
+   Menus Categorias e Escolhas com painel, banner interativo da home,
+   mini carrossel de ofertas e botões flutuantes.
+   ========================================================================== */
+
 /* =========================================================
    Melhorias 25/10/2026 — menus do topo, Escolhas, banner
    interativo, mini carrossel de ofertas e WhatsApp flutuante
    ========================================================= */
 
-/* ---------- Itens do menu com painel ---------- */
+/* --------------------------------------------------------------------------
+   6.1  Itens do menu que abrem painel (Categorias, Escolhas)
+   Onde: todas as páginas (.nav-item, .nav-trigger, .nav-panel; montado pelo js/site.js)
+   -------------------------------------------------------------------------- */
 @media (min-width: 761px) { .main-nav { align-items: center; position: relative; } }
 .nav-item { position: static; }
 .nav-trigger {
@@ -1683,7 +1875,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 }
 .nav-item.is-open .nav-panel { opacity: 1; visibility: visible; transform: none; transition: opacity .18s ease, transform .18s ease; }
 
-/* Mega menu de categorias */
+/* --------------------------------------------------------------------------
+   6.2  Mega menu de Categorias: lista à esquerda, guias à direita
+   Onde: painel "Categorias" (.mega, .mega-cat)
+   -------------------------------------------------------------------------- */
 .mega { display: grid; grid-template-columns: 300px minmax(0, 1fr); min-height: 380px; }
 .mega-side { padding: 20px 16px 18px; border-right: 1px solid var(--border); background: rgba(255,255,255,.015); }
 .mega-offers {
@@ -1743,7 +1938,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 .mega-guides-all:hover { background: rgba(25,118,210,.3); }
 .mega-guides-mobile { display: none; }
 
-/* Escolhas: 6 produtos */
+/* --------------------------------------------------------------------------
+   6.3  Painel Escolhas: 6 produtos com link da Amazon e do guia
+   Onde: painel "Escolhas" (.picks, .pick)
+   -------------------------------------------------------------------------- */
 .nav-panel-picks { width: min(720px, calc(100vw - 32px)); }
 .picks { padding: 20px 20px 16px; }
 .picks-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
@@ -1766,7 +1964,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 .pick-guide:hover { color: var(--text); }
 .picks-note { margin-top: 12px; color: var(--text-muted); font-size: .74rem; }
 
-/* Menus no celular: viram acordeão dentro do menu ☰ */
+/* --------------------------------------------------------------------------
+   6.4  Menus no celular: painéis viram acordeão dentro do ☰ (até 760px)
+   Onde: todas as páginas
+   -------------------------------------------------------------------------- */
 @media (max-width: 760px) {
   .main-nav { max-height: calc(100vh - 92px); overflow-y: auto; overscroll-behavior: contain; }
   .nav-trigger { width: 100%; justify-content: space-between; padding: 12px; border-radius: 9px; font-size: .95rem; }
@@ -1796,7 +1997,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   .main-nav .mega-guides-list a { padding: 9px 10px; }
 }
 
-/* ---------- Banner interativo ---------- */
+/* --------------------------------------------------------------------------
+   6.5  Banner interativo: brilho e áreas clicáveis sobre a arte
+   Onde: index.html (.banner-hot, .banner-hot-tip)
+   -------------------------------------------------------------------------- */
 .site-banner { position: relative; isolation: isolate; }
 .site-banner picture { overflow: hidden; }
 .site-banner picture img { transition: transform .5s cubic-bezier(.2,.7,.2,1); will-change: transform; }
@@ -1840,7 +2044,10 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 .banner-hot[data-spot="logo"]:hover { border-color: transparent; background: none; box-shadow: none; transform: none; }
 @media (max-width: 900px) { .banner-hotspots .banner-hot:not([data-spot="logo"]) { display: none; } .banner-hot[data-spot="logo"] { left: 14%; top: 24%; width: 72%; height: 52%; } }
 
-/* ---------- Mini carrossel de ofertas no topo do banner ---------- */
+/* --------------------------------------------------------------------------
+   6.6  Mini carrossel de ofertas no topo do banner
+   Onde: index.html (.banner-deals, .mini-deal; dados em js/home.js)
+   -------------------------------------------------------------------------- */
 .banner-deals {
   position: relative; z-index: 3; display: flex; align-items: center; gap: 10px;
   padding: 10px 0 10px 14px; background: #0b0d12; border-bottom: 1px solid rgba(255,255,255,.05);
@@ -1886,7 +2093,11 @@ main, section, .container, .product-grid, .product-card, .article-inner,
   .mini-deal:hover, .mini-deal:focus-visible { transform: none; }
 }
 
-/* ---------- WhatsApp flutuante + voltar ao topo ---------- */
+/* --------------------------------------------------------------------------
+   6.7  Botões flutuantes: voltar ao topo (+ WhatsApp, desativado)
+   Onde: todas as páginas (.float-dock, .to-top; criado pelo js/site.js)
+   Obs.: as regras .wa-* ficam sem uso desde 28/10/2026; o js não cria mais o botão do WhatsApp.
+   -------------------------------------------------------------------------- */
 .float-dock {
   position: fixed; right: 18px; bottom: calc(18px + var(--dock-lift, 0px)); z-index: 55;
   display: flex; flex-direction: column; align-items: flex-end; gap: 10px;
@@ -1932,13 +2143,19 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 }
 body.menu-open .float-dock { opacity: 0; pointer-events: none; }
 
-/* Barra de leitura nos guias */
+/* --------------------------------------------------------------------------
+   6.8  Barra de progresso de leitura nos guias
+   Onde: guias (.read-progress)
+   -------------------------------------------------------------------------- */
 .read-progress {
   position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 70; transform-origin: 0 50%; transform: scaleX(0);
   background: linear-gradient(90deg, var(--accent), var(--accent-yellow)); pointer-events: none;
 }
 
-/* Animações */
+/* --------------------------------------------------------------------------
+   6.9  Animações do carrossel e respeito ao "reduzir movimento"
+   Onde: index.html
+   -------------------------------------------------------------------------- */
 @keyframes ta-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @keyframes ta-shine { 0%, 55% { left: -60%; } 100% { left: 130%; } }
 @keyframes ta-flicker { 0%, 100% { transform: scale(1) rotate(0); } 50% { transform: scale(1.12) rotate(-6deg); } }
@@ -1951,7 +2168,10 @@ body.menu-open .float-dock { opacity: 0; pointer-events: none; }
   .banner-deals-viewport { overflow-x: auto; }
 }
 
-/* O estilo geral dos links do menu (.main-nav a) não deve vazar para dentro dos painéis */
+/* --------------------------------------------------------------------------
+   6.10  Correção: o estilo dos links do menu não vaza para dentro dos painéis
+   Onde: menus Categorias e Escolhas
+   -------------------------------------------------------------------------- */
 .nav-panel a { font-size: inherit; color: inherit; }
 .nav-panel a.mega-offers { padding: 14px 16px; border-radius: 14px; color: #06120a; font-size: 1rem; }
 .nav-panel a.mega-offers:hover { background: #ffe033; color: #06120a; }
@@ -1969,7 +2189,10 @@ body.menu-open .float-dock { opacity: 0; pointer-events: none; }
 .nav-panel a.pick-guide:hover { color: var(--text); background: none; }
 @media (max-width: 760px) { .nav-panel a.mega-offers { padding: 12px 14px; border-radius: 12px; } }
 
-/* Espaço extra para o zoom do mini card não ser cortado pela máscara de esmaecimento */
+/* --------------------------------------------------------------------------
+   6.11  Utilitários: folga do carrossel, texto só para leitor de tela (.sr-only) e cores YouTube/TikTok
+   Onde: home, todas as páginas, redes-sociais.html
+   -------------------------------------------------------------------------- */
 .banner-deals-viewport { padding: 9px 0 36px; margin: -9px 0 -36px; pointer-events: none; }
 .banner-deals-viewport .mini-deal { pointer-events: auto; }
 .sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
@@ -1978,7 +2201,10 @@ body.menu-open .float-dock { opacity: 0; pointer-events: none; }
 .link-btn-tiktok { border-color: rgba(37, 244, 238, 0.4); }
 .link-btn-tiktok .link-btn-icon { background: rgba(254, 44, 85, 0.14); }
 
-/* Formulário de contato (Sobre) — Web3Forms */
+/* --------------------------------------------------------------------------
+   6.12  Formulário de contato (Web3Forms)
+   Onde: contato.html (.contact-form; .contact-hp é a armadilha anti-robô)
+   -------------------------------------------------------------------------- */
 .contact-form { display: flex; flex-direction: column; gap: 6px; margin: 16px 0 32px; padding: 24px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
 .contact-form label { color: var(--text); font-weight: 600; font-size: 0.95rem; margin-top: 8px; }
 .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea { width: 100%; font: inherit; color: var(--text); background: var(--bg-alt); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
@@ -1995,7 +2221,17 @@ body.menu-open .float-dock { opacity: 0; pointer-events: none; }
 @media (max-width: 600px) { .contact-form { padding: 16px; } .contact-submit { align-self: stretch; text-align: center; } }
 
 
-/* TechAprovado — categorias, páginas institucionais e navegação — 27/10/2026 */
+/* ==========================================================================
+   PARTE 7 — AJUSTES DE 27/10/2026
+   Navegação em tablets, banners das páginas institucionais e de
+   categoria, e pop-up da ficha técnica nos guias.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   7.1  Navegação em tablet, banners de páginas e categorias
+   Onde: todas as páginas (1100px, 900px, 360px)
+   Obs.: última camada do menu e do cabeçalho: vence as seções 2.1, 3 e 6.
+   -------------------------------------------------------------------------- */
 .site-header .main-nav > a,
 .site-header .main-nav > .nav-item > .nav-trigger,
 .site-header .mega-cat-text strong,
@@ -2063,7 +2299,10 @@ body.menu-open .float-dock { opacity: 0; pointer-events: none; }
  .ta-banner-networks img { width:25px; height:25px; }
 }
 
-/* === Ficha técnica em pop-up nos cards dos guias (27/10/2026) === */
+/* --------------------------------------------------------------------------
+   7.2  Ficha técnica em pop-up nos cards dos guias
+   Onde: guias (.spec-btn, .spec-dialog)
+   -------------------------------------------------------------------------- */
 .rank-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .spec-btn {
   display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
