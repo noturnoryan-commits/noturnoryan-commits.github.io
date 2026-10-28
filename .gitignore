@@ -1,0 +1,17 @@
+# TechAprovado: arquivos privados ficam fora da raiz publica.
+# Isto evita novos arquivos no Git; nao remove arquivos ja rastreados ou publicados.
+.env
+.env.*
+.aws/
+.ssh/
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.kdbx
+id_rsa
+id_ed25519
+credentials.json
+service-account*.json
+node_modules/

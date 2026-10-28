@@ -1,11 +1,9 @@
-/* TechAprovado — menus do topo, Escolhas, WhatsApp flutuante e voltar ao topo (25/10/2026).
+/* TechAprovado — menus do topo, Escolhas, voltar ao topo (WhatsApp removido em 28/10/2026) (25/10/2026).
    Roda em todas as páginas (fica no começo do site.js, antes do menu do celular). Para editar:
    - Guias de cada categoria: lista TA_CATEGORIES abaixo (adicione o guia novo na categoria certa).
-   - Os 6 produtos do botão Escolhas: lista TA_PICKS (asin = código do produto na Amazon).
-   - Link da Comunidade do WhatsApp: TA_WHATSAPP. */
+   - Os 6 produtos do botão Escolhas: lista TA_PICKS (asin = código do produto na Amazon). */
 (() => {
   const TAG = 'techaprovad0f-20';
-  const TA_WHATSAPP = 'https://chat.whatsapp.com/LphALpUxOLQLezwD0XHHjJ';
 
   const TA_CATEGORIES = [
     { id: 'casa', icon: '🏠', name: 'Casa', desc: 'Cozinha, limpeza, climatização e TV', page: 'categoria-casa.html', guides: [
@@ -184,22 +182,13 @@
     addEventListener('resize', () => closeAll());
   }
 
-  /* ---------- WhatsApp flutuante + voltar ao topo ---------- */
+  /* ---------- Voltar ao topo ---------- */
   const dock = document.createElement('div');
   dock.className = 'float-dock';
   dock.innerHTML = `
     <button type="button" class="to-top" aria-label="Voltar ao topo" tabindex="-1">
       <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 14l6-6 6 6"/></svg>
-    </button>
-    <div class="wa-bubble" role="status" hidden>
-      <button type="button" class="wa-bubble-close" aria-label="Fechar aviso">×</button>
-      <strong>🔥 Ofertas no WhatsApp</strong>
-      <span>Promoções com preço conferido, por categoria. Grátis.</span>
-    </div>
-    <a class="wa-float" href="${TA_WHATSAPP}" target="_blank" rel="noopener" aria-label="Entrar na Comunidade de ofertas do TechAprovado no WhatsApp">
-      <span class="wa-float-label">Comunidade de ofertas</span>
-      <span class="wa-float-icon"><svg aria-hidden="true" viewBox="0 0 32 32"><path fill="currentColor" d="M16.04 3C9.08 3 3.43 8.64 3.43 15.6c0 2.22.58 4.39 1.69 6.3L3.33 28.5l6.78-1.78a12.6 12.6 0 0 0 5.93 1.5h.01c6.95 0 12.61-5.65 12.61-12.6C28.66 8.64 23 3 16.04 3Zm0 23.08h-.01a10.45 10.45 0 0 1-5.33-1.46l-.38-.23-4.02 1.06 1.07-3.92-.25-.4a10.43 10.43 0 0 1-1.6-5.53c0-5.78 4.7-10.48 10.53-10.48 2.8 0 5.44 1.09 7.42 3.08a10.4 10.4 0 0 1 3.07 7.41c0 5.78-4.71 10.47-10.5 10.47Zm5.75-7.84c-.32-.16-1.86-.92-2.15-1.02-.29-.11-.5-.16-.71.16-.21.31-.82 1.02-1 1.23-.19.21-.37.24-.68.08-.32-.16-1.33-.49-2.53-1.56a9.5 9.5 0 0 1-1.75-2.18c-.18-.32-.02-.49.14-.64.14-.14.32-.37.47-.55.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.4-.29.31-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.22 3.39 5.38 4.75.75.33 1.34.52 1.8.66.75.24 1.44.21 1.98.13.6-.09 1.86-.76 2.12-1.5.26-.73.26-1.36.18-1.5-.08-.13-.29-.21-.6-.37Z"/></svg></span>
-    </a>`;
+    </button>`;
   document.body.appendChild(dock);
 
   const toTop = dock.querySelector('.to-top');
@@ -211,26 +200,6 @@
   syncTop(); addEventListener('scroll', syncTop, { passive: true });
   toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
 
-  // Balão de convite: aparece uma vez por sessão, depois de 8 s ou de rolar metade da página.
-  const bubble = dock.querySelector('.wa-bubble');
-  const seen = () => { try { return sessionStorage.getItem('techa-wa-bubble') === '1'; } catch (e) { return false; } };
-  const markSeen = () => { try { sessionStorage.setItem('techa-wa-bubble', '1'); } catch (e) {} };
-  let bubbleTimer;
-  const showBubble = () => {
-    if (seen() || document.querySelector('.cookie-banner')) return;
-    bubble.hidden = false; markSeen();
-    bubbleTimer = setTimeout(() => { bubble.hidden = true; }, 9000);
-  };
-  if (!seen()) {
-    const t = setTimeout(showBubble, 8000);
-    const onScroll = () => {
-      if (scrollY > (document.documentElement.scrollHeight - innerHeight) * 0.5) {
-        clearTimeout(t); removeEventListener('scroll', onScroll); showBubble();
-      }
-    };
-    addEventListener('scroll', onScroll, { passive: true });
-  }
-  dock.querySelector('.wa-bubble-close').addEventListener('click', () => { clearTimeout(bubbleTimer); bubble.hidden = true; });
 
   // Sobe o botão quando o aviso de cookies está aberto, para não cobrir os botões dele.
   const syncCookie = () => {
