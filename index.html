@@ -61,7 +61,7 @@
 <section class="deals-section" id="ofertas">
 <div class="container">
 <h2>🔥 Ofertas do Dia</h2>
-<p class="section-sub">Preços por tempo limitado, direto da Amazon — toca pra ver.</p>
+<p class="section-sub">Confira os produtos selecionados na Amazon.</p>
 </div>
 <div class="deals-rail" id="dealsRail"></div>
 </section>
@@ -242,33 +242,32 @@
 
   // Ofertas do Dia — edite esta lista pra trocar as ofertas.
   // Campos: asin (código do produto na Amazon), title (nome curto), img (foto),
-  // price/oldPrice (em texto, ex "1.234,56"), discount (número), expires ("AAAA-MM-DD").
+  // expires ("AAAA-MM-DD").
   // Ofertas com "expires" no passado somem sozinhas do site — não precisa apagar na mão.
-  const AFFILIATE_TAG = "techaprovad0f-20";
-  // Preços conferidos na Amazon em 2026-10-23.
+  const AFFILIATE_TAG = "techaprovad0b-20";
   const DEALS = [
-    { asin: "B07S14JHF2", title: "Smart Plug Wi-Fi Positivo 10A", img: "https://m.media-amazon.com/images/I/51EDolwwHOS._AC_UL480_.jpg", price: "33,15", oldPrice: "128,00", discount: 74, expires: "2026-10-30" },
-    { asin: "B07H3GFJJ2", title: "Mouse Gamer HyperX Pulsefire Core RGB", img: "https://m.media-amazon.com/images/I/61rqBrI4PML._AC_UL480_.jpg", price: "104,99", oldPrice: "314,00", discount: 67, expires: "2026-10-30" },
-    { asin: "B0F4K1H6X5", title: "Robô Aspirador Xiaomi S40C", img: "https://m.media-amazon.com/images/I/61K3M5gPZPL._AC_UL480_.jpg", price: "950,00", oldPrice: "2.699,99", discount: 65, expires: "2026-10-30" },
-    { asin: "B0B726S9S3", title: "Oven Fryer Oster 12L 3 em 1 (127V)", img: "https://m.media-amazon.com/images/I/51SJbHCok6L._AC_UL480_.jpg", price: "548,10", oldPrice: "1.549,00", discount: 65, expires: "2026-10-30" },
-    { asin: "B0CVCLGV1W", title: "Smartwatch Samsung Galaxy Fit3", img: "https://m.media-amazon.com/images/I/61o3-pf41tL._AC_UL480_.jpg", price: "197,31", oldPrice: "549,00", discount: 64, expires: "2026-10-30" },
-    { asin: "B088C4QZV2", title: "Lâmpada Inteligente Elgin 10W RGB", img: "https://m.media-amazon.com/images/I/61i1yPAlVLL._AC_UL480_.jpg", price: "35,99", oldPrice: "99,00", discount: 64, expires: "2026-10-30" },
-    { asin: "B089B7Z8ZD", title: "Teclado Mecânico Redragon Dark Avenger", img: "https://m.media-amazon.com/images/I/61O+xK4F6aL._AC_UL480_.jpg", price: "142,93", oldPrice: "379,00", discount: 62, expires: "2026-10-30" },
-    { asin: "B0BLT2MQY2", title: "Ventilador de Teto Ventisol Wind Inverter Bivolt", img: "https://m.media-amazon.com/images/I/31F3IAFetGL._AC_UL480_.jpg", price: "198,65", oldPrice: "499,00", discount: 60, expires: "2026-10-30" },
-    { asin: "B076HZ63PL", title: "Fechadura Digital Intelbras FR 201", img: "https://m.media-amazon.com/images/I/41HcCEN+upL._AC_UL480_.jpg", price: "331,55", oldPrice: "789,00", discount: 58, expires: "2026-10-30" },
-    { asin: "B0DK3RXTW4", title: "Fone JBL Tune Buds 2 com ANC", img: "https://m.media-amazon.com/images/I/51It8Afd0PL._AC_UL480_.jpg", price: "271,26", oldPrice: "599,00", discount: 55, expires: "2026-10-30" },
-    { asin: "B0156Q085O", title: "Rastreador Galaxy SmartTag2", img: "https://m.media-amazon.com/images/I/41YWoh4H3bL._AC_UL480_.jpg", price: "161,31", oldPrice: "349,00", discount: 54, expires: "2026-10-30" },
-    { asin: "B0DSYJCY45", title: "Samsung Galaxy S25 Ultra 5G 256GB", img: "https://m.media-amazon.com/images/I/61OvA9ijsYL._AC_UL480_.jpg", price: "5.439,14", oldPrice: "10.999,00", discount: 51, expires: "2026-10-30" },
-    { asin: "B0CRTR3PMF", title: "Fone soundcore P30i (Anker) com ANC", img: "https://m.media-amazon.com/images/I/518zpITOCHL._AC_UL480_.jpg", price: "186,67", oldPrice: "369,00", discount: 49, expires: "2026-10-30" },
-    { asin: "B0941752F2", title: "Cafeteira Oster Jarra Inox 1,2L (220V)", img: "https://m.media-amazon.com/images/I/51vVvDVetDL._AC_UL480_.jpg", price: "167,00", oldPrice: "329,90", discount: 49, expires: "2026-10-30" },
-    { asin: "B09Q3K4YLS", title: "Câmera Intelbras iM3 C Wi-Fi", img: "https://m.media-amazon.com/images/I/41SSHIdYMTL._AC_UL480_.jpg", price: "160,55", oldPrice: "309,90", discount: 48, expires: "2026-10-30" },
-    { asin: "B0DYVNRG3B", title: "Samsung Galaxy A36 5G 128GB", img: "https://m.media-amazon.com/images/I/613Vrz+GcaL._AC_UL480_.jpg", price: "1.414,55", oldPrice: "2.699,00", discount: 48, expires: "2026-10-30" },
-    { asin: "B0D8RJ99Z1", title: "Power Bank Samsung 20.000mAh 45W", img: "https://m.media-amazon.com/images/I/41sv463IV4L._AC_UL480_.jpg", price: "236,55", oldPrice: "449,00", discount: 47, expires: "2026-10-30" },
-    { asin: "B07HR1MZQP", title: "Umidificador Fisher Price 3,4L Bivolt", img: "https://m.media-amazon.com/images/I/41Gjg7-IkUL._AC_UL480_.jpg", price: "143,92", oldPrice: "269,90", discount: 47, expires: "2026-10-30" },
-    { asin: "B0FP8T2RDC", title: "Fone Samsung Galaxy Buds Core", img: "https://m.media-amazon.com/images/I/31zLQOfTQ2L._AC_UL480_.jpg", price: "222,30", oldPrice: "399,00", discount: 44, expires: "2026-10-30" },
-    { asin: "B07JFSM214", title: "Aspirador Mondial Turbo Cycle 1100W (220V)", img: "https://m.media-amazon.com/images/I/510P6tjT3ZL._AC_UL480_.jpg", price: "139,90", oldPrice: "246,00", discount: 43, expires: "2026-10-30" },
-    { asin: "B09HZF2NDR", title: "Mouse Logitech G305 Sem Fio", img: "https://m.media-amazon.com/images/I/51DYDLykzoL._AC_UL480_.jpg", price: "199,99", oldPrice: "349,90", discount: 43, expires: "2026-10-30" },
-    { asin: "B0D8DPT7ZY", title: "Monitor LG UltraGear 24 pol. IPS 180Hz", img: "https://m.media-amazon.com/images/I/61aIuJu0M0L._AC_UL480_.jpg", price: "715,85", oldPrice: "1.199,00", discount: 40, expires: "2026-10-30" }
+    { asin: "B07S14JHF2", title: "Smart Plug Wi-Fi Positivo 10A", img: "https://m.media-amazon.com/images/I/51EDolwwHOS._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B07H3GFJJ2", title: "Mouse Gamer HyperX Pulsefire Core RGB", img: "https://m.media-amazon.com/images/I/61rqBrI4PML._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B0F4K1H6X5", title: "Robô Aspirador Xiaomi S40C", img: "https://m.media-amazon.com/images/I/61K3M5gPZPL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B0B726S9S3", title: "Oven Fryer Oster 12L 3 em 1 (127V)", img: "https://m.media-amazon.com/images/I/51SJbHCok6L._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B0CVCLGV1W", title: "Smartwatch Samsung Galaxy Fit3", img: "https://m.media-amazon.com/images/I/61o3-pf41tL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B088C4QZV2", title: "Lâmpada Inteligente Elgin 10W RGB", img: "https://m.media-amazon.com/images/I/61i1yPAlVLL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B089B7Z8ZD", title: "Teclado Mecânico Redragon Dark Avenger", img: "https://m.media-amazon.com/images/I/61O+xK4F6aL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B0BLT2MQY2", title: "Ventilador de Teto Ventisol Wind Inverter Bivolt", img: "https://m.media-amazon.com/images/I/31F3IAFetGL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B076HZ63PL", title: "Fechadura Digital Intelbras FR 201", img: "https://m.media-amazon.com/images/I/41HcCEN+upL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B0DK3RXTW4", title: "Fone JBL Tune Buds 2 com ANC", img: "https://m.media-amazon.com/images/I/51It8Afd0PL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B0156Q085O", title: "Rastreador Galaxy SmartTag2", img: "https://m.media-amazon.com/images/I/41YWoh4H3bL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B0DSYJCY45", title: "Samsung Galaxy S25 Ultra 5G 256GB", img: "https://m.media-amazon.com/images/I/61OvA9ijsYL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B0CRTR3PMF", title: "Fone soundcore P30i (Anker) com ANC", img: "https://m.media-amazon.com/images/I/518zpITOCHL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B0941752F2", title: "Cafeteira Oster Jarra Inox 1,2L (220V)", img: "https://m.media-amazon.com/images/I/51vVvDVetDL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B09Q3K4YLS", title: "Câmera Intelbras iM3 C Wi-Fi", img: "https://m.media-amazon.com/images/I/41SSHIdYMTL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B0DYVNRG3B", title: "Samsung Galaxy A36 5G 128GB", img: "https://m.media-amazon.com/images/I/613Vrz+GcaL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B0D8RJ99Z1", title: "Power Bank Samsung 20.000mAh 45W", img: "https://m.media-amazon.com/images/I/41sv463IV4L._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B07HR1MZQP", title: "Umidificador Fisher Price 3,4L Bivolt", img: "https://m.media-amazon.com/images/I/41Gjg7-IkUL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B0FP8T2RDC", title: "Fone Samsung Galaxy Buds Core", img: "https://m.media-amazon.com/images/I/31zLQOfTQ2L._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B07JFSM214", title: "Aspirador Mondial Turbo Cycle 1100W (220V)", img: "https://m.media-amazon.com/images/I/510P6tjT3ZL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B09HZF2NDR", title: "Mouse Logitech G305 Sem Fio", img: "https://m.media-amazon.com/images/I/51DYDLykzoL._AC_UL480_.jpg", expires: "2026-10-30" },
+    { asin: "B0D8DPT7ZY", title: "Monitor LG UltraGear 24 pol. IPS 180Hz", img: "https://m.media-amazon.com/images/I/61aIuJu0M0L._AC_UL480_.jpg", expires: "2026-10-30" }
   ];
 
   function renderDeals() {
@@ -278,29 +277,25 @@
     if (!active.length) { section.style.display = 'none'; return; }
     document.getElementById('dealsRail').innerHTML = active.map(d => `
       <a class="deal-card" href="https://www.amazon.com.br/dp/${d.asin}?tag=${AFFILIATE_TAG}" target="_blank" rel="noopener sponsored">
-        <span class="deal-discount">-${d.discount}%</span>
         <img class="deal-img" src="${d.img}" alt="${d.title}" width="480" height="480" loading="lazy" decoding="async">
         <div class="deal-info">
           <span class="deal-title">${d.title}</span>
-          <span class="deal-price">R$ ${d.price}</span>
-          <span class="deal-old-price">R$ ${d.oldPrice}</span>
         </div>
       </a>
     `).join('');
   }
   renderDeals();
 
-  // Mini carrossel no topo do banner: as 12 ofertas ativas com maior desconto (mesma lista acima).
+  // Mini carrossel no topo do banner: os 12 primeiros produtos ativos (mesma lista acima).
   function renderBannerDeals() {
     const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year:'numeric', month:'2-digit', day:'2-digit' }).format(new Date());
-    const top = DEALS.filter(d => d.expires >= today).sort((a, b) => b.discount - a.discount).slice(0, 12);
+    const top = DEALS.filter(d => d.expires >= today).slice(0, 12);
     const box = document.getElementById('bannerDeals');
     if (!top.length || !box) return;
     const card = (d, dup) => `
       <a class="mini-deal" href="https://www.amazon.com.br/dp/${d.asin}?tag=${AFFILIATE_TAG}" target="_blank" rel="noopener sponsored"${dup ? ' aria-hidden="true" tabindex="-1"' : ''} title="${d.title} — ver na Amazon">
-        <span class="mini-deal-off">-${d.discount}%</span>
         <img src="${d.img}" alt="" width="44" height="44" decoding="async">
-        <span class="mini-deal-text"><span class="mini-deal-title">${d.title}</span><span class="mini-deal-price">R$ ${d.price}</span></span>
+        <span class="mini-deal-text"><span class="mini-deal-title">${d.title}</span></span>
       </a>`;
     // A lista vai duplicada para o giro ser contínuo, sem "pulo" no fim.
     const track = document.getElementById('bannerDealsTrack');

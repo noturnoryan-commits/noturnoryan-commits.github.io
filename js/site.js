@@ -3,7 +3,7 @@
    - Guias de cada categoria: lista TA_CATEGORIES abaixo (adicione o guia novo na categoria certa).
    - Os 6 produtos do botão Escolhas: lista TA_PICKS (asin = código do produto na Amazon). */
 (() => {
-  const TAG = 'techaprovad0f-20';
+  const TAG = 'techaprovad0b-20';
 
   const TA_CATEGORIES = [
     { id: 'casa', icon: '🏠', name: 'Casa', desc: 'Cozinha, limpeza, climatização e TV', page: 'categoria-casa.html', guides: [
