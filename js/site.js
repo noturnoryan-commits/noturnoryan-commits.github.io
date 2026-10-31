@@ -43,6 +43,16 @@
   const desktop = () => matchMedia('(min-width: 761px)').matches;
   const canHover = () => matchMedia('(hover: hover) and (pointer: fine)').matches;
 
+  // Link fixo da área Notícias e Lançamentos (31/10/2026), antes de "Sobre" em todas as páginas.
+  if (nav && !nav.querySelector('a[href$="noticias.html"]')) {
+    const news = document.createElement('a');
+    news.href = 'noticias.html';
+    news.textContent = 'Notícias';
+    if (here === 'noticias.html' || document.querySelector('main.news-page')) news.setAttribute('aria-current', 'page');
+    const about = nav.querySelector('a[href$="sobre.html"]');
+    nav.insertBefore(news, about || nav.querySelector('.nav-cta'));
+  }
+
   if (nav) {
     const catLink = nav.querySelector('a[href$="categorias.html"]');
     const pickLink = nav.querySelector('a[href$="#aprovados"]');
