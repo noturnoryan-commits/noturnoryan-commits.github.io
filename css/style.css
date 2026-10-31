@@ -2360,3 +2360,51 @@ body.spec-open { overflow: hidden; }
 .news-strip-go { color: #83b8f0; font-weight: 700; font-size: .88rem; }
 .news-strip-all { align-self: flex-end; font-size: .88rem; font-weight: 700; color: #83b8f0; text-decoration: none; }
 @media (max-width: 640px) { .news-strip-card { grid-template-columns: 1fr; gap: 14px; } .news-strip-all { align-self: flex-start; } }
+
+/* === Barra de pesquisa do topo (31/10/2026) === */
+.site-search { position: relative; flex: 1 1 auto; max-width: 340px; margin: 0 22px; }
+.search-toggle { display: none; }
+.search-form { position: relative; display: flex; align-items: center; }
+.search-form > svg { position: absolute; left: 12px; width: 17px; height: 17px; fill: none; stroke: var(--text-muted); stroke-width: 2; stroke-linecap: round; pointer-events: none; }
+.search-form input { width: 100%; height: 40px; padding: 0 14px 0 38px; border: 1px solid var(--border); border-radius: 999px; background: var(--card); color: var(--text); font: inherit; font-size: .86rem; }
+.search-form input::placeholder { color: var(--text-muted); }
+.search-form input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(25,118,210,.25); }
+.search-results { position: absolute; top: calc(100% + 8px); left: 0; right: 0; min-width: 320px; max-height: min(70vh, 460px); overflow-y: auto; margin: 0; padding: 6px; list-style: none; background: #111722; border: 1px solid var(--border); border-radius: 14px; box-shadow: 0 24px 60px rgba(0,0,0,.55); z-index: 60; }
+.search-results a { display: grid; grid-template-columns: auto 1fr; column-gap: 10px; row-gap: 2px; padding: 10px 12px; border-radius: 10px; color: var(--text); text-decoration: none; }
+.search-results a:hover, .search-results [aria-selected="true"] a { background: rgba(25,118,210,.16); }
+.search-results .sr-kind { grid-row: span 2; align-self: start; margin-top: 2px; padding: 2px 8px; border-radius: 999px; background: rgba(255,214,0,.12); color: var(--accent-yellow); font-size: .66rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+.search-results strong { font-size: .9rem; line-height: 1.35; }
+.search-results small { color: var(--text-muted); font-size: .76rem; line-height: 1.4; }
+.search-empty { padding: 12px; color: var(--text-muted); font-size: .86rem; }
+.search-empty a { color: #83b8f0; }
+@media (min-width:761px) and (max-width:1100px) { .site-search { max-width: 240px; margin: 0 12px; } }
+@media (min-width:761px) and (max-width:900px) { .site-search { max-width: 170px; margin: 0 8px; } .search-form input { font-size: .78rem; padding-right: 8px; } }
+@media (max-width: 760px) {
+  .site-search { flex: 0 0 auto; margin: 0 8px 0 auto; max-width: none; position: static; }
+  .search-toggle { display: flex; width: 42px; height: 42px; align-items: center; justify-content: center; border: 1px solid var(--border); background: var(--card); color: var(--text); border-radius: 11px; cursor: pointer; }
+  .search-toggle svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+  .search-form { display: none; position: fixed; left: 14px; right: 14px; top: 76px; z-index: 55; }
+  .site-search.is-open .search-form { display: flex; }
+  .search-form input { height: 48px; font-size: 1rem; box-shadow: 0 18px 40px rgba(0,0,0,.5); }
+  .search-results { min-width: 0; max-height: 65vh; }
+}
+
+/* === Últimas ofertas da home em grade (31/10/2026) === */
+.deals-section { padding: 44px 0 52px; }
+.deals-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 22px; }
+.deals-head h2 { font-size: 1.7rem; }
+.deals-head .section-sub { max-width: 680px; color: var(--text-muted); line-height: 1.6; }
+.deals-all { flex: 0 0 auto; color: #83b8f0; font-weight: 700; font-size: .9rem; text-decoration: none; }
+.deals-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.deals-grid .deal-card { display: flex; flex-direction: column; width: auto; flex: none; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); overflow: hidden; transition: border-color .15s ease, transform .15s ease; }
+.deals-grid .deal-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.deals-grid .deal-buy { display: flex; flex-direction: column; color: var(--text); text-decoration: none; flex: 1 1 auto; }
+.deals-grid .deal-img { width: 100%; height: 190px; object-fit: contain; background: #fff; padding: 14px; display: block; }
+.deals-grid .deal-info { display: flex; flex-direction: column; gap: 8px; padding: 12px 14px 6px; }
+.deals-grid .deal-title { white-space: normal; min-height: 2.7em; font-size: .9rem; font-weight: 700; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.deals-grid .deal-cta { font-size: .8rem; font-weight: 800; color: var(--accent-yellow); }
+.deals-grid .deal-guide { padding: 6px 14px 14px; font-size: .78rem; color: #83b8f0; text-decoration: none; }
+.deals-grid .deal-guide:hover { text-decoration: underline; }
+.deals-note { margin-top: 14px; font-size: .78rem; color: var(--text-muted); }
+@media (max-width: 1000px) { .deals-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .deals-head { flex-direction: column; align-items: flex-start; gap: 10px; } .deals-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } .deals-grid .deal-img { height: 140px; padding: 10px; } .deals-grid .deal-title { font-size: .82rem; } }

@@ -7,7 +7,7 @@
 <meta content="TechAprovado seleciona produtos, tecnologia e soluções para uma casa mais prática, confortável e inteligente, com rankings e foco em custo-benefício." name="description"/>
 <link href="img/favicon-32.png" rel="icon" type="image/png"/>
 <link href="img/favicon-180.png" rel="apple-touch-icon"/>
-<link href="css/style.css?v=20261031" rel="stylesheet"/>
+<link href="css/style.css?v=20261031b" rel="stylesheet"/>
 <link href="https://techaprovado.com.br/" rel="canonical"/><link href="manifest.webmanifest" rel="manifest"/><meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/><meta content="pt_BR" property="og:locale"/><meta content="TechAprovado" property="og:site_name"/><meta content="website" property="og:type"/><meta content="TechAprovado — Curadoria para uma casa mais tecnológica" property="og:title"/><meta content="TechAprovado seleciona produtos, tecnologia e soluções para uma casa mais prática, confortável e inteligente, com rankings e foco em custo-benefício." property="og:description"/><meta content="https://techaprovado.com.br/" property="og:url"/><meta content="https://techaprovado.com.br/img/banner.jpg" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="TechAprovado — Curadoria para uma casa mais tecnológica" name="twitter:title"/><meta content="TechAprovado seleciona produtos, tecnologia e soluções para uma casa mais prática, confortável e inteligente, com rankings e foco em custo-benefício." name="twitter:description"/><meta content="https://techaprovado.com.br/img/banner.jpg" name="twitter:image"/><meta content="#0f1115" name="theme-color"/><script data-techa-schema="" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://techaprovado.com.br/#organization","name":"TechAprovado","url":"https://techaprovado.com.br/","logo":{"@type":"ImageObject","url":"https://techaprovado.com.br/img/logo-icon.png"},"sameAs":["https://www.instagram.com/tech_aprovado/","https://www.facebook.com/profile.php?id=61593412544612"]},{"@type":"WebSite","@id":"https://techaprovado.com.br/#website","url":"https://techaprovado.com.br/","name":"TechAprovado","publisher":{"@id":"https://techaprovado.com.br/#organization"},"inLanguage":"pt-BR"}]}</script><!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1M92J904EN"></script>
 <script>
@@ -26,17 +26,15 @@
 <a class="logo" href="#"><img alt="" decoding="async" height="32" src="img/logo-icon.png" width="32"/>Tech<span>Aprovado</span></a>
 <button aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu" class="menu-toggle" data-menu-toggle="" type="button"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button><nav class="main-nav" id="main-nav">
 <a href="categorias.html">Categorias</a>
-<a href="#aprovados">Escolhas</a>
+<a class="nav-offers" href="#ofertas">🔥 Últimas ofertas</a>
 <a href="noticias.html">Notícias</a>
-<a href="sobre.html">Sobre</a>
-<a href="contato.html">Contato</a>
 <a class="nav-cta" href="redes-sociais.html">📲 Nossas redes</a>
 </nav>
 </div>
 </header>
 <div class="site-banner" data-banner="">
-<div aria-label="Ofertas do dia em destaque" class="banner-deals" hidden="" id="bannerDeals" role="region">
-<a class="banner-deals-label" href="#ofertas">🔥 Ofertas do dia</a>
+<div aria-label="Últimas ofertas em destaque" class="banner-deals" hidden="" id="bannerDeals" role="region">
+<a class="banner-deals-label" href="#ofertas">🔥 Últimas ofertas</a>
 <div class="banner-deals-viewport"><div class="banner-deals-track" id="bannerDealsTrack"></div></div>
 </div>
 <picture><source media="(max-width: 900px)" srcset="img/banner-mobile.jpg"/><img alt="TechAprovado — os melhores produtos para sua casa, aprovados por quem entende de tecnologia" decoding="async" fetchpriority="high" height="793" src="img/banner.jpg" width="1983"/></picture>
@@ -46,7 +44,7 @@
 <a class="banner-hot is-blue" data-spot="1" href="#categorias"><span class="banner-hot-tip">Ver os rankings →</span><span class="sr-only">Top 10: melhores produtos para sua casa</span></a>
 <a class="banner-hot is-blue" data-spot="2" href="sobre.html"><span class="banner-hot-tip">Como analisamos →</span><span class="sr-only">Análises completas e confiáveis</span></a>
 <a class="banner-hot is-blue" data-spot="3" href="#aprovados"><span class="banner-hot-tip">Ver as Escolhas →</span><span class="sr-only">Escolhas inteligentes e econômicas</span></a>
-<a class="banner-hot is-yellow" data-spot="4" href="#ofertas"><span class="banner-hot-tip">Ofertas do dia →</span><span class="sr-only">Aprovados: só o que vale a pena</span></a>
+<a class="banner-hot is-yellow" data-spot="4" href="#ofertas"><span class="banner-hot-tip">Últimas ofertas →</span><span class="sr-only">Aprovados: só o que vale a pena</span></a>
 <a class="banner-hot is-yellow" data-spot="5" href="categorias.html"><span class="banner-hot-tip">Todas as categorias →</span><span class="sr-only">Eletrônicos, eletrodomésticos e muito mais</span></a>
 <a class="banner-hot is-yellow" data-spot="6" href="redes-sociais.html"><span class="banner-hot-tip">Nossas redes →</span><span class="sr-only">Dicas de tecnologia para o dia a dia</span></a>
 <a class="banner-hot" data-spot="logo" href="#categorias" tabindex="-1"><span class="sr-only">Ver categorias</span></a>
@@ -59,12 +57,14 @@
 <a class="btn-primary" href="#categorias">Ver categorias</a>
 </div>
 </section>
-<section class="deals-section" id="ofertas">
+<section class="deals-section" id="ofertas" aria-labelledby="ofertas-titulo">
 <div class="container">
-<h2>🔥 Ofertas do Dia</h2>
-<p class="section-sub">Confira os produtos selecionados na Amazon.</p>
+<div class="deals-head"><div><h2 id="ofertas-titulo">🔥 Últimas ofertas</h2>
+<p class="section-sub">Produtos dos nossos guias que estavam com desconto na Amazon na conferência de <span id="dealsChecked">31/10/2026</span>. O preço muda o tempo todo: confira o valor atual na loja.</p></div>
+<a class="deals-all" href="categorias.html">Ver todos os guias <span aria-hidden="true">→</span></a></div>
+<div class="deals-grid" id="dealsRail"></div>
+<p class="deals-note">Links de afiliado: o TechAprovado pode ganhar comissão, sem custo extra para você.</p>
 </div>
-<div class="deals-rail" id="dealsRail"></div>
 </section>
 <section aria-label="Siga o TechAprovado" class="follow-cta">
 <div class="container follow-cta-inner">
@@ -240,56 +240,55 @@
 </div>
 <div class="container disclosure">
 <p>Como participante do Programa de Associados da Amazon, o TechAprovado pode ganhar comissão sobre compras qualificadas feitas através dos links deste site, sem custo adicional para você.</p>
-<p class="footer-legal"><a href="sobre.html">Sobre e método</a> · <a href="privacidade.html">Privacidade</a> · <button class="link-button" data-cookie-prefs="" type="button">Preferências de cookies</button> · <a href="mailto:techaprovado@gmail.com">techaprovado@gmail.com</a></p>
+<p class="footer-legal"><a href="sobre.html">Sobre e método</a> · <a href="contato.html">Contato</a> · <a href="privacidade.html">Privacidade</a> · <button class="link-button" data-cookie-prefs="" type="button">Preferências de cookies</button> · <a href="mailto:techaprovado@gmail.com">techaprovado@gmail.com</a></p>
 <p>© <span id="year"></span> TechAprovado. Todos os direitos reservados.</p>
 </div>
 </footer>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Ofertas do Dia — edite esta lista pra trocar as ofertas.
-  // Campos: asin (código do produto na Amazon), title (nome curto), img (foto),
-  // expires ("AAAA-MM-DD").
-  // Ofertas com "expires" no passado somem sozinhas do site — não precisa apagar na mão.
+  // Últimas ofertas — seleção conferida em 31/10/2026.
+  // Critério: produtos dos nossos guias, vendidos e entregues pela Amazon, em estoque e com desconto
+  // de pelo menos 15% na página da Amazon no dia da conferência. Não mostramos preço: ele muda o tempo todo.
+  // Campos: asin, title, img, guide (link do produto no guia), guideName, expires ("AAAA-MM-DD").
+  // Ofertas com "expires" no passado somem sozinhas. Ao trocar a lista, atualize DEALS_CHECKED.
   const AFFILIATE_TAG = "techaprovad0b-20";
+  const DEALS_CHECKED = "31/10/2026";
   const DEALS = [
-    { asin: "B07S14JHF2", title: "Smart Plug Wi-Fi Positivo 10A", img: "https://m.media-amazon.com/images/I/51EDolwwHOS._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B07H3GFJJ2", title: "Mouse Gamer HyperX Pulsefire Core RGB", img: "https://m.media-amazon.com/images/I/61rqBrI4PML._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B0F4K1H6X5", title: "Robô Aspirador Xiaomi S40C", img: "https://m.media-amazon.com/images/I/61K3M5gPZPL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B0B726S9S3", title: "Oven Fryer Oster 12L 3 em 1 (127V)", img: "https://m.media-amazon.com/images/I/51SJbHCok6L._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B0CVCLGV1W", title: "Smartwatch Samsung Galaxy Fit3", img: "https://m.media-amazon.com/images/I/61o3-pf41tL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B088C4QZV2", title: "Lâmpada Inteligente Elgin 10W RGB", img: "https://m.media-amazon.com/images/I/61i1yPAlVLL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B089B7Z8ZD", title: "Teclado Mecânico Redragon Dark Avenger", img: "https://m.media-amazon.com/images/I/61O+xK4F6aL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B0BLT2MQY2", title: "Ventilador de Teto Ventisol Wind Inverter Bivolt", img: "https://m.media-amazon.com/images/I/31F3IAFetGL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B076HZ63PL", title: "Fechadura Digital Intelbras FR 201", img: "https://m.media-amazon.com/images/I/41HcCEN+upL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B0DK3RXTW4", title: "Fone JBL Tune Buds 2 com ANC", img: "https://m.media-amazon.com/images/I/51It8Afd0PL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B0156Q085O", title: "Rastreador Galaxy SmartTag2", img: "https://m.media-amazon.com/images/I/41YWoh4H3bL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B0DSYJCY45", title: "Samsung Galaxy S25 Ultra 5G 256GB", img: "https://m.media-amazon.com/images/I/61OvA9ijsYL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B0CRTR3PMF", title: "Fone soundcore P30i (Anker) com ANC", img: "https://m.media-amazon.com/images/I/518zpITOCHL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B0941752F2", title: "Cafeteira Oster Jarra Inox 1,2L (220V)", img: "https://m.media-amazon.com/images/I/51vVvDVetDL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B09Q3K4YLS", title: "Câmera Intelbras iM3 C Wi-Fi", img: "https://m.media-amazon.com/images/I/41SSHIdYMTL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B0DYVNRG3B", title: "Samsung Galaxy A36 5G 128GB", img: "https://m.media-amazon.com/images/I/613Vrz+GcaL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B0D8RJ99Z1", title: "Power Bank Samsung 20.000mAh 45W", img: "https://m.media-amazon.com/images/I/41sv463IV4L._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B07HR1MZQP", title: "Umidificador Fisher Price 3,4L Bivolt", img: "https://m.media-amazon.com/images/I/41Gjg7-IkUL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B0FP8T2RDC", title: "Fone Samsung Galaxy Buds Core", img: "https://m.media-amazon.com/images/I/31zLQOfTQ2L._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B07JFSM214", title: "Aspirador Mondial Turbo Cycle 1100W (220V)", img: "https://m.media-amazon.com/images/I/510P6tjT3ZL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B09HZF2NDR", title: "Mouse Logitech G305 Sem Fio", img: "https://m.media-amazon.com/images/I/51DYDLykzoL._AC_UL480_.jpg", expires: "2026-10-30" },
-    { asin: "B0D8DPT7ZY", title: "Monitor LG UltraGear 24 pol. IPS 180Hz", img: "https://m.media-amazon.com/images/I/61aIuJu0M0L._AC_UL480_.jpg", expires: "2026-10-30" }
+    { asin: "B0C7D72S7Z", title: "Oster PrimaLatte Touch", img: "https://m.media-amazon.com/images/I/61Nwem6YkSL._AC_UL480_.jpg", guide: "cafeteira-2026.html#produto-6", guideName: "Cafeteira Elétrica", expires: "2026-11-07" },
+    { asin: "B0D98WR6YM", title: "Philips Walita Série 2000 6,2L com painel touch", img: "https://m.media-amazon.com/images/I/51EASto3heL._AC_UL480_.jpg", guide: "airfryer-2026.html#produto-2", guideName: "Air Fryer", expires: "2026-11-07" },
+    { asin: "B0D1DN9GR2", title: "Logitech G515 LIGHTSPEED TKL (mecânico gamer sem fio)", img: "https://m.media-amazon.com/images/I/61kFc75+7OL._AC_UL480_.jpg", guide: "teclado-2026.html#produto-7", guideName: "Teclado", expires: "2026-11-07" },
+    { asin: "B0FQFH5PJS", title: "Apple Watch SE 3 (GPS, 40 mm)", img: "https://m.media-amazon.com/images/I/41H4AoY5xbL._AC_UL480_.jpg", guide: "smartwatch-2026.html#produto-6", guideName: "Smartwatch", expires: "2026-11-07" },
+    { asin: "B08J89FSXX", title: "Nescafé Dolce Gusto Genio S Plus (Arno)", img: "https://m.media-amazon.com/images/I/51oDwo0t-RL._AC_UL480_.jpg", guide: "cafeteira-2026.html#produto-3", guideName: "Cafeteira Elétrica", expires: "2026-11-07" },
+    { asin: "B0GJDT6PN2", title: "Intelbras MFR 2020 V (Wi-Fi)", img: "https://m.media-amazon.com/images/I/317oQvPryjL._AC_UL480_.jpg", guide: "fechaduradigital-2026.html#produto-2", guideName: "Fechadura Digital", expires: "2026-11-07" },
+    { asin: "B0CJ3P5RX9", title: "Logitech Pebble Keys 2 K380s (Bluetooth)", img: "https://m.media-amazon.com/images/I/61vnuYiLrXL._AC_UL480_.jpg", guide: "teclado-2026.html#produto-4", guideName: "Teclado", expires: "2026-11-07" },
+    { asin: "B07L4TSL64", title: "G-Tech Allergy Free Hm (3 L)", img: "https://m.media-amazon.com/images/I/41dRwQGYZPL._AC_UL480_.jpg", guide: "umidificador-2026.html#produto-2", guideName: "Umidificador de Ar", expires: "2026-11-07" },
+    { asin: "B0CJ9RGJ18", title: "Logitech G PRO X SUPERLIGHT 2", img: "https://m.media-amazon.com/images/I/51fBcz6DnTL._AC_UL480_.jpg", guide: "mouse-2026.html#produto-7", guideName: "Mouse", expires: "2026-11-07" },
+    { asin: "B0B728Z9NW", title: "Arno Xtreme Force Breeze VB51 (parede, 50cm)", img: "https://m.media-amazon.com/images/I/61geDu3VQpL._AC_UL480_.jpg", guide: "ventilador-2026.html#produto-3", guideName: "Ventilador de Mesa/Coluna/Torre", expires: "2026-11-07" },
+    { asin: "B0F2GQWVS3", title: "Philips Walita PowerPro Aqua Série 3000 com MOP", img: "https://m.media-amazon.com/images/I/71vQWjZIxPL._AC_UL480_.jpg", guide: "aspiradorvertical-2026.html#produto-7", guideName: "Aspirador de Pó Vertical", expires: "2026-11-07" },
+    { asin: "B0DGLXRFXB", title: "Apple AirPods 4 com Cancelamento Ativo de Ruído", img: "https://m.media-amazon.com/images/I/41WMBnjyitL._AC_UL480_.jpg", guide: "fonebluetooth-2026.html#produto-8", guideName: "Fone Bluetooth TWS", expires: "2026-11-07" },
+    { asin: "B0792XQTH6", title: "Electrolux MEO44 (34 L)", img: "https://m.media-amazon.com/images/I/61+2T8DkW7L._AC_UL480_.jpg", guide: "microondas-2026.html#produto-2", guideName: "Micro-ondas", expires: "2026-11-07" },
+    { asin: "B07XLML2YS", title: "TP-Link Tapo C200", img: "https://m.media-amazon.com/images/I/41WQe9NiU6L._AC_UL480_.jpg", guide: "cameraseguranca-2026.html#produto-1", guideName: "Câmera de Segurança Wi-Fi", expires: "2026-11-07" },
+    { asin: "B0DCC38VNW", title: "AOC 24B35HM2 24\" 100Hz", img: "https://m.media-amazon.com/images/I/613cJwYUDSL._AC_UL480_.jpg", guide: "monitor-2026.html#produto-1", guideName: "Monitor", expires: "2026-11-07" },
+    { asin: "B0BHJNL76T", title: "Insider Tech T-Shirt Gola V", img: "https://m.media-amazon.com/images/I/51hss67Tm8L._AC_UL480_.jpg", guide: "camisetatech-2026.html#produto-2", guideName: "Camiseta Tech", expires: "2026-11-07" }
   ];
+  const escH = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 
   function renderDeals() {
     const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year:'numeric', month:'2-digit', day:'2-digit' }).format(new Date());
     const active = DEALS.filter(d => d.expires >= today);
     const section = document.getElementById('ofertas');
     if (!active.length) { section.style.display = 'none'; return; }
+    const when = document.getElementById('dealsChecked');
+    if (when) when.textContent = DEALS_CHECKED;
     document.getElementById('dealsRail').innerHTML = active.map(d => `
-      <a class="deal-card" href="https://www.amazon.com.br/dp/${d.asin}?tag=${AFFILIATE_TAG}" target="_blank" rel="noopener sponsored">
-        <img class="deal-img" src="${d.img}" alt="${d.title}" width="480" height="480" loading="lazy" decoding="async">
-        <div class="deal-info">
-          <span class="deal-title">${d.title}</span>
-        </div>
-      </a>
-    `).join('');
+      <article class="deal-card">
+        <a class="deal-buy" href="https://www.amazon.com.br/dp/${d.asin}?tag=${AFFILIATE_TAG}" target="_blank" rel="noopener sponsored" aria-label="${escH(d.title)}: conferir o preço atual na Amazon">
+          <img class="deal-img" src="${d.img}" alt="${escH(d.title)}" width="480" height="480" loading="lazy" decoding="async">
+          <span class="deal-info"><span class="deal-title">${escH(d.title)}</span><span class="deal-cta">Ver preço na Amazon ↗</span></span>
+        </a>
+        <a class="deal-guide" href="${d.guide}">Ver no guia ${escH(d.guideName)}</a>
+      </article>`).join('');
   }
   renderDeals();
 
@@ -334,5 +333,5 @@
     banner.addEventListener('pointerleave', () => { banner.classList.remove('is-live'); img.style.transform = ''; });
   })();
 </script>
-<script defer="" src="js/site.js"></script></body>
+<script defer="" src="js/site.js?v=20261031b"></script></body>
 </html>

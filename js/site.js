@@ -115,7 +115,7 @@
           <div class="mega-side">
             <a class="mega-offers" href="${offersHref}">
               <span class="mega-offers-fire" aria-hidden="true">🔥</span>
-              <span class="mega-offers-text"><strong>Ofertas do Dia</strong><small>Descontos conferidos na Amazon</small></span>
+              <span class="mega-offers-text"><strong>Últimas ofertas</strong><small>Descontos conferidos na Amazon</small></span>
               <span class="mega-offers-go" aria-hidden="true">→</span>
             </a>
             <p class="mega-label">Categorias</p>
@@ -340,5 +340,80 @@
     if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
     dlg.querySelector('.spec-body').scrollTop = 0;
     if (typeof window.gtag === 'function') window.gtag('event', 'ficha_tecnica', { item: dlg.querySelector('.spec-title').textContent });
+  });
+})();
+
+/* Barra de pesquisa (31/10/2026): busca guias, categorias, produtos e notícias no índice js/busca.json.
+   O índice é gerado pelo script gerar_busca.py (02 Site/Scripts) — rode de novo ao publicar ou alterar guias. */
+(() => {
+  const inner = document.querySelector('.site-header .header-inner');
+  const logo = inner && inner.querySelector('.logo');
+  if (!inner || !logo || inner.querySelector('.site-search')) return;
+  const icon = '<svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>';
+  const box = document.createElement('div');
+  box.className = 'site-search';
+  box.innerHTML = `
+    <button type="button" class="search-toggle" aria-label="Abrir a busca" aria-expanded="false" aria-controls="site-search-form">${icon}</button>
+    <form class="search-form" id="site-search-form" role="search" autocomplete="off">
+      <label class="sr-only" for="site-search-input">Buscar no TechAprovado</label>
+      ${icon}
+      <input id="site-search-input" type="search" placeholder="Buscar produto, guia ou categoria" enterkeyhint="search"
+        role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="site-search-results">
+      <ul class="search-results" id="site-search-results" role="listbox" hidden></ul>
+    </form>`;
+  logo.after(box);
+  const form = box.querySelector('form'), input = box.querySelector('input'), list = box.querySelector('.search-results');
+  const toggle = box.querySelector('.search-toggle');
+  const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+  let index = null, loading = null, results = [], active = -1;
+  const load = () => loading || (loading = fetch('js/busca.json?v=20261031').then(r => r.json())
+    .then(d => { index = d.map(i => ({ ...i, n: norm(i.t), m: norm([i.t, i.s, i.c || '', i.k].join(' ')) })); })
+    .catch(() => { index = []; }));
+  const order = { Guia: 0, Categoria: 1, 'Notícia': 2, Produto: 3 };
+  const search = q => {
+    const words = norm(q).split(/\s+/).filter(Boolean);
+    if (!words.length || !index) return [];
+    return index.filter(i => words.every(w => i.m.includes(w)))
+      .map(i => ({ i, s: (i.n.startsWith(words[0]) ? 0 : i.n.includes(words[0]) ? 1 : 2) * 10 + order[i.k] }))
+      .sort((a, b) => a.s - b.s).slice(0, 8).map(x => x.i);
+  };
+  const close = () => { list.hidden = true; input.setAttribute('aria-expanded', 'false'); active = -1; };
+  const render = () => {
+    const q = input.value.trim();
+    if (!q) { close(); return; }
+    results = search(q); active = -1;
+    list.innerHTML = results.length ? results.map((r, n) => `
+      <li role="option" id="busca-op-${n}" aria-selected="false"><a href="${esc(r.u)}">
+        <span class="sr-kind">${esc(r.k)}</span><strong>${esc(r.t)}</strong><small>${esc(r.s)}</small></a></li>`).join('')
+      : `<li class="search-empty">Nada encontrado para “${esc(q)}”. <a href="categorias.html">Ver todas as categorias</a></li>`;
+    list.hidden = false; input.setAttribute('aria-expanded', 'true');
+  };
+  const mark = n => {
+    const opts = list.querySelectorAll('[role="option"]');
+    opts.forEach((o, k) => o.setAttribute('aria-selected', String(k === n)));
+    active = n;
+    if (opts[n]) { input.setAttribute('aria-activedescendant', opts[n].id); opts[n].scrollIntoView({ block: 'nearest' }); }
+  };
+  input.addEventListener('focus', load);
+  input.addEventListener('input', () => { if (index) render(); else load().then(render); });
+  input.addEventListener('keydown', e => {
+    const n = list.querySelectorAll('[role="option"]').length;
+    if (e.key === 'ArrowDown' && n) { e.preventDefault(); mark((active + 1) % n); }
+    else if (e.key === 'ArrowUp' && n) { e.preventDefault(); mark((active - 1 + n) % n); }
+    else if (e.key === 'Escape') { close(); if (box.classList.contains('is-open')) { box.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.focus(); } }
+  });
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const go = results[active >= 0 ? active : 0];
+    if (go) location.href = go.u;
+  });
+  list.addEventListener('mousedown', e => { if (e.target.closest('a')) e.preventDefault(); });
+  list.addEventListener('click', e => { const a = e.target.closest('a'); if (a) location.href = a.getAttribute('href'); });
+  document.addEventListener('click', e => { if (!box.contains(e.target)) { close(); if (box.classList.contains('is-open') && !input.value) { box.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); } } });
+  toggle.addEventListener('click', () => {
+    const open = !box.classList.contains('is-open');
+    box.classList.toggle('is-open', open); toggle.setAttribute('aria-expanded', String(open));
+    if (open) { load(); setTimeout(() => input.focus(), 30); } else close();
   });
 })();
