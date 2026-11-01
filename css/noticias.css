@@ -120,3 +120,16 @@
   .news-page .n-feature h2 { font-size:1.35rem; }
 }
 @media (prefers-reduced-motion:reduce) { .news-page * { transition:none !important; } }
+
+/* Botões abaixo da abertura e imagem de produto inteira (01/11/2026) */
+.news-page .n-figure-contain .n-figure-img{background:#0d1520}
+.news-page .n-figure-contain .n-figure-img img{object-fit:contain}
+.news-page .article-actions{display:flex;flex-wrap:wrap;gap:12px;border-top:1px solid #2a2f3d;border-bottom:1px solid #2a2f3d;padding:20px 0;margin:8px 0 30px}
+.news-page .article-actions a{display:inline-flex;justify-content:center;align-items:center;gap:16px;padding:13px 18px;border:1px solid #46566d;border-radius:9px;color:#e4ecf8;text-decoration:none;font-size:.8rem;font-weight:700;line-height:1.4}
+.news-page .article-actions a span{color:#ffd600}
+.news-page .article-actions a.article-action-primary{background:#ffd600;border-color:#ffd600;color:#10151e}
+.news-page .article-actions .article-action-primary span{color:#10151e}
+.news-page .article-actions a:hover{border-color:#83b8f0}
+.news-page .article-actions a:focus-visible{outline:3px solid #83b8f0;outline-offset:4px}
+.news-page #fontes-da-pesquisa{scroll-margin-top:100px}
+@media(max-width:600px){.news-page .article-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px}.news-page .article-actions .article-action-primary{grid-column:1/-1}.news-page .article-actions a{font-size:.72rem;padding:12px 10px;gap:7px}}

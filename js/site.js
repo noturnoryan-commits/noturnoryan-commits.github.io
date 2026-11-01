@@ -367,7 +367,7 @@
   const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
   let index = null, loading = null, results = [], active = -1;
-  const load = () => loading || (loading = fetch('js/busca.json?v=20261031').then(r => r.json())
+  const load = () => loading || (loading = fetch('js/busca.json?v=20261101').then(r => r.json())
     .then(d => { index = d.map(i => ({ ...i, n: norm(i.t), m: norm([i.t, i.s, i.c || '', i.k].join(' ')) })); })
     .catch(() => { index = []; }));
   const order = { Guia: 0, Categoria: 1, 'Notícia': 2, Produto: 3 };
