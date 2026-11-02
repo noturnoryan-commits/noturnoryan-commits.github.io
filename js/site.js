@@ -27,10 +27,10 @@
 
   // Os 6 produtos do botão "Escolhas" (link direto para a Amazon com a tag de afiliado).
   const TA_PICKS = [
-    { asin: 'B0GXFFSVYM', name: 'Dreame D15 Plus', badge: 'Automação em destaque', img: 'https://m.media-amazon.com/images/I/61N-ZmR2MxL._AC_UL480_.jpg', guide: 'roboaspirador-2026.html#produto-5' },
-    { asin: 'B0CPFT8QQK', name: 'TP-Link Tapo P110', badge: 'Casa inteligente acessível', img: 'https://m.media-amazon.com/images/I/31ARV778-nL._AC_UL480_.jpg', guide: 'tomadainteligente-2026.html#produto-1' },
-    { asin: 'B0DF2WSGF6', name: 'Monitor LG 24MS500 IPS 100Hz', badge: 'Custo-benefício no escritório', img: 'https://m.media-amazon.com/images/I/61EXtxtW1gL._AC_UL480_.jpg', guide: 'monitor-2026.html#produto-2' },
-    { asin: 'B0C3KWT5V6', name: 'soundcore Q20i da Anker', badge: 'Upgrade que vale a pena', img: 'https://m.media-amazon.com/images/I/61cfZHdnvzL._AC_UL480_.jpg', guide: 'foneoverear-2026.html#produto-3' },
+    { asin: 'B0GXFFSVYM', name: 'Dreame D15 Plus', badge: 'Automação em destaque', img: 'https://m.media-amazon.com/images/I/61N-ZmR2MxL._AC_UL480_.jpg', guide: 'roboaspirador-2026.html#produto-14' },
+    { asin: 'B0CPFT8QQK', name: 'TP-Link Tapo P110', badge: 'Casa inteligente acessível', img: 'https://m.media-amazon.com/images/I/31ARV778-nL._AC_UL480_.jpg', guide: 'tomadainteligente-2026.html#produto-2' },
+    { asin: 'B0DF2WSGF6', name: 'Monitor LG 24MS500 IPS 100Hz', badge: 'Custo-benefício no escritório', img: 'https://m.media-amazon.com/images/I/61EXtxtW1gL._AC_UL480_.jpg', guide: 'monitor-2026.html' },
+    { asin: 'B0C3KWT5V6', name: 'soundcore Q20i da Anker', badge: 'Upgrade que vale a pena', img: 'https://m.media-amazon.com/images/I/61cfZHdnvzL._AC_UL480_.jpg', guide: 'foneoverear-2026.html#produto-6' },
     { asin: 'B0DFZPR9Z4', name: 'Redmi Watch 5 Active', badge: 'Melhor custo-benefício vestível', img: 'https://m.media-amazon.com/images/I/61iOQG77hxL._AC_UL480_.jpg', guide: 'smartwatch-2026.html#produto-2' },
     { asin: 'B0F7T2Y46Y', name: 'Caixa de Som JBL Flip 7', badge: 'Melhor custo-benefício em som', img: 'https://m.media-amazon.com/images/I/61S6CABfB7L._AC_UL480_.jpg', guide: 'caixadesom-2026.html#produto-4' }
   ];
