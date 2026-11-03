@@ -12,8 +12,8 @@
       ['maquinadelavar-2026.html', 'Máquina de Lavar'], ['microondas-2026.html', 'Micro-ondas'], ['projetor-portatil-2026.html', 'Projetor Portátil'],
       ['roboaspirador-2026.html', 'Robô Aspirador'], ['smarttv-2026.html', 'Smart TVs'], ['umidificador-2026.html', 'Umidificador de Ar'],
       ['ventilador-2026.html', 'Ventilador de Mesa/Coluna/Torre'], ['ventiladordeteto-2026.html', 'Ventilador de Teto'] ] },
-    { id: 'escritorio', icon: '💻', name: 'Escritório & PC', desc: 'Notebooks, monitores, mouses, teclados e roteadores', page: 'categoria-escritorio-pc.html', guides: [
-      ['monitor-2026.html', 'Monitor'], ['mouse-2026.html', 'Mouse'], ['notebook-2026.html', 'Notebooks'], ['roteador-2026.html', 'Roteador Wi-Fi'], ['teclado-2026.html', 'Teclado'] ] },
+    { id: 'escritorio', icon: '💻', name: 'Escritório & PC', desc: 'Notebooks, monitores, mouses, teclados, kits e roteadores', page: 'categoria-escritorio-pc.html', guides: [
+      ['monitor-2026.html', 'Monitor'], ['mouse-2026.html', 'Mouse'], ['notebook-2026.html', 'Notebooks'], ['roteador-2026.html', 'Roteador Wi-Fi'], ['teclado-2026.html', 'Teclado'], ['kit-teclado-mouse-2026.html', 'Kit teclado e mouse'] ] },
     { id: 'vestivel', icon: '⌚', name: 'Vestível', desc: 'Relógios, fones e roupa tech', page: 'categoria-vestivel.html', guides: [
       ['camisetatech-2026.html', 'Camiseta Tech'], ['fonebluetooth-2026.html', 'Fone Bluetooth TWS'], ['foneoverear-2026.html', 'Fone Over-Ear Bluetooth'],
       ['smartwatch-2026.html', 'Smartwatch'] ] },
