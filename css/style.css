@@ -791,7 +791,11 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; }
    ========================================================= */
 html { scroll-behavior: smooth; scroll-padding-top: 82px; }
 html, body { width: 100%; max-width: 100%; overflow-x: clip; }
-body.menu-open { overflow: hidden; }
+/* Menu ☰ aberto: trava a rolagem no <html> (não no <body>).
+   Travar o body, com o html em overflow-x: clip, fazia a página pular e o
+   cabeçalho sumir quando o menu era aberto no meio da página (corrigido 03/11/2026). */
+html.menu-open { overflow: hidden; }
+body.menu-open { overflow: visible; }
 img, picture, video, iframe, svg { max-width: 100%; }
 img { display: block; }
 main, section, .container, .product-grid, .product-card, .article-inner,
@@ -901,7 +905,7 @@ main, section, .container, .product-grid, .product-card, .article-inner,
     box-shadow: 0 24px 60px rgba(0,0,0,.5);
     z-index: 50;
   }
-  .main-nav.is-open { display: flex; }
+  .main-nav.is-open { display: flex; max-height: calc(100vh - 90px); max-height: calc(100dvh - 90px); overflow-y: auto; overscroll-behavior: contain; }
   .main-nav a { padding: 12px; border-radius: 9px; }
   .main-nav a:hover { background: rgba(255,255,255,.04); }
   .site-banner img { max-height: none; aspect-ratio: 14 / 9; object-fit: cover; object-position: center; }

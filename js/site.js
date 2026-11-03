@@ -243,6 +243,7 @@
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-label', 'Abrir menu');
     document.body.classList.remove('menu-open');
+    document.documentElement.classList.remove('menu-open');
   };
   if (toggle && nav) {
     toggle.addEventListener('click', () => {
@@ -251,6 +252,7 @@
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
       document.body.classList.toggle('menu-open', open);
+      document.documentElement.classList.toggle('menu-open', open);
     });
     nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
     window.addEventListener('resize', () => { if (innerWidth > 760) closeMenu(); });
