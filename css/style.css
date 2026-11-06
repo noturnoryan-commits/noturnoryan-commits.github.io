@@ -2381,6 +2381,9 @@ body.spec-open { overflow: hidden; }
 .search-results small { color: var(--text-muted); font-size: .76rem; line-height: 1.4; }
 .search-empty { padding: 12px; color: var(--text-muted); font-size: .86rem; }
 .search-empty a { color: #83b8f0; }
+/* Busca: aviso de modelo que ainda não analisamos (05/11/2026) */
+.search-missing { padding: 10px 12px 6px; color: var(--text-muted); font-size: .84rem; line-height: 1.45; }
+.search-missing strong { color: var(--text); font-size: inherit; }
 @media (min-width:761px) and (max-width:1100px) { .site-search { max-width: 240px; margin: 0 12px; } }
 @media (min-width:761px) and (max-width:900px) { .site-search { max-width: 170px; margin: 0 8px; } .search-form input { font-size: .78rem; padding-right: 8px; } }
 @media (max-width: 760px) {

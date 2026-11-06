@@ -460,3 +460,6 @@
 .ta-curadoria.ta-perfis .good-to-know strong{font-size:15px;color:#fff}
 .ta-curadoria.ta-perfis .good-to-know span{font-size:14px;line-height:1.65;color:#bec8d8}
 @media (max-width:760px){.ta-curadoria.ta-perfis .good-to-know ul{grid-template-columns:1fr}.ta-curadoria.ta-perfis .good-to-know{padding:18px}.ta-curadoria.ta-perfis .concept-extra-toggle{width:100%;min-width:0}}
+
+/* 05/11/2026 — fundo principal transparente para mostrar as luzes globais do body::before (como na home). Cards, blocos e barra de filtros mantêm o próprio fundo; --paper segue no degradê do "Ler mais". */
+main.ta-curadoria{background:transparent}

@@ -373,6 +373,61 @@
     .then(d => { index = d.map(i => ({ ...i, n: norm(i.t), m: norm([i.t, i.s, i.c || '', i.k].join(' ')) })); })
     .catch(() => { index = []; }));
   const order = { Guia: 0, Categoria: 1, 'Notícia': 2, Produto: 3 };
+  /* Produto fora da lista (05/11/2026): quando a pessoa procura um modelo que ainda não analisamos,
+     a busca avisa e sugere o guia mais próximo pelo tipo de produto. A busca é registrada no
+     Google Analytics como o evento "busca_sem_produto" (aparece só para quem aceitou os cookies)
+     e serve de pauta para as próximas pesquisas. Ordem importa: o primeiro tema que casar vence. */
+  const temas = [
+    [/kit teclado|teclado e mouse|combo teclado/, 'kit-teclado-mouse-2026.html'],
+    [/ventilador de teto/, 'ventiladordeteto-2026.html'],
+    [/robo|roomba|roborock|dreame|deebot|eufy robo/, 'roboaspirador-2026.html'],
+    [/iphone|galaxy [asmz]|motorola|moto [ge]|redmi|poco|celular|smartphone|pixel|zenfone/, 'smartphone-2026.html'],
+    [/smart ?tv|televis|qled|oled|polegadas|\btv \d/, 'smarttv-2026.html'],
+    [/chromecast|roku|tv ?box|mi ?box|apple tv|tv stick|fire ?tv|streaming/, 'fire-tv-stick-2026.html'],
+    [/airpods|buds|earbud|tws|qcy|fone (bluetooth|sem fio|de ouvido)/, 'fonebluetooth-2026.html'],
+    [/headphone|headset|over.?ear|sony wh|bose|fone/, 'foneoverear-2026.html'],
+    [/notebook|macbook|laptop|chromebook|ideapad|vivobook|aspire|inspiron|thinkpad|zenbook|galaxy book|dell|xps|lenovo|acer|asus|positivo|avell|\bhp\b/, 'notebook-2026.html'],
+    [/monitor|ultrawide/, 'monitor-2026.html'],
+    [/mouse|mx master|g305|g203/, 'mouse-2026.html'],
+    [/teclado|keyboard/, 'teclado-2026.html'],
+    [/roteador|router|wi-?fi|mesh|deco|archer|repetidor/, 'roteador-2026.html'],
+    [/watch|relogio|amazfit|mi band|smart ?band|garmin/, 'smartwatch-2026.html'],
+    [/kindle|e-?reader|leitor digital|kobo/, 'kindle-2026.html'],
+    [/echo|alexa|nest|assistente/, 'echo-alexa-2026.html'],
+    [/air ?fryer|fritadeira/, 'airfryer-2026.html'],
+    [/aspirador/, 'aspiradorvertical-2026.html'],
+    [/cafeteira|nespresso|dolce gusto|espresso|tres coracoes/, 'cafeteira-2026.html'],
+    [/caixa de som|jbl|speaker|boombox|soundbar/, 'caixadesom-2026.html'],
+    [/camera|cftv|ipcam|baba eletronica/, 'cameraseguranca-2026.html'],
+    [/fechadura/, 'fechaduradigital-2026.html'],
+    [/lampada|fita led|iluminacao/, 'casainteligente-2026.html'],
+    [/tomada|smart ?plug|interruptor/, 'tomadainteligente-2026.html'],
+    [/power ?bank|carregador portatil|bateria externa/, 'powerbank-2026.html'],
+    [/projetor/, 'projetor-portatil-2026.html'],
+    [/airtag|smarttag|rastreador|localizador/, 'rastreadorbluetooth-2026.html'],
+    [/geladeira|refrigerador|freezer/, 'geladeiras-2026.html'],
+    [/lava ?roupa|maquina de lavar|lava e seca|lavadora/, 'maquinadelavar-2026.html'],
+    [/micro-?ondas/, 'microondas-2026.html'],
+    [/ventilador|circulador/, 'ventilador-2026.html'],
+    [/umidificador/, 'umidificador-2026.html'],
+    [/chuveiro|ducha/, 'chuveiroeletrico-2026.html'],
+    [/camiseta/, 'camisetatech-2026.html'],
+  ];
+  const guiaProximo = q => {
+    const nq = norm(q), achado = temas.find(([re]) => re.test(nq));
+    return achado ? index.find(i => i.k === 'Guia' && i.u === achado[1]) : null;
+  };
+  const registrados = new Set();
+  let timerRegistro = null;
+  const registrar = q => {
+    clearTimeout(timerRegistro);
+    timerRegistro = setTimeout(() => {
+      const termo = norm(q).slice(0, 80);
+      if (registrados.has(termo) || typeof window.gtag !== 'function') return;
+      registrados.add(termo);
+      window.gtag('event', 'busca_sem_produto', { search_term: termo });
+    }, 1500);
+  };
   const search = q => {
     const words = norm(q).split(/\s+/).filter(Boolean);
     if (!words.length || !index) return [];
@@ -385,10 +440,19 @@
     const q = input.value.trim();
     if (!q) { close(); return; }
     results = search(q); active = -1;
-    list.innerHTML = results.length ? results.map((r, n) => `
+    // Parece um modelo específico (tem número ou não achou nada) e nenhum produto analisado casou?
+    const semProduto = !results.some(r => r.k === 'Produto') && (/\d/.test(q) || !results.length);
+    let aviso = '';
+    if (semProduto && q.length >= 3) {
+      const g = guiaProximo(q);
+      if (g) results = [{ ...g, k: 'Guia mais próximo', s: 'Veja os modelos de ' + g.t + ' que recomendamos' }, ...results.filter(r => r.u !== g.u)].slice(0, 8);
+      aviso = `<li class="search-missing">Ainda não analisamos <strong>“${esc(q)}”</strong>.${g || results.length ? ' Veja o que temos de mais próximo:' : ''}</li>`;
+      registrar(q);
+    }
+    list.innerHTML = aviso + (results.length ? results.map((r, n) => `
       <li role="option" id="busca-op-${n}" aria-selected="false"><a href="${esc(r.u)}">
         <span class="sr-kind">${esc(r.k)}</span><strong>${esc(r.t)}</strong><small>${esc(r.s)}</small></a></li>`).join('')
-      : `<li class="search-empty">Nada encontrado para “${esc(q)}”. <a href="categorias.html">Ver todas as categorias</a></li>`;
+      : `<li class="search-empty">${aviso ? '' : `Nada encontrado para “${esc(q)}”. `}<a href="categorias.html">Ver todas as categorias</a></li>`);
     list.hidden = false; input.setAttribute('aria-expanded', 'true');
   };
   const mark = n => {
