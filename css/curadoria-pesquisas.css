@@ -362,8 +362,6 @@
 .ta-curadoria.ta-perfis .tier-line span{color:var(--muted);font-weight:600;letter-spacing:.4px}
 .ta-curadoria.ta-perfis .pick-badge{display:inline-block;margin:0 0 8px;padding:4px 10px;border-radius:999px;background:var(--yellow);color:#0f1115;font-size:11px;font-weight:800;letter-spacing:.4px;text-transform:uppercase}
 .ta-curadoria.ta-perfis .pick-badge.is-top{background:#1d3b66;color:#cfe4ff}
-.ta-curadoria.ta-perfis .card-rating{margin:6px 0 0;font-size:13px;color:#c9d1de}
-.ta-curadoria.ta-perfis .card-rating span{color:var(--yellow)}
 .ta-curadoria.ta-perfis .technical-explanation p:not(.technical-label){font-size:14.5px;line-height:1.7}
 .ta-curadoria.ta-perfis .reason-list dt{font-size:12px}
 .ta-curadoria.ta-perfis .reason-list dd{font-size:14px}
