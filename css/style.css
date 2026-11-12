@@ -2517,6 +2517,9 @@ body.spec-open { overflow: hidden; }
 }
 .deal-btn-amazon { background: var(--accent-yellow); color: #06120a; }
 .deal-btn-amazon:hover { background: var(--accent-yellow-dark); color: #06120a; }
+/* KaBuM! (12/11/2026): laranja da loja, texto escuro para contraste. */
+.deal-btn-kabum { background: #ff6500; color: #160800; }
+.deal-btn-kabum:hover { background: #e55a00; color: #160800; }
 .deal-btn-guide { background: var(--accent); color: #fff; }
 .deal-btn-guide:hover { background: var(--accent-dark); color: #fff; }
 .deal-btn:hover { transform: translateY(-1px); }
