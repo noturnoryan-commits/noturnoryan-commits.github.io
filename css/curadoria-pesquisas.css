@@ -461,3 +461,20 @@
 
 /* 05/11/2026 — fundo principal transparente para mostrar as luzes globais do body::before (como na home). Cards, blocos e barra de filtros mantêm o próprio fundo; --paper segue no degradê do "Ler mais". */
 main.ta-curadoria{background:transparent}
+/* Lojas parceiras (12/11/2026): quadro "Ver preços" com Amazon e KaBuM! */
+.ta-curadoria .store-dialog{margin:auto;inset:0;width:min(420px,calc(100vw - 32px));max-width:none;padding:0;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);box-shadow:0 24px 60px rgba(0,0,0,.55)}
+.ta-curadoria .store-dialog::backdrop{background:rgba(5,7,12,.72)}
+.ta-curadoria .store-dialog-box{position:relative;padding:22px 20px 18px}
+.ta-curadoria .store-dialog-close{position:absolute;top:8px;right:8px;width:40px;height:40px;border:0;border-radius:50%;background:transparent;font-size:24px;line-height:1;color:var(--muted)}
+.ta-curadoria .store-dialog-close:hover{background:rgba(255,255,255,.08);color:var(--ink)}
+.ta-curadoria .store-dialog-eyebrow{margin:0 0 4px;font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--link)}
+.ta-curadoria .store-dialog h2{margin:0 40px 16px 0;font-size:18px;line-height:1.3}
+.ta-curadoria .store-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ta-curadoria .store-list li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--paper)}
+.ta-curadoria .store-name{font-weight:800;font-size:15px}
+.ta-curadoria .store-btn{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:10px 14px;border-radius:6px;font-size:13px;font-weight:800;white-space:nowrap;text-decoration:none}
+.ta-curadoria .store-btn:hover{text-decoration:none;filter:brightness(.94)}
+.ta-curadoria .store-btn-amazon{background:var(--yellow);color:#0f1115}
+.ta-curadoria .store-btn-kabum{background:#ff6500;color:#160800}
+.ta-curadoria .store-dialog-note{margin:14px 0 0;font-size:12px;line-height:1.5;color:var(--muted)}
+@media (max-width:380px){.ta-curadoria .store-list li{flex-direction:column;align-items:stretch}.ta-curadoria .store-btn{justify-content:center}}
