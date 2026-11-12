@@ -22,7 +22,7 @@
       ['casainteligente-2026.html', 'Iluminação Inteligente'], ['tomadainteligente-2026.html', 'Tomada Inteligente'] ] },
     { id: 'mobilidade', icon: '📱', name: 'Mobilidade', desc: 'Celulares, caixas de som e acessórios', page: 'categoria-mobilidade.html', guides: [
       ['caixadesom-2026.html', 'Caixa de Som Bluetooth'], ['smartphone-2026.html', 'Celular'], ['kindle-2026.html', 'Kindle'],
-      ['powerbank-2026.html', 'Power Bank'], ['rastreadorbluetooth-2026.html', 'Rastreador Bluetooth'] ] }
+      ['powerbank-2026.html', 'Power Bank'], ['rastreadorbluetooth-2026.html', 'Rastreador Bluetooth'], ['tablet-2026.html', 'Tablet'] ] }
   ];
 
   // Os 6 produtos do botão "Escolhas" (link direto para a Amazon com a tag de afiliado).
@@ -381,6 +381,7 @@
     [/kit teclado|teclado e mouse|combo teclado/, 'kit-teclado-mouse-2026.html'],
     [/ventilador de teto/, 'ventiladordeteto-2026.html'],
     [/robo|roomba|roborock|dreame|deebot|eufy robo/, 'roboaspirador-2026.html'],
+    [/tablet|ipad|galaxy tab|redmi pad|xiaomi pad|lenovo tab|idea tab|matepad|fire hd|positivo vision tab|vision tab/, 'tablet-2026.html'],
     [/iphone|galaxy [asmz]|motorola|moto [ge]|redmi|poco|celular|smartphone|pixel|zenfone/, 'smartphone-2026.html'],
     [/smart ?tv|televis|qled|oled|polegadas|\btv \d/, 'smarttv-2026.html'],
     [/chromecast|roku|tv ?box|mi ?box|apple tv|tv stick|fire ?tv|streaming/, 'fire-tv-stick-2026.html'],
