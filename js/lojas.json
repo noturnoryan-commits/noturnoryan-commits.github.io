@@ -180,6 +180,11 @@
     {
      "loja": "kabum",
      "id": 49461
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/2VPVcgk",
+     "mlb": "MLB6162297"
     }
    ],
    "conferido": "2026-11-16"
@@ -206,6 +211,11 @@
     {
      "loja": "kabum",
      "id": 303808
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/2WdLQnM",
+     "mlb": "MLB24527496"
     }
    ],
    "conferido": "2026-11-16"
@@ -219,6 +229,11 @@
     {
      "loja": "kabum",
      "id": 495500
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/2Wa3zKT",
+     "mlb": "MLB31067754"
     }
    ],
    "conferido": "2026-11-16"
@@ -232,6 +247,11 @@
     {
      "loja": "kabum",
      "id": 685693
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/2XNyumS",
+     "mlb": "MLB45151488"
     }
    ],
    "conferido": "2026-11-16"
@@ -245,6 +265,11 @@
     {
      "loja": "kabum",
      "id": 474964
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/28md3Kv",
+     "mlb": "MLB26867540"
     }
    ],
    "conferido": "2026-11-16"
@@ -258,6 +283,11 @@
     {
      "loja": "kabum",
      "id": 112948
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/2pqA9o8",
+     "mlb": "MLB16211422"
     }
    ],
    "conferido": "2026-11-16"
@@ -271,6 +301,11 @@
     {
      "loja": "kabum",
      "id": 97092
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/27fJoj7",
+     "mlb": "MLB23144158"
     }
    ],
    "conferido": "2026-11-16"
@@ -284,6 +319,11 @@
     {
      "loja": "kabum",
      "id": 98244
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/28JkNBu",
+     "mlb": "MLB12866864"
     }
    ],
    "conferido": "2026-11-16"
@@ -297,6 +337,11 @@
     {
      "loja": "kabum",
      "id": 102651
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/24tetLj",
+     "mlb": "MLB17374971"
     }
    ],
    "conferido": "2026-11-16"
@@ -310,6 +355,11 @@
     {
      "loja": "kabum",
      "id": 495544
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/22b92z8",
+     "mlb": "MLB28294852"
     }
    ],
    "conferido": "2026-11-16"
@@ -336,6 +386,12 @@
     {
      "loja": "kabum",
      "id": 642240
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/2yw5ufh",
+     "mlb": "MLB46967648",
+     "parceira": true
     }
    ],
    "conferido": "2026-11-16"
@@ -349,6 +405,12 @@
     {
      "loja": "kabum",
      "id": 363687
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/2n3wCNi",
+     "mlb": "MLB21707251",
+     "parceira": true
     }
    ],
    "conferido": "2026-11-16"
@@ -362,6 +424,11 @@
     {
      "loja": "kabum",
      "id": 98243
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/2PcLH4D",
+     "mlb": "MLB43279846"
     }
    ],
    "conferido": "2026-11-16"
@@ -804,6 +871,11 @@
     {
      "loja": "kabum",
      "id": 944494
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/2t754s2",
+     "mlb": "MLB61258226"
     }
    ],
    "conferido": "2026-11-16"
@@ -817,6 +889,11 @@
     {
      "loja": "kabum",
      "id": 303805
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/1eQuUsB",
+     "mlb": "MLB19457581"
     }
    ],
    "conferido": "2026-11-16"
@@ -830,6 +907,11 @@
     {
      "loja": "kabum",
      "id": 642241
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/1FdxoA8",
+     "mlb": "MLB43200795"
     }
    ],
    "conferido": "2026-11-16"
@@ -1941,6 +2023,12 @@
      "loja": "kabum",
      "id": 948291,
      "parceira": true
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/2sS9XKt",
+     "mlb": "MLB47591390",
+     "parceira": true
     }
    ],
    "conferido": "2026-11-16"
@@ -2734,6 +2822,21 @@
     {
      "loja": "kabum",
      "id": 934761
+    }
+   ],
+   "conferido": "2026-11-16"
+  },
+  "B08K9FRH7N": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B08K9FRH7N"
+    },
+    {
+     "loja": "mercadolivre",
+     "url": "https://meli.la/1B8ACYF",
+     "mlb": "MLB16994776",
+     "parceira": true
     }
    ],
    "conferido": "2026-11-16"
