@@ -14,8 +14,8 @@
       ['maquinadelavar-2026.html', 'Máquina de Lavar'], ['microondas-2026.html', 'Micro-ondas'], ['projetor-portatil-2026.html', 'Projetor Portátil'],
       ['roboaspirador-2026.html', 'Robô Aspirador'], ['smarttv-2026.html', 'Smart TVs'], ['umidificador-2026.html', 'Umidificador de Ar'],
       ['ventilador-2026.html', 'Ventilador de Mesa/Coluna/Torre'], ['ventiladordeteto-2026.html', 'Ventilador de Teto'], ['liquidificador-2026.html', 'Liquidificador'] ] },
-    { id: 'escritorio', icon: '💻', name: 'Escritório & PC', desc: 'Notebooks, monitores, periféricos, SSD e impressoras', page: 'categoria-escritorio-pc.html', guides: [
-      ['monitor-2026.html', 'Monitor'], ['mouse-2026.html', 'Mouse'], ['notebook-2026.html', 'Notebooks'], ['roteador-2026.html', 'Roteador Wi-Fi'], ['teclado-2026.html', 'Teclado'], ['kit-teclado-mouse-2026.html', 'Kit teclado e mouse'], ['headset-gamer-2026.html', 'Headset gamer'], ['ssd-2026.html', 'SSD'], ['webcam-2026.html', 'Webcam'], ['impressora-2026.html', 'Impressora'], ['controle-gamer-2026.html', 'Controle gamer'] ] },
+    { id: 'escritorio', icon: '💻', name: 'Escritório & PC', desc: 'Notebooks, monitores, periféricos, consoles e SSD', page: 'categoria-escritorio-pc.html', guides: [
+      ['monitor-2026.html', 'Monitor'], ['mouse-2026.html', 'Mouse'], ['notebook-2026.html', 'Notebooks'], ['roteador-2026.html', 'Roteador Wi-Fi'], ['teclado-2026.html', 'Teclado'], ['kit-teclado-mouse-2026.html', 'Kit teclado e mouse'], ['headset-gamer-2026.html', 'Headset gamer'], ['ssd-2026.html', 'SSD'], ['webcam-2026.html', 'Webcam'], ['impressora-2026.html', 'Impressora'], ['controle-gamer-2026.html', 'Controle gamer'], ['nintendo-switch-2026.html', 'Nintendo Switch'], ['playstation-5-2026.html', 'PlayStation 5'], ['console-portatil-2026.html', 'Console portátil'] ] },
     { id: 'vestivel', icon: '⌚', name: 'Vestível', desc: 'Relógios, fones e roupa tech', page: 'categoria-vestivel.html', guides: [
       ['camisetatech-2026.html', 'Camiseta Tech'], ['fonebluetooth-2026.html', 'Fone Bluetooth TWS'], ['foneoverear-2026.html', 'Fone Over-Ear Bluetooth'],
       ['smartwatch-2026.html', 'Smartwatch'] ] },
@@ -414,6 +414,9 @@
     [/webcam|camera (para|de) pc|brio|c270|c920|obsbot/, 'webcam-2026.html'],
     [/impressora|multifuncional|ecotank|smart tank|mega tank|laserjet|toner/, 'impressora-2026.html'],
     [/controle|gamepad|joystick|dualsense|8bitdo|gamesir|xbox elite/, 'controle-gamer-2026.html'],
+    [/nintendo|switch (lite|oled|2)|joy-?con|\bswitch\b/, 'nintendo-switch-2026.html'],
+    [/playstation|\bps5\b|\bps4\b|ps vr|psvr|ps portal|playstation portal/, 'playstation-5-2026.html'],
+    [/rog ally|xbox ally|legion go|steam deck|portatil gamer|console portatil|videogame portatil|\bxbox\b|series s|series x/, 'console-portatil-2026.html'],
     [/liquidificador|mixer|blender|nutribullet|osterizer/, 'liquidificador-2026.html'],
     [/carregador|fonte usb|tomada usb|gan|magsafe|qi2|power delivery/, 'carregador-celular-2026.html'],
     [/kit teclado|teclado e mouse|combo teclado/, 'kit-teclado-mouse-2026.html'],
