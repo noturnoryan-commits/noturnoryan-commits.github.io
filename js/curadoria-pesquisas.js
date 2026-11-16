@@ -115,21 +115,37 @@
   fetch('js/lojas.json?v=' + versao).then(r => r.ok ? r.json() : null).then(lista => {
     if (!lista || !lista.produtos) return;
     let n = 0;
-    guide.querySelectorAll('article.analysis-card a.shop-link[data-produto]').forEach(a => {
+    guide.querySelectorAll('article.analysis-card a.shop-link[data-produto], article.profile-tile a.shop-link[data-produto]').forEach(a => {
       const p = lista.produtos[a.dataset.produto];
       const lojas = (p && p.lojas || []).filter(l => urlDe(l));
       if (lojas.length < 2) return;
-      const nome = a.closest('article').querySelector('h3')?.textContent.trim() || '';
+      const art = a.closest('article');
+      const nome = (art.querySelector('.tile-pick strong') || art.querySelector('h3'))?.textContent.trim() || '';
       const [principal, ...outras] = lojas;
       a.href = urlDe(principal);
       a.dataset.loja = principal.loja;
       a.innerHTML = `Ver preço na ${nomeDe(principal)} <span aria-hidden="true">↗</span>`;
       a.setAttribute('aria-label', `Ver preço do ${nome} na ${nomeDe(principal)}`);
-      const id = `lojas-${a.closest('article').id}-${n++}`;
+      const id = `lojas-${art.id || 'perfil'}-${n++}`;
       const wrap = document.createElement('div');
       wrap.className = 'store-row';
       a.replaceWith(wrap);
       wrap.appendChild(a);
+      // Só uma loja além da principal: botão direto, lado a lado (aprovado em 16/11/2026).
+      if (outras.length === 1) {
+        const l = outras[0];
+        const b2 = document.createElement('a');
+        b2.className = `shop-link shop-alt shop-alt-${l.loja}`;
+        b2.href = urlDe(l);
+        b2.target = '_blank';
+        b2.rel = 'noopener sponsored';
+        b2.dataset.loja = l.loja;
+        b2.setAttribute('aria-label', `Ver preço do ${nome} na ${nomeDe(l)}`);
+        b2.innerHTML = `Ver preço na ${nomeDe(l)} <span aria-hidden="true">↗</span>`;
+        wrap.classList.add('store-row-pair');
+        wrap.appendChild(b2);
+        return;
+      }
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'store-more';
@@ -154,7 +170,8 @@
     });
     guide.addEventListener('click', e => {
       const link = e.target.closest('a[data-loja]');
-      if (link && typeof window.gtag === 'function') window.gtag('event', 'clique_loja', { loja: link.dataset.loja, produto: link.closest('article')?.querySelector('h3')?.textContent.trim() || '' });
+      const art2 = link && link.closest('article');
+      if (link && typeof window.gtag === 'function') window.gtag('event', 'clique_loja', { loja: link.dataset.loja, produto: (art2?.querySelector('.tile-pick strong') || art2?.querySelector('h3'))?.textContent.trim() || '' });
     });
   }).catch(() => {});
 })();
