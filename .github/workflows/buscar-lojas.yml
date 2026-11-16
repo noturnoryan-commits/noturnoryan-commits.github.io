@@ -1,0 +1,46 @@
+# TechAprovado — procura os produtos dos guias na Shopee e no AliExpress pelas APIs oficiais de afiliados.
+# Só roda na mão: GitHub → Actions → "Buscar lojas (Shopee e AliExpress)" → Run workflow.
+# Grava data/candidatos-lojas.json para revisão; não mexe nos guias nem em js/lojas.json.
+name: Buscar lojas (Shopee e AliExpress)
+
+on:
+  workflow_dispatch:
+    inputs:
+      guias:
+        description: 'Páginas a buscar, separadas por vírgula (vazio = todos os guias)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: buscar-lojas
+  cancel-in-progress: false
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Buscar candidatos
+        env:
+          GUIAS: ${{ inputs.guias }}
+          SHOPEE_APP_ID: ${{ secrets.SHOPEE_APP_ID }}
+          SHOPEE_SECRET: ${{ secrets.SHOPEE_SECRET }}
+          ALI_APP_KEY: ${{ secrets.ALI_APP_KEY }}
+          ALI_APP_SECRET: ${{ secrets.ALI_APP_SECRET }}
+          ALI_TRACKING_ID: ${{ secrets.ALI_TRACKING_ID }}
+        run: node scripts/buscar-lojas.mjs
+      - name: Salvar no repositório
+        run: |
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git config user.name "techaprovado-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/candidatos-lojas.json
+            git commit -m "Candidatos Shopee/AliExpress para revisão"
+            git push
+          fi
