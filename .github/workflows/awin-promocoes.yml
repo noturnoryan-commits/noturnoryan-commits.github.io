@@ -1,0 +1,39 @@
+# TechAprovado — atualiza os cupons/promoções da KaBuM! (Awin) todo dia às 7h de Brasília.
+# Também dá para rodar na mão: GitHub → Actions → "Cupons KaBuM (Awin)" → Run workflow.
+name: Cupons KaBuM (Awin)
+
+on:
+  schedule:
+    - cron: '7 10 * * *'   # 10:07 UTC = 07:07 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: awin-promocoes
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Buscar promoções na Awin
+        env:
+          AWIN_API_TOKEN: ${{ secrets.AWIN_API_TOKEN }}
+        run: node scripts/awin-promocoes.mjs
+      - name: Salvar no repositório (se mudou)
+        run: |
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git config user.name "techaprovado-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/
+            git commit -m "Cupons KaBuM (Awin): atualização automática"
+            git push
+          else
+            echo "Nada novo para salvar."
+          fi

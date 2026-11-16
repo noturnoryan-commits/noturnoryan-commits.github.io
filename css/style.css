@@ -2098,9 +2098,9 @@ main, section, .container, .product-grid, .product-card, .article-inner,
 }
 
 /* --------------------------------------------------------------------------
-   6.7  Botões flutuantes: voltar ao topo (+ WhatsApp, desativado)
+   6.7  Botões flutuantes: voltar ao topo + WhatsApp
    Onde: todas as páginas (.float-dock, .to-top; criado pelo js/site.js)
-   Obs.: as regras .wa-* ficam sem uso desde 28/10/2026; o js não cria mais o botão do WhatsApp.
+   Obs.: o botão do WhatsApp voltou em 15/11/2026 (criado pelo js/site.js, link em TA_WHATSAPP).
    -------------------------------------------------------------------------- */
 .float-dock {
   position: fixed; right: 18px; bottom: calc(18px + var(--dock-lift, 0px)); z-index: 55;
