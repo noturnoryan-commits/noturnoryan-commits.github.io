@@ -1,0 +1,708 @@
+{
+ "_leia": "Lista central de lojas por produto (chave = código Amazon do produto). Edite só aqui: os guias se atualizam sozinhos. Lojas: amazon (asin), kabum (id do produto na KaBuM!, link pela Awin), mercadolivre/aliexpress/outras (url de afiliado pronta). A primeira loja da lista é o botão principal do card.",
+ "atualizado": "2026-11-12",
+ "produtos": {
+  "B0F7T2Y46Y": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0F7T2Y46Y"
+    },
+    {
+     "loja": "kabum",
+     "id": 876266
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0D2LPLTJ8": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0D2LPLTJ8"
+    },
+    {
+     "loja": "kabum",
+     "id": 587799
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0D7W6Q7L9": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0D7W6Q7L9"
+    },
+    {
+     "loja": "kabum",
+     "id": 580135
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0D6NKG6WY": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0D6NKG6WY"
+    },
+    {
+     "loja": "kabum",
+     "id": 929900
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B09B8VGCR8": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B09B8VGCR8"
+    },
+    {
+     "loja": "kabum",
+     "id": 460473
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0DYC2GV1Z": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DYC2GV1Z"
+    },
+    {
+     "loja": "kabum",
+     "id": 947310
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B09B2TSNNN": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B09B2TSNNN"
+    },
+    {
+     "loja": "kabum",
+     "id": 478090
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0DYC5S7DK": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DYC5S7DK"
+    },
+    {
+     "loja": "kabum",
+     "id": 947312
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0G4SMGD8C": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0G4SMGD8C"
+    },
+    {
+     "loja": "kabum",
+     "id": 1084205
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0CX8MT2M2": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CX8MT2M2"
+    },
+    {
+     "loja": "kabum",
+     "id": 1028062
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0D54W4HR6": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0D54W4HR6"
+    },
+    {
+     "loja": "kabum",
+     "id": 587331
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0D8DPT7ZY": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0D8DPT7ZY"
+    },
+    {
+     "loja": "kabum",
+     "id": 614879
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0DWQK1Q8S": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DWQK1Q8S"
+    },
+    {
+     "loja": "kabum",
+     "id": 713377
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B00VB4CXLI": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B00VB4CXLI"
+    },
+    {
+     "loja": "kabum",
+     "id": 49461
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B074L9L5KZ": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B074L9L5KZ"
+    },
+    {
+     "loja": "kabum",
+     "id": 94224
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B09NQPBMSY": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B09NQPBMSY"
+    },
+    {
+     "loja": "kabum",
+     "id": 303808
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0CJ3BDN7T": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CJ3BDN7T"
+    },
+    {
+     "loja": "kabum",
+     "id": 495500
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0DN4RM6X7": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DN4RM6X7"
+    },
+    {
+     "loja": "kabum",
+     "id": 685693
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0C6K2DH73": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0C6K2DH73"
+    },
+    {
+     "loja": "kabum",
+     "id": 474964
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B08GS763C5": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B08GS763C5"
+    },
+    {
+     "loja": "kabum",
+     "id": 112948
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B09HZF2NDR": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B09HZF2NDR"
+    },
+    {
+     "loja": "kabum",
+     "id": 97092
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B07JM7DR7K": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07JM7DR7K"
+    },
+    {
+     "loja": "kabum",
+     "id": 98244
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B07W8X4F48": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07W8X4F48"
+    },
+    {
+     "loja": "kabum",
+     "id": 102651
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0CJ9RGJ18": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CJ9RGJ18"
+    },
+    {
+     "loja": "kabum",
+     "id": 495544
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B07FLZ3XSK": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07FLZ3XSK"
+    },
+    {
+     "loja": "kabum",
+     "id": 128309
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0DJ1QD7SL": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DJ1QD7SL"
+    },
+    {
+     "loja": "kabum",
+     "id": 642240
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B09J1TB35S": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B09J1TB35S"
+    },
+    {
+     "loja": "kabum",
+     "id": 363687
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B07PNKGKBX": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07PNKGKBX"
+    },
+    {
+     "loja": "kabum",
+     "id": 98243
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0GR6QYR4T": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0GR6QYR4T"
+    },
+    {
+     "loja": "kabum",
+     "id": 1015057
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0F6GGBRYR": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0F6GGBRYR"
+    },
+    {
+     "loja": "kabum",
+     "id": 1009200
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B07F24FXYY": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07F24FXYY"
+    },
+    {
+     "loja": "kabum",
+     "id": 97248
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0CL573PRH": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CL573PRH"
+    },
+    {
+     "loja": "kabum",
+     "id": 905402
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0D3619JX7": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0D3619JX7"
+    },
+    {
+     "loja": "kabum",
+     "id": 885203
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0DZJR4G1T": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DZJR4G1T"
+    },
+    {
+     "loja": "kabum",
+     "id": 726364
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0B9CG7QZK": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0B9CG7QZK"
+    },
+    {
+     "loja": "kabum",
+     "id": 375044
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0GJTWBNY7": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0GJTWBNY7"
+    },
+    {
+     "loja": "kabum",
+     "id": 1000746
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0FQFTB8JX": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0FQFTB8JX"
+    },
+    {
+     "loja": "kabum",
+     "id": 1073306
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B074WL3ZHZ": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B074WL3ZHZ"
+    },
+    {
+     "loja": "kabum",
+     "id": 20866
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B074FC9TV5": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B074FC9TV5"
+    },
+    {
+     "loja": "kabum",
+     "id": 39391
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B08ZRC6LP4": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B08ZRC6LP4"
+    },
+    {
+     "loja": "kabum",
+     "id": 150000
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0C6K19YBH": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0C6K19YBH"
+    },
+    {
+     "loja": "kabum",
+     "id": 474963
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0CJ3WFW9H": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CJ3WFW9H"
+    },
+    {
+     "loja": "kabum",
+     "id": 495497
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0D2FG84F5": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0D2FG84F5"
+    },
+    {
+     "loja": "kabum",
+     "id": 630325
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0D1DN9GR2": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0D1DN9GR2"
+    },
+    {
+     "loja": "kabum",
+     "id": 629753
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0DT43NNNF": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DT43NNNF"
+    },
+    {
+     "loja": "kabum",
+     "id": 949783
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0G4F9RFJ1": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0G4F9RFJ1"
+    },
+    {
+     "loja": "kabum",
+     "id": 999732
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0DJD163HT": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DJD163HT"
+    },
+    {
+     "loja": "kabum",
+     "id": 703012
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B074WKLRYT": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B074WKLRYT"
+    },
+    {
+     "loja": "kabum",
+     "id": 20868
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B07643MPGS": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07643MPGS"
+    },
+    {
+     "loja": "kabum",
+     "id": 79357
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0BPTK4P38": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0BPTK4P38"
+    },
+    {
+     "loja": "kabum",
+     "id": 415702
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B08JD18BD3": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B08JD18BD3"
+    },
+    {
+     "loja": "kabum",
+     "id": 128317
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B075KD78F8": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B075KD78F8"
+    },
+    {
+     "loja": "kabum",
+     "id": 77590
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B0FHJ8QQB8": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0FHJ8QQB8"
+    },
+    {
+     "loja": "kabum",
+     "id": 904669
+    }
+   ],
+   "conferido": "2026-11-12"
+  },
+  "B07Z88XJV2": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07Z88XJV2"
+    },
+    {
+     "loja": "kabum",
+     "id": 104954
+    }
+   ],
+   "conferido": "2026-11-12"
+  }
+ }
+}

@@ -96,56 +96,65 @@
   });
 })();
 
-// Lojas parceiras (12/11/2026): produto vendido em mais de uma loja ganha o botão "Ver preços",
-// que abre um quadro com as lojas. O link da Amazon continua no HTML (funciona sem JavaScript).
-// No HTML: <a class="shop-link" href="(Amazon)" data-kabum="(número do produto na KaBuM!)" data-name="(nome)">
+// Lojas parceiras (12/11/2026). Os links ficam numa lista central: js/lojas.json.
+// Cada botão de compra traz data-produto="(código do produto)". Se a lista tiver mais de uma loja
+// para ele, o card ganha "Mais lojas (N)", que abre um painel DENTRO do card (não é janela por cima).
+// O link da Amazon continua escrito no HTML: sem JavaScript ou sem a lista, o botão segue funcionando.
 (() => {
   const guide = document.querySelector('.ta-curadoria');
-  const links = guide ? [...guide.querySelectorAll('a.shop-link[data-kabum]')] : [];
-  if (!links.length) return;
-  const kabum = id => 'https://www.awin1.com/cread.php?awinmid=17729&awinaffid=3148451&ued=' + encodeURIComponent('https://www.kabum.com.br/produto/' + id);
-  const dialog = document.createElement('dialog');
-  dialog.className = 'store-dialog';
-  dialog.setAttribute('aria-labelledby', 'storeDialogTitle');
-  dialog.innerHTML = `
-    <div class="store-dialog-box">
-      <button type="button" class="store-dialog-close" aria-label="Fechar">×</button>
-      <p class="store-dialog-eyebrow">LOJAS PARCEIRAS</p>
-      <h2 id="storeDialogTitle"></h2>
-      <ul class="store-list">
-        <li><span class="store-name">Amazon</span><a class="store-btn store-btn-amazon" target="_blank" rel="noopener sponsored" data-store="amazon" aria-label="Ver preço na Amazon">Ver preço <span aria-hidden="true">↗</span></a></li>
-        <li><span class="store-name">KaBuM!</span><a class="store-btn store-btn-kabum" target="_blank" rel="noopener sponsored" data-store="kabum" aria-label="Ver preço na KaBuM!">Ver preço <span aria-hidden="true">↗</span></a></li>
-      </ul>
-      <p class="store-dialog-note">O preço e o estoque mudam o tempo todo e podem ser diferentes entre as lojas: compare antes de comprar. Links de afiliado: o TechAprovado pode ganhar comissão, sem custo extra para você.</p>
-    </div>`;
-  guide.appendChild(dialog);
-  const title = dialog.querySelector('h2');
-  const amazonBtn = dialog.querySelector('[data-store="amazon"]');
-  const kabumBtn = dialog.querySelector('[data-store="kabum"]');
-  let opener = null;
-  const close = () => { dialog.close(); };
-  dialog.querySelector('.store-dialog-close').addEventListener('click', close);
-  dialog.addEventListener('click', e => { if (e.target === dialog) close(); });
-  dialog.addEventListener('close', () => { if (opener) opener.focus(); });
-  [amazonBtn, kabumBtn].forEach(btn => btn.addEventListener('click', () => {
-    if (typeof window.gtag === 'function') window.gtag('event', 'clique_loja', { loja: btn.dataset.store, produto: title.textContent });
-    setTimeout(close, 300);
-  }));
-  links.forEach(a => {
-    const name = a.dataset.name || a.closest('article')?.querySelector('h3')?.textContent.trim() || '';
-    a.dataset.amazon = a.href;
-    a.setAttribute('aria-haspopup', 'dialog');
-    a.setAttribute('aria-label', `Ver preços${name ? ' do ' + name : ''} nas lojas parceiras`);
-    a.innerHTML = 'Ver preços <span aria-hidden="true">›</span>';
-    a.addEventListener('click', e => {
-      if (typeof dialog.showModal !== 'function') return; // navegador antigo: segue para a Amazon
-      e.preventDefault();
-      opener = a;
-      title.textContent = name;
-      amazonBtn.href = a.dataset.amazon;
-      kabumBtn.href = kabum(a.dataset.kabum);
-      dialog.showModal();
-      if (typeof window.gtag === 'function') window.gtag('event', 'ver_precos', { produto: name });
+  if (!guide || !guide.querySelector('a.shop-link[data-produto]')) return;
+  const LOJAS = {
+    amazon: { nome: 'Amazon', url: l => `https://www.amazon.com.br/dp/${l.asin}?tag=techaprovad0b-20` },
+    kabum: { nome: 'KaBuM!', url: l => 'https://www.awin1.com/cread.php?awinmid=17729&awinaffid=3148451&ued=' + encodeURIComponent('https://www.kabum.com.br/produto/' + l.id) },
+    mercadolivre: { nome: 'Mercado Livre', url: l => l.url },
+    aliexpress: { nome: 'AliExpress', url: l => l.url }
+  };
+  const nomeDe = l => (LOJAS[l.loja] && LOJAS[l.loja].nome) || l.nome || l.loja;
+  const urlDe = l => (LOJAS[l.loja] ? LOJAS[l.loja].url(l) : l.url);
+  const versao = (document.querySelector('script[src*="curadoria-pesquisas.js"]')?.src.split('v=')[1]) || '';
+  fetch('js/lojas.json?v=' + versao).then(r => r.ok ? r.json() : null).then(lista => {
+    if (!lista || !lista.produtos) return;
+    let n = 0;
+    guide.querySelectorAll('article.analysis-card a.shop-link[data-produto]').forEach(a => {
+      const p = lista.produtos[a.dataset.produto];
+      const lojas = (p && p.lojas || []).filter(l => urlDe(l));
+      if (lojas.length < 2) return;
+      const nome = a.closest('article').querySelector('h3')?.textContent.trim() || '';
+      const [principal, ...outras] = lojas;
+      a.href = urlDe(principal);
+      a.dataset.loja = principal.loja;
+      a.innerHTML = `Ver preço na ${nomeDe(principal)} <span aria-hidden="true">↗</span>`;
+      a.setAttribute('aria-label', `Ver preço do ${nome} na ${nomeDe(principal)}`);
+      const id = `lojas-${a.closest('article').id}-${n++}`;
+      const wrap = document.createElement('div');
+      wrap.className = 'store-row';
+      a.replaceWith(wrap);
+      wrap.appendChild(a);
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'store-more';
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-controls', id);
+      btn.innerHTML = `Mais lojas (${outras.length}) <span aria-hidden="true">↓</span>`;
+      wrap.appendChild(btn);
+      const panel = document.createElement('div');
+      panel.className = 'store-panel';
+      panel.id = id;
+      panel.hidden = true;
+      panel.innerHTML = '<ul>' + outras.map(l => `<li><span class="store-name">${nomeDe(l)}</span><a class="store-btn store-btn-${l.loja}" href="${urlDe(l).replace(/&/g, '&amp;')}" target="_blank" rel="noopener sponsored" data-loja="${l.loja}" aria-label="Ver preço do ${nome.replace(/"/g, '&quot;')} na ${nomeDe(l)}">Ver preço <span aria-hidden="true">↗</span></a></li>`).join('') +
+        '</ul><p class="store-note">O preço e o estoque mudam e podem ser diferentes entre as lojas.</p>';
+      wrap.after(panel);
+      btn.addEventListener('click', () => {
+        const abrir = panel.hidden;
+        panel.hidden = !abrir;
+        btn.setAttribute('aria-expanded', String(abrir));
+        btn.lastElementChild.textContent = abrir ? '↑' : '↓';
+        if (abrir && typeof window.gtag === 'function') window.gtag('event', 'mais_lojas', { produto: nome });
+      });
     });
-  });
+    guide.addEventListener('click', e => {
+      const link = e.target.closest('a[data-loja]');
+      if (link && typeof window.gtag === 'function') window.gtag('event', 'clique_loja', { loja: link.dataset.loja, produto: link.closest('article')?.querySelector('h3')?.textContent.trim() || '' });
+    });
+  }).catch(() => {});
 })();
