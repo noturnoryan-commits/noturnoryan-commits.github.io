@@ -13,9 +13,9 @@
       ['chuveiroeletrico-2026.html', 'Chuveiro Elétrico'], ['fire-tv-stick-2026.html', 'Fire TV Stick'], ['geladeiras-2026.html', 'Geladeiras'],
       ['maquinadelavar-2026.html', 'Máquina de Lavar'], ['microondas-2026.html', 'Micro-ondas'], ['projetor-portatil-2026.html', 'Projetor Portátil'],
       ['roboaspirador-2026.html', 'Robô Aspirador'], ['smarttv-2026.html', 'Smart TVs'], ['umidificador-2026.html', 'Umidificador de Ar'],
-      ['ventilador-2026.html', 'Ventilador de Mesa/Coluna/Torre'], ['ventiladordeteto-2026.html', 'Ventilador de Teto'] ] },
-    { id: 'escritorio', icon: '💻', name: 'Escritório & PC', desc: 'Notebooks, monitores, mouses, teclados, kits e roteadores', page: 'categoria-escritorio-pc.html', guides: [
-      ['monitor-2026.html', 'Monitor'], ['mouse-2026.html', 'Mouse'], ['notebook-2026.html', 'Notebooks'], ['roteador-2026.html', 'Roteador Wi-Fi'], ['teclado-2026.html', 'Teclado'], ['kit-teclado-mouse-2026.html', 'Kit teclado e mouse'] ] },
+      ['ventilador-2026.html', 'Ventilador de Mesa/Coluna/Torre'], ['ventiladordeteto-2026.html', 'Ventilador de Teto'], ['liquidificador-2026.html', 'Liquidificador'] ] },
+    { id: 'escritorio', icon: '💻', name: 'Escritório & PC', desc: 'Notebooks, monitores, periféricos, consoles e SSD', page: 'categoria-escritorio-pc.html', guides: [
+      ['monitor-2026.html', 'Monitor'], ['mouse-2026.html', 'Mouse'], ['notebook-2026.html', 'Notebooks'], ['roteador-2026.html', 'Roteador Wi-Fi'], ['teclado-2026.html', 'Teclado'], ['kit-teclado-mouse-2026.html', 'Kit teclado e mouse'], ['headset-gamer-2026.html', 'Headset gamer'], ['ssd-2026.html', 'SSD'], ['webcam-2026.html', 'Webcam'], ['impressora-2026.html', 'Impressora'], ['controle-gamer-2026.html', 'Controle gamer'], ['nintendo-switch-2026.html', 'Nintendo Switch'], ['playstation-5-2026.html', 'PlayStation 5'], ['console-portatil-2026.html', 'Console portátil'] ] },
     { id: 'vestivel', icon: '⌚', name: 'Vestível', desc: 'Relógios, fones e roupa tech', page: 'categoria-vestivel.html', guides: [
       ['camisetatech-2026.html', 'Camiseta Tech'], ['fonebluetooth-2026.html', 'Fone Bluetooth TWS'], ['foneoverear-2026.html', 'Fone Over-Ear Bluetooth'],
       ['smartwatch-2026.html', 'Smartwatch'] ] },
@@ -24,7 +24,7 @@
       ['casainteligente-2026.html', 'Iluminação Inteligente'], ['tomadainteligente-2026.html', 'Tomada Inteligente'] ] },
     { id: 'mobilidade', icon: '📱', name: 'Mobilidade', desc: 'Celulares, caixas de som e acessórios', page: 'categoria-mobilidade.html', guides: [
       ['caixadesom-2026.html', 'Caixa de Som Bluetooth'], ['smartphone-2026.html', 'Celular'], ['kindle-2026.html', 'Kindle'],
-      ['powerbank-2026.html', 'Power Bank'], ['rastreadorbluetooth-2026.html', 'Rastreador Bluetooth'], ['tablet-2026.html', 'Tablet'] ] }
+      ['powerbank-2026.html', 'Power Bank'], ['rastreadorbluetooth-2026.html', 'Rastreador Bluetooth'], ['tablet-2026.html', 'Tablet'], ['carregador-celular-2026.html', 'Carregador de celular'] ] }
   ];
 
   // Os 6 produtos do botão "Escolhas" (link direto para a Amazon com a tag de afiliado).
@@ -409,6 +409,16 @@
      Google Analytics como o evento "busca_sem_produto" (aparece só para quem aceitou os cookies)
      e serve de pauta para as próximas pesquisas. Ordem importa: o primeiro tema que casar vence. */
   const temas = [
+    [/headset|fone gamer|pulse 3d|pulse elite|astro a50|cloud (iii|alpha|stinger)|quantum \d/, 'headset-gamer-2026.html'],
+    [/\bssd\b|nvme|m\.2|sata|hd externo|990 pro|sn850|kingston nv|crucial/, 'ssd-2026.html'],
+    [/webcam|camera (para|de) pc|brio|c270|c920|obsbot/, 'webcam-2026.html'],
+    [/impressora|multifuncional|ecotank|smart tank|mega tank|laserjet|toner/, 'impressora-2026.html'],
+    [/controle|gamepad|joystick|dualsense|8bitdo|gamesir|xbox elite/, 'controle-gamer-2026.html'],
+    [/nintendo|switch (lite|oled|2)|joy-?con|\bswitch\b/, 'nintendo-switch-2026.html'],
+    [/playstation|\bps5\b|\bps4\b|ps vr|psvr|ps portal|playstation portal/, 'playstation-5-2026.html'],
+    [/rog ally|xbox ally|legion go|steam deck|portatil gamer|console portatil|videogame portatil|\bxbox\b|series s|series x/, 'console-portatil-2026.html'],
+    [/liquidificador|mixer|blender|nutribullet|osterizer/, 'liquidificador-2026.html'],
+    [/carregador|fonte usb|tomada usb|gan|magsafe|qi2|power delivery/, 'carregador-celular-2026.html'],
     [/kit teclado|teclado e mouse|combo teclado/, 'kit-teclado-mouse-2026.html'],
     [/ventilador de teto/, 'ventiladordeteto-2026.html'],
     [/robo|roomba|roborock|dreame|deebot|eufy robo/, 'roboaspirador-2026.html'],
