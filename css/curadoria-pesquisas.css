@@ -476,3 +476,8 @@ main.ta-curadoria{background:transparent}
 .ta-curadoria .store-btn-kabum{background:#ff6500;color:#160800}
 .ta-curadoria .store-note{margin:10px 0 0;font-size:12px;line-height:1.5;color:var(--muted)}
 @media (max-width:600px){.ta-curadoria .store-row{flex-direction:column}.ta-curadoria .store-row .shop-link,.ta-curadoria .store-more{width:100%}}
+.ta-curadoria .store-btn-amazon{background:var(--yellow);color:#0f1115}
+.ta-curadoria .store-btn-mercadolivre{background:#ffe600;color:#2d3277}
+.ta-curadoria .store-btn-aliexpress{background:#e62e04;color:#fff}
+.ta-curadoria .store-btn-shopee{background:#ee4d2d;color:#fff}
+.ta-curadoria .store-name small{display:block;font-weight:600;font-size:11px;color:var(--muted)}
