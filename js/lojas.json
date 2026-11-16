@@ -2672,6 +2672,71 @@
     }
    ],
    "conferido": "2026-11-16"
+  },
+  "B09C66FYCR": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B09C66FYCR"
+    },
+    {
+     "loja": "kabum",
+     "id": 957160
+    }
+   ],
+   "conferido": "2026-11-16"
+  },
+  "B0F6D7MQQB": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0F6D7MQQB"
+    },
+    {
+     "loja": "kabum",
+     "id": 777177
+    }
+   ],
+   "conferido": "2026-11-16"
+  },
+  "B0DH8J5YGH": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DH8J5YGH"
+    },
+    {
+     "loja": "kabum",
+     "id": 636960
+    }
+   ],
+   "conferido": "2026-11-16"
+  },
+  "B0D2DPR628": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0D2DPR628"
+    },
+    {
+     "loja": "kabum",
+     "id": 697721
+    }
+   ],
+   "conferido": "2026-11-16"
+  },
+  "B0BP2TGK6W": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0BP2TGK6W"
+    },
+    {
+     "loja": "kabum",
+     "id": 934761
+    }
+   ],
+   "conferido": "2026-11-16"
   }
  }
 }

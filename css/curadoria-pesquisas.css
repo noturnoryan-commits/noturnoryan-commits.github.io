@@ -461,7 +461,7 @@
 
 /* 05/11/2026 — fundo principal transparente para mostrar as luzes globais do body::before (como na home). Cards, blocos e barra de filtros mantêm o próprio fundo; --paper segue no degradê do "Ler mais". */
 main.ta-curadoria{background:transparent}
-/* Lojas parceiras (12/11/2026): botão principal + "Mais lojas (N)" abre painel dentro do card */
+/* Lojas parceiras (16/11/2026): botão principal + "Mais lojas (N)" abre painel dentro do card */
 .ta-curadoria .store-row{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;margin-top:12px}
 .ta-curadoria .store-row .shop-link{margin-top:0}
 .ta-curadoria .store-more{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 14px;border:1px solid var(--line);border-radius:5px;background:transparent;color:var(--ink);font-size:11px;font-weight:800;line-height:1.3}
@@ -473,17 +473,11 @@ main.ta-curadoria{background:transparent}
 .ta-curadoria .store-name{font-weight:800;font-size:14px}
 .ta-curadoria .store-btn{display:inline-flex;align-items:center;gap:6px;min-height:42px;padding:9px 14px;border-radius:6px;font-size:13px;font-weight:800;white-space:nowrap;text-decoration:none}
 .ta-curadoria .store-btn:hover{text-decoration:none;filter:brightness(.94)}
-.ta-curadoria .store-btn-amazon{background:var(--yellow);color:#0f1115}
 .ta-curadoria .store-btn-kabum{background:#ff6500;color:#160800}
-.ta-curadoria .store-btn-mercadolivre{background:#ffe600;color:#2d3277}
-.ta-curadoria .store-btn-aliexpress{background:#e62e04;color:#fff}
 .ta-curadoria .store-note{margin:10px 0 0;font-size:12px;line-height:1.5;color:var(--muted)}
 @media (max-width:600px){.ta-curadoria .store-row{flex-direction:column}.ta-curadoria .store-row .shop-link,.ta-curadoria .store-more{width:100%}}
-
-/* Duas lojas lado a lado (Amazon + 1 parceira) - 16/11/2026 */
-.ta-curadoria .store-row-pair{display:grid;grid-template-columns:1fr 1fr;width:100%}
-.ta-curadoria .store-row-pair .shop-link{width:100%;margin:0;padding-left:8px;padding-right:8px}
-.ta-curadoria .shop-link.shop-alt{background:#f3f4f6;color:#0f1115}
-.ta-curadoria .shop-link.shop-alt:hover{background:#dfe3ea;color:#0f1115}
-.ta-curadoria .tile-actions .store-row{margin-top:0}
-@media (max-width:420px){.ta-curadoria .store-row-pair{grid-template-columns:1fr}}
+.ta-curadoria .store-btn-amazon{background:var(--yellow);color:#0f1115}
+.ta-curadoria .store-btn-mercadolivre{background:#ffe600;color:#2d3277}
+.ta-curadoria .store-btn-aliexpress{background:#e62e04;color:#fff}
+.ta-curadoria .store-btn-shopee{background:#ee4d2d;color:#fff}
+.ta-curadoria .store-name small{display:block;font-weight:600;font-size:11px;color:var(--muted)}
