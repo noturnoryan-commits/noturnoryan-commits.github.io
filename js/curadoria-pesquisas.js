@@ -96,56 +96,44 @@
   });
 })();
 
-// Lojas parceiras (12/11/2026): produto vendido em mais de uma loja ganha o botão "Ver preços",
-// que abre um quadro com as lojas. O link da Amazon continua no HTML (funciona sem JavaScript).
-// No HTML: <a class="shop-link" href="(Amazon)" data-kabum="(número do produto na KaBuM!)" data-name="(nome)">
+// Lojas parceiras (corrigido em 16/11/2026): o quadro pop-up foi retirado (política da Amazon sobre
+// links em janelas/camadas). Agora o produto com KaBuM! ganha "Mais lojas (1)", que abre um painel
+// DENTRO do próprio card. O link da Amazon continua no HTML e abre direto.
+// No HTML: <a class="shop-link" href="(Amazon)" data-kabum="(número do produto na KaBuM!)">
 (() => {
   const guide = document.querySelector('.ta-curadoria');
-  const links = guide ? [...guide.querySelectorAll('a.shop-link[data-kabum]')] : [];
-  if (!links.length) return;
+  const links = guide ? [...guide.querySelectorAll('article.analysis-card a.shop-link[data-kabum]')] : [];
   const kabum = id => 'https://www.awin1.com/cread.php?awinmid=17729&awinaffid=3148451&ued=' + encodeURIComponent('https://www.kabum.com.br/produto/' + id);
-  const dialog = document.createElement('dialog');
-  dialog.className = 'store-dialog';
-  dialog.setAttribute('aria-labelledby', 'storeDialogTitle');
-  dialog.innerHTML = `
-    <div class="store-dialog-box">
-      <button type="button" class="store-dialog-close" aria-label="Fechar">×</button>
-      <p class="store-dialog-eyebrow">LOJAS PARCEIRAS</p>
-      <h2 id="storeDialogTitle"></h2>
-      <ul class="store-list">
-        <li><span class="store-name">Amazon</span><a class="store-btn store-btn-amazon" target="_blank" rel="noopener sponsored" data-store="amazon" aria-label="Ver preço na Amazon">Ver preço <span aria-hidden="true">↗</span></a></li>
-        <li><span class="store-name">KaBuM!</span><a class="store-btn store-btn-kabum" target="_blank" rel="noopener sponsored" data-store="kabum" aria-label="Ver preço na KaBuM!">Ver preço <span aria-hidden="true">↗</span></a></li>
-      </ul>
-      <p class="store-dialog-note">O preço e o estoque mudam o tempo todo e podem ser diferentes entre as lojas: compare antes de comprar. Links de afiliado: o TechAprovado pode ganhar comissão, sem custo extra para você.</p>
-    </div>`;
-  guide.appendChild(dialog);
-  const title = dialog.querySelector('h2');
-  const amazonBtn = dialog.querySelector('[data-store="amazon"]');
-  const kabumBtn = dialog.querySelector('[data-store="kabum"]');
-  let opener = null;
-  const close = () => { dialog.close(); };
-  dialog.querySelector('.store-dialog-close').addEventListener('click', close);
-  dialog.addEventListener('click', e => { if (e.target === dialog) close(); });
-  dialog.addEventListener('close', () => { if (opener) opener.focus(); });
-  [amazonBtn, kabumBtn].forEach(btn => btn.addEventListener('click', () => {
-    if (typeof window.gtag === 'function') window.gtag('event', 'clique_loja', { loja: btn.dataset.store, produto: title.textContent });
-    setTimeout(close, 300);
-  }));
-  links.forEach(a => {
-    const name = a.dataset.name || a.closest('article')?.querySelector('h3')?.textContent.trim() || '';
-    a.dataset.amazon = a.href;
-    a.setAttribute('aria-haspopup', 'dialog');
-    a.setAttribute('aria-label', `Ver preços${name ? ' do ' + name : ''} nas lojas parceiras`);
-    a.innerHTML = 'Ver preços <span aria-hidden="true">›</span>';
-    a.addEventListener('click', e => {
-      if (typeof dialog.showModal !== 'function') return; // navegador antigo: segue para a Amazon
-      e.preventDefault();
-      opener = a;
-      title.textContent = name;
-      amazonBtn.href = a.dataset.amazon;
-      kabumBtn.href = kabum(a.dataset.kabum);
-      dialog.showModal();
-      if (typeof window.gtag === 'function') window.gtag('event', 'ver_precos', { produto: name });
+  links.forEach((a, i) => {
+    const card = a.closest('article');
+    const nome = card.querySelector('h3')?.textContent.trim() || '';
+    const id = `lojas-${card.id}-${i}`;
+    const wrap = document.createElement('div');
+    wrap.className = 'store-row';
+    a.replaceWith(wrap);
+    wrap.appendChild(a);
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'store-more';
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-controls', id);
+    btn.innerHTML = 'Mais lojas (1) <span aria-hidden="true">↓</span>';
+    wrap.appendChild(btn);
+    const panel = document.createElement('div');
+    panel.className = 'store-panel';
+    panel.id = id;
+    panel.hidden = true;
+    panel.innerHTML = `<ul><li><span class="store-name">KaBuM!</span><a class="store-btn store-btn-kabum" href="${kabum(a.dataset.kabum).replace(/&/g, '&amp;')}" target="_blank" rel="noopener sponsored" data-loja="kabum" aria-label="Ver preço do ${nome.replace(/"/g, '&quot;')} na KaBuM!">Ver preço <span aria-hidden="true">↗</span></a></li></ul><p class="store-note">O preço e o estoque mudam e podem ser diferentes entre as lojas.</p>`;
+    wrap.after(panel);
+    btn.addEventListener('click', () => {
+      const abrir = panel.hidden;
+      panel.hidden = !abrir;
+      btn.setAttribute('aria-expanded', String(abrir));
+      btn.lastElementChild.textContent = abrir ? '↑' : '↓';
+      if (abrir && typeof window.gtag === 'function') window.gtag('event', 'mais_lojas', { produto: nome });
+    });
+    panel.querySelector('a').addEventListener('click', () => {
+      if (typeof window.gtag === 'function') window.gtag('event', 'clique_loja', { loja: 'kabum', produto: nome });
     });
   });
 })();
