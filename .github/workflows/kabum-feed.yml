@@ -1,0 +1,36 @@
+# TechAprovado — procura no feed oficial da KaBuM (Awin) os produtos dos guias que ainda não têm KaBuM.
+# Só roda na mão: GitHub → Actions → "Buscar KaBuM no feed (Awin)" → Run workflow.
+# Grava data/candidatos-kabum.json para revisão; não mexe nos guias nem em js/lojas.json.
+name: Buscar KaBuM no feed (Awin)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kabum-feed
+  cancel-in-progress: false
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Ler o feed e casar com os guias
+        env:
+          AWIN_KABUM_FEED_URL: ${{ secrets.AWIN_KABUM_FEED_URL }}
+        run: node scripts/kabum-feed.mjs
+      - name: Salvar no repositório
+        run: |
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git config user.name "techaprovado-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/candidatos-kabum.json
+            git commit -m "Candidatos KaBuM (feed Awin) para revisão"
+            git push
+          fi
