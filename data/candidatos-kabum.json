@@ -1,0 +1,3325 @@
+{
+ "gerado": "2026-11-17T01:49:29.853Z",
+ "colunas": [
+  "aw_deep_link",
+  "product_name",
+  "aw_product_id",
+  "merchant_product_id",
+  "merchant_image_url",
+  "description",
+  "merchant_category",
+  "search_price",
+  "merchant_name",
+  "merchant_id",
+  "category_name",
+  "category_id",
+  "aw_image_url",
+  "currency",
+  "store_price",
+  "delivery_cost",
+  "merchant_deep_link",
+  "language",
+  "last_updated",
+  "display_price",
+  "data_feed_id",
+  "brand_name",
+  "brand_id",
+  "colour",
+  "product_short_description",
+  "specifications",
+  "condition",
+  "product_model",
+  "model_number",
+  "dimensions",
+  "keywords",
+  "promotional_text",
+  "product_type",
+  "commission_group",
+  "merchant_product_category_path",
+  "merchant_product_second_category",
+  "merchant_product_third_category",
+  "rrp_price",
+  "saving",
+  "savings_percent",
+  "base_price",
+  "base_price_amount",
+  "base_price_text",
+  "product_price_old",
+  "delivery_restrictions",
+  "delivery_weight",
+  "warranty",
+  "terms_of_contract",
+  "delivery_time",
+  "in_stock",
+  "stock_quantity",
+  "valid_from",
+  "valid_to",
+  "is_for_sale",
+  "web_offer",
+  "pre_order",
+  "stock_status",
+  "size_stock_status",
+  "size_stock_amount",
+  "merchant_thumb_url",
+  "large_image",
+  "alternate_image",
+  "aw_thumb_url",
+  "alternate_image_two",
+  "alternate_image_three",
+  "alternate_image_four",
+  "reviews",
+  "average_rating",
+  "rating",
+  "number_available",
+  "custom_1",
+  "custom_2",
+  "custom_3",
+  "custom_4",
+  "custom_5",
+  "custom_6",
+  "custom_7",
+  "custom_8",
+  "custom_9",
+  "ean",
+  "isbn",
+  "upc",
+  "mpn",
+  "parent_product_id",
+  "product_GTIN",
+  "basket_link"
+ ],
+ "produtos": {
+  "B0CK63VDV2": {
+   "nome": "Gaabor Mini Air Fryer 1,4 L",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B07WFHZQ2T": {
+   "nome": "Mondial AF-30 3,5 L",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0CD14V4RQ": {
+   "nome": "Philco PFR15PG 4,4 L cesto quadrado",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0F6YRL42F": {
+   "nome": "Philips Walita Série 1000 4,2 L",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B09Q3LLPFN": {
+   "nome": "Electrolux EAF31 4 L",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0CRBJYG6P": {
+   "nome": "Britânia BFR50 5,5 L",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0D98VK8PP": {
+   "nome": "Philips Walita Série 1000 XL 6,2 L",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0BJFJGW4B": {
+   "nome": "Mondial AFN-80 8 L",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0BRLBBYLT": {
+   "nome": "Philips Walita Essential XL Digital 6,2 L",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0C6FT4QYV": {
+   "nome": "Mondial Dual AFD-01 8 L (cesto duplo)",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0DY2W199X": {
+   "nome": "Philips Walita Digital 7,2 L com visor",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0BLWG2CFZ": {
+   "nome": "Elgin Oven Fry 4 em 1 12 L",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0BZJDLT6Z": {
+   "nome": "Mondial Oven AFON-12L",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0B726S9S3": {
+   "nome": "Oster Oven Fryer 12 L 3 em 1",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0DD1KD5JP": {
+   "nome": "Philips Walita Airfryer Forno 12 L",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0BYK2VCP7": {
+   "nome": "Electrolux Air Fryer Forno 12 L com espeto",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0DPLJD1PN": {
+   "nome": "Mondial Oven Digital 25 L",
+   "guia": "airfryer-2026.html",
+   "candidatos": []
+  },
+  "B0F4H85FW6": {
+   "nome": "Kärcher VCL Stick",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B088MVWBM9": {
+   "nome": "Philco Power Clean 2000 W",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B08P21149Q": {
+   "nome": "BLACK+DECKER AVT12",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B07K8VPJHT": {
+   "nome": "WAP Power Speed 2 em 1",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B0924BJ3QM": {
+   "nome": "Electrolux Ergorapido 38 min",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B07JLS5ZQZ": {
+   "nome": "Electrolux Ergorapido 45 min Pet",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B08R7GTLYX": {
+   "nome": "Xiaomi Mi Vacuum Cleaner G10",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B0H467S3JN": {
+   "nome": "Dreame Z30",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B0CH3WBKN6": {
+   "nome": "WAP Spot Cleaner W3 (extratora)",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B0F2GQWVS3": {
+   "nome": "Philips Walita Aqua Série 3000",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B0CG6SQPK5": {
+   "nome": "Liectroux i7 Pro",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B0FCRJ3SYJ": {
+   "nome": "Dreame H12 Pro Plus",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B0GY4H64Y1": {
+   "nome": "Dreame H60 GT",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B0GY4JGRWG": {
+   "nome": "Dreame H12 Pro FlexReach",
+   "guia": "aspiradorvertical-2026.html",
+   "candidatos": []
+  },
+  "B0DB2KSYPY": {
+   "nome": "Elgin Coffee Break 15 xícaras",
+   "guia": "cafeteira-2026.html",
+   "candidatos": []
+  },
+  "B09CC3QFDX": {
+   "nome": "Electrolux programável 38 xícaras",
+   "guia": "cafeteira-2026.html",
+   "candidatos": []
+  },
+  "B076VW8XH2": {
+   "nome": "Hamilton Beach BrewStation Elite",
+   "guia": "cafeteira-2026.html",
+   "candidatos": []
+  },
+  "B0B3BR6VK9": {
+   "nome": "Delta Q MiniQool",
+   "guia": "cafeteira-2026.html",
+   "candidatos": []
+  },
+  "B099ZJQXMF": {
+   "nome": "Nespresso Essenza Mini",
+   "guia": "cafeteira-2026.html",
+   "candidatos": []
+  },
+  "B0CY2Z1KPS": {
+   "nome": "Oster OCAF900 Digital",
+   "guia": "cafeteira-2026.html",
+   "candidatos": []
+  },
+  "B0DPY44LWR": {
+   "nome": "Philips Walita Superautomática Série 5500",
+   "guia": "cafeteira-2026.html",
+   "candidatos": []
+  },
+  "B01MTB55WH": {
+   "nome": "Anker soundcore 2",
+   "guia": "caixadesom-2026.html",
+   "candidatos": []
+  },
+  "B0BJJH4L5W": {
+   "nome": "Mondial CM-150",
+   "guia": "caixadesom-2026.html",
+   "candidatos": []
+  },
+  "B0914XZ2LL": {
+   "nome": "Mondial Connect Lights CM-400",
+   "guia": "caixadesom-2026.html",
+   "candidatos": []
+  },
+  "B0FK1JG2TT": {
+   "nome": "Philips Party Speaker TAX4000",
+   "guia": "caixadesom-2026.html",
+   "candidatos": []
+  },
+  "B0752HPRY3": {
+   "nome": "Edifier X100B 2.1",
+   "guia": "caixadesom-2026.html",
+   "candidatos": []
+  },
+  "B086LBCQJL": {
+   "nome": "eufy E220",
+   "guia": "cameraseguranca-2026.html",
+   "candidatos": []
+  },
+  "B0CDPJJRKB": {
+   "nome": "eufy Indoor Cam S350",
+   "guia": "cameraseguranca-2026.html",
+   "candidatos": []
+  },
+  "B0BQJVKVQR": {
+   "nome": "TP-Link Tapo C500",
+   "guia": "cameraseguranca-2026.html",
+   "candidatos": []
+  },
+  "B0BZMLKXL4": {
+   "nome": "TP-Link Tapo C510W",
+   "guia": "cameraseguranca-2026.html",
+   "candidatos": []
+  },
+  "B0B9D7LT36": {
+   "nome": "Intelbras iM7 Full Color",
+   "guia": "cameraseguranca-2026.html",
+   "candidatos": []
+  },
+  "B0F4RNSJL3": {
+   "nome": "TP-Link Tapo C530WS",
+   "guia": "cameraseguranca-2026.html",
+   "candidatos": []
+  },
+  "B0D5BCN87V": {
+   "nome": "TP-Link Tapo C410 KIT (com painel solar)",
+   "guia": "cameraseguranca-2026.html",
+   "candidatos": []
+  },
+  "B0DN6LZGBW": {
+   "nome": "TP-Link Tapo D210 (campainha com câmera)",
+   "guia": "cameraseguranca-2026.html",
+   "candidatos": []
+  },
+  "B0DK5FH9L8": {
+   "nome": "eufy SoloCam E30",
+   "guia": "cameraseguranca-2026.html",
+   "candidatos": []
+  },
+  "B0CCYP6KFM": {
+   "nome": "eufy S340 (câmera dupla solar)",
+   "guia": "cameraseguranca-2026.html",
+   "candidatos": []
+  },
+  "B0B4BZH58H": {
+   "nome": "eufyCam 3 (S330) kit com 2 câmeras",
+   "guia": "cameraseguranca-2026.html",
+   "candidatos": []
+  },
+  "B0BGLZQ8R4": {
+   "nome": "Muvin Dry Basic FPS 50 (masculina)",
+   "guia": "camisetatech-2026.html",
+   "candidatos": []
+  },
+  "B07N9RQFVB": {
+   "nome": "Speedo Interlock",
+   "guia": "camisetatech-2026.html",
+   "candidatos": []
+  },
+  "B07D13B3N1": {
+   "nome": "Under Armour UA Tech 2.0",
+   "guia": "camisetatech-2026.html",
+   "candidatos": []
+  },
+  "B0DBJ1QKZJ": {
+   "nome": "Dial Cyclo Dry Non-Wet",
+   "guia": "camisetatech-2026.html",
+   "candidatos": []
+  },
+  "B0BHJNL76T": {
+   "nome": "Insider Tech T-Shirt Gola V",
+   "guia": "camisetatech-2026.html",
+   "candidatos": []
+  },
+  "B0BFSXMPCL": {
+   "nome": "Insider Tech T-Shirt Gola U",
+   "guia": "camisetatech-2026.html",
+   "candidatos": []
+  },
+  "B0FY3B7TVQ": {
+   "nome": "Sandrini kit 4 camisetas dry-fit UV",
+   "guia": "camisetatech-2026.html",
+   "candidatos": []
+  },
+  "B0DB6CLXXB": {
+   "nome": "Dial Cyclo Manga Longa UV50+",
+   "guia": "camisetatech-2026.html",
+   "candidatos": []
+  },
+  "B0DZ33XY3Q": {
+   "nome": "Insider Performance T-Shirt 2.0",
+   "guia": "camisetatech-2026.html",
+   "candidatos": []
+  },
+  "B094YPD98Z": {
+   "nome": "i2GO PRO 20 W USB-C PD",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B00MFDJSUI": {
+   "nome": "Baseus Super Si 20 W",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B0CX5DHV4Q": {
+   "nome": "Apple Adaptador de Energia USB-C de 20 W",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B0CPDJLJ67": {
+   "nome": "UGREEN MagFlow 2 em 1 dobrável",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B0D4DX8PH3": {
+   "nome": "UGREEN Qi2 2 em 1 com suporte",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B09R8ZY2JN": {
+   "nome": "Geonav SuperPower 25 W PD",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B09C6NYKCG": {
+   "nome": "Motorola TurboPower 20 W (com cabo)",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B0CBDWQVSF": {
+   "nome": "Samsung 25 W Super Fast Charging",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B0FHBCYH5N": {
+   "nome": "Samsung 45 W Super Fast Charging 2.0",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B0GT66C9CL": {
+   "nome": "Xiaomi Turbo 100 W GaN",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B0BW4TY5NW": {
+   "nome": "Geonav GaN Duo 35 W",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B0B57CH8XT": {
+   "nome": "Geonav GaN Duo 65 W",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B091BRJSRN": {
+   "nome": "UGREEN 65 W GaN 3 portas",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B088CX4BX3": {
+   "nome": "UGREEN Nexode 65 W GaN 4 portas",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B0D3XR6S47": {
+   "nome": "UGREEN Uno 100 W 4 portas",
+   "guia": "carregador-celular-2026.html",
+   "candidatos": []
+  },
+  "B088C4QZV2": {
+   "nome": "Elgin Smart Color 10 W",
+   "guia": "casainteligente-2026.html",
+   "candidatos": []
+  },
+  "B09HXWRWB4": {
+   "nome": "Tramontina Smart LED 10 W",
+   "guia": "casainteligente-2026.html",
+   "candidatos": []
+  },
+  "B082FTRR76": {
+   "nome": "Positivo Smart Lâmpada Wi-Fi 9 W",
+   "guia": "casainteligente-2026.html",
+   "candidatos": []
+  },
+  "B07WRMLH93": {
+   "nome": "Philips Hue Starter Kit",
+   "guia": "casainteligente-2026.html",
+   "candidatos": []
+  },
+  "B08VL94QQT": {
+   "nome": "Fita LED AGL Wi-Fi 5 m",
+   "guia": "casainteligente-2026.html",
+   "candidatos": []
+  },
+  "B0CFWCNL9L": {
+   "nome": "Positivo Smart Fita LED 2ª geração 3 m",
+   "guia": "casainteligente-2026.html",
+   "candidatos": []
+  },
+  "B09FSTVWFF": {
+   "nome": "TP-Link Tapo Fita LED Wi-Fi 5 m",
+   "guia": "casainteligente-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "Roteador TP-Link Tri-band Be9300, Wi-fi 7, 5 Portas de 2.5G Easymesh, Preto - Archer BE550(US)",
+     "id": "885203",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/885203/roteador-tp-link-tri-band-be9300-wi-fi-7-5-portas-de-2-5g-easymesh-preto-archer-be550-us-",
+     "categoria": "Conectividade > Dispositivo de Rede > Roteador > Roteador"
+    },
+    {
+     "pts": 3,
+     "titulo": "Access Point TP-Link Omada EAP225, Wi-Fi 5, AC1200, Dual Band, PoE, Teto/Parede, Branco - 0153601354",
+     "id": "1078417",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1078417/access-point-tp-link-omada-eap225-wi-fi-5-ac1200-dual-band-poe-teto/parede-branco-0153601354",
+     "categoria": "Conectividade > Dispositivo de Rede > Access point > Access point"
+    }
+   ]
+  },
+  "B08TQ7TDT3": {
+   "nome": "Elgin Painel Smart de Embutir Redondo 18 W",
+   "guia": "casainteligente-2026.html",
+   "candidatos": []
+  },
+  "B09LZ1DL6V": {
+   "nome": "Elgin Ecospot Smart 5 W RGB",
+   "guia": "casainteligente-2026.html",
+   "candidatos": []
+  },
+  "B0B7V46PS3": {
+   "nome": "Tramontina Plafon Smart 18 W",
+   "guia": "casainteligente-2026.html",
+   "candidatos": []
+  },
+  "B09FK1GSXY": {
+   "nome": "Govee Hexa Glide (painéis de parede)",
+   "guia": "casainteligente-2026.html",
+   "candidatos": []
+  },
+  "B0BWS6W5R1": {
+   "nome": "Fame Ducha Faminho 4T 220 V",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B07C45YRBT": {
+   "nome": "Lorenzetti Bella Ducha Ultra 4T 220 V",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B095VF5GR7": {
+   "nome": "Lorenzetti Loren Shower Eletrônico 7.500 W",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B076X91BDR": {
+   "nome": "Lorenzetti Ducha Advanced Eletrônica 7.500 W",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B076PPH1HQ": {
+   "nome": "Lorenzetti Acqua Storm Ultra 7.800 W",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B077Q52ZDL": {
+   "nome": "Lorenzetti Acqua Duo 7.800 W",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B076X788KK": {
+   "nome": "Lorenzetti Maxi Ducha 127 V",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B095V4CZZC": {
+   "nome": "Lorenzetti Loren Shower Multitemperaturas 127 V",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B07FB4K8CJ": {
+   "nome": "Lorenzetti Ducha Futura Multitemperaturas 127 V",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B076BJLPYL": {
+   "nome": "Hydra Ducha Eletrônica 127 V",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B076PJ8RC9": {
+   "nome": "Lorenzetti Acqua Storm Ultra 127 V",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B0779M8KXP": {
+   "nome": "Lorenzetti Acqua Duo 127 V",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B076PN1GYV": {
+   "nome": "Lorenzetti Advanced Turbo 127 V",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B076PK167Q": {
+   "nome": "Lorenzetti Bella Ducha Turbo 4T 220 V",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B0779M71RM": {
+   "nome": "Lorenzetti Advanced Turbo 220 V",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B078JP3HMS": {
+   "nome": "Lorenzetti Top Jet Turbo 7.500 W",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B076PSHW8X": {
+   "nome": "Lorenzetti Jet Turbo 7.800 W",
+   "guia": "chuveiroeletrico-2026.html",
+   "candidatos": []
+  },
+  "B003VAHYQY": {
+   "nome": "Logitech F310 (com fio)",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": []
+  },
+  "B0D72TNXSC": {
+   "nome": "8BitDo Ultimate 2C (sem fio)",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 9,
+     "titulo": "Controle Wireless 8BitDo Ultimate 2C (Mint) - 81HD03",
+     "id": "634469",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/634469/controle-wireless-8bitdo-ultimate-2c-mint-81hd03",
+     "categoria": "Games > Acessórios Gamer > Joystick > Joystick"
+    },
+    {
+     "pts": 9,
+     "titulo": "Controle Sem fio 8BitDo Ultimate 2C, Bluetooth, Pessêgo - 81HD04",
+     "id": "634470",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/634470/controle-sem-fio-8bitdo-ultimate-2c-bluetooth-pessego-81hd04",
+     "categoria": "Games > Acessórios Gamer > Joystick > Joystick"
+    },
+    {
+     "pts": 9,
+     "titulo": "Controle 8BitDo Ultimate 2C, USB, Mint - 82CD03",
+     "id": "888019",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/888019/controle-8bitdo-ultimate-2c-usb-mint-82cd03",
+     "categoria": "Games > Acessórios Gamer > Joystick > Joystick"
+    },
+    {
+     "pts": 9,
+     "titulo": "Controle 8BitDo Ultimate 2C, USB, Peach - 82CD04",
+     "id": "888020",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/888020/controle-8bitdo-ultimate-2c-usb-peach-82cd04",
+     "categoria": "Games > Acessórios Gamer > Joystick > Joystick"
+    }
+   ]
+  },
+  "B0DBLMZJRJ": {
+   "nome": "GameSir Cyclone 2",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": []
+  },
+  "B0DR8V899R": {
+   "nome": "8BitDo Ultimate 2 (com base)",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 6,
+     "titulo": "Controle Wireless 8BitDo Ultimate 2, Efeito Hall, Bluetooth, com Dock, p/ Switch, PC e Mobile, Preto - 80ND02",
+     "id": "911320",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/911320/controle-wireless-8bitdo-ultimate-2-efeito-hall-bluetooth-com-dock-p-switch-pc-e-mobile-preto-80nd02",
+     "categoria": "Games > Acessórios Gamer > Joystick > Joystick"
+    },
+    {
+     "pts": 6,
+     "titulo": "Controle Wireless 8BitDo Ultimate 2, Efeito Hall, 2.4G, com Dock, p/ PC e Android, Branco - 81HE01",
+     "id": "911321",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/911321/controle-wireless-8bitdo-ultimate-2-efeito-hall-2-4g-com-dock-p-pc-e-android-branco-81he01",
+     "categoria": "Games > Acessórios Gamer > Joystick > Joystick"
+    },
+    {
+     "pts": 6,
+     "titulo": "Controle Wireless 8BitDo Ultimate 2, Efeito Hall, 2.4G, com Dock, p/ PC e Android, Preto - 81HE02",
+     "id": "911322",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/911322/controle-wireless-8bitdo-ultimate-2-efeito-hall-2-4g-com-dock-p-pc-e-android-preto-81he02",
+     "categoria": "Games > Acessórios Gamer > Joystick > Joystick"
+    },
+    {
+     "pts": 5,
+     "titulo": "Case de transporte para Controle 8BitDo Ultimate, Bluetooth, Wireless, Preto - 88BF01",
+     "id": "619951",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/619951/case-de-transporte-para-controle-8bitdo-ultimate-bluetooth-wireless-preto-88bf01",
+     "categoria": "Games > Acessórios Gamer > Suportes Gamer > Suportes Gamer"
+    }
+   ]
+  },
+  "B0FD41XC3P": {
+   "nome": "GameSir G7 Pro",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": []
+  },
+  "B08F4444HM": {
+   "nome": "PowerA com fio para Xbox Series X|S",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": []
+  },
+  "B08DF248LD": {
+   "nome": "Controle Sem Fio Xbox (oficial)",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": []
+  },
+  "B0CQKKHT5J": {
+   "nome": "Sony DualSense (PS5)",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 6,
+     "titulo": "Controle Sony DualSense PS5, Sem Fio, Gray Camuflado - 1000039944",
+     "id": "394555",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/394555/controle-sony-dualsense-ps5-sem-fio-gray-camuflado-1000039944",
+     "categoria": "Games > Playstation > Controles Playstation > Controles Playstation"
+    },
+    {
+     "pts": 6,
+     "titulo": "Controle Sony Dualsense Edge PS5, Sem Fio, Preto e Branco - CFI-ZCP1WY",
+     "id": "401293",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/401293/controle-sony-dualsense-edge-ps5-sem-fio-preto-e-branco-cfi-zcp1wy",
+     "categoria": "Games > Playstation > Controles Playstation > Controles Playstation"
+    },
+    {
+     "pts": 6,
+     "titulo": "Controle Sony Dualsense Edge PS5, Sem Fio, Midnight Black - CFI-ZCP1WY",
+     "id": "697722",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/697722/controle-sony-dualsense-edge-ps5-sem-fio-midnight-black-cfi-zcp1wy",
+     "categoria": "Games > Playstation > Controles Playstation > Controles Playstation"
+    },
+    {
+     "pts": 6,
+     "titulo": "Controle Sony DualSense PS5, Sem Fio, Chroma Teal - 1000044151",
+     "id": "713091",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/713091/controle-sony-dualsense-ps5-sem-fio-chroma-teal-1000044151",
+     "categoria": "Games > Playstation > Controles Playstation > Controles Playstation"
+    }
+   ]
+  },
+  "B0BMB8R1K6": {
+   "nome": "Sony DualSense Edge",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "Controle Sony Dualsense Edge PS5, Sem Fio, Preto e Branco - CFI-ZCP1WY",
+     "id": "401293",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/401293/controle-sony-dualsense-edge-ps5-sem-fio-preto-e-branco-cfi-zcp1wy",
+     "categoria": "Games > Playstation > Controles Playstation > Controles Playstation"
+    },
+    {
+     "pts": 3,
+     "titulo": "Controle Sony Dualsense Edge PS5, Sem Fio, Midnight Black - CFI-ZCP1WY",
+     "id": "697722",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/697722/controle-sony-dualsense-edge-ps5-sem-fio-midnight-black-cfi-zcp1wy",
+     "categoria": "Games > Playstation > Controles Playstation > Controles Playstation"
+    }
+   ]
+  },
+  "B07SFKTLZM": {
+   "nome": "Xbox Elite Series 2",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": []
+  },
+  "B07T7SPMCJ": {
+   "nome": "Ipega PG-9076",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": []
+  },
+  "B0CDG5HCCH": {
+   "nome": "8BitDo Micro",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 4,
+     "titulo": "Case de transporte para Controle 8BitDo Ultimate, Bluetooth, Wireless, Preto - 88BF01",
+     "id": "619951",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/619951/case-de-transporte-para-controle-8bitdo-ultimate-bluetooth-wireless-preto-88bf01",
+     "categoria": "Games > Acessórios Gamer > Suportes Gamer > Suportes Gamer"
+    },
+    {
+     "pts": 4,
+     "titulo": "Controle Sem Fio 8BitDo Pro 2 Hall Edition, Bluetooth, Preto - 80GJ03",
+     "id": "619954",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/619954/controle-sem-fio-8bitdo-pro-2-hall-edition-bluetooth-preto-80gj03",
+     "categoria": "Games > Acessórios Gamer > Joystick > Joystick"
+    },
+    {
+     "pts": 4,
+     "titulo": "Controle Com Fio 8BitDo para Xbox Ultimate C, Cinza Escuro - 82CF04D",
+     "id": "619961",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/619961/controle-com-fio-8bitdo-para-xbox-ultimate-c-cinza-escuro-82cf04d",
+     "categoria": "Games > Acessórios Gamer > Joystick > Joystick"
+    },
+    {
+     "pts": 4,
+     "titulo": "Controle Com Fio 8BitDo para Xbox Ultimate C, Verde Escuro - 82CF03D",
+     "id": "619962",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/619962/controle-com-fio-8bitdo-para-xbox-ultimate-c-verde-escuro-82cf03d",
+     "categoria": "Games > Acessórios Gamer > Joystick > Joystick"
+    }
+   ]
+  },
+  "B0CM3C9HRG": {
+   "nome": "GameSir G8 Galileo (USB-C)",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": []
+  },
+  "B0D8JJRCJN": {
+   "nome": "GameSir G8 Plus (Bluetooth)",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": []
+  },
+  "B0CY1ZTS76": {
+   "nome": "GameSir X4 Aileron",
+   "guia": "controle-gamer-2026.html",
+   "candidatos": []
+  },
+  "B0CW976R89": {
+   "nome": "Elsys Pop DS1100V",
+   "guia": "fechaduradigital-2026.html",
+   "candidatos": []
+  },
+  "B07D82PQTV": {
+   "nome": "Yale YRD 256",
+   "guia": "fechaduradigital-2026.html",
+   "candidatos": []
+  },
+  "B0CJ13VSZ2": {
+   "nome": "Kuanttum Delta",
+   "guia": "fechaduradigital-2026.html",
+   "candidatos": []
+  },
+  "B07W7VQ7HQ": {
+   "nome": "Intelbras FR 630",
+   "guia": "fechaduradigital-2026.html",
+   "candidatos": []
+  },
+  "B0CHZGG25V": {
+   "nome": "Kuanttum Delta Pro",
+   "guia": "fechaduradigital-2026.html",
+   "candidatos": []
+  },
+  "B0BTQNL31V": {
+   "nome": "Positivo Casa Inteligente",
+   "guia": "fechaduradigital-2026.html",
+   "candidatos": []
+  },
+  "B0DKQQ6Z7Q": {
+   "nome": "TP-Link Tapo DL110",
+   "guia": "fechaduradigital-2026.html",
+   "candidatos": []
+  },
+  "B0CH3QJBSB": {
+   "nome": "Intelbras Izy Play Stick Full HD",
+   "guia": "fire-tv-stick-2026.html",
+   "candidatos": []
+  },
+  "B0BJN57F96": {
+   "nome": "Apple TV 4K (3ª geração) 64 GB",
+   "guia": "fire-tv-stick-2026.html",
+   "candidatos": []
+  },
+  "B0BTYCRJSS": {
+   "nome": "soundcore P20i",
+   "guia": "fonebluetooth-2026.html",
+   "candidatos": []
+  },
+  "B0BHDRW3MK": {
+   "nome": "JBL Wave Flex",
+   "guia": "fonebluetooth-2026.html",
+   "candidatos": []
+  },
+  "B0DGM4T4H8": {
+   "nome": "Apple AirPods 4",
+   "guia": "fonebluetooth-2026.html",
+   "candidatos": []
+  },
+  "B0CRTN7C8C": {
+   "nome": "soundcore P30i",
+   "guia": "fonebluetooth-2026.html",
+   "candidatos": []
+  },
+  "B0CQXHC5FQ": {
+   "nome": "soundcore P40i",
+   "guia": "fonebluetooth-2026.html",
+   "candidatos": []
+  },
+  "B0DT4F2NM9": {
+   "nome": "soundcore Liberty 5",
+   "guia": "fonebluetooth-2026.html",
+   "candidatos": []
+  },
+  "B0D44H2RG3": {
+   "nome": "JBL Live Beam 3",
+   "guia": "fonebluetooth-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "Fone de Ouvido TWS JBL Live BUDS 3, Smart Case, Cancelamento de Ruído Pro, Preto - 28913780",
+     "id": "627464",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/627464/fone-de-ouvido-tws-jbl-live-buds-3-smart-case-cancelamento-de-ruido-pro-preto-28913780",
+     "categoria": "Áudio > Fone de Ouvido > Bluetooth > Bluetooth"
+    },
+    {
+     "pts": 3,
+     "titulo": "Fone de Ouvido Sem Fio JBL Live Beam 4, True Wireless, Bluetooth, Recarregável, Resistente à Água, Preto - JBLLIVEBEAM4BLKBR2",
+     "id": "1060747",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1060747/fone-de-ouvido-sem-fio-jbl-live-beam-4-true-wireless-bluetooth-recarregavel-resistente-a-agua-preto-jbllivebeam4blkbr2",
+     "categoria": "Áudio > Fone de Ouvido > Bluetooth > Bluetooth"
+    },
+    {
+     "pts": 3,
+     "titulo": "Fone de Ouvido Sem Fio JBL Live Beam 4, True Wireless, Bluetooth, Recarregável, Resistente à Água, Champagne - JBLLIVEBEAM4CPGBR2",
+     "id": "1060748",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1060748/fone-de-ouvido-sem-fio-jbl-live-beam-4-true-wireless-bluetooth-recarregavel-resistente-a-agua-champagne-jbllivebeam4cpgbr2",
+     "categoria": "Áudio > Fone de Ouvido > Bluetooth > Bluetooth"
+    }
+   ]
+  },
+  "B0D2XRXNGY": {
+   "nome": "soundcore V20i",
+   "guia": "fonebluetooth-2026.html",
+   "candidatos": []
+  },
+  "B0CRT6HQ82": {
+   "nome": "soundcore Sport X20",
+   "guia": "fonebluetooth-2026.html",
+   "candidatos": []
+  },
+  "B09BW29FJS": {
+   "nome": "Shokz OpenMove",
+   "guia": "fonebluetooth-2026.html",
+   "candidatos": []
+  },
+  "B0CS35T6NR": {
+   "nome": "Shokz OpenSwim Pro",
+   "guia": "fonebluetooth-2026.html",
+   "candidatos": []
+  },
+  "B0CFZST5DV": {
+   "nome": "QCY H3 ANC",
+   "guia": "foneoverear-2026.html",
+   "candidatos": []
+  },
+  "B0CQXMXJC5": {
+   "nome": "soundcore Q20i",
+   "guia": "foneoverear-2026.html",
+   "candidatos": []
+  },
+  "B0C6KFZC9Z": {
+   "nome": "soundcore Space One",
+   "guia": "foneoverear-2026.html",
+   "candidatos": []
+  },
+  "B0CZ8G716J": {
+   "nome": "soundcore Space One Pro",
+   "guia": "foneoverear-2026.html",
+   "candidatos": []
+  },
+  "B0863TXGM3": {
+   "nome": "Sony WH-1000XM4",
+   "guia": "foneoverear-2026.html",
+   "candidatos": []
+  },
+  "B00ENMK1DW": {
+   "nome": "Philips SHP9500",
+   "guia": "foneoverear-2026.html",
+   "candidatos": []
+  },
+  "B076BDR1P7": {
+   "nome": "Electrolux 240 L 1 porta",
+   "guia": "geladeiras-2026.html",
+   "candidatos": []
+  },
+  "B076BDN8TJ": {
+   "nome": "Consul Frost Free 342 L 1 porta (CRB39AB)",
+   "guia": "geladeiras-2026.html",
+   "candidatos": []
+  },
+  "B07FXZ8TR6": {
+   "nome": "Brastemp Frost Free 375 L Duplex",
+   "guia": "geladeiras-2026.html",
+   "candidatos": []
+  },
+  "B0DN3JFV7Z": {
+   "nome": "Electrolux Frost Free 431 L Efficient AutoSense Inox Look (TF70S)",
+   "guia": "geladeiras-2026.html",
+   "candidatos": []
+  },
+  "B0D1YP2X5W": {
+   "nome": "Electrolux Frost Free Inverter 480 L (IT70S)",
+   "guia": "geladeiras-2026.html",
+   "candidatos": []
+  },
+  "B0D9P9V38B": {
+   "nome": "Electrolux Inverter 480 L 3 portas (IM7S)",
+   "guia": "geladeiras-2026.html",
+   "candidatos": []
+  },
+  "B0CLPNH7FN": {
+   "nome": "Electrolux Inverse 490 L Efficient AutoSense (IB7)",
+   "guia": "geladeiras-2026.html",
+   "candidatos": []
+  },
+  "B0C9KB44X1": {
+   "nome": "Philco Side by Side 434 L (PRF535ID)",
+   "guia": "geladeiras-2026.html",
+   "candidatos": []
+  },
+  "B0BHX77QJQ": {
+   "nome": "Brastemp French Door 554 L (BRO85AK)",
+   "guia": "geladeiras-2026.html",
+   "candidatos": []
+  },
+  "B07Y2G7VX5": {
+   "nome": "Havit H2002d",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer Havit H2002D, Drivers 53mm, P3, XBOX ONE e PS4, Rosa - HV-H2002P",
+     "id": "405787",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/405787/headset-gamer-havit-h2002d-drivers-53mm-p3-xbox-one-e-ps4-rosa-hv-h2002p",
+     "categoria": "Periféricos > Headset Gamer > Com Fio > Com Fio"
+    },
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer Havit H2002D, Drivers 53mm, P3, XBOX ONE e PS4, Branco e Roxo - HV-H2002WP",
+     "id": "405788",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/405788/headset-gamer-havit-h2002d-drivers-53mm-p3-xbox-one-e-ps4-branco-e-roxo-hv-h2002wp",
+     "categoria": "Periféricos > Headset Gamer > Com Fio > Com Fio"
+    },
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer Havit H2002D, Drivers 53mm, P3, XBOX ONE e PS4, Branco e Vermelho - HV-H2002WR",
+     "id": "405789",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/405789/headset-gamer-havit-h2002d-drivers-53mm-p3-xbox-one-e-ps4-branco-e-vermelho-hv-h2002wr",
+     "categoria": "Periféricos > Headset Gamer > Com Fio > Com Fio"
+    },
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer Sem Fio Havit H2002D Pro, Drivers 53mm, 2.4GHz, P3, Microfone Removível, Preto - HVGMH-H2002d PRO-BK+OC+RE",
+     "id": "1021193",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1021193/headset-gamer-havit-h2002d-pro-drivers-53mm-conexao-p3-microfone-removivel-preto-hvgmh-h2002d-pro-bk-oc-re",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    }
+   ]
+  },
+  "B0BDHYF8YS": {
+   "nome": "HyperX Cloud Stinger 2 Core",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer HyperX Cloud Stinger 2 Core, Drivers 40mm, Preto - 683L9AA",
+     "id": "461178",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/461178/headset-gamer-hyperx-cloud-stinger-2-core-drivers-40mm-preto-683l9aa",
+     "categoria": "Periféricos > Headset Gamer > Com Fio > Com Fio"
+    },
+    {
+     "pts": 4,
+     "titulo": "Headset Gamer HyperX Cloud Stinger 2, Drivers 50mm, P3, Preto - 519T1AA",
+     "id": "461160",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/461160/headset-gamer-hyperx-cloud-stinger-2-drivers-50mm-p3-preto-519t1aa",
+     "categoria": "Periféricos > Headset Gamer > Com Fio > Com Fio"
+    },
+    {
+     "pts": 4,
+     "titulo": "Headset Gamer HyperX Cloud Stinger 2, Drivers 50mm, Branco, Xbox - 75X28AA",
+     "id": "505108",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/505108/headset-gamer-hyperx-cloud-stinger-2-drivers-50mm-branco-xbox-75x28aa-",
+     "categoria": "Periféricos > Headset Gamer > Com Fio > Com Fio"
+    },
+    {
+     "pts": 4,
+     "titulo": "Headset Gamer HyperX CloudX Stinger 2 Core para Xbox, Licenciado Oficial, Noise Cancelling, Preto - 6H9B8AA",
+     "id": "732897",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/732897/headset-gamer-hyperx-cloudx-stinger-2-core-para-xbox-licenciado-oficial-noise-cancelling-preto-6h9b8aa",
+     "categoria": "Periféricos > Headset Gamer > Com Fio > Com Fio"
+    }
+   ]
+  },
+  "B0C3BSZ56D": {
+   "nome": "HyperX Cloud III",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "Headset Gamer HyperX Cloud III, DTS, Drivers 53mm, USB, PC, PS5, PS4, XBOX Series X/S, Xbox One, Nintendo Switch, Mobile, Preto e Vermelho - 727A9AA",
+     "id": "467535",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/467535/headset-gamer-hyperx-cloud-iii-dts-drivers-53mm-usb-pc-ps5-ps4-xbox-series-x-s-xbox-one-nintendo-switch-mobile-preto-e-vermelho-727a9aa",
+     "categoria": "Periféricos > Headset Gamer > Com Fio > Com Fio"
+    },
+    {
+     "pts": 3,
+     "titulo": "Headset Gamer HyperX Cloud III, Driver 53mm, USB, Multi Plataformas, Preto - 727A8AA",
+     "id": "543665",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/543665/headset-gamer-hyperx-cloud-iii-driver-53mm-usb-multi-plataformas-preto-727a8aa",
+     "categoria": "Periféricos > Headset Gamer > Com Fio > Com Fio"
+    },
+    {
+     "pts": 3,
+     "titulo": "Headset Gamer Sem Fio HyperX Cloud III S, DTS Headphone:X, Bateria até 120h, Preto - A59YZAA",
+     "id": "1023163",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1023163/headset-gamer-sem-fio-hyperx-cloud-iii-s-dts-headphone-x-bateria-ate-120h-preto-a59yzaa",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 3,
+     "titulo": "Headset Gamer Sem Fio HyperX Cloud III S, DTS Headphone:X, Bateria até 120h, Preto e Vermelho - A59Z0AA",
+     "id": "1023164",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1023164/headset-gamer-sem-fio-hyperx-cloud-iii-s-dts-headphone-x-bateria-ate-120h-preto-e-vermelho-a59z0aa",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    }
+   ]
+  },
+  "B074NBSF9N": {
+   "nome": "HyperX Cloud Alpha",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": []
+  },
+  "B07PDFBJZD": {
+   "nome": "Logitech G PRO X (com fio)",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 4,
+     "titulo": "Headset Gamer Logitech G PRO X 7.1 Dolby Surround - 981-000817",
+     "id": "102827",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/102827/headset-gamer-logitech-g-pro-x-7-1-dolby-surround-981-000817",
+     "categoria": "Periféricos > Headset Gamer > Com Fio > Com Fio"
+    },
+    {
+     "pts": 4,
+     "titulo": "Headset Gamer Sem Fio Logitech G PRO X Wireless LIGHTSPEED 7.1 Dolby Surround, Blue VOICE, Drivers PRO-G 50 mm - 981-000906",
+     "id": "117314",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/117314/headset-gamer-sem-fio-logitech-g-pro-x-wireless-lightspeed-7-1-dolby-surround-blue-voice-drivers-pro-g-50-mm-981-000906",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 4,
+     "titulo": "Headset Gamer Sem Fio Logitech G Pro X 2 Lightspeed, Driver 50mm, Bluetooth, USB e 3.5mm, para PC, Playstation e Switch, Preto - 981-001262",
+     "id": "495541",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/495541/headset-gamer-sem-fio-logitech-g-pro-x-2-lightspeed-driver-50mm-bluetooth-usb-e-3-5mm-para-pc-playstation-e-switch-preto-981-001262",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 4,
+     "titulo": "Headset Gamer Sem Fio Logitech G Pro X 2 Lightspeed, Driver 50mm, Bluetooth, USB e 3.5mm, para PC, Playstation e Switch, Branco - 981-001268",
+     "id": "495542",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/495542/headset-gamer-sem-fio-logitech-g-pro-x-2-lightspeed-driver-50mm-bluetooth-usb-e-3-5mm-para-pc-playstation-e-switch-branco-981-001268",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    }
+   ]
+  },
+  "B0CNKVYLF5": {
+   "nome": "Redragon Zeus Pro (sem fio)",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "Headset Gamer Sem Fio Redragon Zeus Pro, 7.1, Driver 53mm, Bluetooth, Preto - H510-PRO",
+     "id": "508106",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/508106/headset-gamer-sem-fio-redragon-zeus-pro-7-1-driver-53mm-bluetooth-preto-h510-pro",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    }
+   ]
+  },
+  "B0D8QJRBV3": {
+   "nome": "JBL Quantum 360 Wireless",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 4,
+     "titulo": "Headset Gamer Sem Fio Quantum 360 Wireless Jbl, Preto - 28913840",
+     "id": "670665",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/670665/headset-gamer-sem-fio-quantum-360-wireless-jbl-preto-28913840",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 3,
+     "titulo": "Headset Gamer Sem Fio JBL Quantum 910 Wireless RGB, Hi-Res e ANC, PS5 e PC, Preto - JBLQ910WLBLK",
+     "id": "468474",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/468474/headset-gamer-sem-fio-jbl-quantum-910-wireless-rgb-hi-res-e-anc-ps5-e-pc-preto-jblq910wlblk",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 3,
+     "titulo": "Microfone de Lapela Sem Fio JBL Quantum Stream, Wireless, USB-C, Cancelamento de Ruído, Preto - 28913748",
+     "id": "818923",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/818923/microfone-de-lapela-sem-fio-jbl-quantum-stream-wireless-usb-c-cancelamento-de-ruido-preto-28913748",
+     "categoria": "Periféricos > Streamer > Microfone Streamer > Microfone Sem Fio"
+    },
+    {
+     "pts": 3,
+     "titulo": "Headset Gamer Sem Fio JBL Quantum 650 Wireless, 2.4GHz, Som Surround, Preto - JBLQTUM650BLK",
+     "id": "985054",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/985054/headset-gamer-sem-fio-jbl-quantum-650-wireless-2-4ghz-som-surround-preto-jblqtum650blk",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    }
+   ]
+  },
+  "B09BBPTDWX": {
+   "nome": "Corsair HS80 RGB Wireless",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 7,
+     "titulo": "Headset Gamer Sem Fio Corsair HS80 Premium, RGB, Surround, Dolby Atmos, Wireless, Drivers 50mm, Preto - CA-9011235-NA",
+     "id": "216705",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/216705/headset-gamer-sem-fio-corsair-hs80-premium-rgb-surround-dolby-atmos-wireless-drivers-50mm-preto-ca-9011235-na",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 7,
+     "titulo": "Headset Gamer Sem Fio Corsair HS80 RGB, Dolby Atmos, Drivers 50mm, Wireless, Branco - CA-9011236-NA",
+     "id": "477912",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/477912/headset-gamer-sem-fio-corsair-hs80-rgb-dolby-atmos-drivers-50mm-wireless-branco-ca-9011236-na",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 6,
+     "titulo": "Headset Gamer Corsair HS80 Premium, RGB, Surround, Dolby 7.1, Drivers 50mm, Preto - CA-9011237-NA",
+     "id": "355914",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/355914/headset-gamer-corsair-hs80-premium-rgb-surround-dolby-7-1-drivers-50mm-preto-ca-9011237-na",
+     "categoria": "Periféricos > Headset Gamer > Com Fio > Com Fio"
+    }
+   ]
+  },
+  "B081415GCS": {
+   "nome": "Logitech G733 Lightspeed",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer Sem Fio Logitech G733 7.1 Dolby Surround RGB LIGHTSYNC, Blue VOICE para PC e PlayStation, Preto - 981-000863",
+     "id": "120487",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/120487/headset-gamer-sem-fio-logitech-g733-7-1-dolby-surround-rgb-lightsync-blue-voice-para-pc-e-playstation-preto-981-000863",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    }
+   ]
+  },
+  "B081PP4CB6": {
+   "nome": "Logitech G PRO X Lightspeed",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer Sem Fio Logitech G PRO X Wireless LIGHTSPEED 7.1 Dolby Surround, Blue VOICE, Drivers PRO-G 50 mm - 981-000906",
+     "id": "117314",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/117314/headset-gamer-sem-fio-logitech-g-pro-x-wireless-lightspeed-7-1-dolby-surround-blue-voice-drivers-pro-g-50-mm-981-000906",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer Sem Fio Logitech G Pro X 2 Lightspeed, Driver 50mm, Bluetooth, USB e 3.5mm, para PC, Playstation e Switch, Preto - 981-001262",
+     "id": "495541",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/495541/headset-gamer-sem-fio-logitech-g-pro-x-2-lightspeed-driver-50mm-bluetooth-usb-e-3-5mm-para-pc-playstation-e-switch-preto-981-001262",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer Sem Fio Logitech G Pro X 2 Lightspeed, Driver 50mm, Bluetooth, USB e 3.5mm, para PC, Playstation e Switch, Branco - 981-001268",
+     "id": "495542",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/495542/headset-gamer-sem-fio-logitech-g-pro-x-2-lightspeed-driver-50mm-bluetooth-usb-e-3-5mm-para-pc-playstation-e-switch-branco-981-001268",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer Sem Fio Logitech G Pro X 2 Lightspeed, Driver 50mm, Bluetooth, USB e 3.5mm, para PC, Playstation e Switch, Rosa Magenta - 981-001274",
+     "id": "495543",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/495543/headset-gamer-sem-fio-logitech-g-pro-x-2-lightspeed-driver-50mm-bluetooth-usb-e-3-5mm-para-pc-playstation-e-switch-rosa-magenta-981-001274",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    }
+   ]
+  },
+  "B0BWK86TKG": {
+   "nome": "JBL Quantum 360X (Xbox)",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 6,
+     "titulo": "Headset Gamer Sem Fio JBL Quantum 360X, Drivers 40mm, Preto - 28913694 - JBLQ360XWLBLKGRN",
+     "id": "468473",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/468473/headset-gamer-sem-fio-jbl-quantum-360x-drivers-40mm-preto-28913694-jblq360xwlblkgrn",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    }
+   ]
+  },
+  "B0FTZY2PCV": {
+   "nome": "Headset Sem Fio Xbox (Microsoft)",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": []
+  },
+  "B08CWH73FZ": {
+   "nome": "Sony PULSE 3D (PS5)",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": []
+  },
+  "B0CXK8LVM7": {
+   "nome": "Sony PULSE Elite",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "Headset sem fio Gamer Sony Pulse Elite, Bluetooth, PS5, Branco - CFI-ZWH2L",
+     "id": "536999",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/536999/headset-sem-fio-gamer-sony-pulse-elite-bluetooth-ps5-branco-cfi-zwh2l",
+     "categoria": "Games > Playstation > Acessórios Playstation > Acessórios Playstation"
+    },
+    {
+     "pts": 3,
+     "titulo": "Headset Sem Fio Gamer Sony Pulse Elite, Bluetooth, PS5, Midnight Black - CFI-ZWH2L",
+     "id": "697723",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/697723/headset-sem-fio-gamer-sony-pulse-elite-bluetooth-ps5-midnight-black-cfi-zwh2l",
+     "categoria": "Games > Playstation > Acessórios Playstation > Acessórios Playstation"
+    }
+   ]
+  },
+  "B0BRXJDQC1": {
+   "nome": "Logitech G Astro A50 X + Base Station",
+   "guia": "headset-gamer-2026.html",
+   "candidatos": [
+    {
+     "pts": 10,
+     "titulo": "Headset Gamer Sem Fio Logitech G Astro A50 X LIGHTSPEED, Base Station, PRO-G GRAPHENE, Bluetooth, HDMI 2.1 Passthru, 939-002280 - Vermelho",
+     "id": "1077194",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1077194/headset-gamer-sem-fio-logitech-g-astro-a50-x-lightspeed-base-station-pro-g-graphene-bluetooth-hdmi-21-passthru-939-002280-vermelho",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    }
+   ]
+  },
+  "B0G491Z8QR": {
+   "nome": "HP DeskJet Ink Advantage 2975",
+   "guia": "impressora-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "Impressora Multifuncional HP DeskJet Ink Advantage 2975, Jato de Tinta, Colorida, Wi-Fi, USB, Preto - AJ4Y4A#AK4",
+     "id": "986082",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/986082/impressora-multifuncional-hp-deskjet-ink-advantage-2975-jato-de-tinta-colorida-wi-fi-usb-preto-aj4y4a-ak4",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Multifuncional Tanque de Tinta"
+    }
+   ]
+  },
+  "B07G5TZSYJ": {
+   "nome": "Canon Mega Tank G3110",
+   "guia": "impressora-2026.html",
+   "candidatos": []
+  },
+  "B0C1L2R4HH": {
+   "nome": "HP Smart Tank 581",
+   "guia": "impressora-2026.html",
+   "candidatos": [
+    {
+     "pts": 4,
+     "titulo": "Impressora Multifuncional Tanque de Tinta HP Smart Tank 581 Colorida Wi-Fi (4A8D5A#AK4)",
+     "id": "454167",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/454167/impressora-multifuncional-tanque-de-tinta-hp-smart-tank-581-colorida-wi-fi-4a8d5a-ak4-",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Multifuncional Tanque de Tinta"
+    },
+    {
+     "pts": 3,
+     "titulo": "Impressora Multifuncional HP Smart Tank 724 Wi-Fi - Tanque de Tinta Colorida Duplex USB Bluetooth (2G9Q2A)",
+     "id": "381686",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/381686/impressora-multifuncional-hp-smart-tank-724-wi-fi-tanque-de-tinta-colorida-duplex-usb-bluetooth-2g9q2a-",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Multifuncional Tanque de Tinta"
+    },
+    {
+     "pts": 3,
+     "titulo": "Impressora Multifuncional HP Smart Tank 794, Wi-Fi - Tanque de Tinta Colorida Duplex USB, Bivolt - 2G9Q9A#AK4",
+     "id": "523362",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/523362/impressora-multifuncional-hp-smart-tank-794-wi-fi-tanque-de-tinta-colorida-duplex-usb-bivolt-2g9q9a-ak4",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Impressora Multifuncional"
+    },
+    {
+     "pts": 3,
+     "titulo": "Impressora Multifuncional HP Smart Tank 754 Wi-Fi - Tanque de Tinta Colorida Duplex USB Bluetooth (2H0A6A)",
+     "id": "523363",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/523363/impressora-multifuncional-hp-smart-tank-754-wi-fi-tanque-de-tinta-colorida-duplex-usb-bluetooth-2h0a6a-",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Impressora Multifuncional"
+    }
+   ]
+  },
+  "B098YHFT9S": {
+   "nome": "Epson EcoTank L3250",
+   "guia": "impressora-2026.html",
+   "candidatos": [
+    {
+     "pts": 6,
+     "titulo": "Impressora Multifuncional Epson EcoTank L3250, Colorida, Wifi, Wireless, USB, Bivolt, Preta - C11CJ67303",
+     "id": "220523",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/220523/impressora-multifuncional-epson-ecotank-l3250-colorida-wifi-wireless-usb-bivolt-preta-c11cj67303",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Multifuncional Tanque de Tinta"
+    }
+   ]
+  },
+  "B0GJ7H8WLW": {
+   "nome": "Epson EcoTank L4360",
+   "guia": "impressora-2026.html",
+   "candidatos": []
+  },
+  "B0DM6G7929": {
+   "nome": "Brother HL-L1222",
+   "guia": "impressora-2026.html",
+   "candidatos": []
+  },
+  "B07S61ZJCS": {
+   "nome": "HP LaserJet 107w",
+   "guia": "impressora-2026.html",
+   "candidatos": [
+    {
+     "pts": 6,
+     "titulo": "Impressora HP LaserJet 107w, Laser, Mono, 110V - 4ZB78A",
+     "id": "102766",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/102766/impressora-hp-laserjet-107w-laser-mono-110v-4zb78a",
+     "categoria": "Computadores > Impressoras > Impressora Laser > Impressora Laser"
+    },
+    {
+     "pts": 5,
+     "titulo": "Impressora Laser HP 107w, Wi-Fi, USB, Monocromática, 220V, Preto e Branco - 4ZB78A#A1Z",
+     "id": "1078388",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1078388/impressora-laser-hp-107w-wi-fi-usb-monocromatica-220v-preto-e-branco-4zb78aa1z",
+     "categoria": "Computadores > Impressoras > Impressora Laser > Impressora Laser"
+    }
+   ]
+  },
+  "B07SB6TZGG": {
+   "nome": "HP Laser MFP 135w",
+   "guia": "impressora-2026.html",
+   "candidatos": [
+    {
+     "pts": 6,
+     "titulo": "Impressora HP LaserJet 135w, Laser, Mono, 110V - 4ZB83A",
+     "id": "102765",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/102765/impressora-hp-laserjet-135w-laser-mono-110v-4zb83a",
+     "categoria": "Computadores > Impressoras > Impressora Laser > Impressora Laser"
+    },
+    {
+     "pts": 6,
+     "titulo": "Impressora Multifuncional HP Laser 135w, Wi-Fi, USB, Monocromática, 220V, Preto e Branco - 4ZB83A#A1Z",
+     "id": "1078389",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1078389/impressora-multifuncional-hp-laser-135w-wi-fi-usb-monocromatica-220v-preto-e-branco-4zb83aa1z",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Multifuncional Laser"
+    }
+   ]
+  },
+  "B0DM6G2BQP": {
+   "nome": "Brother DCP-L1632W",
+   "guia": "impressora-2026.html",
+   "candidatos": []
+  },
+  "B07VNJ7TSF": {
+   "nome": "Brother DCP-B7535DW",
+   "guia": "impressora-2026.html",
+   "candidatos": []
+  },
+  "B088LMMK4N": {
+   "nome": "Epson EcoTank M2120",
+   "guia": "impressora-2026.html",
+   "candidatos": [
+    {
+     "pts": 6,
+     "titulo": "Multifuncional EPSON EcoTank Monocromatica, Simplex, Compatibilidade com Epson Connect Solutions - M2120",
+     "id": "155932",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/155932/multifuncional-epson-ecotank-monocromatica-simplex-compatibilidade-com-epson-connect-solutions-m2120",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Multifuncional Tanque de Tinta"
+    }
+   ]
+  },
+  "B0CH8Q4WNV": {
+   "nome": "Epson EcoTank L5590",
+   "guia": "impressora-2026.html",
+   "candidatos": [
+    {
+     "pts": 6,
+     "titulo": "Multifuncional Epson, Jato de Tinta, EcoTank L5590, Colorido, USB, Wireless, Bivolt, Preto - L5590",
+     "id": "477403",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/477403/multifuncional-epson-jato-de-tinta-ecotank-l5590-colorido-usb-wireless-bivolt-preto-l5590",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Impressora Multifuncional"
+    }
+   ]
+  },
+  "B0874627F5": {
+   "nome": "Canon Mega Tank G6010",
+   "guia": "impressora-2026.html",
+   "candidatos": []
+  },
+  "B0BJ7SFZ1P": {
+   "nome": "HP Smart Tank 794",
+   "guia": "impressora-2026.html",
+   "candidatos": [
+    {
+     "pts": 4,
+     "titulo": "Impressora Multifuncional HP Smart Tank 794, Wi-Fi - Tanque de Tinta Colorida Duplex USB, Bivolt - 2G9Q9A#AK4",
+     "id": "523362",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/523362/impressora-multifuncional-hp-smart-tank-794-wi-fi-tanque-de-tinta-colorida-duplex-usb-bivolt-2g9q9a-ak4",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Impressora Multifuncional"
+    },
+    {
+     "pts": 3,
+     "titulo": "Impressora Multifuncional HP Smart Tank 724 Wi-Fi - Tanque de Tinta Colorida Duplex USB Bluetooth (2G9Q2A)",
+     "id": "381686",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/381686/impressora-multifuncional-hp-smart-tank-724-wi-fi-tanque-de-tinta-colorida-duplex-usb-bluetooth-2g9q2a-",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Multifuncional Tanque de Tinta"
+    },
+    {
+     "pts": 3,
+     "titulo": "Impressora Multifuncional Tanque de Tinta HP Smart Tank 581 Colorida Wi-Fi (4A8D5A#AK4)",
+     "id": "454167",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/454167/impressora-multifuncional-tanque-de-tinta-hp-smart-tank-581-colorida-wi-fi-4a8d5a-ak4-",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Multifuncional Tanque de Tinta"
+    },
+    {
+     "pts": 3,
+     "titulo": "Impressora Multifuncional HP Smart Tank 754 Wi-Fi - Tanque de Tinta Colorida Duplex USB Bluetooth (2H0A6A)",
+     "id": "523363",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/523363/impressora-multifuncional-hp-smart-tank-754-wi-fi-tanque-de-tinta-colorida-duplex-usb-bluetooth-2h0a6a-",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Impressora Multifuncional"
+    }
+   ]
+  },
+  "B08Q8HLWRC": {
+   "nome": "Epson EcoTank L14150 (A3+)",
+   "guia": "impressora-2026.html",
+   "candidatos": [
+    {
+     "pts": 10,
+     "titulo": "Multifuncional Epson EcoTank L14150, Jato de Tinta, Colorido, A3, WiFi, Bivolt - C11CH96302",
+     "id": "128559",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/128559/multifuncional-epson-ecotank-l14150-jato-de-tinta-colorido-a3-wifi-bivolt-c11ch96302",
+     "categoria": "Computadores > Impressoras > Impressora Multifuncional > Multifuncional Tanque de Tinta"
+    }
+   ]
+  },
+  "B0CFPL6CFY": {
+   "nome": "Kindle Paperwhite 16 GB (2024)",
+   "guia": "kindle-2026.html",
+   "candidatos": []
+  },
+  "B0CFPHTMDX": {
+   "nome": "Kindle Paperwhite Signature Edition 32 GB",
+   "guia": "kindle-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "Kindle Amazon Colorsoft Signature Edition, 7\", 32GB, Wi-Fi, Tela Colorida, Carregamento Sem Fio, Preto - B0CX8Y3CMG",
+     "id": "1028063",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1028063/kindle-amazon-colorsoft-signature-edition-7-32gb-wi-fi-tela-colorida-carregamento-sem-fio-preto",
+     "categoria": "Tablets, iPads e E-readers > Kindles > Kindle 11ª Geração > Kindle 11ª Geração"
+    }
+   ]
+  },
+  "B0CX8Y3CMG": {
+   "nome": "Kindle Colorsoft Signature Edition 32 GB",
+   "guia": "kindle-2026.html",
+   "candidatos": [
+    {
+     "pts": 4,
+     "titulo": "Kindle Amazon Colorsoft Signature Edition, 7\", 32GB, Wi-Fi, Tela Colorida, Carregamento Sem Fio, Preto - B0CX8Y3CMG",
+     "id": "1028063",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1028063/kindle-amazon-colorsoft-signature-edition-7-32gb-wi-fi-tela-colorida-carregamento-sem-fio-preto",
+     "categoria": "Tablets, iPads e E-readers > Kindles > Kindle 11ª Geração > Kindle 11ª Geração"
+    }
+   ]
+  },
+  "B0FBSC6CPR": {
+   "nome": "Kindle Scribe sem luz frontal 16 GB",
+   "guia": "kindle-2026.html",
+   "candidatos": []
+  },
+  "B0CBSVX2K5": {
+   "nome": "Multi CF50 (TC309)",
+   "guia": "kit-teclado-mouse-2026.html",
+   "candidatos": []
+  },
+  "B098QKHRGK": {
+   "nome": "Kit Bluetooth ultrafino recarregável",
+   "guia": "kit-teclado-mouse-2026.html",
+   "candidatos": []
+  },
+  "B0DVCHL7PG": {
+   "nome": "Logitech Pebble Keys 2 K380s + Pebble Mouse 2 M350s",
+   "guia": "kit-teclado-mouse-2026.html",
+   "candidatos": [
+    {
+     "pts": 15,
+     "titulo": "Kit Personalidade Logitech Webcam Brio 300+ Mouse Sem Fio Pebble 2 M350s + Teclado Sem Fio Pebble Keys 2 K380s + Headset H390",
+     "id": "525695",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/525695/kit-personalidade-logitech-webcam-brio-300-mouse-sem-fio-pebble-2-m350s-teclado-sem-fio-pebble-keys-2-k380s-headset-h390",
+     "categoria": "Periféricos > Webcam e Videoconferência > Webcam > Webcam"
+    },
+    {
+     "pts": 6,
+     "titulo": "Teclado Sem Fio Logitech, Bluetooth e USB, Pebble Keys 2 K380s, Easy-Switch e Pilha Inclusa, Grafite - 920-011789",
+     "id": "495497",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/495497/teclado-sem-fio-logitech-bluetooth-e-usb-pebble-keys-2-k380s-easy-switch-e-pilha-inclusa-grafite-920-011789",
+     "categoria": "Periféricos > Teclado e Mouse > Teclado sem Fio > Teclado sem Fio"
+    },
+    {
+     "pts": 6,
+     "titulo": "Teclado Sem Fio Logitech, Bluetooth e USB, Pebble Keys 2 K380s, Easy-Switch e Pilha Inclusa, Rosa - 920-011791",
+     "id": "495498",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/495498/teclado-sem-fio-logitech-bluetooth-e-usb-pebble-keys-2-k380s-easy-switch-e-pilha-inclusa-rosa-920-011791",
+     "categoria": "Periféricos > Teclado e Mouse > Teclado sem Fio > Teclado sem Fio"
+    },
+    {
+     "pts": 6,
+     "titulo": "Teclado Sem Fio Logitech, Bluetooth e USB, Pebble Keys 2 K380s, Easy-Switch e Pilha Inclusa, Branco - 920-011790",
+     "id": "495499",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/495499/teclado-sem-fio-logitech-bluetooth-e-usb-pebble-keys-2-k380s-easy-switch-e-pilha-inclusa-branco-920-011790",
+     "categoria": "Periféricos > Teclado e Mouse > Teclado sem Fio > Teclado sem Fio"
+    }
+   ]
+  },
+  "B0C6JZ2ZDN": {
+   "nome": "Logitech MX Keys S Combo",
+   "guia": "kit-teclado-mouse-2026.html",
+   "candidatos": [
+    {
+     "pts": 4,
+     "titulo": "Teclado Sem Fio Logitech MX Keys S, Com Iluminação Inteligente, Bluetooth ou USB, Logi Bolt e Bateria Recarregável, Grafite - 920-011563",
+     "id": "474963",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/474963/teclado-sem-fio-logitech-mx-keys-s-com-iluminacao-inteligente-bluetooth-ou-usb-logi-bolt-e-bateria-recarregavel-grafite-920-011563",
+     "categoria": "Periféricos > Teclado e Mouse > Teclado sem Fio > Teclado sem Fio"
+    },
+    {
+     "pts": 4,
+     "titulo": "Teclado Sem Fio Logitech MX Keys S, Iluminação Inteligente, Bluetooth ou USB Tipo-C e Logi Bolt, Bateria Recarregável, Cinza - 920-011564",
+     "id": "649931",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/649931/teclado-sem-fio-logitech-mx-keys-s-iluminacao-inteligente-bluetooth-ou-usb-tipo-c-e-logi-bolt-bateria-recarregavel-cinza-920-011564",
+     "categoria": "Periféricos > Teclado e Mouse > Teclado sem Fio > Teclado sem Fio"
+    },
+    {
+     "pts": 3,
+     "titulo": "Teclado Sem Fio Logitech MX Keys Mini, Iluminação Smart, Bluetooth, USB, Easy-Switch, Recarregável, Rosa - 920-010507",
+     "id": "275873",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/275873/teclado-sem-fio-logitech-mx-keys-mini-ilumina-o-smart-bluetooth-usb-easy-switch-recarreg-vel-rosa-920-010507",
+     "categoria": "Periféricos > Teclado e Mouse > Teclado sem Fio > Teclado sem Fio"
+    },
+    {
+     "pts": 3,
+     "titulo": "Mouse sem Fio Logitech Trackball MX Ergo S, Bluetooth e USB Logi Bolt, 6 Botões Programáveis com Ajuste de Ângulo, Preto - 910-007261",
+     "id": "642241",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/642241/mouse-sem-fio-logitech-trackball-mx-ergo-s-bluetooth-e-usb-logi-bolt-6-botoes-programaveis-com-ajuste-de-angulo-preto-910-007261",
+     "categoria": "Periféricos > Teclado e Mouse > Mouse sem Fio > Mouse sem Fio"
+    }
+   ]
+  },
+  "B0B73JCBRZ": {
+   "nome": "EDJO ergonômico com fio",
+   "guia": "kit-teclado-mouse-2026.html",
+   "candidatos": []
+  },
+  "B0H196BVWH": {
+   "nome": "Kit sem fio de teclas curvas",
+   "guia": "kit-teclado-mouse-2026.html",
+   "candidatos": []
+  },
+  "B0DX791FXY": {
+   "nome": "Kit ergonômico ondulado (Wave)",
+   "guia": "kit-teclado-mouse-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "Teclado Sem Fio Logitech Wave Keys, Bluetooth, Layout US, Com Design Ondulado, Ergonômico, Grafite - 920-012281",
+     "id": "507339",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/507339/teclado-sem-fio-logitech-wave-keys-bluetooth-layout-us-com-design-ondulado-ergonomico-grafite-920-012281",
+     "categoria": "Periféricos > Teclado e Mouse > Teclado sem Fio > Teclado sem Fio"
+    },
+    {
+     "pts": 3,
+     "titulo": "Teclado Sem Fio Logitech Wave Keys, Bluetooth, Layout US, Com Design Ondulado, Ergonômico, Branco - 920-012282",
+     "id": "507340",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/507340/teclado-sem-fio-logitech-wave-keys-bluetooth-layout-us-com-design-ondulado-ergonomico-branco-920-012282",
+     "categoria": "Periféricos > Teclado e Mouse > Teclado sem Fio > Teclado sem Fio"
+    }
+   ]
+  },
+  "B07Z622Q53": {
+   "nome": "J JOYACCESS ergonômico",
+   "guia": "kit-teclado-mouse-2026.html",
+   "candidatos": []
+  },
+  "B09123XQD1": {
+   "nome": "Kit Gamer semi-mecânico iluminado",
+   "guia": "kit-teclado-mouse-2026.html",
+   "candidatos": []
+  },
+  "B0CM73M34B": {
+   "nome": "Kit teclado mecânico + mouse RGB (ABNT2)",
+   "guia": "kit-teclado-mouse-2026.html",
+   "candidatos": [
+    {
+     "pts": 7,
+     "titulo": "Teclado Mecânico Gamer Redragon Kumara, Anti-Ghosting, RGB, Switch Outemu Brown, ABNT2, Preto, PT - K552RGB-1 (PT-BROWN)",
+     "id": "93160",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/93160/teclado-mecanico-gamer-redragon-kumara-anti-ghosting-rgb-switch-outemu-brown-abnt2-preto-pt-k552rgb-1-pt-brown-",
+     "categoria": "Periféricos > Teclado Gamer > Com Fio > Com Fio"
+    },
+    {
+     "pts": 7,
+     "titulo": "Teclado Mecânico Gamer Redragon Kumara, Anti-Ghosting, RGB, Switch Outemu Black, ABNT2, Preto, PT - K552RGB-1 (PT-BLACK)",
+     "id": "93161",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/93161/teclado-mecanico-gamer-redragon-kumara-anti-ghosting-rgb-switch-outemu-black-abnt2-preto-pt-k552rgb-1-pt-black-",
+     "categoria": "Periféricos > Teclado Gamer > Com Fio > Com Fio"
+    },
+    {
+     "pts": 7,
+     "titulo": "Teclado Mecânico Gamer Redragon Mitra, RGB, Switch Outemu Brown, ABNT2, Preto - K551RGB-1 (PT-BROWN)",
+     "id": "94014",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/94014/teclado-mecanico-gamer-redragon-mitra-rgb-switch-outemu-brown-abnt2-preto-k551rgb-1-pt-brown-",
+     "categoria": "Periféricos > Teclado Gamer > Com Fio > Redragon"
+    },
+    {
+     "pts": 7,
+     "titulo": "Teclado Mecânico Gamer HyperX Alloy Origins Core, RGB, Switch HyperX Red, USB Tipo-C, ABNT2, Preto - 4P5P3A2#AC4",
+     "id": "105009",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/105009/teclado-mecanico-gamer-hyperx-alloy-origins-core-rgb-switch-hyperx-red-usb-tipo-c-abnt2-preto-4p5p3a2-ac4",
+     "categoria": "Periféricos > Teclado Gamer > Com Fio > Com Fio"
+    }
+   ]
+  },
+  "B07QKN5NF1": {
+   "nome": "Mondial Turbo Power L-99",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B08DFCF9HW": {
+   "nome": "Oster 1400 Full",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B08TM75GN4": {
+   "nome": "Philips Walita Série 5000 (RI2242)",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B0999PPKHM": {
+   "nome": "Oster New Osterizer Clássico",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B0DWBCG2M9": {
+   "nome": "Ninja Kitchen System 3 em 1",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B09VQ39F41": {
+   "nome": "Elgin Turbo Chef 3 em 1",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B08YHR9C4S": {
+   "nome": "Britânia BMX400 3 em 1",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B07SD5K7LR": {
+   "nome": "Arno TurboMix Pro MX31",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B0CFM6RMLM": {
+   "nome": "Philco PMX2000 3 em 1 Inox",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B0874G5TTM": {
+   "nome": "Philips Walita Pro Mix 4 em 1",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B09J1L99K9": {
+   "nome": "Cadence Zoop Contrast (2 jarras)",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B0DPNHNFPY": {
+   "nome": "Oster Blender Power To Go",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B0FQXYKFT8": {
+   "nome": "Arno Lightmix (portátil)",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B0DSCGG8V9": {
+   "nome": "Oster Ultra Power 1000",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B0DHSX6SBL": {
+   "nome": "Ninja Blast (portátil)",
+   "guia": "liquidificador-2026.html",
+   "candidatos": []
+  },
+  "B076B9D3LM": {
+   "nome": "Tanquinho Plus 4,5 kg",
+   "guia": "maquinadelavar-2026.html",
+   "candidatos": []
+  },
+  "B07W3N79QF": {
+   "nome": "Colormaq 12 kg (LCA12)",
+   "guia": "maquinadelavar-2026.html",
+   "candidatos": []
+  },
+  "B0D4R5Z8QT": {
+   "nome": "Electrolux 15 kg Premium Care (LEC15)",
+   "guia": "maquinadelavar-2026.html",
+   "candidatos": []
+  },
+  "B09B8VWZRG": {
+   "nome": "Electrolux 17 kg Essential Care (LED17)",
+   "guia": "maquinadelavar-2026.html",
+   "candidatos": []
+  },
+  "B0DJPMJ4X4": {
+   "nome": "Philco Lava e Seca 11 kg Eco InvertPlus (PLS11A)",
+   "guia": "maquinadelavar-2026.html",
+   "candidatos": []
+  },
+  "B0D9YQNT3Y": {
+   "nome": "Samsung Lavadora Frontal WW11T 11 kg",
+   "guia": "maquinadelavar-2026.html",
+   "candidatos": []
+  },
+  "B0CJSBX717": {
+   "nome": "Midea Lava e Seca HealthGuard 10,5 kg",
+   "guia": "maquinadelavar-2026.html",
+   "candidatos": []
+  },
+  "B0B61WJRY5": {
+   "nome": "Samsung Lava e Seca WD11M 11/7 kg",
+   "guia": "maquinadelavar-2026.html",
+   "candidatos": []
+  },
+  "B0D3WGQF6K": {
+   "nome": "LG Lava e Seca VC4 14 kg ThinQ",
+   "guia": "maquinadelavar-2026.html",
+   "candidatos": []
+  },
+  "B0FGZ6FCGY": {
+   "nome": "Midea MasterCook 20 L",
+   "guia": "microondas-2026.html",
+   "candidatos": []
+  },
+  "B08JN318M2": {
+   "nome": "Panasonic 21 L (NN-ST25LWRU)",
+   "guia": "microondas-2026.html",
+   "candidatos": []
+  },
+  "B0792XQTH6": {
+   "nome": "Electrolux 34 L (MEO44)",
+   "guia": "microondas-2026.html",
+   "candidatos": []
+  },
+  "B0921RTR6Y": {
+   "nome": "Panasonic 34 L Inox Antibactéria (NN-ST67LSRU)",
+   "guia": "microondas-2026.html",
+   "candidatos": []
+  },
+  "B076XCSJ4Q": {
+   "nome": "Electrolux 31 L Inox Painel Integrado (MI41S)",
+   "guia": "microondas-2026.html",
+   "candidatos": []
+  },
+  "B079ZBTGHW": {
+   "nome": "Brastemp 32 L com Grill (BMG45AR)",
+   "guia": "microondas-2026.html",
+   "candidatos": []
+  },
+  "B08DL8VLT5": {
+   "nome": "Electrolux de Embutir 34 L (ME3EP)",
+   "guia": "microondas-2026.html",
+   "candidatos": []
+  },
+  "B0BYP6G4VC": {
+   "nome": "Panasonic 30 L Air Fryer, Grill e Convecção (CD89)",
+   "guia": "microondas-2026.html",
+   "candidatos": []
+  },
+  "B093GCL18V": {
+   "nome": "ARZOPA Portátil 15,6\" Full HD",
+   "guia": "monitor-2026.html",
+   "candidatos": []
+  },
+  "B0CZ7N3RH8": {
+   "nome": "Dell Pro 24 Plus (P2425H)",
+   "guia": "monitor-2026.html",
+   "candidatos": []
+  },
+  "B088HSJP47": {
+   "nome": "BenQ PD2705Q 27\" QHD",
+   "guia": "monitor-2026.html",
+   "candidatos": []
+  },
+  "B0F2KBZ7WQ": {
+   "nome": "Alienware 27\" QHD 180 Hz (AW2725DM)",
+   "guia": "monitor-2026.html",
+   "candidatos": []
+  },
+  "B0GN9QR7JJ": {
+   "nome": "LG UltraGear OLED 27GX704A",
+   "guia": "monitor-2026.html",
+   "candidatos": []
+  },
+  "B0FHB4KWBF": {
+   "nome": "Alienware 27\" QD-OLED 280 Hz (AW2725D)",
+   "guia": "monitor-2026.html",
+   "candidatos": []
+  },
+  "B0DB5CDRHV": {
+   "nome": "Logitech POP Mouse",
+   "guia": "mouse-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "Kit Teclado e Mouse Sem Fio Logitech POP Icon com Teclas e Botões Personalizáveis, Silencioso, Bluetooth, Grafite - 920-013056",
+     "id": "687777",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/687777/kit-teclado-e-mouse-sem-fio-logitech-pop-icon-com-teclas-e-botoes-personalizaveis-silencioso-bluetooth-grafite-920-013056",
+     "categoria": "Periféricos > Teclado e Mouse > Kit Teclado + Mouse > Kit Teclado + Mouse"
+    },
+    {
+     "pts": 3,
+     "titulo": "Kit Teclado e Mouse Sem Fio Logitech POP Icon com Teclas e Botões Personalizáveis, Silencioso, Bluetooth, Branco- 920-013057",
+     "id": "687778",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/687778/kit-teclado-e-mouse-sem-fio-logitech-pop-icon-com-teclas-e-botoes-personalizaveis-silencioso-bluetooth-branco-920-013057",
+     "categoria": "Periféricos > Teclado e Mouse > Kit Teclado + Mouse > Kit Teclado + Mouse"
+    }
+   ]
+  },
+  "B08K9FRH7N": {
+   "nome": "Fortrek Crusader",
+   "guia": "mouse-2026.html",
+   "candidatos": []
+  },
+  "B09BDP8FL4": {
+   "nome": "Nintendo Switch Lite (Turquesa)",
+   "guia": "nintendo-switch-2026.html",
+   "candidatos": []
+  },
+  "B09KMW2N9Z": {
+   "nome": "Nintendo Switch OLED (Branco)",
+   "guia": "nintendo-switch-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "Console Nintendo Switch OLED + Super Mario Bros. Wonder + 3MO NOS - NT000053NSW",
+     "id": "940533",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/940533/console-nintendo-switch-oled-super-mario-bros-wonder-3mo-nos-nt000053nsw",
+     "categoria": "Games > Nintendo > Consoles Nintendo > Nintendo Switch"
+    }
+   ]
+  },
+  "B0FHCHBRGF": {
+   "nome": "Dell 15 (Core i5-1334U)",
+   "guia": "notebook-2026.html",
+   "candidatos": []
+  },
+  "B0GQJM9NJK": {
+   "nome": "Lenovo LOQ (i5-13450HX, RTX 3050)",
+   "guia": "notebook-2026.html",
+   "candidatos": [
+    {
+     "pts": 7,
+     "titulo": "Notebook Gamer Lenovo LOQ 15IRX9, 15.6\" Full HD 144Hz, Intel Core i5-13450HX, 16GB, 512GB SSD, NVIDIA RTX 4050, Linux - 83KHS00300",
+     "id": "1003399",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1003399/notebook-gamer-lenovo-loq-15irx9-15-6-full-hd-144hz-intel-core-i5-13450hx-16gb-512gb-ssd-nvidia-rtx-4050-linux-83khs00300",
+     "categoria": "Computadores > Notebooks > Notebook Lenovo > Notebook Lenovo"
+    }
+   ]
+  },
+  "B0FY3WHPDH": {
+   "nome": "Acer Nitro V 15 (i9, RTX 4060)",
+   "guia": "notebook-2026.html",
+   "candidatos": []
+  },
+  "B0FPGF9J2J": {
+   "nome": "PS5 Slim Edição Digital + Astro Bot e Gran Turismo 7",
+   "guia": "playstation-5-2026.html",
+   "candidatos": [
+    {
+     "pts": 8,
+     "titulo": "Jogo Gran Turismo 7 Edição Standart, PS5",
+     "id": "238134",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/238134/jogo-gran-turismo-7-edicao-standart-ps5",
+     "categoria": "Games > Playstation > Jogos Playstation > Playstation 5"
+    },
+    {
+     "pts": 7,
+     "titulo": "Leitor de Disco Para Playstation 5 Slim, PS5 Pro Sony, Edição digital, Branco - CFI-2000 - slim",
+     "id": "536958",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/536958/leitor-de-disco-para-playstation-5-slim-ps5-pro-sony-edicao-digital-branco-cfi-2000-slim",
+     "categoria": "Games > Playstation > Acessórios Playstation > Acessórios Playstation"
+    },
+    {
+     "pts": 7,
+     "titulo": "Controle Sem Fio Sony DualSense, Edição Limitada Gran Turismo, PS5, PC, Bluetooth, USB-C - 1000056957",
+     "id": "1080805",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1080805/controle-sem-fio-sony-dualsense-edicao-limitada-gran-turismo-ps5-pc-bluetooth-usb-c-1000056957",
+     "categoria": "Games > Playstation > Controles Playstation > Controles Playstation"
+    },
+    {
+     "pts": 6,
+     "titulo": "Jogo Astro Bot, PS5 - 1000044301",
+     "id": "609663",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/609663/jogo-astro-bot-ps5-1000044301",
+     "categoria": "Games > Playstation > Jogos Playstation > Playstation 5"
+    }
+   ]
+  },
+  "B0F8R9NDXC": {
+   "nome": "PS5 Slim com disco + Astro Bot e Gran Turismo 7",
+   "guia": "playstation-5-2026.html",
+   "candidatos": [
+    {
+     "pts": 7,
+     "titulo": "Jogo Gran Turismo 7 Edição Standart, PS5",
+     "id": "238134",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/238134/jogo-gran-turismo-7-edicao-standart-ps5",
+     "categoria": "Games > Playstation > Jogos Playstation > Playstation 5"
+    },
+    {
+     "pts": 6,
+     "titulo": "Leitor de Disco Para Playstation 5 Slim, PS5 Pro Sony, Edição digital, Branco - CFI-2000 - slim",
+     "id": "536958",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/536958/leitor-de-disco-para-playstation-5-slim-ps5-pro-sony-edicao-digital-branco-cfi-2000-slim",
+     "categoria": "Games > Playstation > Acessórios Playstation > Acessórios Playstation"
+    },
+    {
+     "pts": 6,
+     "titulo": "Jogo Astro Bot, PS5 - 1000044301",
+     "id": "609663",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/609663/jogo-astro-bot-ps5-1000044301",
+     "categoria": "Games > Playstation > Jogos Playstation > Playstation 5"
+    },
+    {
+     "pts": 6,
+     "titulo": "Controle Sem Fio Sony DualSense, Edição Limitada Gran Turismo, PS5, PC, Bluetooth, USB-C - 1000056957",
+     "id": "1080805",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1080805/controle-sem-fio-sony-dualsense-edicao-limitada-gran-turismo-ps5-pc-bluetooth-usb-c-1000056957",
+     "categoria": "Games > Playstation > Controles Playstation > Controles Playstation"
+    }
+   ]
+  },
+  "B094YR4SLJ": {
+   "nome": "i2GO PRO 20.000 mAh",
+   "guia": "powerbank-2026.html",
+   "candidatos": []
+  },
+  "B0C6XK77HJ": {
+   "nome": "Anker Nano 5.000 mAh",
+   "guia": "powerbank-2026.html",
+   "candidatos": []
+  },
+  "B0CZ9M6X8Q": {
+   "nome": "Anker 10.000 mAh 30 W",
+   "guia": "powerbank-2026.html",
+   "candidatos": []
+  },
+  "B0DSZF8HNJ": {
+   "nome": "Anker Zolo 20.000 mAh 45 W",
+   "guia": "powerbank-2026.html",
+   "candidatos": []
+  },
+  "B0C9QSV82F": {
+   "nome": "Geonav PB10MAG 10.000 mAh",
+   "guia": "powerbank-2026.html",
+   "candidatos": []
+  },
+  "B0B466YTT3": {
+   "nome": "Anker 622 MagSafe",
+   "guia": "powerbank-2026.html",
+   "candidatos": []
+  },
+  "B0D7DKJ75M": {
+   "nome": "Anker MagGo 10.000 mAh",
+   "guia": "powerbank-2026.html",
+   "candidatos": []
+  },
+  "B0CXDXP8VR": {
+   "nome": "Anker 20.000 mAh 87 W",
+   "guia": "powerbank-2026.html",
+   "candidatos": []
+  },
+  "B0DMDJBCDP": {
+   "nome": "Anker Laptop Power Bank 25.000 mAh",
+   "guia": "powerbank-2026.html",
+   "candidatos": []
+  },
+  "B0C85J5HYD": {
+   "nome": "Magcubic HY300",
+   "guia": "projetor-portatil-2026.html",
+   "candidatos": []
+  },
+  "B0DTKBMWJL": {
+   "nome": "Magcubic Projetor 1080p com foco automático",
+   "guia": "projetor-portatil-2026.html",
+   "candidatos": []
+  },
+  "B0DDKL8JXP": {
+   "nome": "BYINTEK U4",
+   "guia": "projetor-portatil-2026.html",
+   "candidatos": []
+  },
+  "B0FT371MFB": {
+   "nome": "Bettdow AC1082 (Netflix licenciado)",
+   "guia": "projetor-portatil-2026.html",
+   "candidatos": []
+  },
+  "B0DSWCMK7B": {
+   "nome": "Xiaomi Projetor L1 Pro",
+   "guia": "projetor-portatil-2026.html",
+   "candidatos": []
+  },
+  "B0FN7R1L3J": {
+   "nome": "soundcore Nebula P1",
+   "guia": "projetor-portatil-2026.html",
+   "candidatos": []
+  },
+  "B0F8R67B8J": {
+   "nome": "Hisense M2 Pro (4K a laser)",
+   "guia": "projetor-portatil-2026.html",
+   "candidatos": []
+  },
+  "B0D53RXMB1": {
+   "nome": "UGREEN Smart Tag (Find My)",
+   "guia": "rastreadorbluetooth-2026.html",
+   "candidatos": []
+  },
+  "B0CHN2D8KM": {
+   "nome": "Samsung Galaxy SmartTag2",
+   "guia": "rastreadorbluetooth-2026.html",
+   "candidatos": []
+  },
+  "B09SVRVV3H": {
+   "nome": "Electrolux ERB10",
+   "guia": "roboaspirador-2026.html",
+   "candidatos": []
+  },
+  "B0CGBR6QFC": {
+   "nome": "WAP Robot W400",
+   "guia": "roboaspirador-2026.html",
+   "candidatos": []
+  },
+  "B0DGQVLY99": {
+   "nome": "Tapo RV30 Max Plus",
+   "guia": "roboaspirador-2026.html",
+   "candidatos": []
+  },
+  "B0FD9CXF2W": {
+   "nome": "Xiaomi Robot Vacuum S40 Pro",
+   "guia": "roboaspirador-2026.html",
+   "candidatos": []
+  },
+  "B0H2DR1SGP": {
+   "nome": "Dreame L40",
+   "guia": "roboaspirador-2026.html",
+   "candidatos": []
+  },
+  "B0CPFBBHP4": {
+   "nome": "eufy X10 Pro Omni",
+   "guia": "roboaspirador-2026.html",
+   "candidatos": []
+  },
+  "B0FL7GXSCV": {
+   "nome": "eufy C28",
+   "guia": "roboaspirador-2026.html",
+   "candidatos": []
+  },
+  "B0FXM4S78T": {
+   "nome": "Dreame L40 Ultra AE",
+   "guia": "roboaspirador-2026.html",
+   "candidatos": []
+  },
+  "B0FXM57JL9": {
+   "nome": "Dreame X50 Ultra Complete",
+   "guia": "roboaspirador-2026.html",
+   "candidatos": []
+  },
+  "B0GXFFSVYM": {
+   "nome": "Dreame D15 Plus",
+   "guia": "roboaspirador-2026.html",
+   "candidatos": []
+  },
+  "B0G6Z6PTJG": {
+   "nome": "eufy C20 Omni",
+   "guia": "roboaspirador-2026.html",
+   "candidatos": []
+  },
+  "B0HJCYPVC7": {
+   "nome": "Dreame D30 Ultra",
+   "guia": "roboaspirador-2026.html",
+   "candidatos": []
+  },
+  "B0GXF8NXKX": {
+   "nome": "Dreame X60 Max Ultra Complete",
+   "guia": "roboaspirador-2026.html",
+   "candidatos": []
+  },
+  "B0FG2MD49G": {
+   "nome": "TP-Link Deco BE22 (3 unidades)",
+   "guia": "roteador-2026.html",
+   "candidatos": [
+    {
+     "pts": 8,
+     "titulo": "Roteador Wireless TP-Link Deco BE22, Wi-Fi 7, Gigabit, Dual Band, 3600Mbps, 3 Unidades - 100001717",
+     "id": "1042980",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1042980/roteador-wireless-tp-link-deco-be22-wi-fi-7-gigabit-dual-band-3600mbps-3-unidades-100001717",
+     "categoria": "Conectividade > Dispositivo de Rede > Roteador > Roteador"
+    },
+    {
+     "pts": 6,
+     "titulo": "Roteador Wireless TP-Link Deco BE22, Wi-Fi 7, Gigabit, Dual Band, 3600Mbps, 1 Unidade - 100001719",
+     "id": "1042978",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1042978/roteador-wireless-tp-link-deco-be22-wi-fi-7-gigabit-dual-band-3600mbps-1-unidade-100001719",
+     "categoria": "Conectividade > Dispositivo de Rede > Roteador > Roteador"
+    }
+   ]
+  },
+  "B0CJJ733W3": {
+   "nome": "TP-Link Deco BE65 (2 unidades)",
+   "guia": "roteador-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "Roteador TP Link Deco BE65 Mesh WI-FI 7, 2.5G, Tri-Band, BE11000, Pacote com 1 Unidade - Deco BE65(1-pack)(US)",
+     "id": "712627",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/712627/roteador-tp-link-deco-be65-mesh-wi-fi-7-2-5g-tri-band-be11000-pacote-com-1-unidade-deco-be65-1-pack-us-",
+     "categoria": "Conectividade > Dispositivo de Rede > Roteador > Roteador"
+    }
+   ]
+  },
+  "B0H99VLDM9": {
+   "nome": "TP-Link EB3600 Pro",
+   "guia": "roteador-2026.html",
+   "candidatos": []
+  },
+  "B0DR8VBPZN": {
+   "nome": "Cudy WR11000 (BE11000)",
+   "guia": "roteador-2026.html",
+   "candidatos": []
+  },
+  "B08WHRTR38": {
+   "nome": "TP-Link Archer GX90",
+   "guia": "roteador-2026.html",
+   "candidatos": []
+  },
+  "B0DHWFBYVC": {
+   "nome": "Motorola Moto g35 5G",
+   "guia": "smartphone-2026.html",
+   "candidatos": []
+  },
+  "B0DSYC4V4V": {
+   "nome": "Samsung Galaxy S25 Ultra 256 GB",
+   "guia": "smartphone-2026.html",
+   "candidatos": []
+  },
+  "B0GQW2J4SK": {
+   "nome": "Apple iPhone 17 256 GB",
+   "guia": "smartphone-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "iPhone 17 Pro Apple 256GB, Câmera Tripla Fusion de 48MP, Tela 6.3\" Super Retina XDR, Laranja-cósmico",
+     "id": "925347",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/925347/iphone-17-pro-apple-256gb-camera-tripla-fusion-de-48mp-tela-6-3-super-retina-xdr-laranja-cosmico",
+     "categoria": "Celular & Smartphone > Smartphones > iPhone > IPhone 17"
+    },
+    {
+     "pts": 3,
+     "titulo": "iPhone 17 Pro Apple 256GB, Câmera Tripla Fusion de 48MP, Tela 6.3\" Super Retina XDR, Azul-intenso",
+     "id": "925348",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/925348/iphone-17-pro-apple-256gb-camera-tripla-fusion-de-48mp-tela-6-3-super-retina-xdr-azul-intenso",
+     "categoria": "Celular & Smartphone > Smartphones > iPhone > IPhone 17"
+    },
+    {
+     "pts": 3,
+     "titulo": "iPhone 17 Pro Apple 512GB, Câmera Tripla Fusion de 48MP, Tela 6.3\" Super Retina XDR, Prateado",
+     "id": "925349",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/925349/iphone-17-pro-apple-512gb-camera-tripla-fusion-de-48mp-tela-6-3-super-retina-xdr-prateado",
+     "categoria": "Celular & Smartphone > Smartphones > iPhone > IPhone 17"
+    },
+    {
+     "pts": 3,
+     "titulo": "iPhone 17 Pro Apple 512GB, Câmera Tripla Fusion de 48MP, Tela 6.3\", Super Retina XDR, Laranja-cósmico",
+     "id": "925350",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/925350/iphone-17-pro-apple-512gb-camera-tripla-fusion-de-48mp-tela-6-3-super-retina-xdr-laranja-cosmico",
+     "categoria": "Celular & Smartphone > Smartphones > iPhone > IPhone 17"
+    }
+   ]
+  },
+  "B0GVP7Q8TX": {
+   "nome": "Hisense 43\" 4K Hi-QLED (43Q6QVV)",
+   "guia": "smarttv-2026.html",
+   "candidatos": []
+  },
+  "B0FKDPN21C": {
+   "nome": "Samsung 50\" Neo QLED 4K (QN90F)",
+   "guia": "smarttv-2026.html",
+   "candidatos": []
+  },
+  "B0F5X4NPK2": {
+   "nome": "Samsung 75\" Crystal UHD 4K (U8100F)",
+   "guia": "smarttv-2026.html",
+   "candidatos": []
+  },
+  "B0GL9C7WJD": {
+   "nome": "HUAWEI Band 11 Pro",
+   "guia": "smartwatch-2026.html",
+   "candidatos": []
+  },
+  "B0F32PTQD3": {
+   "nome": "HUAWEI WATCH FIT 4",
+   "guia": "smartwatch-2026.html",
+   "candidatos": []
+  },
+  "B0FDX5VNRL": {
+   "nome": "Samsung Galaxy Watch8 Classic 46 mm LTE",
+   "guia": "smartwatch-2026.html",
+   "candidatos": []
+  },
+  "B0DCZ9PRCP": {
+   "nome": "Amazfit T-Rex 3",
+   "guia": "smartwatch-2026.html",
+   "candidatos": []
+  },
+  "B01N5IB20Q": {
+   "nome": "Kingston A400 240 GB",
+   "guia": "ssd-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston A400, 240GB, 2.5\", SATA III, Leitura: 500 MB/s, Gravação: 350 MB/s, Preto - SA400S37/240G",
+     "id": "85197",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/85197/ssd-kingston-a400-240gb-sata-iii-2-5-leitura-500mb-s-gravacao-350mb-s-preto-sa400s37-240g",
+     "categoria": "Hardware > SSD > SSD SATA > SSD SATA"
+    },
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston A400, 480GB, 2.5\", SATA III, Leitura: 500 MB/s, Gravação: 450 MB/s, Preto - SA400S37/480G",
+     "id": "85198",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/85198/ssd-kingston-a400-480gb-sata-iii-2-5-leitura-500mb-s-gravacao-450mb-s-preto-sa400s37-480g",
+     "categoria": "Hardware > SSD > SSD SATA > SSD SATA"
+    },
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston A400, 960GB, 2.5\", SATA III, Leitura: 500 MB/s, Gravação: 450 MB/s, Preto - SA400S37/960G",
+     "id": "95217",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/95217/ssd-kingston-a400-960gb-sata-iii-2-5-leitura-500mb-s-gravacao-450mb-s-preto-sa400s37-960g",
+     "categoria": "Hardware > SSD > SSD SATA > SSD SATA"
+    }
+   ]
+  },
+  "B01N0TQPQB": {
+   "nome": "Kingston A400 480 GB",
+   "guia": "ssd-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston A400, 240GB, 2.5\", SATA III, Leitura: 500 MB/s, Gravação: 350 MB/s, Preto - SA400S37/240G",
+     "id": "85197",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/85197/ssd-kingston-a400-240gb-sata-iii-2-5-leitura-500mb-s-gravacao-350mb-s-preto-sa400s37-240g",
+     "categoria": "Hardware > SSD > SSD SATA > SSD SATA"
+    },
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston A400, 480GB, 2.5\", SATA III, Leitura: 500 MB/s, Gravação: 450 MB/s, Preto - SA400S37/480G",
+     "id": "85198",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/85198/ssd-kingston-a400-480gb-sata-iii-2-5-leitura-500mb-s-gravacao-450mb-s-preto-sa400s37-480g",
+     "categoria": "Hardware > SSD > SSD SATA > SSD SATA"
+    },
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston A400, 960GB, 2.5\", SATA III, Leitura: 500 MB/s, Gravação: 450 MB/s, Preto - SA400S37/960G",
+     "id": "95217",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/95217/ssd-kingston-a400-960gb-sata-iii-2-5-leitura-500mb-s-gravacao-450mb-s-preto-sa400s37-960g",
+     "categoria": "Hardware > SSD > SSD SATA > SSD SATA"
+    }
+   ]
+  },
+  "B07YD579WM": {
+   "nome": "Crucial BX500 1 TB",
+   "guia": "ssd-2026.html",
+   "candidatos": []
+  },
+  "B08QBJ2YMG": {
+   "nome": "Samsung 870 EVO 1 TB",
+   "guia": "ssd-2026.html",
+   "candidatos": []
+  },
+  "B0DBR9RZLV": {
+   "nome": "Kingston NV3 500 GB",
+   "guia": "ssd-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston NV3, 500GB, M.2 2280, PCIe 4.0 x4, NVMe, Leitura: 5000 MB/s, Gravação: 3000 MB/s, Azul - SNV3S/500G",
+     "id": "621161",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/621161/ssd-kingston-nv3-500-gb-m-2-2280-pcie-4-0-x4-nvme-leitura-5000-mb-s-gravacao-3000-mb-s-azul-snv3s-500g",
+     "categoria": "Hardware > SSD > SSD PCIe NVMe > SSD PCIe NVMe"
+    },
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston NV3, 1TB, M.2 2280, PCIe 4.0 x4, NVMe, Leitura: 6000 MB/s, Gravação: 4000 MB/s, Azul - SNV3S/1000G",
+     "id": "621162",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/621162/ssd-kingston-nv3-1-tb-m-2-2280-pcie-4-0-x4-nvme-leitura-6000-mb-s-gravacao-4000-mb-s-azul-snv3s-1000g",
+     "categoria": "Hardware > SSD > SSD PCIe NVMe > SSD PCIe NVMe"
+    },
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston NV3, 2TB, M.2 2280, PCIe 4.0 x4, NVMe, Leitura: 6000 MB/s, Gravação: 5000 MB/s, Azul - SNV3S/2000G",
+     "id": "621163",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/621163/ssd-kingston-nv3-2tb-m-2-2280-pcie-4-0-x4-nvme-leitura-6000-mb-s-gravacao-5000-mb-s-azul-snv3s-2000g",
+     "categoria": "Hardware > SSD > SSD PCIe NVMe > SSD PCIe NVMe"
+    },
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston NV3, 4TB, M.2 2280, PCIe 4.0 x4, NVMe, Leitura: 6000 MB/s, Gravação: 5000 MB/s, Azul - SNV3S/4000G",
+     "id": "678286",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/678286/ssd-kingston-nv3-4tb-m-2-2280-pcie-4-0-x4-nvme-leitura-6000-mb-s-grava-o-5000-mb-s-azul-snv3s-4000g",
+     "categoria": "Hardware > SSD > SSD PCIe NVMe > SSD PCIe NVMe"
+    }
+   ]
+  },
+  "B0DBR3DZWG": {
+   "nome": "Kingston NV3 1 TB",
+   "guia": "ssd-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston NV3, 500GB, M.2 2280, PCIe 4.0 x4, NVMe, Leitura: 5000 MB/s, Gravação: 3000 MB/s, Azul - SNV3S/500G",
+     "id": "621161",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/621161/ssd-kingston-nv3-500-gb-m-2-2280-pcie-4-0-x4-nvme-leitura-5000-mb-s-gravacao-3000-mb-s-azul-snv3s-500g",
+     "categoria": "Hardware > SSD > SSD PCIe NVMe > SSD PCIe NVMe"
+    },
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston NV3, 1TB, M.2 2280, PCIe 4.0 x4, NVMe, Leitura: 6000 MB/s, Gravação: 4000 MB/s, Azul - SNV3S/1000G",
+     "id": "621162",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/621162/ssd-kingston-nv3-1-tb-m-2-2280-pcie-4-0-x4-nvme-leitura-6000-mb-s-gravacao-4000-mb-s-azul-snv3s-1000g",
+     "categoria": "Hardware > SSD > SSD PCIe NVMe > SSD PCIe NVMe"
+    },
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston NV3, 2TB, M.2 2280, PCIe 4.0 x4, NVMe, Leitura: 6000 MB/s, Gravação: 5000 MB/s, Azul - SNV3S/2000G",
+     "id": "621163",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/621163/ssd-kingston-nv3-2tb-m-2-2280-pcie-4-0-x4-nvme-leitura-6000-mb-s-gravacao-5000-mb-s-azul-snv3s-2000g",
+     "categoria": "Hardware > SSD > SSD PCIe NVMe > SSD PCIe NVMe"
+    },
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston NV3, 4TB, M.2 2280, PCIe 4.0 x4, NVMe, Leitura: 6000 MB/s, Gravação: 5000 MB/s, Azul - SNV3S/4000G",
+     "id": "678286",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/678286/ssd-kingston-nv3-4tb-m-2-2280-pcie-4-0-x4-nvme-leitura-6000-mb-s-grava-o-5000-mb-s-azul-snv3s-4000g",
+     "categoria": "Hardware > SSD > SSD PCIe NVMe > SSD PCIe NVMe"
+    }
+   ]
+  },
+  "B0CK39YR9V": {
+   "nome": "Crucial T500 1 TB",
+   "guia": "ssd-2026.html",
+   "candidatos": []
+  },
+  "B0B7CKVCCV": {
+   "nome": "WD Black SN850X 1 TB",
+   "guia": "ssd-2026.html",
+   "candidatos": [
+    {
+     "pts": 4,
+     "titulo": "SSD SanDisk SN850X Gaming Storage, 1TB, M.2 2280, PCIe 4.0 x4, NVMe, Leitura: 7300 MB/s, Gravação: 6300 MB/s, Preto - WDS100T2X0E",
+     "id": "379756",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/379756/ssd-sandisk-sn850x-gaming-storage-1tb-m-2-2280-pcie-gen4x4-nvme-leitura-7300-mb-s-e-gravacao-6300-mb-s-preto-wds100t2x0e",
+     "categoria": "Hardware > SSD > SSD PCIe NVMe > SSD PCIe NVMe"
+    },
+    {
+     "pts": 4,
+     "titulo": "SSD SanDisk SN850X Gaming Storage, 2TB, M.2 2280, PCIe 4.0 x4, NVMe, Leitura: 7300 MB/s, Gravação: 6600 MB/s, Preto - WDS200T2X0E",
+     "id": "379757",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/379757/ssd-sandisk-sn850x-gaming-storage-2tb-m-2-2280-pcie-gen4x4-nvme-leitura-7300-mb-s-e-gravacao-6600-mb-s-preto-wds200t2x0e",
+     "categoria": "Hardware > SSD > SSD PCIe NVMe > SSD PCIe NVMe"
+    },
+    {
+     "pts": 4,
+     "titulo": "SSD SanDisk SN850X Gaming Storage, 4TB, M.2 2280, PCIe 4.0 x4, NVMe, Leitura: 7300 MB/s, Gravação: 6600 MB/s, Preto - WDS400T2X0E",
+     "id": "379758",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/379758/ssd-sandisk-wd-black-sn850x-gaming-storage-4tb-m-2-2280-pcie-gen4x4-nvme-leitura-7300-mb-s-e-gravacao-6600-mb-s-preto-wds400t2x0e",
+     "categoria": "Hardware > SSD > SSD PCIe NVMe > SSD PCIe NVMe"
+    }
+   ]
+  },
+  "B0CCQB7BN7": {
+   "nome": "Kingston XS1000 1 TB",
+   "guia": "ssd-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston XS1000, 1TB, Portátil, USB 3.2 Gen 2, Leitura: 1050 MB/s, Gravação: 1050 MB/s, Preto - SXS1000/1000G",
+     "id": "476239",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/476239/ssd-kingston-xs1000-1tb-portatil-usb-3-2-gen-2-leitura-1050-mb-s-gravacao-1050-mb-s-preto-sxs1000-1000g",
+     "categoria": "Hardware > SSD > SSD Externo / Portátil > SSD Externo / Portátil"
+    },
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston XS1000, 2TB, Portátil, USB 3.2 Gen 2, Leitura: 1050 MB/s, Gravação: 1050 MB/s, Preto - SXS1000/2000G",
+     "id": "476241",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/476241/ssd-kingston-xs1000-2tb-portatil-usb-3-2-gen-2-leitura-1050-mb-s-gravacao-1050-mb-s-preto-sxs1000-2000g",
+     "categoria": "Hardware > SSD > SSD Externo / Portátil > SSD Externo / Portátil"
+    },
+    {
+     "pts": 5,
+     "titulo": "SSD Kingston XS1000, 1TB, Portátil, USB 3.2 Gen 2, Leitura: 1050 MB/s, Gravação: 1000 MB/s, Vermelho - SXS1000R/1000G",
+     "id": "615713",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/615713/ssd-kingston-xs1000-1tb-portatil-usb-3-2-gen-2-leitura-1050-mb-s-gravacao-1000-mb-s-vermelho-sxs1000r-1000g",
+     "categoria": "Hardware > SSD > SSD Externo / Portátil > SSD Externo / Portátil"
+    }
+   ]
+  },
+  "B0874XN4D8": {
+   "nome": "Samsung T7 1 TB",
+   "guia": "ssd-2026.html",
+   "candidatos": []
+  },
+  "B08HN37XC1": {
+   "nome": "SanDisk Extreme Portable 2 TB",
+   "guia": "ssd-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "SSD Externo SanDisk Portable V3, 1TB, USB 3.2 Gen 2, Leitura: 1000MB/s, Preto - SDSSDE31-1T00-G25",
+     "id": "1061518",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1061518/ssd-externo-sandisk-e30-1tb-usb-32-gen-2-leitura-800mb/s-preto-sdssde31-1t00-g25",
+     "categoria": "Hardware > SSD > SSD Externo / Portátil > SSD Externo / Portátil"
+    },
+    {
+     "pts": 3,
+     "titulo": "SSD Externo SanDisk Portable V3, 500GB, USB 3.2 Gen 2, Leitura: 1000MB/s, Preto - SDSSDE31-500G-G25",
+     "id": "1061519",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1061519/ssd-externo-sandisk-e30-500gb-usb-32-gen-2-leitura-800mb/s-preto-sdssde31-500g-g25",
+     "categoria": "Hardware > SSD > SSD Externo / Portátil > SSD Externo / Portátil"
+    },
+    {
+     "pts": 3,
+     "titulo": "SSD Externo SanDisk Portable V3, 2TB, USB 3.2 Gen 2, Leitura: 1000MB/s, Preto - SDSSDE70-2T00-G25",
+     "id": "1061521",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1061521/ssd-externo-sandisk-extreme-v2-2tb-nvme-usb-c-leitura-1050mb/s-gravacao-1000mb/s-preto-sdssde70-2t00-g25",
+     "categoria": "Hardware > SSD > SSD Externo / Portátil > SSD Externo / Portátil"
+    }
+   ]
+  },
+  "B09VLHR4JC": {
+   "nome": "Samsung T7 Shield 2 TB",
+   "guia": "ssd-2026.html",
+   "candidatos": []
+  },
+  "B0CJH88CW7": {
+   "nome": "Multi Patrulha Canina Chase",
+   "guia": "tablet-2026.html",
+   "candidatos": []
+  },
+  "B0CX2DW61L": {
+   "nome": "Multi M8 (6 GB)",
+   "guia": "tablet-2026.html",
+   "candidatos": []
+  },
+  "B0CQRQ8ZLT": {
+   "nome": "Positivo Vision Tab 10 (4G)",
+   "guia": "tablet-2026.html",
+   "candidatos": []
+  },
+  "B0F7HYZV8V": {
+   "nome": "Lenovo Tab 10.1\"",
+   "guia": "tablet-2026.html",
+   "candidatos": []
+  },
+  "B0FMFRFNWG": {
+   "nome": "Samsung Galaxy Tab S10 Lite",
+   "guia": "tablet-2026.html",
+   "candidatos": []
+  },
+  "B0DZK4GFX6": {
+   "nome": "Apple iPad Air 11\" (M3, 128 GB)",
+   "guia": "tablet-2026.html",
+   "candidatos": [
+    {
+     "pts": 10,
+     "titulo": "iPad Air Apple 11\" 128 GB, Chip M3, Wi-Fi + Cellular, Câmera Traseira 12MP, Azul - MCFW4BZ/A",
+     "id": "726630",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/726630/ipad-air-apple-11-128-gb-chip-m3-wi-fi-cellular-camera-traseira-12mp-azul-mcfw4bz-a",
+     "categoria": "Tablets, iPads e E-readers > Apple iPad > Ipad Air > Ipad Air"
+    },
+    {
+     "pts": 9,
+     "titulo": "iPad Air Apple 13\" 128 GB, Chip M3, Wi-Fi, Câmera Traseira 12MP, Azul - MCNJ4BZ/A",
+     "id": "726614",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/726614/ipad-air-apple-13-128-gb-chip-m3-wi-fi-camera-traseira-12mp-azul-mcnj4bz-a",
+     "categoria": "Tablets, iPads e E-readers > Apple iPad > Ipad Air > Ipad Air"
+    },
+    {
+     "pts": 9,
+     "titulo": "iPad Air Apple 11\" 512 GB, Chip M3, Wi-Fi + Cellular, Câmera Traseira 12MP, Cinza-espacial - MCG44BZ/A",
+     "id": "726637",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/726637/ipad-air-apple-11-512-gb-chip-m3-wi-fi-cellular-camera-traseira-12mp-cinza-espacial-mcg44bz-a",
+     "categoria": "Tablets, iPads e E-readers > Apple iPad > Ipad Air > Ipad Air"
+    },
+    {
+     "pts": 9,
+     "titulo": "iPad Air Apple 11\" 512 GB, Chip M3, Wi-Fi, Câmera Traseira 12MP, Roxo - MCAE4BZ/A",
+     "id": "726656",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/726656/ipad-air-apple-11-512-gb-chip-m3-wi-fi-camera-traseira-12mp-roxo-mcae4bz-a",
+     "categoria": "Tablets, iPads e E-readers > Apple iPad > Ipad Air > Ipad Air"
+    }
+   ]
+  },
+  "B0F3LTWYS5": {
+   "nome": "Samsung Galaxy Tab S10 FE",
+   "guia": "tablet-2026.html",
+   "candidatos": []
+  },
+  "B0DGJ8P2MG": {
+   "nome": "Samsung Galaxy Tab S10+",
+   "guia": "tablet-2026.html",
+   "candidatos": []
+  },
+  "B0FNT69RYY": {
+   "nome": "Samsung Galaxy Tab S11",
+   "guia": "tablet-2026.html",
+   "candidatos": []
+  },
+  "B0DZK3VZVH": {
+   "nome": "Apple iPad Air 13\" (M3, 128 GB)",
+   "guia": "tablet-2026.html",
+   "candidatos": [
+    {
+     "pts": 10,
+     "titulo": "iPad Air Apple 13\" 128 GB, Chip M3, Wi-Fi, Câmera Traseira 12MP, Azul - MCNJ4BZ/A",
+     "id": "726614",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/726614/ipad-air-apple-13-128-gb-chip-m3-wi-fi-camera-traseira-12mp-azul-mcnj4bz-a",
+     "categoria": "Tablets, iPads e E-readers > Apple iPad > Ipad Air > Ipad Air"
+    },
+    {
+     "pts": 9,
+     "titulo": "iPad Air Apple 11\" 128 GB, Chip M3, Wi-Fi + Cellular, Câmera Traseira 12MP, Azul - MCFW4BZ/A",
+     "id": "726630",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/726630/ipad-air-apple-11-128-gb-chip-m3-wi-fi-cellular-camera-traseira-12mp-azul-mcfw4bz-a",
+     "categoria": "Tablets, iPads e E-readers > Apple iPad > Ipad Air > Ipad Air"
+    },
+    {
+     "pts": 8,
+     "titulo": "iPad Air Apple 13\" 128GB, Chip M3, Wi-Fi + Cellular, Câmera Traseira 12MP, Cinza-espacial - MCJ14BZ/A",
+     "id": "726597",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/726597/ipad-air-apple-13-128gb-chip-m3-wi-fi-cellular-camera-traseira-12mp-cinza-espacial-mcj14bz-a",
+     "categoria": "Tablets, iPads e E-readers > Apple iPad > Ipad Air > Ipad Air"
+    },
+    {
+     "pts": 8,
+     "titulo": "iPad Air Apple 13\" 128GB, Chip M3, Wi-Fi + Cellular, Câmera Traseira 12MP, Azul - MCJ24BZ/A",
+     "id": "726598",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/726598/ipad-air-apple-13-128gb-chip-m3-wi-fi-cellular-camera-traseira-12mp-azul-mcj24bz-a",
+     "categoria": "Tablets, iPads e E-readers > Apple iPad > Ipad Air > Ipad Air"
+    }
+   ]
+  },
+  "B0DGJ8NNYV": {
+   "nome": "Samsung Galaxy Tab S10 Ultra (512 GB)",
+   "guia": "tablet-2026.html",
+   "candidatos": []
+  },
+  "B08DRVM6BQ": {
+   "nome": "VINIK Dynamic Smart DT200",
+   "guia": "teclado-2026.html",
+   "candidatos": []
+  },
+  "B0CZ6VB7QT": {
+   "nome": "AULA F75",
+   "guia": "teclado-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "Teclado Mecânico Gamer AULA F75, RGB, Switch Red, Keycaps PBT, Hotswap, Branco - AULA-F75-Wired-WH-R",
+     "id": "949794",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/949794/teclado-mecanico-gamer-aula-f75-rgb-switch-red-keycaps-pbt-hotswap-branco-aula-f75-wired-wh-r",
+     "categoria": "Periféricos > Teclado Gamer > Com Fio > Com Fio"
+    }
+   ]
+  },
+  "B0BQBSH6NQ": {
+   "nome": "Logitech G PRO X TKL LIGHTSPEED",
+   "guia": "teclado-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer Sem Fio Logitech G PRO X Wireless LIGHTSPEED 7.1 Dolby Surround, Blue VOICE, Drivers PRO-G 50 mm - 981-000906",
+     "id": "117314",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/117314/headset-gamer-sem-fio-logitech-g-pro-x-wireless-lightspeed-7-1-dolby-surround-blue-voice-drivers-pro-g-50-mm-981-000906",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer Sem Fio Logitech G Pro X 2 Lightspeed, Driver 50mm, Bluetooth, USB e 3.5mm, para PC, Playstation e Switch, Preto - 981-001262",
+     "id": "495541",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/495541/headset-gamer-sem-fio-logitech-g-pro-x-2-lightspeed-driver-50mm-bluetooth-usb-e-3-5mm-para-pc-playstation-e-switch-preto-981-001262",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer Sem Fio Logitech G Pro X 2 Lightspeed, Driver 50mm, Bluetooth, USB e 3.5mm, para PC, Playstation e Switch, Branco - 981-001268",
+     "id": "495542",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/495542/headset-gamer-sem-fio-logitech-g-pro-x-2-lightspeed-driver-50mm-bluetooth-usb-e-3-5mm-para-pc-playstation-e-switch-branco-981-001268",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 5,
+     "titulo": "Headset Gamer Sem Fio Logitech G Pro X 2 Lightspeed, Driver 50mm, Bluetooth, USB e 3.5mm, para PC, Playstation e Switch, Rosa Magenta - 981-001274",
+     "id": "495543",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/495543/headset-gamer-sem-fio-logitech-g-pro-x-2-lightspeed-driver-50mm-bluetooth-usb-e-3-5mm-para-pc-playstation-e-switch-rosa-magenta-981-001274",
+     "categoria": "Periféricos > Headset Gamer > Sem Fio > Sem Fio"
+    }
+   ]
+  },
+  "B0GC9LZPV4": {
+   "nome": "Redragon Dharma K556 (magnético)",
+   "guia": "teclado-2026.html",
+   "candidatos": []
+  },
+  "B09M56VH6F": {
+   "nome": "EKAZA Tomada Inteligente 20 A (T105)",
+   "guia": "tomadainteligente-2026.html",
+   "candidatos": []
+  },
+  "B0BNSVWWDR": {
+   "nome": "Positivo Smart Plug Max 16 A",
+   "guia": "tomadainteligente-2026.html",
+   "candidatos": []
+  },
+  "B07VMZBLJC": {
+   "nome": "JWCOM Smart Interruptor Wi-Fi SA-01",
+   "guia": "tomadainteligente-2026.html",
+   "candidatos": []
+  },
+  "B09CWLWMWH": {
+   "nome": "EKAZA Mini Módulo Embutido T109",
+   "guia": "tomadainteligente-2026.html",
+   "candidatos": []
+  },
+  "B07L4TSL64": {
+   "nome": "G-Tech Allergy Free HM 3 L",
+   "guia": "umidificador-2026.html",
+   "candidatos": []
+  },
+  "B075ZJXD5K": {
+   "nome": "BLACK+DECKER AIR1000 2,5 L",
+   "guia": "umidificador-2026.html",
+   "candidatos": []
+  },
+  "B07G387JPR": {
+   "nome": "Mondial Comfort Air 6 (UA-07)",
+   "guia": "umidificador-2026.html",
+   "candidatos": []
+  },
+  "B0FZCT7GGZ": {
+   "nome": "Midea Master Connect 6 L (Wi-Fi)",
+   "guia": "umidificador-2026.html",
+   "candidatos": []
+  },
+  "B0F8Y8N2ST": {
+   "nome": "Arno X-TREME 7 40 cm (VE71)",
+   "guia": "ventilador-2026.html",
+   "candidatos": []
+  },
+  "B09B15B85N": {
+   "nome": "Mondial Coluna Super Power 40 cm (VSP-40C-B)",
+   "guia": "ventilador-2026.html",
+   "candidatos": []
+  },
+  "B09DRC1Y8T": {
+   "nome": "Arno Ultra Silence Force Bluetooth (VDBT)",
+   "guia": "ventilador-2026.html",
+   "candidatos": []
+  },
+  "B0882JG84M": {
+   "nome": "WAP RAJADA PRO 60",
+   "guia": "ventilador-2026.html",
+   "candidatos": []
+  },
+  "B076HRGXLB": {
+   "nome": "Ventisol Fênix 370 (127 V)",
+   "guia": "ventiladordeteto-2026.html",
+   "candidatos": []
+  },
+  "B0B7KJ5BG5": {
+   "nome": "Ventisol Fênix Inverter com controle remoto",
+   "guia": "ventiladordeteto-2026.html",
+   "candidatos": []
+  },
+  "B0F7RF51CW": {
+   "nome": "Airwit 106,7 cm com luz LED (preto e madeira)",
+   "guia": "ventiladordeteto-2026.html",
+   "candidatos": []
+  },
+  "B0FN5HFZTY": {
+   "nome": "Elgin Silence Air Pro retrátil",
+   "guia": "ventiladordeteto-2026.html",
+   "candidatos": []
+  },
+  "B0FC28XWJF": {
+   "nome": "Airwit Retrátil Inverter 106 cm",
+   "guia": "ventiladordeteto-2026.html",
+   "candidatos": []
+  },
+  "B00K4D80W8": {
+   "nome": "Rapoo C200 720p",
+   "guia": "webcam-2026.html",
+   "candidatos": [
+    {
+     "pts": 9,
+     "titulo": "Webcam Rapoo C200 HD 720P, com Autofoco, Microfone com Cancelamento de Ruído, Preto - C200",
+     "id": "900236",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/900236/webcam-rapoo-c200-hd-720p-com-autofoco-microfone-com-cancelamento-de-ruido-preto-c200",
+     "categoria": "Periféricos > Webcam e Videoconferência > Webcam > Webcam"
+    }
+   ]
+  },
+  "B003PAOAWG": {
+   "nome": "Logitech C270",
+   "guia": "webcam-2026.html",
+   "candidatos": [
+    {
+     "pts": 5,
+     "titulo": "Webcam HD Logitech C270, 720p, 30 FPS, Microfone Integrado, USB 2.0 - 960-000694",
+     "id": "37697",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/37697/webcam-hd-logitech-c270-720p-30-fps-microfone-integrado-usb-2-0-960-000694",
+     "categoria": "Periféricos > Webcam e Videoconferência > Webcam > Webcam"
+    }
+   ]
+  },
+  "B0C76ZD7KV": {
+   "nome": "UGREEN Full HD 1080p",
+   "guia": "webcam-2026.html",
+   "candidatos": []
+  },
+  "B09SBNSFR5": {
+   "nome": "HP 320 Full HD",
+   "guia": "webcam-2026.html",
+   "candidatos": []
+  },
+  "B0DZXW5XJ3": {
+   "nome": "Intelbras WCI1080P 60 fps",
+   "guia": "webcam-2026.html",
+   "candidatos": []
+  },
+  "B0CJRXT3L6": {
+   "nome": "Logitech Brio 100",
+   "guia": "webcam-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "Webcam Logitech Brio 100 Full HD 30 FPS, Microfone, USB-A, Correção Automática, Grafite - 960-001586",
+     "id": "496104",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/496104/webcam-logitech-brio-100-full-hd-30-fps-microfone-usb-a-correcao-automatica-grafite-960-001586",
+     "categoria": "Periféricos > Webcam e Videoconferência > Webcam > Webcam"
+    },
+    {
+     "pts": 3,
+     "titulo": "Webcam Logitech Brio 100 Full HD 30 FPS, Microfone, USB-A, Correção Automática, Branco - 960-001615",
+     "id": "496105",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/496105/webcam-logitech-brio-100-full-hd-30-fps-microfone-usb-a-correcao-automatica-branco-960-001615",
+     "categoria": "Periféricos > Webcam e Videoconferência > Webcam > Webcam"
+    }
+   ]
+  },
+  "B0BX1PWTZ2": {
+   "nome": "Logitech Brio 300",
+   "guia": "webcam-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "Webcam Logitech Brio 300 Full HD, 1080p, 30 FPS, USB-C, Microfone Integrado, Branco - 960-001440",
+     "id": "431013",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/431013/webcam-logitech-brio-300-full-hd-1080p-30-fps-usb-c-microfone-integrado-branco-960-001440",
+     "categoria": "Periféricos > Webcam e Videoconferência > Webcam > Webcam"
+    },
+    {
+     "pts": 3,
+     "titulo": "Kit Personalidade Logitech Webcam Brio 300+ Mouse Sem Fio Pebble 2 M350s + Teclado Sem Fio Pebble Keys 2 K380s + Headset H390",
+     "id": "525695",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/525695/kit-personalidade-logitech-webcam-brio-300-mouse-sem-fio-pebble-2-m350s-teclado-sem-fio-pebble-keys-2-k380s-headset-h390",
+     "categoria": "Periféricos > Webcam e Videoconferência > Webcam > Webcam"
+    }
+   ]
+  },
+  "B0BGT1VQGJ": {
+   "nome": "Logitech Brio 500",
+   "guia": "webcam-2026.html",
+   "candidatos": [
+    {
+     "pts": 3,
+     "titulo": "Webcam + Suporte Logitech Brio 500 Full HD, 1080p, 30 FPS, com Microfones Duplos, USB, Suporte Incluso, Grafite - 960-001412",
+     "id": "399007",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/399007/webcam-suporte-logitech-brio-500-full-hd-1080p-30-fps-com-microfones-duplos-usb-suporte-incluso-grafite-960-001412",
+     "categoria": "Periféricos > Webcam e Videoconferência > Webcam > Webcam"
+    },
+    {
+     "pts": 3,
+     "titulo": "Webcam + Suporte Logitech Brio 500 Full HD, 1080p, 30 FPS, com Microfones Duplos, USB, Suporte Incluso, Branco - 960-001426",
+     "id": "399008",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/399008/webcam-suporte-logitech-brio-500-full-hd-1080p-30-fps-com-microfones-duplos-usb-suporte-incluso-branco-960-001426",
+     "categoria": "Periféricos > Webcam e Videoconferência > Webcam > Webcam"
+    },
+    {
+     "pts": 3,
+     "titulo": "Webcam + Suporte Logitech Brio 500 Full HD, 1080p, 30 FPS, com Microfones Duplos, USB, Suporte Incluso, Rosa - 960-001418",
+     "id": "399009",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/399009/webcam-suporte-logitech-brio-500-full-hd-1080p-30-fps-com-microfones-duplos-usb-suporte-incluso-rosa-960-001418",
+     "categoria": "Periféricos > Webcam e Videoconferência > Webcam > Webcam"
+    }
+   ]
+  },
+  "B0D2QJ9W2G": {
+   "nome": "EMEET SmartCam S800 4K",
+   "guia": "webcam-2026.html",
+   "candidatos": []
+  },
+  "B0CX8S8JLX": {
+   "nome": "Logitech MX Brio 4K",
+   "guia": "webcam-2026.html",
+   "candidatos": [
+    {
+     "pts": 7,
+     "titulo": "Webcam Ultra HD 4K Logitech MX Brio Com Microfones com Redução de Ruído, Protetor de Privacidade e Conexão USB-C, Grafite - 960-001548",
+     "id": "551597",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/551597/webcam-ultra-hd-4k-logitech-mx-brio-com-microfones-com-reducao-de-ruido-protetor-de-privacidade-e-conexao-usb-c-grafite-960-001548",
+     "categoria": "Periféricos > Webcam e Videoconferência > Webcam > Webcam"
+    },
+    {
+     "pts": 4,
+     "titulo": "Mouse Gamer Sem Fio Logitech G PRO X SUPERLIGHT 2c, 5 botões, sensor 44K DPI, Atualização de até 8 kHz, PC e Mac, Branco - 910-007537",
+     "id": "948296",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/948296/mouse-gamer-sem-fio-logitech-g-pro-x-superlight-2c-5-botoes-sensor-44k-dpi-atualizacao-de-ate-8-khz-pc-e-mac-branco-910-007537",
+     "categoria": "Periféricos > Mouse Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 4,
+     "titulo": "Mouse Gamer Sem Fio Logitech G502 X PLUS Edição Limitada, Switch LIGHTFORCE, Sensor 44K, 13 controles, LIGHTSPEED, RGB, Branco - 910-007818",
+     "id": "1077196",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1077196/mouse-gamer-sem-fio-logitech-g502-x-plus-edicao-limitada-switch-lightforce-sensor-44k-13-controles-lightspeed-rgb-branco-910-007818",
+     "categoria": "Periféricos > Mouse Gamer > Sem Fio > Sem Fio"
+    },
+    {
+     "pts": 4,
+     "titulo": "Mouse Gamer Sem Fio Logitech G PRO X Superlight 2 DEX SE, 60 g, Cinco Botões, Sensor 44K DPI, Taxa de transmissão 1 kHz, 910-007832 - Preto",
+     "id": "1077207",
+     "estoque": "1",
+     "cond": "",
+     "url": "https://www.kabum.com.br/produto/1077207/mouse-gamer-sem-fio-logitech-g-pro-x-superlight-2-dex-se-60-g-cinco-botoes-sensor-44k-dpi-taxa-de-transmissao-1-khz-910-007832-preto",
+     "categoria": "Periféricos > Mouse Gamer > Sem Fio > Sem Fio"
+    }
+   ]
+  },
+  "B08C4YL4XP": {
+   "nome": "Redragon GW800 Hitman",
+   "guia": "webcam-2026.html",
+   "candidatos": []
+  },
+  "B0G6L2WHKG": {
+   "nome": "EMEET S600L 4K com luz de anel",
+   "guia": "webcam-2026.html",
+   "candidatos": []
+  },
+  "B0DQ196WLW": {
+   "nome": "OBSBOT Meet SE",
+   "guia": "webcam-2026.html",
+   "candidatos": []
+  },
+  "B0CZ6XY78Y": {
+   "nome": "OBSBOT Tiny 2 Lite 4K",
+   "guia": "webcam-2026.html",
+   "candidatos": []
+  },
+  "B0G63LXK6R": {
+   "nome": "OBSBOT Tiny 3 Lite",
+   "guia": "webcam-2026.html",
+   "candidatos": []
+  }
+ }
+}
