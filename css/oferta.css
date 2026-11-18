@@ -1,0 +1,81 @@
+/* TechAprovado — página de oferta (oferta/*.html)
+   Ponte entre o post do WhatsApp e a loja: a pessoa lê por que a oferta
+   entrou na seleção e CLICA no botão para ir à Amazon (regra do programa:
+   nada de redirecionamento automático). Sem preço em número no site. */
+
+.od-page { padding: 18px 0 64px; }
+.od-page .container { max-width: 980px; }
+
+.od-crumbs { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: .78rem; color: var(--text-muted); margin-bottom: 16px; }
+.od-crumbs a { color: #83b8f0; }
+.od-crumbs a:hover { text-decoration: underline; }
+
+.od-expired { display: none; margin-bottom: 16px; padding: 12px 16px; border-radius: 12px; border: 1px solid rgba(255,214,0,.45); background: rgba(255,214,0,.08); font-size: .88rem; }
+.od-page.is-expired .od-expired { display: block; }
+
+/* Bloco principal */
+.od-hero { display: grid; grid-template-columns: 340px 1fr; gap: 28px; align-items: center; padding: 24px; border: 1px solid var(--border); border-radius: 18px; background: linear-gradient(135deg, #18233a 0%, var(--card) 55%); }
+.od-media { position: relative; display: block; border-radius: 14px; background: #fff; padding: 18px; }
+.od-media img { display: block; width: 100%; height: 280px; object-fit: contain; }
+.od-tag { position: absolute; top: 12px; left: 12px; padding: 5px 10px; border-radius: 999px; background: var(--accent-yellow); color: #06120a; font-size: .68rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+
+.od-eyebrow { font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #83b8f0; margin-bottom: 6px; }
+.od-hero h1 { font-size: clamp(1.6rem, 3.4vw, 2.3rem); font-weight: 800; line-height: 1.15; margin-bottom: 6px; }
+.od-summary { color: var(--text-muted); font-size: .95rem; margin-bottom: 10px; }
+.od-rating { font-size: .85rem; margin-bottom: 14px; }
+.od-rating span { color: var(--accent-yellow); }
+.od-checked { display: flex; gap: 8px; align-items: flex-start; font-size: .84rem; color: var(--text-muted); margin-bottom: 18px; }
+.od-checked strong { color: var(--text); }
+
+.od-actions { display: flex; flex-wrap: wrap; gap: 10px; max-width: 560px; }
+.od-actions .od-btn { flex: 1 1 200px; }
+.od-btn-store { background: transparent; color: var(--text); border: 1px solid #36507a; }
+.od-btn-store:hover { background: rgba(25,118,210,.15); }
+.od-btn { display: inline-flex; justify-content: center; align-items: center; gap: 6px; padding: 14px 16px; border-radius: 12px; font-weight: 800; font-size: .95rem; text-align: center; transition: transform .15s ease, background .15s ease; }
+.od-btn:hover { transform: translateY(-1px); }
+.od-btn:focus-visible { outline: 3px solid rgba(255,214,0,.82); outline-offset: 2px; }
+.od-btn-amazon { background: var(--accent-yellow); color: #06120a; }
+.od-btn-amazon:hover { background: var(--accent-yellow-dark); }
+.od-btn-guide { background: var(--accent); color: #fff; }
+.od-btn-guide:hover { background: var(--accent-dark); }
+.od-aff { margin-top: 10px; font-size: .74rem; color: var(--text-muted); }
+
+/* Seções de apoio */
+.od-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 20px; margin-top: 22px; }
+.od-box { padding: 22px; border: 1px solid var(--border); border-radius: 16px; background: var(--card); }
+.od-box h2 { font-size: 1.05rem; font-weight: 800; margin-bottom: 10px; }
+.od-box p { font-size: .92rem; color: #d5d9e2; }
+.od-reasons { display: grid; gap: 10px; margin-top: 14px; }
+.od-reasons div { padding: 12px 14px; border-radius: 12px; background: rgba(25,118,210,.12); border-left: 3px solid var(--accent); }
+.od-reasons div.caution { background: rgba(255,214,0,.07); border-left-color: var(--accent-yellow); }
+.od-reasons dt { font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 3px; }
+.od-reasons dd { font-size: .88rem; color: #d5d9e2; }
+
+.od-specs { width: 100%; border-collapse: collapse; font-size: .86rem; }
+.od-specs th, .od-specs td { text-align: left; padding: 8px 0; border-bottom: 1px solid var(--border); vertical-align: top; }
+.od-specs th { width: 38%; color: var(--text-muted); font-weight: 600; padding-right: 10px; }
+.od-source { margin-top: 10px; font-size: .72rem !important; color: var(--text-muted) !important; }
+
+.od-next { margin-top: 22px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px; padding: 20px 22px; border-radius: 16px; border: 1px dashed #36507a; }
+.od-next p { font-size: .92rem; }
+.od-next a { color: #83b8f0; font-weight: 700; }
+.od-next a:hover { text-decoration: underline; }
+
+/* Barra fixa no celular */
+.od-sticky { display: none; }
+
+@media (max-width: 760px) {
+  .od-page { padding: 12px 0 96px; }
+  .od-page .container { padding: 0 16px; }
+  .od-hero { grid-template-columns: 1fr; gap: 16px; padding: 14px; }
+  .od-media img { height: 210px; }
+  .od-actions { max-width: none; }
+  .od-actions .od-btn { flex-basis: 100%; }
+  .od-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 14px; }
+  .od-box { padding: 18px; }
+  .od-sticky { display: flex; gap: 10px; align-items: center; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(15,17,21,.96); border-top: 1px solid var(--border); backdrop-filter: blur(6px); transform: translateY(110%); transition: transform .2s ease; }
+  .od-sticky.is-visible { transform: none; }
+  .od-sticky-on .float-dock { bottom: calc(80px + env(safe-area-inset-bottom)); } /* botão "voltar ao topo" sobe acima da barra */
+  .od-sticky-name { flex: 1 1 auto; min-width: 0; font-size: .78rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .od-sticky .od-btn { flex: none; padding: 11px 14px; font-size: .86rem; }
+}
