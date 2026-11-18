@@ -79,3 +79,7 @@
   .od-sticky-name { flex: 1 1 auto; min-width: 0; font-size: .78rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .od-sticky .od-btn { flex: none; padding: 11px 14px; font-size: .86rem; }
 }
+
+/* KaBuM! com vendedor parceiro: aviso dentro do botão. */
+.od-btn-label { display: flex; flex-direction: column; align-items: center; line-height: 1.2; }
+.od-btn-label small { font-size: .74rem; font-weight: 600; opacity: .8; margin-top: 2px; }
