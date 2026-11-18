@@ -31,9 +31,11 @@ const DEALS = [
   {"store": "amazon","title": "JBL Tune 720BT","guide": "foneoverear-2026.html#produto-3","guideName": "Fone over-ear","expires": "2026-11-19","asin": "B0BYWL962Q","img": "https://m.media-amazon.com/images/I/51hHlj4OqZL._AC_UL480_.jpg"},
   {"store": "amazon","title": "JBL Xtreme 4","guide": "caixadesom-2026.html#produto-6","guideName": "Caixa de som","expires": "2026-11-19","asin": "B0D2LPLTJ8","img": "https://m.media-amazon.com/images/I/71jzFcaXnzL._AC_UL480_.jpg"},
   {"store": "amazon","title": "LG UltraGear 24GS60F 24\"","guide": "monitor-2026.html#produto-7","guideName": "Monitor","expires": "2026-11-19","asin": "B0D8DPT7ZY","img": "https://m.media-amazon.com/images/I/61aIuJu0M0L._AC_UL480_.jpg"},
-  {"store": "amazon","title": "Logitech G203 LIGHTSYNC","guide": "mouse-2026.html#produto-14","guideName": "Mouse","expires": "2026-11-19","asin": "B08GS763C5","img": "https://m.media-amazon.com/images/I/61rR-PPX20L._AC_UL480_.jpg","productKey": "logitech-910-005793"},
+  {"store": "amazon", "title": "Logitech G203 LIGHTSYNC", "guide": "mouse-2026.html#produto-14", "guideName": "Mouse", "expires": "2026-11-19", "asin": "B08GS763C5", "img": "https://m.media-amazon.com/images/I/61rR-PPX20L._AC_UL480_.jpg", "productKey": "logitech-910-005793"},
+  {"title": "Logitech G203 LIGHTSYNC", "guide": "mouse-2026.html#produto-14", "guideName": "Mouse", "productKey": "logitech-910-005793", "store": "mercadolivre", "affiliate": true, "url": "https://meli.la/2pqA9o8", "expires": "2026-11-19", "img": "img/banners-guias/mouse.webp"},
   {"store": "amazon","title": "Logitech G733 Lightspeed","guide": "headset-gamer-2026.html#produto-9","guideName": "Headset gamer","expires": "2026-11-19","asin": "B081415GCS","img": "https://m.media-amazon.com/images/I/710MzmBFzkL._AC_UL480_.jpg"},
-  {"store": "amazon","title": "Logitech MX Anywhere 3S","guide": "mouse-2026.html#produto-11","guideName": "Mouse","expires": "2026-11-19","asin": "B0C6K2DH73","img": "https://m.media-amazon.com/images/I/61dYSaNVRaL._AC_UL480_.jpg"},
+  {"store": "amazon", "title": "Logitech MX Anywhere 3S", "guide": "mouse-2026.html#produto-11", "guideName": "Mouse", "expires": "2026-11-19", "asin": "B0C6K2DH73", "img": "https://m.media-amazon.com/images/I/61dYSaNVRaL._AC_UL480_.jpg", "productKey": "logitech-910-006932"},
+  {"title": "Logitech MX Anywhere 3S", "guide": "mouse-2026.html#produto-11", "guideName": "Mouse", "productKey": "logitech-910-006932", "store": "mercadolivre", "affiliate": true, "url": "https://meli.la/28md3Kv", "expires": "2026-11-19", "img": "img/banners-guias/mouse.webp"},
   {"store": "kabum","title": "Logitech MX Keys Mini","guide": "teclado-2026.html#produto-12","guideName": "Teclado","expires": "2026-11-19","kabumId": 275873,"img": "img/banners-guias/teclado.webp"},
   {"store": "amazon","title": "Logitech POP Icon Combo","guide": "kit-teclado-mouse-2026.html#produto-18","guideName": "Kit teclado e mouse","expires": "2026-11-19","asin": "B0DPXZ6H24","img": "https://m.media-amazon.com/images/I/71bpua-bVsL._AC_UL480_.jpg"},
   {"store": "amazon","title": "Mallory Chronos 140 W","guide": "ventilador-2026.html#produto-5","guideName": "Ventilador","expires": "2026-11-19","asin": "B0BTQY3GMZ","img": "https://m.media-amazon.com/images/I/71VRFzPsVIL._AC_UL480_.jpg"},
@@ -61,7 +63,7 @@ const DEAL_STORES = Object.freeze({
   amazon: { name: "Amazon", affiliate: true, url: d => /^[A-Z0-9]{10}$/.test(d.asin) ? 'https://www.amazon.com.br/dp/' + d.asin + '?tag=' + AFFILIATE_TAG : null },
   kabum: { name: "KaBuM!", affiliate: true, url: d => /^\d+$/.test(d.kabumId) ? 'https://www.awin1.com/cread.php?awinmid=' + AWIN_KABUM_ID + '&awinaffid=' + AWIN_AFFILIATE_ID + '&ued=' + encodeURIComponent('https://www.kabum.com.br/produto/' + d.kabumId) : null },
   shopee: { name: "Shopee", url: d => dealStoreUrl(d.url, ['shopee.com.br','www.shopee.com.br','s.shopee.com.br']) },
-  mercadolivre: { name: "Mercado Livre", url: d => dealStoreUrl(d.url, ['mercadolivre.com.br','www.mercadolivre.com.br','meli.la']) }
+  mercadolivre: { name: "Mercado Livre", url: d => dealStoreUrl(d.url, ['meli.la']) }
 });
 function dealStoreUrl(value, hosts) {
   try { const url = new URL(value); return url.protocol === 'https:' && !url.username && !url.password && !url.port && hosts.includes(url.hostname) ? url.href : null; } catch { return null; }
