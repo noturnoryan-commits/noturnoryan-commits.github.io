@@ -2578,3 +2578,11 @@ body::before{
 .home-products-label{margin:22px 0 0}
 .home-products-label+.home-products{margin-top:10px}
 @media(max-width:360px){.home-opening-v3 .brand-heading,.home-opening-v2 .brand-heading,.brand-heading{font-size:18.5px;line-height:1.18}}
+
+/* Ofertas: múltiplas lojas por modelo, com guia em linha própria. */
+.deal-actions-multiloja{grid-template-columns:repeat(2,minmax(0,1fr))}
+.deal-actions-multiloja .deal-btn{min-width:0;white-space:normal;text-align:center}
+.deal-actions-multiloja .deal-btn-guide{grid-column:1/-1}
+.deal-btn-shopee,.deal-btn-mercadolivre{background:#1b3e6b;color:#fff}
+.deal-btn-shopee:hover,.deal-btn-mercadolivre:hover{background:#24568f;color:#fff}
+@media(max-width:370px){.deal-actions-multiloja{grid-template-columns:1fr}}
