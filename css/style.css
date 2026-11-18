@@ -2204,6 +2204,8 @@ body.menu-open .float-dock { opacity: 0; pointer-events: none; }
 .link-btn-youtube .link-btn-icon { background: rgba(255, 0, 0, 0.14); }
 .link-btn-tiktok { border-color: rgba(37, 244, 238, 0.4); }
 .link-btn-tiktok .link-btn-icon { background: rgba(254, 44, 85, 0.14); }
+.link-btn-telegram { border-color: rgba(38, 165, 228, 0.45); }
+.link-btn-telegram .link-btn-icon { background: rgba(38, 165, 228, 0.14); }
 
 /* --------------------------------------------------------------------------
    6.12  Formulário de contato (Web3Forms)
