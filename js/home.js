@@ -3,7 +3,7 @@
 const AFFILIATE_TAG = "techaprovad0b-20";
 const DEALS = [
   { asin:"B0B9PSBNYL", title:"Robô Aspirador WAP W90 3em1", img:"https://m.media-amazon.com/images/I/716GA5MQQkL._AC_UL480_.jpg", expires:"2026-08-19" },
-  { asin:"B0CRTYZG5C", title:"Fone soundcore P30i (Anker)", img:"https://m.media-amazon.com/images/I/21KKr6VQU7L._AC_SR400,400_.jpg", expires:"2026-08-19" },
+  { asin:"B0CRTYZG5C", title:"Fone Soundcore P30i (Anker)", img:"https://m.media-amazon.com/images/I/21KKr6VQU7L._AC_SR400,400_.jpg", expires:"2026-08-19" },
   { asin:"B0849PHXW1", title:"Robô Aspirador WAP W100 3em1", img:"https://m.media-amazon.com/images/I/81w-AyhZt-L._AC_UL480_.jpg", expires:"2026-08-19" },
   { asin:"B0BRLBBYLT", title:"Airfryer Philips Walita XL 6,2L", img:"https://m.media-amazon.com/images/I/41GECCa8AAL._AC_SR400,400_.jpg", expires:"2026-08-19" },
   { asin:"B0F9Z2DV83", title:"Robô Aspirador WAP W310", img:"https://m.media-amazon.com/images/I/61QHYk962EL._AC_UL480_.jpg", expires:"2026-08-19" },

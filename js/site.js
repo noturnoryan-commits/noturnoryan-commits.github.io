@@ -32,10 +32,30 @@
     { asin: 'B0GXFFSVYM', name: 'Dreame D15 Plus', badge: 'Automação em destaque', img: 'https://m.media-amazon.com/images/I/61N-ZmR2MxL._AC_UL480_.jpg', guide: 'roboaspirador-2026.html#produto-14' },
     { asin: 'B0CPFT8QQK', name: 'TP-Link Tapo P110', badge: 'Casa inteligente acessível', img: 'https://m.media-amazon.com/images/I/31ARV778-nL._AC_UL480_.jpg', guide: 'tomadainteligente-2026.html#produto-2' },
     { asin: 'B0DF2WSGF6', name: 'Monitor LG 24MS500 IPS 100Hz', badge: 'Custo-benefício no escritório', img: 'https://m.media-amazon.com/images/I/61EXtxtW1gL._AC_UL480_.jpg', guide: 'monitor-2026.html' },
-    { asin: 'B0C3KWT5V6', name: 'soundcore Q20i da Anker', badge: 'Upgrade que vale a pena', img: 'https://m.media-amazon.com/images/I/61cfZHdnvzL._AC_UL480_.jpg', guide: 'foneoverear-2026.html#produto-6' },
+    { asin: 'B0C3KWT5V6', name: 'Soundcore Q20i da Anker', badge: 'Upgrade que vale a pena', img: 'https://m.media-amazon.com/images/I/61cfZHdnvzL._AC_UL480_.jpg', guide: 'foneoverear-2026.html#produto-6' },
     { asin: 'B0DFZPR9Z4', name: 'Redmi Watch 5 Active', badge: 'Melhor custo-benefício vestível', img: 'https://m.media-amazon.com/images/I/61iOQG77hxL._AC_UL480_.jpg', guide: 'smartwatch-2026.html#produto-2' },
     { asin: 'B0F7T2Y46Y', name: 'Caixa de Som JBL Flip 7', badge: 'Melhor custo-benefício em som', img: 'https://m.media-amazon.com/images/I/61S6CABfB7L._AC_UL480_.jpg', guide: 'caixadesom-2026.html#produto-4' }
   ];
+
+  // Aba de Nichos (notas do dev, 20/11/2026): nas páginas de categorias e nos guias, os nichos
+  // ficam à vista logo abaixo do menu, com o nicho atual marcado.
+  (() => {
+    const pagina = location.pathname.split('/').pop() || 'index.html';
+    const atual = TA_CATEGORIES.find(c => c.page === pagina || c.guides.some(g => g[0] === pagina));
+    if (pagina !== 'categorias.html' && !atual) return;
+    const header = document.querySelector('.site-header');
+    if (!header || document.querySelector('.niche-tabs')) return;
+    const barra = document.createElement('nav');
+    barra.className = 'niche-tabs';
+    barra.setAttribute('aria-label', 'Nichos');
+    const e = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+    barra.innerHTML = '<div class="container niche-tabs-inner"><span class="niche-tabs-label">Nichos</span>' +
+      `<a href="categorias.html"${pagina === 'categorias.html' ? ' aria-current="page"' : ''}>Todos</a>` +
+      TA_CATEGORIES.map(c => `<a href="${e(c.page)}"${atual === c ? ' aria-current="' + (c.page === pagina ? 'page' : 'true') + '"' : ''}><span aria-hidden="true">${c.icon}</span> ${e(c.name)}</a>`).join('') + '</div>';
+    header.insertAdjacentElement('afterend', barra);
+    const marcado = barra.querySelector('[aria-current]');
+    if (marcado && marcado.scrollIntoView) barra.querySelector('.niche-tabs-inner').scrollLeft = marcado.offsetLeft - 16;
+  })();
 
   const nav = document.getElementById('main-nav');
   const isHome = !!document.getElementById('ofertas');
@@ -169,7 +189,7 @@
         <div class="picks">
           <div class="picks-head">
             <p class="picks-title">Escolhas TechAprovado</p>
-            <a class="picks-more" href="${isHome ? '#aprovados' : 'index.html#aprovados'}">Por que escolhemos <span aria-hidden="true">→</span></a>
+            <a class="picks-more" href="${isHome ? '#aprovados' : '/#aprovados'}">Por que escolhemos <span aria-hidden="true">→</span></a>
           </div>
           <ul class="picks-grid">${cards}</ul>
           <p class="picks-note">Links de afiliado da Amazon: o preço é o mesmo pra você. Confira o valor atual na loja.</p>
@@ -400,7 +420,7 @@
   const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
   let index = null, loading = null, results = [], active = -1;
-  const load = () => loading || (loading = fetch('js/busca.json?v=20261101b').then(r => r.json())
+  const load = () => loading || (loading = fetch('js/busca.json?v=20261120').then(r => r.json())
     .then(d => { index = d.map(i => ({ ...i, n: norm(i.t), m: norm([i.t, i.s, i.c || '', i.k].join(' ')) })); })
     .catch(() => { index = []; }));
   const order = { Guia: 0, Categoria: 1, 'Notícia': 2, Produto: 3 };
@@ -421,7 +441,7 @@
     [/carregador|fonte usb|tomada usb|gan|magsafe|qi2|power delivery/, 'carregador-celular-2026.html'],
     [/kit teclado|teclado e mouse|combo teclado/, 'kit-teclado-mouse-2026.html'],
     [/ventilador de teto/, 'ventiladordeteto-2026.html'],
-    [/robo|roomba|roborock|dreame|deebot|eufy robo/, 'roboaspirador-2026.html'],
+    [/robo|roomba|roborock|dreame|deebot|Eufy robo/, 'roboaspirador-2026.html'],
     [/tablet|ipad|galaxy tab|redmi pad|xiaomi pad|lenovo tab|idea tab|matepad|fire hd|positivo vision tab|vision tab/, 'tablet-2026.html'],
     [/iphone|galaxy [asmz]|motorola|moto [ge]|redmi|poco|celular|smartphone|pixel|zenfone/, 'smartphone-2026.html'],
     [/smart ?tv|televis|qled|oled|polegadas|\btv \d/, 'smarttv-2026.html'],

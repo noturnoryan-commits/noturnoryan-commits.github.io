@@ -2586,3 +2586,29 @@ body::before{
 .deal-btn-shopee,.deal-btn-mercadolivre{background:#1b3e6b;color:#fff}
 .deal-btn-shopee:hover,.deal-btn-mercadolivre:hover{background:#24568f;color:#fff}
 @media(max-width:370px){.deal-actions-multiloja{grid-template-columns:1fr}}
+
+/* === Ofertas: botões das lojas (notas do dev, 20/11/2026) ===
+   Lojas em pares (duas por linha); se sobrar uma, ela ocupa a linha toda.
+   "Ver guia" sempre embaixo, na linha toda. Texto sempre em uma linha. */
+.deal-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.deal-actions .deal-btn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.deal-actions .deal-btn-wide,.deal-actions .deal-btn-guide{grid-column:1/-1}
+@media(max-width:370px){.deal-actions{grid-template-columns:repeat(2,minmax(0,1fr))}.deal-btn{font-size:.72rem}}
+
+/* Nossas Redes (notas do dev, 20/11/2026): no computador, o bloco de texto do banner ficava por cima
+   dos ícones das redes e bloqueava o mouse (sem animação e sem clique). O bloco deixa o mouse passar;
+   o texto e os links dele continuam clicáveis. */
+.ta-page-hero > .container{pointer-events:none}
+.ta-page-hero .ta-page-copy{pointer-events:auto}
+.ta-banner-networks a{transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.ta-banner-networks a:hover{box-shadow:0 16px 34px rgba(0,0,0,.35)}
+
+/* Aba de Nichos (notas do dev, 20/11/2026): faixa abaixo do menu em Categorias, nas páginas de nicho e nos guias. */
+.niche-tabs{background:#121621;border-bottom:1px solid var(--border)}
+.niche-tabs-inner{display:flex;align-items:center;gap:6px;overflow-x:auto;scrollbar-width:none;padding-top:8px;padding-bottom:8px}
+.niche-tabs-inner::-webkit-scrollbar{display:none}
+.niche-tabs-label{flex:0 0 auto;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);margin-right:6px}
+.niche-tabs a{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:6px 14px;border-radius:999px;border:1px solid transparent;color:#d5dae4;font-size:.84rem;font-weight:700;text-decoration:none;white-space:nowrap;transition:background .15s ease,border-color .15s ease}
+.niche-tabs a:hover{background:rgba(255,255,255,.05);border-color:#33435b}
+.niche-tabs a[aria-current]{background:rgba(25,118,210,.18);border-color:var(--accent);color:#fff}
+.niche-tabs a:focus-visible{outline:3px solid var(--accent-yellow);outline-offset:2px}

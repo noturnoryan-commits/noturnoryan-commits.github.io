@@ -134,6 +134,23 @@
       wrap.className = 'store-row';
       a.replaceWith(wrap);
       wrap.appendChild(a);
+      // Notas do dev (20/11/2026): com uma só loja extra, mostra a loja direto, sem "Mais lojas (1)".
+      if (outras.length === 1) {
+        const l = outras[0];
+        const extra = document.createElement('a');
+        extra.className = 'shop-link shop-link-alt store-btn-' + l.loja;
+        extra.href = urlDe(l);
+        extra.target = '_blank';
+        extra.rel = 'noopener sponsored';
+        extra.dataset.loja = l.loja;
+        extra.setAttribute('aria-label', `Ver preço do ${nome} na ${nomeDe(l)}`);
+        extra.innerHTML = `<span class="lbl-long">Ver na </span>${esc(nomeDe(l))} <span aria-hidden="true">↗</span>`;
+        a.innerHTML = `<span class="lbl-long">Ver na </span>${esc(nomeDe(principal))} <span aria-hidden="true">↗</span>`;
+        wrap.classList.add('store-row-pair');
+        wrap.appendChild(extra);
+        if (l.parceira) wrap.insertAdjacentHTML('afterend', '<p class="store-note">Na ' + esc(nomeDe(l)) + ', vendido por loja parceira.</p>');
+        return;
+      }
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'store-more';
@@ -145,7 +162,7 @@
       panel.className = 'store-panel';
       panel.id = id;
       panel.hidden = true;
-      panel.innerHTML = '<ul>' + outras.map(l => `<li><span class="store-name">${esc(nomeDe(l))}${l.parceira ? '<small>vendido por loja parceira</small>' : ''}</span><a class="store-btn store-btn-${esc(l.loja)}" href="${esc(urlDe(l))}" target="_blank" rel="noopener sponsored" data-loja="${esc(l.loja)}" aria-label="Ver preço do ${esc(nome)} na ${esc(nomeDe(l))}">Ver preço <span aria-hidden="true">↗</span></a></li>`).join('') +
+      panel.innerHTML = '<ul>' + outras.map(l => `<li><span class="store-name">${esc(nomeDe(l))}${l.parceira ? '<small>Vendido por loja parceira</small>' : ''}</span><a class="store-btn store-btn-${esc(l.loja)}" href="${esc(urlDe(l))}" target="_blank" rel="noopener sponsored" data-loja="${esc(l.loja)}" aria-label="Ver preço do ${esc(nome)} na ${esc(nomeDe(l))}">Ver preço <span aria-hidden="true">↗</span></a></li>`).join('') +
         '</ul><p class="store-note">O preço e o estoque mudam e podem ser diferentes entre as lojas.</p>';
       wrap.after(panel);
       btn.addEventListener('click', () => {

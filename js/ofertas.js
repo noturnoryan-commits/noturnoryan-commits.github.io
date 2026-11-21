@@ -48,8 +48,8 @@ const DEALS = [
   {"store": "amazon","title": "Samsung Galaxy S25 FE 128 GB","guide": "smartphone-2026.html#produto-4","guideName": "Celular","expires": "2026-11-19","asin": "B0FTC96JJ5","img": "https://m.media-amazon.com/images/I/51ydsfiGvOL._AC_UL480_.jpg"},
   {"store": "amazon","title": "Samsung Galaxy Tab S10 Lite","guide": "tablet-2026.html#produto-9","guideName": "Tablet","expires": "2026-11-19","asin": "B0FMFRFNWG","img": "https://m.media-amazon.com/images/I/51UFm7dGUuL._AC_UL480_.jpg"},
   {"store": "amazon","title": "Samsung Galaxy Watch8 40 mm","guide": "smartwatch-2026.html#produto-6","guideName": "Smartwatch","expires": "2026-11-19","asin": "B0FDX5NC1G","img": "https://m.media-amazon.com/images/I/61zc3QnQvcL._AC_UL480_.jpg"},
-  {"store": "amazon","title": "soundcore P20i","guide": "fonebluetooth-2026.html#produto-2","guideName": "Fone Bluetooth","expires": "2026-11-19","asin": "B0BTYCRJSS","img": "https://m.media-amazon.com/images/I/61ljZu9+GXL._AC_UL480_.jpg"},
-  {"store": "amazon","title": "soundcore P30i","guide": "fonebluetooth-2026.html#produto-5","guideName": "Fone Bluetooth","expires": "2026-11-19","asin": "B0CRTN7C8C","img": "https://m.media-amazon.com/images/I/51aXXLgifFL._AC_UL480_.jpg"},
+  {"store": "amazon","title": "Soundcore P20i","guide": "fonebluetooth-2026.html#produto-2","guideName": "Fone Bluetooth","expires": "2026-11-19","asin": "B0BTYCRJSS","img": "https://m.media-amazon.com/images/I/61ljZu9+GXL._AC_UL480_.jpg"},
+  {"store": "amazon","title": "Soundcore P30i","guide": "fonebluetooth-2026.html#produto-5","guideName": "Fone Bluetooth","expires": "2026-11-19","asin": "B0CRTN7C8C","img": "https://m.media-amazon.com/images/I/51aXXLgifFL._AC_UL480_.jpg"},
   {"store": "amazon","title": "TP-Link Tapo C200","guide": "cameraseguranca-2026.html#produto-2","guideName": "Câmera de segurança","expires": "2026-11-19","asin": "B07XLML2YS","img": "https://m.media-amazon.com/images/I/41WQe9NiU6L._AC_UL480_.jpg"},
   {"store": "amazon","title": "TP-Link Tapo C320WS","guide": "cameraseguranca-2026.html#produto-8","guideName": "Câmera de segurança","expires": "2026-11-19","asin": "B098TVZ6TS","img": "https://m.media-amazon.com/images/I/51LTtEdludL._AC_UL480_.jpg"},
   {"store": "amazon","title": "TP-Link Tapo P110","guide": "tomadainteligente-2026.html#produto-2","guideName": "Tomada inteligente","expires": "2026-11-19","asin": "B0CPFT8QQK","img": "https://m.media-amazon.com/images/I/31ARV778-nL._AC_UL480_.jpg"},
@@ -88,14 +88,17 @@ function activeDeals(now = new Date()) {
 function dealCardHtml(d) {
   const e = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
   const relation = o => o.affiliate ? 'noopener sponsored' : 'noopener';
-  const buttons = d.offers.map(o => `<a class="deal-btn deal-btn-buy deal-btn-${o.key}" href="${e(o.url)}" target="_blank" rel="${relation(o)}" aria-label="${e(d.title)}: ver preço na ${e(o.name)}"><span class="deal-btn-long">Ver na </span>${e(o.name)} <span aria-hidden="true">↗</span></a>`).join("");
+  // Notas do dev (20/11/2026): lojas em pares, a que sobrar sozinha ocupa a linha toda;
+  // "Ver guia" sempre embaixo, na linha toda. Texto curto para caber em uma linha.
+  const odd = d.offers.length % 2 === 1;
+  const buttons = d.offers.map((o, i) => `<a class="deal-btn deal-btn-buy deal-btn-${o.key}${odd && i === d.offers.length - 1 ? ' deal-btn-wide' : ''}" href="${e(o.url)}" target="_blank" rel="${relation(o)}" aria-label="${e(d.title)}: ver preço na ${e(o.name)}">${e(o.name)} <span aria-hidden="true">↗</span></a>`).join("");
   const first = d.offers[0];
   return `<article class="deal-card">
     <a class="deal-buy" href="${e(first.url)}" target="_blank" rel="${relation(first)}" tabindex="-1" aria-hidden="true">
       <img class="deal-img" src="${e(d.img)}" alt="" width="480" height="480" loading="lazy" decoding="async">
       <span class="deal-info"><span class="deal-cat">${e(d.guideName)}</span><span class="deal-title">${e(d.title)}</span></span>
     </a>
-    <div class="deal-actions${d.offers.length > 1 ? " deal-actions-multiloja" : ""}">
-      ${buttons}<a class="deal-btn deal-btn-guide" href="${e(d.guide)}" aria-label="Ver o guia de ${e(d.guideName)}"><span class="deal-btn-long">Ver </span>Guia</a>
+    <div class="deal-actions">
+      ${buttons}<a class="deal-btn deal-btn-guide" href="${e(d.guide)}" aria-label="Ver o guia de ${e(d.guideName)}">Ver guia</a>
     </div></article>`;
 }

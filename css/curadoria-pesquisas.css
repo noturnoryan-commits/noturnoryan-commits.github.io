@@ -481,3 +481,12 @@ main.ta-curadoria{background:transparent}
 .ta-curadoria .store-btn-aliexpress{background:#e62e04;color:#fff}
 .ta-curadoria .store-btn-shopee{background:#ee4d2d;color:#fff}
 .ta-curadoria .store-name small{display:block;font-weight:600;font-size:11px;color:var(--muted)}
+/* Notas do dev (20/11/2026): com duas lojas, os dois botões lado a lado e do mesmo tamanho, texto em uma linha. */
+.ta-curadoria .store-row .shop-link-alt{flex:1 1 0}
+.ta-curadoria .store-row .shop-link:has(+ .shop-link-alt){flex:1 1 0}
+.ta-curadoria .store-row .shop-link{white-space:nowrap}
+.ta-curadoria .store-row .shop-link-alt:hover{filter:brightness(.94)}
+.ta-curadoria .store-row-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.ta-curadoria .store-row-pair .shop-link{width:100%;min-width:0;padding-left:8px;padding-right:8px;gap:6px}
+@media (max-width:600px){.ta-curadoria .store-row-pair{flex-direction:row}.ta-curadoria .store-row-pair .lbl-long{display:none}}
+.ta-curadoria .shop-link .lbl-long{font-size:inherit;line-height:inherit}

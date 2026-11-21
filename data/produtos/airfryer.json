@@ -1,0 +1,636 @@
+{
+ "_leia": "Gerado por gerar_produtos.py a partir do guia. Não editar à mão: altere o guia e rode o script de novo.",
+ "categoria": "airfryer",
+ "nome": "Air fryer",
+ "nicho": "Casa",
+ "guia": "airfryer-2026.html",
+ "atualizado": "2026-11-20",
+ "perfis": {
+  "pequena": "Para 1 a 2 pessoas",
+  "familia": "Família",
+  "forno": "Air fryer forno (oven)"
+ },
+ "grupos": [
+  {
+   "nome": "Essencial",
+   "campos": [
+    {
+     "id": "tipo",
+     "rotulo": "Tipo"
+    },
+    {
+     "id": "capacidade",
+     "rotulo": "Capacidade"
+    },
+    {
+     "id": "potencia",
+     "rotulo": "Potência"
+    },
+    {
+     "id": "voltagem",
+     "rotulo": "Voltagem"
+    }
+   ]
+  },
+  {
+   "nome": "Uso",
+   "campos": [
+    {
+     "id": "painel",
+     "rotulo": "Painel e controles"
+    },
+    {
+     "id": "temperatura",
+     "rotulo": "Temperatura"
+    },
+    {
+     "id": "timer",
+     "rotulo": "Timer"
+    },
+    {
+     "id": "funcoes",
+     "rotulo": "Funções e programas"
+    }
+   ]
+  },
+  {
+   "nome": "Cesto e limpeza",
+   "campos": [
+    {
+     "id": "cesto",
+     "rotulo": "Cesto e revestimento"
+    },
+    {
+     "id": "limpeza",
+     "rotulo": "Limpeza"
+    }
+   ]
+  },
+  {
+   "nome": "Extras",
+   "campos": [
+    {
+     "id": "acessorios",
+     "rotulo": "Acessórios"
+    },
+    {
+     "id": "extras",
+     "rotulo": "Outros recursos"
+    },
+    {
+     "id": "garantia",
+     "rotulo": "Garantia"
+    }
+   ]
+  }
+ ],
+ "produtos": [
+  {
+   "id": "gaabor-mini-air-fryer-1-4-l",
+   "n": 1,
+   "nome": "Gaabor Mini Air Fryer 1,4 L",
+   "subtitulo": "Individual · 1,4 L · 900 W",
+   "imagem": "https://m.media-amazon.com/images/I/414G-smW5VL._AC_UL480_.jpg",
+   "perfil": "pequena",
+   "perfilNome": "Para 1 a 2 pessoas",
+   "nivel": "Entrada",
+   "destaque": "",
+   "porDentro": "A air fryer de uma pessoa: cabe uma porção individual, ocupa pouquíssimo espaço e usa só 900 W. Tem circulação de ar 360° e indicações de preparo no próprio aparelho.",
+   "fazSentido": "Para quem mora sozinho, estudante ou quem quer uma segunda air fryer para lanches rápidos.",
+   "pondere": "Com 1,4 L, não serve para duas pessoas com fome. O vendedor é uma loja parceira, e esta versão é 127 V (há anúncio separado para 220 V).",
+   "analise": "É a forma mais barata de ter uma air fryer que funciona. A potência baixa ajuda a conta de luz, mas o cesto pequeno obriga a cozinhar em levas quando há mais gente. Se você já sabe que vai dividir com alguém, pule para a Mondial de 3,5 L.",
+   "ficha": {
+    "capacidade": "1,4 L",
+    "potencia": "900 W",
+    "extras": "Cyclone Air 360° · 1 pessoa",
+    "voltagem": "127 V (anúncio separado para 220 V)",
+    "tipo": "Air fryer de cesto"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0CK63VDV2",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CK63VDV2"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-1"
+  },
+  {
+   "id": "mondial-af-30-3-5-l",
+   "n": 2,
+   "nome": "Mondial AF-30 3,5 L",
+   "subtitulo": "3,5 L · 1.500 W",
+   "imagem": "https://m.media-amazon.com/images/I/71rxdF8shNL._AC_UL480_.jpg",
+   "perfil": "pequena",
+   "perfilNome": "Para 1 a 2 pessoas",
+   "nivel": "Custo-benefício",
+   "destaque": "Melhor custo-benefício para 1 a 2 pessoas",
+   "porDentro": "O ponto certo para casal: 3,5 litros, 1.500 W de potência e controle de temperatura até 200 °C. O desenho compacto ocupa pouco da bancada e o cesto é removível.",
+   "fazSentido": "Para quem quer acertar sem pesquisar muito.",
+   "pondere": "O link abre a versão 110 V (127 V); a mesma página costuma oferecer a de 220 V. O controle é analógico, sem programas prontos.",
+   "analise": "A AF-30 é o modelo que resolve para a maioria das casas de até duas pessoas. Acima dela, você paga por marca, cesto quadrado ou painel, não por fritar melhor.",
+   "ficha": {
+    "capacidade": "3,5 L",
+    "potencia": "1.500 W",
+    "temperatura": "Até 200 °C",
+    "painel": "Analógico com timer",
+    "voltagem": "110 V (há versão 220 V)",
+    "tipo": "Air fryer de cesto"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B07WFHZQ2T",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07WFHZQ2T"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-2"
+  },
+  {
+   "id": "philco-pfr15pg-4-4-l-cesto-quadrado",
+   "n": 3,
+   "nome": "Philco PFR15PG 4,4 L cesto quadrado",
+   "subtitulo": "Cesto quadrado de 4,3 L · 1.500 W",
+   "imagem": "https://m.media-amazon.com/images/I/51Cgk25dfHL._AC_UL480_.jpg",
+   "perfil": "pequena",
+   "perfilNome": "Para 1 a 2 pessoas",
+   "nivel": "Alternativa",
+   "destaque": "Outro caminho: cesto quadrado",
+   "porDentro": "O cesto quadrado aproveita melhor o espaço que o redondo: cabem mais pedaços lado a lado, sem empilhar, o que deixa tudo mais crocante. Tem temperatura de 80 a 200 °C e timer de 60 minutos.",
+   "fazSentido": "Para quem faz nuggets, filé e pão de queijo e quer tudo numa camada só.",
+   "pondere": "Esta versão é 220 V. A diferença de preço para a Mondial é pequena; escolha pelo formato do cesto.",
+   "analise": "Não é um degrau acima da Mondial, é outro formato. Com capacidade parecida, o fundo quadrado rende mais área útil.",
+   "ficha": {
+    "capacidade": "4,4 L (cesto de 4,3 L)",
+    "cesto": "Quadrado, antiaderente",
+    "potencia": "1.500 W",
+    "temperatura": "80 a 200 °C",
+    "timer": "60 minutos",
+    "voltagem": "220 V",
+    "tipo": "Air fryer de cesto"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0CD14V4RQ",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CD14V4RQ"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-3"
+  },
+  {
+   "id": "philips-walita-serie-1000-4-2-l",
+   "n": 4,
+   "nome": "Philips Walita Série 1000 4,2 L",
+   "subtitulo": "Rapid Air · mais silenciosa · 2 anos de garantia",
+   "imagem": "https://m.media-amazon.com/images/I/5106QpD9V6L._AC_UL480_.jpg",
+   "perfil": "pequena",
+   "perfilNome": "Para 1 a 2 pessoas",
+   "nivel": "Avançado",
+   "destaque": "",
+   "porDentro": "A tecnologia Rapid Air, com o fundo em forma de estrela, faz o ar circular por igual. A Philips informa que ela é até 2 vezes mais silenciosa e até 18% mais rápida, com 23% de economia de energia. As peças vão na lava-louças.",
+   "fazSentido": "Para quem quer marca reconhecida, menos barulho na cozinha e garantia maior.",
+   "pondere": "O link abre a versão 110 V (127 V); a mesma página costuma oferecer a de 220 V.",
+   "analise": "O que se paga a mais aqui é a marca e a garantia de 2 anos, o dobro do comum. O cozimento é parecido com o das concorrentes, mas mais silencioso.",
+   "ficha": {
+    "capacidade": "4,2 L",
+    "extras": "Rapid Air (fundo em estrela)",
+    "timer": "Com desligamento automático",
+    "limpeza": "Peças vão na lava-louças",
+    "garantia": "2 anos",
+    "voltagem": "110 V (há versão 220 V)",
+    "tipo": "Air fryer de cesto"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0F6YRL42F",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0F6YRL42F"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-4"
+  },
+  {
+   "id": "electrolux-eaf31-4-l",
+   "n": 5,
+   "nome": "Electrolux EAF31 4 L",
+   "subtitulo": "8 receitas no painel · cuba de 4,5 L",
+   "imagem": "https://m.media-amazon.com/images/I/51Uu55-Y6OL._AC_UL480_.jpg",
+   "perfil": "pequena",
+   "perfilNome": "Para 1 a 2 pessoas",
+   "nivel": "Top de linha",
+   "destaque": "",
+   "porDentro": "O painel traz 8 receitas pré-sugeridas, então é só girar até o desenho do alimento. A cuba de 4,5 L tem cesto interno de 4 L, as duas peças vão na lava-louças e o timer vai até 60 minutos.",
+   "fazSentido": "Para quem não quer adivinhar tempo e temperatura e prefere apertar no desenho da batata.",
+   "pondere": "Esta versão é 127 V. O painel é mecânico, não digital.",
+   "analise": "É o topo das pequenas pela praticidade: receitas indicadas no painel, desligamento automático e limpeza fácil.",
+   "ficha": {
+    "capacidade": "Cesto de 4 L (cuba de 4,5 L)",
+    "potencia": "1.400 W",
+    "painel": "Mecânico, 8 receitas pré-sugeridas",
+    "timer": "Até 60 min, desliga sozinha",
+    "limpeza": "Cuba e cesto vão na lava-louças",
+    "voltagem": "127 V",
+    "tipo": "Air fryer de cesto"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B09Q3LLPFN",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B09Q3LLPFN"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-5"
+  },
+  {
+   "id": "britania-bfr50-5-5-l",
+   "n": 6,
+   "nome": "Britânia BFR50 5,5 L",
+   "subtitulo": "5,5 L · cesto quadrado · Redstone",
+   "imagem": "https://m.media-amazon.com/images/I/51hJQRHRUJL._AC_UL480_.jpg",
+   "perfil": "familia",
+   "perfilNome": "Família",
+   "nivel": "Entrada",
+   "destaque": "",
+   "porDentro": "Espaço de família pelo preço de uma pequena: 5,5 litros, cesto quadrado e revestimento antiaderente Redstone, que evita grudar. Potência de 1.500 W.",
+   "fazSentido": "Para família que quer cesto grande gastando o mínimo.",
+   "pondere": "Esta versão é 220 V. Controle analógico, sem programas prontos.",
+   "analise": "É o jeito mais barato de ter um cesto grande e quadrado.",
+   "ficha": {
+    "capacidade": "5,5 L",
+    "cesto": "Quadrado · Antiaderente Redstone",
+    "potencia": "1.500 W",
+    "voltagem": "220 V",
+    "tipo": "Air fryer de cesto"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0CRBJYG6P",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CRBJYG6P"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-6"
+  },
+  {
+   "id": "philips-walita-serie-1000-xl-6-2-l",
+   "n": 7,
+   "nome": "Philips Walita Série 1000 XL 6,2 L",
+   "subtitulo": "6,2 L · 12 em 1 · 1.700 W",
+   "imagem": "https://m.media-amazon.com/images/I/510Uj5C7LdL._AC_UL480_.jpg",
+   "perfil": "familia",
+   "perfilNome": "Família",
+   "nivel": "Custo-benefício",
+   "destaque": "Melhor custo-benefício para família",
+   "porDentro": "A Philips grande com controles simples: 6,2 litros, 1.700 W e 12 modos de preparo (fritar, assar, grelhar, reaquecer, descongelar, desidratar). O fundo StarPlate evita grudar e cesto e gaveta vão na lava-louças.",
+   "fazSentido": "Para família que quer marca forte e cesto grande sem pagar por painel digital.",
+   "pondere": "O link abre a versão 110 V (127 V); a mesma página costuma oferecer a de 220 V.",
+   "analise": "É o melhor equilíbrio do perfil: marca com 2 anos de garantia, capacidade XL e controles analógicos fáceis. A Philips informa que cozinha até 50% mais rápido e gasta até 70% menos energia que um forno convencional.",
+   "ficha": {
+    "capacidade": "6,2 L",
+    "potencia": "1.700 W",
+    "funcoes": "12 em 1",
+    "painel": "Analógicos, até 200 °C",
+    "limpeza": "Cesto e gaveta na lava-louças",
+    "voltagem": "110 V (há versão 220 V)",
+    "tipo": "Air fryer de cesto"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0D98VK8PP",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0D98VK8PP"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-7"
+  },
+  {
+   "id": "mondial-afn-80-8-l",
+   "n": 8,
+   "nome": "Mondial AFN-80 8 L",
+   "subtitulo": "8 L · cesto quadrado amplo · 1.900 W",
+   "imagem": "https://m.media-amazon.com/images/I/61tF0EpMeUL._AC_UL480_.jpg",
+   "perfil": "familia",
+   "perfilNome": "Família",
+   "nivel": "Intermediário",
+   "destaque": "",
+   "porDentro": "O maior cesto da seleção: 8 litros e cesto quadrado que a Mondial descreve como o de maior área plana da categoria. Potência de 1.900 W e temperatura até 200 °C.",
+   "fazSentido": "Para família grande, quem cozinha para a semana ou faz frango inteiro em pedaços.",
+   "pondere": "O link abre a versão 110 V (127 V); a mesma página costuma oferecer a de 220 V. É grande: confira o espaço na bancada.",
+   "analise": "Quando o problema é volume, ela resolve: cabe muita comida numa leva só. Os controles continuam simples.",
+   "ficha": {
+    "capacidade": "8 L",
+    "cesto": "Quadrado, removível",
+    "potencia": "1.900 W",
+    "temperatura": "Até 200 °C",
+    "voltagem": "110 V (há versão 220 V)",
+    "tipo": "Air fryer de cesto"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0BJFJGW4B",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0BJFJGW4B"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-8"
+  },
+  {
+   "id": "philips-walita-essential-xl-digital-6-2-l",
+   "n": 9,
+   "nome": "Philips Walita Essential XL Digital 6,2 L",
+   "subtitulo": "Tela touch · 7 programas · 6,2 L",
+   "imagem": "https://m.media-amazon.com/images/I/51i3nkPbZ-L._AC_UL480_.jpg",
+   "perfil": "familia",
+   "perfilNome": "Família",
+   "nivel": "Avançado",
+   "destaque": "",
+   "porDentro": "Painel touch com 7 programas prontos (congelados, batata fresca, carne, peixe, coxa e mais): toque e ela ajusta tempo e temperatura. Capacidade total de 6,2 L, sendo 4,6 L úteis.",
+   "fazSentido": "Para quem quer apertar um botão e esquecer, sem errar o ponto.",
+   "pondere": "O link abre a versão 110 V (127 V); a mesma página costuma oferecer a de 220 V. A capacidade útil (4,6 L) é menor que o número da caixa.",
+   "analise": "O salto em relação à Série 1000 XL é o painel digital com programas. A Philips informa até 2 vezes menos ruído e 23% de economia de energia.",
+   "ficha": {
+    "capacidade": "6,2 L total, 4,6 L útil",
+    "painel": "Touch, 7 programas",
+    "extras": "Rapid Air",
+    "garantia": "2 anos",
+    "voltagem": "110 V",
+    "tipo": "Air fryer de cesto"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0BRLBBYLT",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0BRLBBYLT"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-9"
+  },
+  {
+   "id": "mondial-dual-afd-01-8-l-cesto-duplo",
+   "n": 10,
+   "nome": "Mondial Dual AFD-01 8 L (cesto duplo)",
+   "subtitulo": "2 cestos · 2 receitas ao mesmo tempo · 2.200 W",
+   "imagem": "https://m.media-amazon.com/images/I/81+27Tn2b+L._AC_UL480_.jpg",
+   "perfil": "familia",
+   "perfilNome": "Família",
+   "nivel": "Alternativa",
+   "destaque": "Outro caminho: cesto duplo",
+   "porDentro": "Dois cestos removíveis (8 L no total) com tempos e temperaturas independentes. A função sincronizar faz as duas receitas ficarem prontas juntas: a carne num cesto, a batata no outro.",
+   "fazSentido": "Para quem quer fazer o prato e o acompanhamento de uma vez, sem misturar cheiros.",
+   "pondere": "O link abre a versão 110 V (127 V); a mesma página costuma oferecer a de 220 V. Cada cesto é menor que o de uma air fryer de 8 L comum.",
+   "analise": "Não é um degrau acima das de cesto único, é outro jeito de cozinhar. Vale para família que faz refeição completa na air fryer.",
+   "ficha": {
+    "capacidade": "8 L em 2 cestos",
+    "painel": "Tempo e temperatura por cesto",
+    "funcoes": "Sincronizar",
+    "potencia": "2.200 W",
+    "voltagem": "110 V",
+    "tipo": "Air fryer de cesto"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0C6FT4QYV",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0C6FT4QYV"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-10"
+  },
+  {
+   "id": "philips-walita-digital-7-2-l-com-visor",
+   "n": 11,
+   "nome": "Philips Walita Digital 7,2 L com visor",
+   "subtitulo": "Visor com luz · 12 programas · Rapid Air Plus",
+   "imagem": "https://m.media-amazon.com/images/I/51huAtziwTL._AC_UL480_.jpg",
+   "perfil": "familia",
+   "perfilNome": "Família",
+   "nivel": "Top de linha",
+   "destaque": "",
+   "porDentro": "Visor com iluminação interna para acompanhar o preparo sem abrir a gaveta, tecnologia Rapid Air Plus, 1.800 W e painel digital com 12 funções e temperatura de 40 a 200 °C. Capacidade de 7,2 L (4,7 L úteis).",
+   "fazSentido": "Para quem quer o máximo de controle e gosta de ver o ponto da comida.",
+   "pondere": "O link abre a versão 110 V (127 V); a mesma página costuma oferecer a de 220 V.",
+   "analise": "O topo da família junta visor, painel digital completo e timer de até 24 horas (útil para desidratar ou fermentar iogurte). Tem 2 anos de garantia.",
+   "ficha": {
+    "capacidade": "7,2 L total, 4,7 L útil",
+    "painel": "Com iluminação interna · Digital, 12 funções",
+    "temperatura": "40 a 200 °C",
+    "potencia": "1.800 W",
+    "voltagem": "110 V",
+    "tipo": "Air fryer de cesto"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0DY2W199X",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DY2W199X"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-11"
+  },
+  {
+   "id": "elgin-oven-fry-4-em-1-12-l",
+   "n": 12,
+   "nome": "Elgin Oven Fry 4 em 1 12 L",
+   "subtitulo": "Assa, frita, desidrata e reaquece · 1.800 W",
+   "imagem": "https://m.media-amazon.com/images/I/61dDjVIkgGL._AC_UL480_.jpg",
+   "perfil": "forno",
+   "perfilNome": "Air fryer forno (oven)",
+   "nivel": "Entrada",
+   "destaque": "",
+   "porDentro": "A entrada no formato forno: 12 litros, 1.800 W e quatro funções (assar, fritar sem óleo, desidratar e reaquecer). A porta é removível, o que facilita a limpeza.",
+   "fazSentido": "Para quem quer trocar o forninho elétrico por algo que também frita sem óleo.",
+   "pondere": "O vendedor é uma loja parceira. Esta versão é 110 V.",
+   "analise": "É o jeito mais barato de testar a air fryer forno. Entrega o essencial, sem painel digital nem acessórios extras.",
+   "ficha": {
+    "capacidade": "12 L",
+    "funcoes": "Assar, fritar, desidratar, reaquecer",
+    "potencia": "1.800 W",
+    "extras": "Removível",
+    "voltagem": "110 V",
+    "tipo": "Air fryer forno (oven)"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0BLWG2CFZ",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0BLWG2CFZ"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-12"
+  },
+  {
+   "id": "mondial-oven-afon-12l",
+   "n": 13,
+   "nome": "Mondial Oven AFON-12L",
+   "subtitulo": "12 L · cesto de 5 L + 3 assadeiras · 2.000 W",
+   "imagem": "https://m.media-amazon.com/images/I/51G4AxVAJxL._AC_UL480_.jpg",
+   "perfil": "forno",
+   "perfilNome": "Air fryer forno (oven)",
+   "nivel": "Custo-benefício",
+   "destaque": "Melhor custo-benefício em air fryer forno",
+   "porDentro": "Vem com cesto de 5 L e três assadeiras antiaderentes (Duraflon), então dá para fritar no cesto ou assar em camadas. São 12 litros e 2.000 W.",
+   "fazSentido": "Para família que quer o formato forno com acessórios na caixa.",
+   "pondere": "O link abre a versão 110 V (127 V); a mesma página costuma oferecer a de 220 V.",
+   "analise": "Os acessórios incluídos fazem diferença: as três assadeiras permitem preparar mais de uma coisa de uma vez.",
+   "ficha": {
+    "capacidade": "12 L",
+    "acessorios": "Cesto de 5 L + 3 assadeiras",
+    "cesto": "Duraflon",
+    "potencia": "2.000 W",
+    "voltagem": "110 V (há versão 220 V)",
+    "tipo": "Air fryer forno (oven)"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0BZJDLT6Z",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0BZJDLT6Z"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-13"
+  },
+  {
+   "id": "oster-oven-fryer-12-l-3-em-1",
+   "n": 14,
+   "nome": "Oster Oven Fryer 12 L 3 em 1",
+   "subtitulo": "Painel touch · 12 L · 1.800 W",
+   "imagem": "https://m.media-amazon.com/images/I/71wvacsxJ2L._AC_UL480_.jpg",
+   "perfil": "forno",
+   "perfilNome": "Air fryer forno (oven)",
+   "nivel": "Intermediário",
+   "destaque": "",
+   "porDentro": "A oven com painel touch: 12 litros, 1.800 W e três funções numa peça só. O painel digital deixa ajustar tempo e temperatura com mais precisão que os botões giratórios.",
+   "fazSentido": "Para quem prefere painel digital e acabamento branco na cozinha.",
+   "pondere": "Esta versão é 127 V.",
+   "analise": "O degrau acima da Mondial é o painel touch. A capacidade é a mesma.",
+   "ficha": {
+    "capacidade": "12 L",
+    "painel": "Touch",
+    "funcoes": "3 em 1",
+    "potencia": "1.800 W",
+    "voltagem": "127 V",
+    "tipo": "Air fryer forno (oven)"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0B726S9S3",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0B726S9S3"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-14"
+  },
+  {
+   "id": "philips-walita-airfryer-forno-12-l",
+   "n": 15,
+   "nome": "Philips Walita Airfryer Forno 12 L",
+   "subtitulo": "Janela · 9 programas · 4 acessórios",
+   "imagem": "https://m.media-amazon.com/images/I/61a0AdTUvPL._AC_UL480_.jpg",
+   "perfil": "forno",
+   "perfilNome": "Air fryer forno (oven)",
+   "nivel": "Avançado",
+   "destaque": "",
+   "porDentro": "Nove programas prontos, de pão de queijo a iogurte e desidratação, janela para acompanhar o preparo e quatro acessórios antiaderentes: duas grelhas, coletor de gordura e cesto com pegador removível.",
+   "fazSentido": "Para quem quer a marca Philips no formato forno e usa programas prontos.",
+   "pondere": "O link abre a versão 110 V (127 V); a mesma página costuma oferecer a de 220 V. A potência (1.600 W) é menor que a das concorrentes do mesmo tamanho.",
+   "analise": "O que se paga aqui é a marca, os programas e os acessórios. Faz sentido para quem vai usar a função iogurte e a desidratação.",
+   "ficha": {
+    "capacidade": "12 L",
+    "funcoes": "9 (iogurte, desidratar, pizza, bolo e mais)",
+    "acessorios": "2 grelhas, coletor, cesto",
+    "extras": "Sim",
+    "potencia": "1.600 W",
+    "voltagem": "110 V",
+    "tipo": "Air fryer forno (oven)"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0DD1KD5JP",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DD1KD5JP"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-15"
+  },
+  {
+   "id": "electrolux-air-fryer-forno-12-l-com-espeto",
+   "n": 16,
+   "nome": "Electrolux Air Fryer Forno 12 L com espeto",
+   "subtitulo": "Espeto giratório · 10 funções · 1.700 W",
+   "imagem": "https://m.media-amazon.com/images/I/5183mlQX54L._AC_UL480_.jpg",
+   "perfil": "forno",
+   "perfilNome": "Air fryer forno (oven)",
+   "nivel": "Avançado",
+   "destaque": "",
+   "porDentro": "A oven com espeto giratório (rotisserie) para frango assado inteiro, além de air fry, gratinar, reaquecer e desidratar. Painel digital com mais de 10 funções, 7 receitas e aviso sonoro para virar o alimento.",
+   "fazSentido": "Para quem quer fazer frango de padaria em casa.",
+   "pondere": "Confira a voltagem na página: o anúncio não traz no título.",
+   "analise": "O diferencial é o espeto, que nenhuma outra da escada tem. Vem com duas bandejas antiaderentes.",
+   "ficha": {
+    "capacidade": "12 L",
+    "funcoes": "Air fry, gratinar, reaquecer, desidratar, rotisserie",
+    "painel": "Digital, 7 receitas",
+    "acessorios": "Espeto e 2 bandejas",
+    "potencia": "1.700 W",
+    "tipo": "Air fryer forno (oven)"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0BYK2VCP7",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0BYK2VCP7"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-16"
+  },
+  {
+   "id": "mondial-oven-digital-25-l",
+   "n": 17,
+   "nome": "Mondial Oven Digital 25 L",
+   "subtitulo": "25 L · air fryer + forno · painel digital",
+   "imagem": "https://m.media-amazon.com/images/I/81EG4mRoqrL._AC_UL480_.jpg",
+   "perfil": "forno",
+   "perfilNome": "Air fryer forno (oven)",
+   "nivel": "Top de linha",
+   "destaque": "",
+   "porDentro": "Com 25 litros, substitui o forno elétrico de bancada: aquece, tosta, assa, gratina e grelha, além de fritar sem óleo. Painel digital e 2.000 W.",
+   "fazSentido": "Para quem quer um aparelho só no lugar do forno e da air fryer.",
+   "pondere": "O link abre a versão 110 V (127 V); a mesma página costuma oferecer a de 220 V. Ocupa bem mais espaço que as de 12 L.",
+   "analise": "É o topo pelo tamanho: cabe assadeira de bolo e pizza maior. Se a sua cozinha não tem espaço, a de 12 L entrega a fritura sem óleo do mesmo jeito.",
+   "ficha": {
+    "capacidade": "25 L",
+    "funcoes": "Air fryer + forno (assar, tostar, gratinar, grelhar)",
+    "painel": "Digital",
+    "potencia": "2.000 W",
+    "voltagem": "110 V (há versão 220 V)",
+    "tipo": "Air fryer forno (oven)"
+   },
+   "fonteFicha": "Fonte: ficha e descrição do anúncio, conferidas em 02/11/2026. Dados informados pelo fabricante.",
+   "asin": "B0DPLJD1PN",
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DPLJD1PN"
+    }
+   ],
+   "guiaUrl": "airfryer-2026.html#produto-17"
+  }
+ ]
+}
