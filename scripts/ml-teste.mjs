@@ -1,22 +1,11 @@
-// Teste da API do Mercado Livre: pega token de app (client_credentials) e testa 3 consultas.
-// Não imprime o token nem as chaves.
-const { ML_APP_ID: id, ML_SECRET: secret } = process.env;
-if (!id || !secret) { console.log('Faltam ML_APP_ID/ML_SECRET'); process.exit(1); }
-const t = await fetch('https://api.mercadolibre.com/oauth/token', { method: 'POST',
-  headers: { 'Content-Type': 'application/x-www-form-urlencoded', Accept: 'application/json' },
-  body: new URLSearchParams({ grant_type: 'client_credentials', client_id: id, client_secret: secret }) });
-const tok = await t.json();
-console.log('token:', t.status, tok.access_token ? 'ok' : JSON.stringify(tok).slice(0, 200));
-const H = tok.access_token ? { Authorization: 'Bearer ' + tok.access_token } : {};
-for (const u of ['https://api.mercadolibre.com/products/search?status=active&site_id=MLB&q=Logitech%20G203%20Lightsync',
-                 'https://api.mercadolibre.com/sites/MLB/search?q=Logitech%20G203%20Lightsync&limit=3']) {
-  const r = await fetch(u, { headers: H }); const j = await r.json().catch(() => ({}));
-  console.log('\n', r.status, u.split('?')[0]);
-  const res = j.results || [];
-  console.log('resultados:', res.length, JSON.stringify(res.slice(0, 3).map(x => ({ id: x.id, nome: x.name || x.title, status: x.status, loja: x.official_store_id, catalogo: x.catalog_product_id }))).slice(0, 600));
-  if (!res.length) console.log(JSON.stringify(j).slice(0, 300));
-  if (u.includes('products/search') && res[0]) {
-    const r2 = await fetch(`https://api.mercadolibre.com/products/${res[0].id}/items`, { headers: H }); const j2 = await r2.json().catch(() => ({}));
-    console.log('\n', r2.status, 'products/{id}/items', JSON.stringify((j2.results || []).slice(0, 3).map(x => ({ item: x.item_id, seller: x.seller_id, loja: x.official_store_id, cond: x.condition, preco: x.price }))).slice(0, 500), !j2.results ? JSON.stringify(j2).slice(0, 300) : '');
-  }
-}
+// Teste da API do Mercado Livre com token de usuário: quais consultas a conta pode usar.
+import { tokenUsuario } from './ml-auth.mjs';
+const H = { Authorization: 'Bearer ' + await tokenUsuario() };
+const get = async u => { const r = await fetch('https://api.mercadolibre.com' + u, { headers: H }); let j = {}; try { j = await r.json(); } catch {} return [r.status, j]; };
+const [s1, p] = await get('/products/MLB16211422');
+console.log('/products/{id}', s1, JSON.stringify({ nome: p.name, status: p.status, bbw: p.buy_box_winner && { item: p.buy_box_winner.item_id, seller: p.buy_box_winner.seller_id, loja: p.buy_box_winner.official_store_id, cond: p.buy_box_winner.condition, preco: p.buy_box_winner.price, original: p.buy_box_winner.original_price } , link: p.permalink }).slice(0, 500));
+const item = p.buy_box_winner?.item_id;
+if (item) { const [s2, it] = await get('/items/' + item); console.log('/items/{id}', s2, JSON.stringify({ titulo: it.title, cond: it.condition, loja: it.official_store_id, seller: it.seller_id, preco: it.price, original: it.original_price, link: it.permalink }).slice(0, 400)); }
+const sid = p.buy_box_winner?.seller_id;
+if (sid) { const [s3, u] = await get('/users/' + sid); console.log('/users/{id}', s3, u.nickname, u.seller_reputation?.level_id, u.seller_reputation?.power_seller_status); }
+for (const u of ['/highlights/MLB/category/MLB1648', '/sites/MLB/search?q=g203&limit=1', '/products/MLB16211422/items']) { const [s] = await get(u); console.log(u, s); }
