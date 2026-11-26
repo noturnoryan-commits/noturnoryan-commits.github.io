@@ -31,7 +31,7 @@ console.log(`${produtos.size} produtos em ${paginas.length} páginas`);
 // Assinatura: SHA256(AppId + Timestamp + Payload + Secret)
 async function shopee(keyword) {
   const query = `{ productOfferV2(keyword: ${JSON.stringify(keyword)}, sortType: 2, page: 1, limit: 8) {
-    nodes { itemId productName price sales ratingStar shopName shopId shopType productLink offerLink } } }`;
+    nodes { itemId productName price priceMin priceMax priceDiscountRate imageUrl sales ratingStar shopName shopId shopType productLink offerLink periodEndTime } } }`;
   const payload = JSON.stringify({ query });
   const ts = Math.floor(Date.now() / 1000);
   const sig = createHash('sha256').update(env.SHOPEE_APP_ID + ts + payload + env.SHOPEE_SECRET).digest('hex');
@@ -45,7 +45,8 @@ async function shopee(keyword) {
   // shopType: 1 = Shopee Mall (loja oficial), 2 = Indicado, 4 = Indicado+
   return (j.data?.productOfferV2?.nodes || []).map(n => ({
     titulo: n.productName, preco: n.price, vendas: n.sales, nota: n.ratingStar,
-    loja: n.shopName, tipoLoja: n.shopType, url: n.offerLink, produto: n.productLink
+    loja: n.shopName, tipoLoja: n.shopType, url: n.offerLink, produto: n.productLink,
+    desconto: n.priceDiscountRate, precoMin: n.priceMin, precoMax: n.priceMax, img: n.imageUrl, fimOferta: n.periodEndTime
   }));
 }
 
