@@ -29,7 +29,7 @@ jobs:
       - name: Buscar candidatos
         env:
           GUIAS: ${{ inputs.guias }}
-          SHOPEE_APP_ID: ${{ secrets.SHOPEE_APP_ID }}
+          SHOPEE_APP_ID: ${{ secrets.SHOPEE_APP_ID || secrets.SHOPEE_API_ID }}
           SHOPEE_SECRET: ${{ secrets.SHOPEE_SECRET }}
           ALI_APP_KEY: ${{ secrets.ALI_APP_KEY }}
           ALI_APP_SECRET: ${{ secrets.ALI_APP_SECRET }}
