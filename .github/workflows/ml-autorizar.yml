@@ -1,0 +1,33 @@
+# Autoriza a conta do Mercado Livre (uma vez). Campo "codigo": o code= que aparece no endereço depois de clicar em Permitir.
+name: Autorizar Mercado Livre
+on:
+  workflow_dispatch:
+    inputs:
+      codigo:
+        description: 'Código de autorização (TG-...)'
+        required: true
+permissions:
+  contents: write
+jobs:
+  autorizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Trocar código e testar
+        env:
+          ML_APP_ID: ${{ secrets.ML_APP_ID }}
+          ML_SECRET: ${{ secrets.ML_SECRET }}
+          ML_CODE: ${{ inputs.codigo }}
+        run: node scripts/ml-autorizar.mjs
+      - name: Guardar token criptografado
+        run: |
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git config user.name "techaprovado-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/ml-token.enc
+            git commit -m "Mercado Livre: token criptografado atualizado"
+            git pull --rebase origin main && git push
+          fi
