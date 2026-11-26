@@ -169,7 +169,7 @@
         <div class="picks">
           <div class="picks-head">
             <p class="picks-title">Escolhas TechAprovado</p>
-            <a class="picks-more" href="${isHome ? '#aprovados' : 'index.html#aprovados'}">Por que escolhemos <span aria-hidden="true">→</span></a>
+            <a class="picks-more" href="${isHome ? '#aprovados' : '/#aprovados'}">Por que escolhemos <span aria-hidden="true">→</span></a>
           </div>
           <ul class="picks-grid">${cards}</ul>
           <p class="picks-note">Links de afiliado da Amazon: o preço é o mesmo pra você. Confira o valor atual na loja.</p>

@@ -2586,3 +2586,24 @@ body::before{
 .deal-btn-shopee,.deal-btn-mercadolivre{background:#1b3e6b;color:#fff}
 .deal-btn-shopee:hover,.deal-btn-mercadolivre:hover{background:#24568f;color:#fff}
 @media(max-width:370px){.deal-actions-multiloja{grid-template-columns:1fr}}
+
+/* 25/11/2026 — Últimas ofertas (dev 19/11): lojas em 2 colunas; ímpar = último botão na linha toda;
+   "Ver guia" sempre embaixo e na linha toda; texto do botão sempre em uma linha. */
+.deal-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.deal-btn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.deal-btn-full{grid-column:1/-1}
+.deal-actions .deal-btn-long{display:none}
+.deal-actions .deal-btn-full .deal-btn-long{display:inline}
+.deal-btn-aliexpress{background:#e62e04;color:#fff}.deal-btn-aliexpress:hover{background:#c22603;color:#fff}
+@media(max-width:370px){.deal-actions-multiloja{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* 25/11/2026 — Nossas redes (dev 19/11): todos os botões de rede com a mesma animação
+   (página Redes sociais, faixa "Siga o TechAprovado" e botão do menu). Respeita "reduzir movimento". */
+.link-btn, .follow-cta-main, .follow-cta-secondary, .nav-cta { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease; }
+.link-btn:hover, .link-btn:focus-visible, .follow-cta-main:hover, .follow-cta-main:focus-visible, .follow-cta-secondary:hover, .follow-cta-secondary:focus-visible { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(0,0,0,.32); }
+.nav-cta:hover, .nav-cta:focus-visible { transform: translateY(-2px); }
+.link-btn:active, .follow-cta-main:active, .follow-cta-secondary:active, .nav-cta:active { transform: scale(.97); }
+.link-btn .link-btn-icon, .link-btn .link-btn-arrow { transition: transform .2s ease; }
+.link-btn:hover .link-btn-icon, .link-btn:focus-visible .link-btn-icon { transform: scale(1.1) rotate(-6deg); }
+.link-btn:hover .link-btn-arrow, .link-btn:focus-visible .link-btn-arrow { transform: translateX(4px); }
+@media (prefers-reduced-motion: reduce) { .link-btn, .follow-cta-main, .follow-cta-secondary, .nav-cta, .link-btn .link-btn-icon, .link-btn .link-btn-arrow { transition: none; transform: none !important; } }

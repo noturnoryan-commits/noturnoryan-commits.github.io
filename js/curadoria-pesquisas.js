@@ -112,6 +112,7 @@
     shopee: { nome: 'Shopee', url: l => l.url }
   };
   const esc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+  const naNo = n => /^(Mercado Livre|AliExpress)$/.test(n) ? 'no' : 'na';
   const nomeDe = l => (LOJAS[l.loja] && LOJAS[l.loja].nome) || l.nome || l.loja;
   const urlDe = l => (LOJAS[l.loja] ? LOJAS[l.loja].url(l) : l.url);
   const versao = (document.querySelector('script[src*="curadoria-pesquisas.js"]')?.getAttribute('src').split('v=')[1]) || '';
@@ -127,8 +128,18 @@
       const [principal, ...outras] = lojas;
       a.href = urlDe(principal);
       a.dataset.loja = principal.loja;
-      a.innerHTML = `Ver preço na ${esc(nomeDe(principal))} <span aria-hidden="true">↗</span>`;
-      a.setAttribute('aria-label', `Ver preço do ${nome} na ${nomeDe(principal)}`);
+      a.innerHTML = `Ver preço ${naNo(nomeDe(principal))} ${esc(nomeDe(principal))} <span aria-hidden="true">↗</span>`;
+      a.setAttribute('aria-label', `Ver preço do ${nome} ${naNo(nomeDe(principal))} ${nomeDe(principal)}`);
+      // Só uma loja a mais (dev, 19/11): mostra direto, sem o botão "Mais lojas".
+      if (outras.length === 1) {
+        const l = outras[0];
+        const wrap1 = document.createElement('div');
+        wrap1.className = 'store-row store-row-direta';
+        a.replaceWith(wrap1);
+        wrap1.appendChild(a);
+        wrap1.insertAdjacentHTML('beforeend', `<a class="shop-link store-direct store-btn-${esc(l.loja)}" href="${esc(urlDe(l))}" target="_blank" rel="noopener sponsored" data-loja="${esc(l.loja)}" aria-label="Ver preço do ${esc(nome)} ${naNo(nomeDe(l))} ${esc(nomeDe(l))}">Ver preço ${naNo(nomeDe(l))} ${esc(nomeDe(l))} <span aria-hidden="true">↗</span>${l.parceira ? '<small>Vendido por loja parceira</small>' : ''}</a>`);
+        return;
+      }
       const id = `lojas-${card.id}-${n++}`;
       const wrap = document.createElement('div');
       wrap.className = 'store-row';
@@ -145,7 +156,7 @@
       panel.className = 'store-panel';
       panel.id = id;
       panel.hidden = true;
-      panel.innerHTML = '<ul>' + outras.map(l => `<li><span class="store-name">${esc(nomeDe(l))}${l.parceira ? '<small>vendido por loja parceira</small>' : ''}</span><a class="store-btn store-btn-${esc(l.loja)}" href="${esc(urlDe(l))}" target="_blank" rel="noopener sponsored" data-loja="${esc(l.loja)}" aria-label="Ver preço do ${esc(nome)} na ${esc(nomeDe(l))}">Ver preço <span aria-hidden="true">↗</span></a></li>`).join('') +
+      panel.innerHTML = '<ul>' + outras.map(l => `<li><span class="store-name">${esc(nomeDe(l))}${l.parceira ? '<small>Vendido por loja parceira</small>' : ''}</span><a class="store-btn store-btn-${esc(l.loja)}" href="${esc(urlDe(l))}" target="_blank" rel="noopener sponsored" data-loja="${esc(l.loja)}" aria-label="Ver preço do ${esc(nome)} ${naNo(nomeDe(l))} ${esc(nomeDe(l))}">Ver preço <span aria-hidden="true">↗</span></a></li>`).join('') +
         '</ul><p class="store-note">O preço e o estoque mudam e podem ser diferentes entre as lojas.</p>';
       wrap.after(panel);
       btn.addEventListener('click', () => {
@@ -161,4 +172,59 @@
       if (link && typeof window.gtag === 'function') window.gtag('event', 'clique_loja', { loja: link.dataset.loja, produto: link.closest('article')?.querySelector('h3')?.textContent.trim() || '' });
     });
   }).catch(() => {});
+})();
+
+// Ficha individual e comparador (dev, 19/11/2026). Cada card ganha "Ver ficha" (produto.html) e
+// "+ Comparar" (até 3 do mesmo guia). A barra de comparação leva ao comparar.html e tem
+// "Só os selecionados", que filtra a curadoria pelos escolhidos.
+(() => {
+  const guide = document.querySelector('.ta-curadoria');
+  if (!guide) return;
+  const cards = [...guide.querySelectorAll('article.analysis-card')].filter(c => c.querySelector('[data-produto]'));
+  if (!cards.length) return;
+  const MAX = 3;
+  const escolhidos = [];
+  const barra = document.createElement('div');
+  barra.className = 'compare-bar';
+  barra.hidden = true;
+  barra.innerHTML = '<span data-cb-texto></span><button type="button" class="compare-bar-filtro" data-cb-filtro aria-pressed="false">Só os selecionados</button><a class="compare-bar-ir" data-cb-ir href="comparar.html">Comparar →</a><button type="button" class="compare-bar-limpar" data-cb-limpar aria-label="Limpar a seleção">×</button>';
+  document.body.appendChild(barra);
+  const atualizar = () => {
+    barra.hidden = !escolhidos.length;
+    barra.querySelector('[data-cb-texto]').textContent = `${escolhidos.length} de ${MAX} para comparar`;
+    barra.querySelector('[data-cb-ir]').href = 'comparar.html?ids=' + escolhidos.join(',');
+    cards.forEach(c => {
+      const id = c.querySelector('[data-produto]').dataset.produto;
+      const on = escolhidos.includes(id);
+      c.classList.toggle('is-selected', on);
+      const b = c.querySelector('[data-cmp]');
+      b.setAttribute('aria-pressed', String(on));
+      b.textContent = on ? '✓ Na comparação' : '+ Comparar';
+      b.disabled = !on && escolhidos.length >= MAX;
+    });
+    if (!escolhidos.length) { guide.classList.remove('so-selecionados'); barra.querySelector('[data-cb-filtro]').setAttribute('aria-pressed', 'false'); }
+  };
+  cards.forEach(card => {
+    const id = card.querySelector('[data-produto]').dataset.produto;
+    const url = 'produto.html?id=' + id;
+    const img = card.querySelector('.product-image');
+    if (img && !img.closest('a')) { const a = document.createElement('a'); a.href = url; a.className = 'product-image-link'; a.setAttribute('aria-label', 'Ver ficha do ' + (card.querySelector('h3')?.textContent.trim() || 'produto')); img.replaceWith(a); a.appendChild(img); }
+    const linha = document.createElement('div');
+    linha.className = 'card-extra';
+    linha.innerHTML = `<a class="card-extra-btn" href="${url}">Ver ficha</a><button type="button" class="card-extra-btn" data-cmp aria-pressed="false">+ Comparar</button>`;
+    const content = card.querySelector('.card-content') || card;
+    content.querySelector('.product-top > div')?.appendChild(linha);
+    linha.querySelector('[data-cmp]').addEventListener('click', () => {
+      const i = escolhidos.indexOf(id);
+      if (i >= 0) escolhidos.splice(i, 1); else if (escolhidos.length < MAX) escolhidos.push(id);
+      atualizar();
+    });
+  });
+  barra.querySelector('[data-cb-filtro]').addEventListener('click', e => {
+    const on = !guide.classList.contains('so-selecionados');
+    guide.classList.toggle('so-selecionados', on);
+    e.currentTarget.setAttribute('aria-pressed', String(on));
+    if (on) guide.querySelector('#selecao')?.scrollIntoView({ block: 'start' });
+  });
+  barra.querySelector('[data-cb-limpar]').addEventListener('click', () => { escolhidos.length = 0; atualizar(); });
 })();

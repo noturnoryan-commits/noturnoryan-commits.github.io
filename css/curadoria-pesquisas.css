@@ -481,3 +481,23 @@ main.ta-curadoria{background:transparent}
 .ta-curadoria .store-btn-aliexpress{background:#e62e04;color:#fff}
 .ta-curadoria .store-btn-shopee{background:#ee4d2d;color:#fff}
 .ta-curadoria .store-name small{display:block;font-weight:600;font-size:11px;color:var(--muted)}
+
+/* 25/11/2026 — dev: loja única à vista, ficha individual e comparador */
+.ta-curadoria .store-row-direta{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ta-curadoria .store-row-direta .shop-link{width:100%;justify-content:center;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ta-curadoria .store-direct{flex-direction:column;line-height:1.2}
+.ta-curadoria .store-direct small{display:block;font-size:10px;font-weight:600;opacity:.85}
+@media (max-width:600px){.ta-curadoria .store-row-direta{grid-template-columns:1fr}}
+.ta-curadoria .product-image-link{display:block;flex:none}
+.ta-curadoria .card-extra{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.ta-curadoria .card-extra-btn{display:inline-flex;align-items:center;min-height:36px;padding:6px 12px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--link);font:inherit;font-size:12px;font-weight:800;cursor:pointer;text-decoration:none}
+.ta-curadoria .card-extra-btn:hover{border-color:var(--link);text-decoration:none}
+.ta-curadoria .card-extra-btn[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.ta-curadoria .card-extra-btn:disabled{opacity:.45;cursor:not-allowed}
+.ta-curadoria .analysis-card.is-selected{outline:2px solid var(--blue);outline-offset:2px}
+.ta-curadoria.so-selecionados [data-product]:not(.is-selected){display:none!important}
+.compare-bar{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;max-width:calc(100vw - 32px);padding:10px 14px;border-radius:12px;background:#161922;border:1px solid #333a49;box-shadow:0 10px 30px rgba(0,0,0,.45);color:#eef0f4;font:700 13px Montserrat,Arial,sans-serif}
+.compare-bar[hidden]{display:none}
+.compare-bar button,.compare-bar a{min-height:40px;padding:8px 12px;border-radius:8px;border:1px solid #333a49;background:transparent;color:#eef0f4;font:inherit;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.compare-bar .compare-bar-ir{background:#1976d2;border-color:#1976d2;color:#fff}
+.compare-bar [aria-pressed="true"]{background:#ffd600;border-color:#ffd600;color:#0f1115}

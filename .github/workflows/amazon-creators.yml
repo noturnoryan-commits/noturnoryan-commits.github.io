@@ -1,0 +1,33 @@
+# TechAprovado — Amazon Creators API (pronta, desligada até a Amazon liberar o acesso).
+# Só roda na mão: GitHub → Actions → "Amazon Creators API (conferência)" → Run workflow.
+# Precisa dos segredos AMAZON_CREATORS_CLIENT_ID e AMAZON_CREATORS_CLIENT_SECRET. Sem eles, termina sem fazer nada.
+name: Amazon Creators API (conferência)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  consultar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Consultar a Amazon
+        env:
+          AMAZON_CREATORS_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_CLIENT_ID }}
+          AMAZON_CREATORS_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_CLIENT_SECRET }}
+        run: node scripts/amazon-creators.mjs
+      - name: Salvar no repositório
+        run: |
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git config user.name "techaprovado-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/amazon-itens.json
+            git commit -m "Amazon Creators API: conferência dos itens"
+            git push
+          fi
