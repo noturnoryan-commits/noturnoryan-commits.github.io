@@ -1,6 +1,6 @@
 {
  "_leia": "Lista central de lojas por produto (chave = código Amazon do produto). Edite só aqui: os guias se atualizam sozinhos. Lojas: amazon (asin), kabum (id do produto na KaBuM!, link pela Awin), mercadolivre/aliexpress/outras (url de afiliado pronta). A primeira loja da lista é o botão principal do card. KaBuM: \"parceira\": true = anúncio de loja parceira (marketplace) dentro da KaBuM!.",
- "atualizado": "2026-11-16",
+ "atualizado": "2026-11-26",
  "produtos": {
   "B0F7T2Y46Y": {
    "lojas": [
@@ -11,9 +11,14 @@
     {
      "loja": "kabum",
      "id": 876266
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7VIGAUauWr",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0D2LPLTJ8": {
    "lojas": [
@@ -24,9 +29,14 @@
     {
      "loja": "kabum",
      "id": 587799
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/4fy4nIkoPi",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0D7W6Q7L9": {
    "lojas": [
@@ -37,9 +47,14 @@
     {
      "loja": "kabum",
      "id": 580135
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/1W131Y4SlM",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0D6NKG6WY": {
    "lojas": [
@@ -50,9 +65,14 @@
     {
      "loja": "kabum",
      "id": 929900
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9fMkkZHRHK",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B09B8VGCR8": {
    "lojas": [
@@ -141,9 +161,13 @@
     {
      "loja": "kabum",
      "id": 587331
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/AAJ1O3LdPH"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0D8DPT7ZY": {
    "lojas": [
@@ -154,9 +178,14 @@
     {
      "loja": "kabum",
      "id": 614879
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/8fUDbJiXYS",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0DWQK1Q8S": {
    "lojas": [
@@ -167,9 +196,13 @@
     {
      "loja": "kabum",
      "id": 713377
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/5AuLQtHnJv"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B00VB4CXLI": {
    "lojas": [
@@ -185,9 +218,14 @@
      "loja": "mercadolivre",
      "url": "https://meli.la/2VPVcgk",
      "mlb": "MLB6162297"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/1gKTGV7ye2",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B074L9L5KZ": {
    "lojas": [
@@ -216,9 +254,14 @@
      "loja": "mercadolivre",
      "url": "https://meli.la/2WdLQnM",
      "mlb": "MLB24527496"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/60TSLxyWG8",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0CJ3BDN7T": {
    "lojas": [
@@ -288,9 +331,14 @@
      "loja": "mercadolivre",
      "url": "https://meli.la/2pqA9o8",
      "mlb": "MLB16211422"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7KypwRJ5tv",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B09HZF2NDR": {
    "lojas": [
@@ -306,9 +354,14 @@
      "loja": "mercadolivre",
      "url": "https://meli.la/27fJoj7",
      "mlb": "MLB23144158"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7AfPoiJOsU",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B07JM7DR7K": {
    "lojas": [
@@ -324,9 +377,14 @@
      "loja": "mercadolivre",
      "url": "https://meli.la/28JkNBu",
      "mlb": "MLB12866864"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/6fj9DnYqaA",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B07W8X4F48": {
    "lojas": [
@@ -342,9 +400,14 @@
      "loja": "mercadolivre",
      "url": "https://meli.la/24tetLj",
      "mlb": "MLB17374971"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9zzbBvzp5x",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0CJ9RGJ18": {
    "lojas": [
@@ -392,9 +455,13 @@
      "url": "https://meli.la/2yw5ufh",
      "mlb": "MLB46967648",
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/1BOCb8BRfe"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B09J1TB35S": {
    "lojas": [
@@ -429,9 +496,14 @@
      "loja": "mercadolivre",
      "url": "https://meli.la/2PcLH4D",
      "mlb": "MLB43279846"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9V3KWSIpyW",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0GR6QYR4T": {
    "lojas": [
@@ -455,9 +527,14 @@
     {
      "loja": "kabum",
      "id": 1009200
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7AfPotFMwa",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B07F24FXYY": {
    "lojas": [
@@ -468,9 +545,14 @@
     {
      "loja": "kabum",
      "id": 97248
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/30pqrdU06o",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0CL573PRH": {
    "lojas": [
@@ -494,9 +576,13 @@
     {
      "loja": "kabum",
      "id": 885203
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/2BGjsBvU3G"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0DZJR4G1T": {
    "lojas": [
@@ -689,9 +775,13 @@
     {
      "loja": "kabum",
      "id": 20868
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/W8VrhFqjv"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B07643MPGS": {
    "lojas": [
@@ -715,9 +805,14 @@
     {
      "loja": "kabum",
      "id": 415702
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/70LzbfqECs",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B08JD18BD3": {
    "lojas": [
@@ -728,9 +823,14 @@
     {
      "loja": "kabum",
      "id": 128317
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/AKcRZolw01",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B075KD78F8": {
    "lojas": [
@@ -741,9 +841,14 @@
     {
      "loja": "kabum",
      "id": 77590
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/3B9H2edXvE",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0FHJ8QQB8": {
    "lojas": [
@@ -754,9 +859,14 @@
     {
      "loja": "kabum",
      "id": 904669
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/qlMGRosTK",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B07Z88XJV2": {
    "lojas": [
@@ -780,9 +890,14 @@
     {
      "loja": "kabum",
      "id": 587797
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7fbgMmIwb8",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0F7T42XRY": {
    "lojas": [
@@ -793,9 +908,14 @@
     {
      "loja": "kabum",
      "id": 876268
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/4B1oCNR3pG",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0FL2QF7YJ": {
    "lojas": [
@@ -806,9 +926,14 @@
     {
      "loja": "kabum",
      "id": 1004916
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/5fqbzDABeJ",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0FQGMGVCT": {
    "lojas": [
@@ -845,9 +970,14 @@
     {
      "loja": "kabum",
      "id": 95722
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/4LLEQq7dFv",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0DPXZ6H24": {
    "lojas": [
@@ -876,9 +1006,14 @@
      "loja": "mercadolivre",
      "url": "https://meli.la/2t754s2",
      "mlb": "MLB61258226"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7KypwOtqcC",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B09NQNWT76": {
    "lojas": [
@@ -912,9 +1047,13 @@
      "loja": "mercadolivre",
      "url": "https://meli.la/1FdxoA8",
      "mlb": "MLB43200795"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9KjuOls0yX"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0DXR6MKR8": {
    "lojas": [
@@ -925,9 +1064,14 @@
     {
      "loja": "kabum",
      "id": 717163
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/90740oL3Pa",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0FQHFY4RH": {
    "lojas": [
@@ -1043,9 +1187,14 @@
      "loja": "kabum",
      "id": 197978,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7VIGA4uDFj",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0BT26M491": {
    "lojas": [
@@ -1057,9 +1206,14 @@
      "loja": "kabum",
      "id": 419879,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7AfPlTHLK5",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0CJYJH5TD": {
    "lojas": [
@@ -1099,9 +1253,14 @@
      "loja": "kabum",
      "id": 459075,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/1Lhct12y4q",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0BZWY2W4R": {
    "lojas": [
@@ -1127,9 +1286,13 @@
      "loja": "kabum",
      "id": 736674,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7fbgMitl0F"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B095YZPJTR": {
    "lojas": [
@@ -1141,9 +1304,13 @@
      "loja": "kabum",
      "id": 175211,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/4VeeeqCqI2"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B002NLADVU": {
    "lojas": [
@@ -1169,9 +1336,14 @@
      "loja": "kabum",
      "id": 449258,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/4VeeapchOc",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B09BJZ1PLS": {
    "lojas": [
@@ -1183,9 +1355,14 @@
      "loja": "kabum",
      "id": 367383,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/5AuLO5mcbC",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B09WYYM8Y4": {
    "lojas": [
@@ -1197,9 +1374,14 @@
      "loja": "kabum",
      "id": 459080,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7fbgMhuIZU",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B09ZHD2YXP": {
    "lojas": [
@@ -1211,9 +1393,13 @@
      "loja": "kabum",
      "id": 380857,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/4fy4nDRB2t"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0DCHR2XMC": {
    "lojas": [
@@ -1225,9 +1411,14 @@
      "loja": "kabum",
      "id": 1032124,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/6L6ImHgtp8",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B00400OMU0": {
    "lojas": [
@@ -1253,9 +1444,14 @@
      "loja": "kabum",
      "id": 150886,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/1BOCczDJsf",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0DB1753RZ": {
    "lojas": [
@@ -1267,9 +1463,13 @@
      "loja": "kabum",
      "id": 1033228,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7fbgMlabTH"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B075XH82V8": {
    "lojas": [
@@ -1295,9 +1495,13 @@
      "loja": "kabum",
      "id": 280066,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/AAJ1LXRSDc"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B00GBN50SC": {
    "lojas": [
@@ -1337,9 +1541,13 @@
      "loja": "kabum",
      "id": 589747,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/3qOxnvopGz"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B098TVZ6TS": {
    "lojas": [
@@ -1351,9 +1559,13 @@
      "loja": "kabum",
      "id": 388027,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/1qdtQIzYgU"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B083V41T6M": {
    "lojas": [
@@ -1365,9 +1577,13 @@
      "loja": "kabum",
      "id": 589748,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/8AXwxtCGHl"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B09Q3K4YLS": {
    "lojas": [
@@ -1393,9 +1609,13 @@
      "loja": "kabum",
      "id": 376871,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/60TSNvORAE"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0C6B19HQ9": {
    "lojas": [
@@ -1421,9 +1641,13 @@
      "loja": "kabum",
      "id": 386014,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/5AuLOiSKVK"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0DHZWT4DV": {
    "lojas": [
@@ -1505,9 +1729,13 @@
      "loja": "kabum",
      "id": 1020685,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/4fy4oLCEk9"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B076HZ63PL": {
    "lojas": [
@@ -1519,9 +1747,14 @@
      "loja": "kabum",
      "id": 1021100,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/2qWQcyejXj",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B08TCH6MKC": {
    "lojas": [
@@ -1561,9 +1794,13 @@
      "loja": "kabum",
      "id": 1057990,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/6fj9C6SWKl"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0BXB7419R": {
    "lojas": [
@@ -1617,9 +1854,14 @@
      "loja": "kabum",
      "id": 684954,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/5VXBo4uwdk",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0FP8KDP36": {
    "lojas": [
@@ -1631,9 +1873,13 @@
      "loja": "kabum",
      "id": 938270,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/3LShEAWJ4a"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B09BVXT8TJ": {
    "lojas": [
@@ -1673,9 +1919,14 @@
      "loja": "kabum",
      "id": 466380,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/2qWQdKAGG2",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0F5BQGVJM": {
    "lojas": [
@@ -1687,9 +1938,14 @@
      "loja": "kabum",
      "id": 778943,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/4qHV0zgEh6",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0BYWL962Q": {
    "lojas": [
@@ -1855,9 +2111,14 @@
      "loja": "kabum",
      "id": 571173,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/3g5XdUvGH5",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0FW1SJ7RM": {
    "lojas": [
@@ -1981,9 +2242,13 @@
      "loja": "kabum",
      "id": 602367,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9V3KarNMgD"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B01JPOLKDW": {
    "lojas": [
@@ -2009,9 +2274,14 @@
      "loja": "kabum",
      "id": 190069,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/1qdtSpXGeg",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0DL79986T": {
    "lojas": [
@@ -2043,9 +2313,13 @@
      "loja": "kabum",
      "id": 991623,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7pv6XNQ4FM"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0CYVVRSSZ": {
    "lojas": [
@@ -2057,9 +2331,14 @@
      "loja": "kabum",
      "id": 579676,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/4fy4qGGtYb",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0CCC27GWY": {
    "lojas": [
@@ -2071,9 +2350,13 @@
      "loja": "kabum",
      "id": 509936,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9zzbC3aBI2"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0DG46DS62": {
    "lojas": [
@@ -2155,9 +2438,14 @@
      "loja": "kabum",
      "id": 415315,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7fbgQ0v10A",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0CZPP1D49": {
    "lojas": [
@@ -2169,9 +2457,14 @@
      "loja": "kabum",
      "id": 600724,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/2gD0SsCQRI",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0F4JZNGT8": {
    "lojas": [
@@ -2197,9 +2490,14 @@
      "loja": "kabum",
      "id": 522723,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7AfPpIeT6w",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0B94L571G": {
    "lojas": [
@@ -2225,9 +2523,14 @@
      "loja": "kabum",
      "id": 442679,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/5fqc2Xaxzu",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B093SXW93B": {
    "lojas": [
@@ -2239,9 +2542,14 @@
      "loja": "kabum",
      "id": 1040673,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/AAJ1OokEaT",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B09BMLJ9YD": {
    "lojas": [
@@ -2253,9 +2561,13 @@
      "loja": "kabum",
      "id": 340204,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/50avFKPtyE"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0DDRWVQH3": {
    "lojas": [
@@ -2337,9 +2649,14 @@
      "loja": "kabum",
      "id": 918914,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/1W135398EC",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0F5X1GYX8": {
    "lojas": [
@@ -2379,9 +2696,14 @@
      "loja": "kabum",
      "id": 938053,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7AfPpT9YdZ",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0F7JZMVKF": {
    "lojas": [
@@ -2407,9 +2729,13 @@
      "loja": "kabum",
      "id": 1074830,
      "parceira": true
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/2LaA4crgcW"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0CVCLGV1W": {
    "lojas": [
@@ -2809,9 +3135,14 @@
     {
      "loja": "kabum",
      "id": 697721
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/8AXx0m1cUb",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0BP2TGK6W": {
    "lojas": [
@@ -2863,9 +3194,14 @@
     {
      "loja": "kabum",
      "id": 911320
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/4LLEPUWhCQ",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0CQKKHT5J": {
    "lojas": [
@@ -2876,9 +3212,14 @@
     {
      "loja": "kabum",
      "id": 394555
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9zzb9y0hyZ",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0BMB8R1K6": {
    "lojas": [
@@ -2889,9 +3230,14 @@
     {
      "loja": "kabum",
      "id": 401293
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/3LShDiq4a5",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B07Y2G7VX5": {
    "lojas": [
@@ -2902,9 +3248,13 @@
     {
      "loja": "kabum",
      "id": 405787
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9pgAyPiQTM"
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0BDHYF8YS": {
    "lojas": [
@@ -2915,9 +3265,14 @@
     {
      "loja": "kabum",
      "id": 461178
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/Lp5exeaf3",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0C3BSZ56D": {
    "lojas": [
@@ -2967,9 +3322,14 @@
     {
      "loja": "kabum",
      "id": 670665
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/80EWn563h4",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B09BBPTDWX": {
    "lojas": [
@@ -3019,9 +3379,14 @@
     {
      "loja": "kabum",
      "id": 468473
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/6AmsbjhQor",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0CXK8LVM7": {
    "lojas": [
@@ -3032,9 +3397,14 @@
     {
      "loja": "kabum",
      "id": 536999
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/5fqc0pwCR3",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0BRXJDQC1": {
    "lojas": [
@@ -3058,9 +3428,14 @@
     {
      "loja": "kabum",
      "id": 986082
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/20xJe8zjZc",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0C1L2R4HH": {
    "lojas": [
@@ -3084,9 +3459,14 @@
     {
      "loja": "kabum",
      "id": 220523
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/1qdtRrLxoi",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B088LMMK4N": {
    "lojas": [
@@ -3136,9 +3516,14 @@
     {
      "loja": "kabum",
      "id": 128559
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/8pndmqNd2g",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B0CX8Y3CMG": {
    "lojas": [
@@ -3162,9 +3547,14 @@
     {
      "loja": "kabum",
      "id": 1042980
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9fMknwTfcr",
+     "parceira": true
     }
    ],
-   "conferido": "2026-11-16"
+   "conferido": "2026-11-26"
   },
   "B01N5IB20Q": {
    "lojas": [
@@ -3321,6 +3711,786 @@
     }
    ],
    "conferido": "2026-11-16"
+  },
+  "B0FD41XC3P": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0FD41XC3P"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/40iO0syQoC",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B07D82PQTV": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07D82PQTV"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7AfPmyfN6B"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B07W7VQ7HQ": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07W7VQ7HQ"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9pgAxwTk2W",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0DKQQ6Z7Q": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DKQQ6Z7Q"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/6VPizqNt4V"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0CH3QJBSB": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CH3QJBSB"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/6q2ZOUqbmh",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0CRTN7C8C": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CRTN7C8C"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/8VAnNeZ6oB"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0CQXHC5FQ": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CQXHC5FQ"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/3g5XcmmdZZ"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0D2XRXNGY": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0D2XRXNGY"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/BVfSNm5ji"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0CRT6HQ82": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CRT6HQ82"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9zzbASWWAg"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0CFZST5DV": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CFZST5DV"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/2LaA2QXpNh"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0CQXMXJC5": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CQXMXJC5"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/6fj9COYvhO"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B00ENMK1DW": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B00ENMK1DW"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/AAJ1Mwehx6",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B07G5TZSYJ": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07G5TZSYJ"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/5LDlcH9WaI",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0GJ7H8WLW": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0GJ7H8WLW"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/4qHV1NoYLO",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0CBSVX2K5": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CBSVX2K5"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7Kyq0ELIv8"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B07QKN5NF1": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07QKN5NF1"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/AAJ1NjpiFQ",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B08DFCF9HW": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B08DFCF9HW"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/6fj9DKFpcc",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B08TM75GN4": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B08TM75GN4"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/1BOCfDwhUA",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0999PPKHM": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0999PPKHM"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/Lp5fhi0Uk"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B09VQ39F41": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B09VQ39F41"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/4qHV1z4TNg",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B07SD5K7LR": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07SD5K7LR"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/5LDlcugAPo",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0CFM6RMLM": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CFM6RMLM"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/6fj9DMsgqG",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B09J1L99K9": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B09J1L99K9"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/2gD0S1tpj9"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0DPNHNFPY": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DPNHNFPY"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/gRw4MfO8l"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0FQXYKFT8": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0FQXYKFT8"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7pv6bXVho8",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0DHSX6SBL": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0DHSX6SBL"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/30pqqfRq7R",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B076B9D3LM": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B076B9D3LM"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/AKcRa9LRIW",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B09BDP8FL4": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B09BDP8FL4"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7Kyq16hUJY",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0GQJM9NJK": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0GQJM9NJK"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/3qOxql5zXY",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0CGBR6QFC": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CGBR6QFC"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/6L6IpZzH6T",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0H2DR1SGP": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0H2DR1SGP"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/40iO3NB1HA",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0FXM4S78T": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0FXM4S78T"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/40iO3NB1HA",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0FXM57JL9": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0FXM57JL9"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/40iO3NB1HA",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0GXF8NXKX": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0GXF8NXKX"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/40iO3NB1HA",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0CJJ733W3": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CJJ733W3"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/Lp5gnTbGe",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0BZJDLT6Z": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0BZJDLT6Z"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9zzb8bZ2ma",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0F4H85FW6": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0F4H85FW6"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/6AmsZcLYNj",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B07K8VPJHT": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07K8VPJHT"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/8AXwxKdbCC",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0CH3WBKN6": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CH3WBKN6"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/1gKTDSienB",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0CG6SQPK5": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0CG6SQPK5"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/W8VpKVAG4",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0GY4H64Y1": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0GY4H64Y1"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9AQU9Gfksj",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0GY4JGRWG": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0GY4JGRWG"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9AQU9Gfksj",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B09CC3QFDX": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B09CC3QFDX"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/4fy4n5hkFF",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B01MTB55WH": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B01MTB55WH"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9073xDrrxw"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0BJJH4L5W": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0BJJH4L5W"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/2gD0Pf0pU3",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0914XZ2LL": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0914XZ2LL"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/80EWlT2SKp",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0FK1JG2TT": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0FK1JG2TT"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/8KrNA6Ddgm",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0752HPRY3": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0752HPRY3"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/1BOCczZO5q"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0BQJVKVQR": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0BQJVKVQR"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/6L6Ima4Ulx"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0BZMLKXL4": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0BZMLKXL4"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/3LShD4bmDI"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0B9D7LT36": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0B9D7LT36"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9zzb9KcS5m"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0F4RNSJL3": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0F4RNSJL3"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/9KjuM71OuK"
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B07N9RQFVB": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07N9RQFVB"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/2qWQcDSvAi",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B07D13B3N1": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B07D13B3N1"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/8AXwy1ZUtd",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0BHJNL76T": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0BHJNL76T"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/7fbgN7WSYl",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B0B7V46PS3": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B0B7V46PS3"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/5qA2C0Npfd",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
+  },
+  "B076X788KK": {
+   "lojas": [
+    {
+     "loja": "amazon",
+     "asin": "B076X788KK"
+    },
+    {
+     "loja": "shopee",
+     "url": "https://s.shopee.com.br/Lp5dzFwrv",
+     "parceira": true
+    }
+   ],
+   "conferido": "2026-11-26"
   }
  }
 }
