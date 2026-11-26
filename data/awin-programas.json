@@ -1,0 +1,32 @@
+{
+ "conferido": "2026-11-26",
+ "programas": [
+  {
+   "id": 17729,
+   "nome": "Kabum BR",
+   "site": "https://www.kabum.com.br/",
+   "regiao": "BR",
+   "logo": "https://ui.awin.com/images/upload/merchant/profile/17729.png",
+   "dominios": [
+    "*.kabum.com",
+    "kabum.com.br",
+    "*.kabum.com.br"
+   ],
+   "comissao": [
+    {
+     "min": 0,
+     "max": 2.3,
+     "type": "percentage"
+    }
+   ],
+   "kpi": {
+    "averagePaymentTime": "59",
+    "approvalPercentage": 68.92,
+    "epc": 1.36,
+    "conversionRate": 1.9,
+    "validationDays": 36,
+    "awinIndex": 49.05
+   }
+  }
+ ]
+}
