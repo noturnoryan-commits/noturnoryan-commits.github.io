@@ -9,6 +9,17 @@ const AWIN_AFFILIATE_ID = "3148451";
 const AWIN_KABUM_ID = "17729";
 const DEALS_CHECKED = "26/11/2026";
 const DEALS = [
+  // Mercado Livre — Central de Afiliados, conferidas em 26/11/2026 (20% a 49% OFF, nota 4,8+ ; link meli.la).
+  {"store": "mercadolivre", "affiliate": true, "url": "https://meli.la/2JXG9wX", "productKey": "ml-MLB79759975", "title": "JBL PartyBox Encore Essential 2", "img": "https://http2.mlstatic.com/D_NQ_NP_732031-MLA116606769276_092026-F.jpg", "guide": "caixadesom-2026.html#produto-11", "guideName": "Caixa de som", "expires": "2026-11-28"},
+  {"store": "mercadolivre", "affiliate": true, "url": "https://meli.la/2UR7xKP", "productKey": "amazon-B09B8VGCR8", "title": "Echo Dot (5ª geração)", "img": "https://http2.mlstatic.com/D_NQ_NP_814549-MLA118334012041_092026-F.jpg", "guide": "echo-alexa-2026.html#produto-1", "guideName": "Echo (Alexa)", "expires": "2026-11-28"},
+  {"store": "mercadolivre", "affiliate": true, "url": "https://meli.la/2BaeXnS", "productKey": "ml-MLB61655019", "title": "Galaxy S25 FE 128 GB", "img": "https://http2.mlstatic.com/D_NQ_NP_993303-MLA96666133268_112025-F.jpg", "guide": "galaxy-s-2026.html#produto-1", "guideName": "Celular", "expires": "2026-11-28"},
+  {"store": "mercadolivre", "affiliate": true, "url": "https://meli.la/2gMAY3D", "productKey": "ml-MLB52878677", "title": "Air Fryer Philips Walita Série 1000 XL 6,2 L", "img": "https://http2.mlstatic.com/D_NQ_NP_662109-MLA88321463845_072025-F.jpg", "guide": "airfryer-2026.html#produto-7", "guideName": "Air Fryer", "expires": "2026-11-28"},
+  {"store": "mercadolivre", "affiliate": true, "url": "https://meli.la/1aTELdE", "productKey": "ml-MLB43419989", "title": "Air Fryer Oven Philco PAF16A 16 L", "img": "https://http2.mlstatic.com/D_NQ_NP_682420-MLA99957851351_112025-F.jpg", "guide": "airfryer-2026.html", "guideName": "Air Fryer", "expires": "2026-11-28"},
+  {"store": "mercadolivre", "affiliate": true, "url": "https://meli.la/2x6PdJg", "productKey": "ml-MLB55237000", "title": "JBL Boombox 4", "img": "https://http2.mlstatic.com/D_NQ_NP_966884-MLA118535139627_092026-F.jpg", "guide": "caixadesom-2026.html", "guideName": "Caixa de som", "expires": "2026-11-28"},
+  {"store": "mercadolivre", "affiliate": true, "url": "https://meli.la/2sqHJHo", "productKey": "ml-MLB65833150", "title": "Fone JBL Tune 530BT", "img": "https://http2.mlstatic.com/D_NQ_NP_673702-MLA106785726136_022026-F.jpg", "guide": "foneoverear-2026.html", "guideName": "Fone Over-Ear", "expires": "2026-11-28"},
+  {"store": "mercadolivre", "affiliate": true, "url": "https://meli.la/1j4sJjZ", "productKey": "ml-MLB66104173", "title": "Smart TV TCL 65\" QLED 4K T6C", "img": "https://http2.mlstatic.com/D_NQ_NP_810221-MLA115949427379_082026-F.jpg", "guide": "smarttv-2026.html", "guideName": "Smart TV", "expires": "2026-11-28"},
+  {"store": "mercadolivre", "affiliate": true, "url": "https://meli.la/31hyEMt", "productKey": "ml-MLB43554996", "title": "Smart TV AOC 40\" Full HD Roku", "img": "https://http2.mlstatic.com/D_NQ_NP_620135-MLA116583936713_082026-F.jpg", "guide": "smarttv-2026.html", "guideName": "Smart TV", "expires": "2026-11-28"},
+  {"store": "mercadolivre", "affiliate": true, "url": "https://meli.la/1PexBUv", "productKey": "ml-MLB48954912", "title": "Smart TV Samsung 32\" H5000F", "img": "https://http2.mlstatic.com/D_NQ_NP_971532-MLA122380966479_112026-F.jpg", "guide": "smarttv-2026.html", "guideName": "Smart TV", "expires": "2026-11-28"},
   // Black Friday 2026 — conferidas uma a uma em 25/11/2026 (vendido e entregue pela Amazon, desconto de 21% a 59%).
   {"store": "amazon", "asin": "B0HJB6V8LM", "productKey": "amazon-B0HJB6V8LM", "title": "Galaxy S26 FE 128 GB", "img": "https://m.media-amazon.com/images/I/51VAnrm9LXL._AC_UL480_.jpg", "guide": "galaxy-s26-fe-vale-a-pena-black-friday-2026.html", "guideName": "Celular", "expires": "2026-11-28"},
   {"store": "amazon", "asin": "B0C2RS4ZG6", "productKey": "amazon-B0C2RS4ZG6", "title": "Echo Spot", "img": "https://m.media-amazon.com/images/I/718KFI+hBOL._AC_UL480_.jpg", "guide": "echo-alexa-2026.html#produto-2", "guideName": "Echo (Alexa)", "expires": "2026-11-28"},
@@ -48,8 +59,8 @@ const DEAL_STORES = Object.freeze({
   amazon: { name: "Amazon", affiliate: true, url: d => /^[A-Z0-9]{10}$/.test(d.asin) ? 'https://www.amazon.com.br/dp/' + d.asin + '?tag=' + AFFILIATE_TAG : null },
   kabum: { name: "KaBuM!", affiliate: true, url: d => /^\d+$/.test(d.kabumId) ? 'https://www.awin1.com/cread.php?awinmid=' + AWIN_KABUM_ID + '&awinaffid=' + AWIN_AFFILIATE_ID + '&ued=' + encodeURIComponent('https://www.kabum.com.br/produto/' + d.kabumId) : null },
   shopee: { name: "Shopee", url: d => dealStoreUrl(d.url, ['shopee.com.br','www.shopee.com.br','s.shopee.com.br']) },
-  mercadolivre: { name: "Mercado Livre", url: d => dealStoreUrl(d.url, ['meli.la']) },
-  aliexpress: { name: "AliExpress", url: d => dealStoreUrl(d.url, ['s.click.aliexpress.com']) }
+  mercadolivre: { name: "Mercado Livre", short: "M. Livre", url: d => dealStoreUrl(d.url, ['meli.la']) },
+  aliexpress: { name: "AliExpress", short: "AliExpress", url: d => dealStoreUrl(d.url, ['s.click.aliexpress.com']) }
 });
 function dealStoreUrl(value, hosts) {
   try { const url = new URL(value); return url.protocol === 'https:' && !url.username && !url.password && !url.port && hosts.includes(url.hostname) ? url.href : null; } catch { return null; }
@@ -67,7 +78,7 @@ function activeDeals(now = new Date()) {
     const product = d.productKey || key + ':' + (d.asin || d.kabumId || url);
     if (!cards.has(product)) cards.set(product, {...d, offers: []});
     const {offers} = cards.get(product);
-    if (!offers.some(o => o.key === key)) offers.push({key, name:store.name, url, affiliate:store.affiliate || d.affiliate === true});
+    if (!offers.some(o => o.key === key)) offers.push({key, name:store.name, short:store.short, url, affiliate:store.affiliate || d.affiliate === true});
   }
   return [...cards.values()];
 }
@@ -77,7 +88,7 @@ function dealCardHtml(d) {
   // Dev 19/11: lojas em 2 colunas; com número ímpar, o último botão de loja ocupa a linha toda;
   // "Ver guia" sempre embaixo, na linha toda. Texto do botão sempre em uma linha.
   const odd = d.offers.length % 2 === 1;
-  const buttons = d.offers.map((o, i) => { const full = odd && i === d.offers.length - 1; return `<a class="deal-btn deal-btn-buy deal-btn-${o.key}${full ? ' deal-btn-full' : ''}" href="${e(o.url)}" target="_blank" rel="${relation(o)}" aria-label="${e(d.title)}: ver preço ${/^(Mercado Livre|AliExpress)$/.test(o.name) ? "no" : "na"} ${e(o.name)}"><span class="deal-btn-long">Ver ${/^(Mercado Livre|AliExpress)$/.test(o.name) ? "no" : "na"} </span>${e(o.name)} <span aria-hidden="true">↗</span></a>`; }).join("");
+  const buttons = d.offers.map((o, i) => { const full = odd && i === d.offers.length - 1; return `<a class="deal-btn deal-btn-buy deal-btn-${o.key}${full ? ' deal-btn-full' : ''}" href="${e(o.url)}" target="_blank" rel="${relation(o)}" aria-label="${e(d.title)}: ver preço ${/^(Mercado Livre|AliExpress)$/.test(o.name) ? "no" : "na"} ${e(o.name)}"><span class="deal-btn-long">Ver ${/^(Mercado Livre|AliExpress)$/.test(o.name) ? "no" : "na"} </span><span class="deal-name-long">${e(o.name)}</span><span class="deal-name-short">${e(o.short || o.name)}</span> <span aria-hidden="true">↗</span></a>`; }).join("");
   const first = d.offers[0];
   return `<article class="deal-card">
     <a class="deal-buy" href="${e(first.url)}" target="_blank" rel="${relation(first)}" tabindex="-1" aria-hidden="true">

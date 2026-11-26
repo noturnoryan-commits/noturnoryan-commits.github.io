@@ -2607,3 +2607,9 @@ body::before{
 .link-btn:hover .link-btn-icon, .link-btn:focus-visible .link-btn-icon { transform: scale(1.1) rotate(-6deg); }
 .link-btn:hover .link-btn-arrow, .link-btn:focus-visible .link-btn-arrow { transform: translateX(4px); }
 @media (prefers-reduced-motion: reduce) { .link-btn, .follow-cta-main, .follow-cta-secondary, .nav-cta, .link-btn .link-btn-icon, .link-btn .link-btn-arrow { transition: none; transform: none !important; } }
+
+/* 26/11/2026 — nome curto da loja quando o botão divide a linha no celular (texto sempre em uma linha) */
+.deal-name-short{display:none}
+.deal-actions .deal-btn:not(.deal-btn-full) .deal-name-long{display:none}.deal-actions .deal-btn:not(.deal-btn-full) .deal-name-short{display:inline}
+@media (max-width:600px){.deal-actions .deal-btn-full .deal-btn-long{display:none}}
+@media (max-width:600px){.deal-actions .deal-btn:not(.deal-btn-full) [aria-hidden="true"]{display:none}.deal-actions .deal-btn:not(.deal-btn-full){padding-left:4px;padding-right:4px}}
