@@ -1,0 +1,1358 @@
+{
+ "gerado": "2026-11-26T00:07:25.535Z",
+ "produtos": {
+  "B00VB4CXLI": {
+   "nome": "Logitech M90",
+   "guia": "mouse-2026.html",
+   "shopeeErro": "[{\"message\":\"error [10000]: System Error\",\"path\":[\"productOfferV2\"],\"extensions\":{\"code\":10000,\"message\":\"System Error\"}}]"
+  },
+  "B074L9L5KZ": {
+   "nome": "Logitech M170",
+   "guia": "mouse-2026.html",
+   "shopeeErro": "[{\"message\":\"error [10000]: System Error\",\"path\":[\"productOfferV2\"],\"extensions\":{\"code\":10000,\"message\":\"System Error\"}}]"
+  },
+  "B01JPOLKDW": {
+   "nome": "Logitech M330 Silent",
+   "guia": "mouse-2026.html",
+   "shopeeErro": "[{\"message\":\"error [10000]: System Error\",\"path\":[\"productOfferV2\"],\"extensions\":{\"code\":10000,\"message\":\"System Error\"}}]"
+  },
+  "B09NQPBMSY": {
+   "nome": "Logitech Signature M650 L",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Mouse Sem Fio Logitech Signature M650 L 2000 DPI, Design Padrão, 5 Botões, Silencioso, Bluetooth, Grafite - 910 - 006231",
+     "preco": "223.52",
+     "vendas": 1,
+     "nota": "0",
+     "loja": "Kabum",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/9pgAuzJaXw",
+     "produto": "https://shopee.com.br/product/1930141978/58270468076"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech Signature M650 L Left - Grafite - 910-006234",
+     "preco": "289.12",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "HDStore Oficial",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/9fMkigKDsv",
+     "produto": "https://shopee.com.br/product/507606053/58271596745"
+    },
+    {
+     "titulo": "MOUSE LOGITECH M650 L SIGNATURE SEM FIO CONEXÃO BLUETOOTH E USB BRANCO",
+     "preco": "278",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "AM RIO INFORMATICA",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/9V3KWNKrDu",
+     "produto": "https://shopee.com.br/product/343833149/18699854661"
+    },
+    {
+     "titulo": "MOUSE BLUETOOTH LOGITECH SIGNATURE M650 L BRANCO 910-006233",
+     "preco": "227.14",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "bftech.inf.br",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/9KjuK4LUYt",
+     "produto": "https://shopee.com.br/product/668573533/22794087965"
+    },
+    {
+     "titulo": "MOUSE BLUETOOTH LOGITECH SIGNATURE M650 L PRETO 910-006231",
+     "preco": "248.78",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "bftech.inf.br",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/AUvriDH3C8",
+     "produto": "https://shopee.com.br/product/668573533/22498588730"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech Signature M650 L- Grafite (Mostruário)",
+     "preco": "209.99",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "VEGAS SADÃO",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/AKcRVuHgX7",
+     "produto": "https://shopee.com.br/product/455082482/58215818946"
+    }
+   ]
+  },
+  "B01LF37K80": {
+   "nome": "Logitech M720 Triathlon",
+   "guia": "mouse-2026.html",
+   "shopeeErro": "[{\"message\":\"error [10000]: System Error\",\"path\":[\"productOfferV2\"],\"extensions\":{\"code\":10000,\"message\":\"System Error\"}}]"
+  },
+  "B0FPM2VC6Q": {
+   "nome": "Logitech MX Master 4",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Case Mouse Compátivel Com Logitech Mx Master 4 - Lançamento Preto",
+     "preco": "69.9",
+     "vendas": 5,
+     "nota": "5",
+     "loja": "Inove Natal",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/5qA29dzYet",
+     "produto": "https://shopee.com.br/product/485446109/22694698660"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech MX Master 4, Sensação Tátil do Haptic Feedback, USB-C, Bluetooth,Cinza Claro - 910-007566",
+     "preco": "694.73",
+     "vendas": 2,
+     "nota": "0",
+     "loja": "Kabum",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/7KypwOtqcC",
+     "produto": "https://shopee.com.br/product/1930141978/58270468075"
+    },
+    {
+     "titulo": "Para Logitech MX Master 4/3S Bolsa Portátil Mouse PU Viagens Ao Ar Livre E Deslocamento [covdes.br]",
+     "preco": "55.61",
+     "vendas": 2,
+     "nota": "5",
+     "loja": "Loja de Mercearia Covdes",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/7VIG8htDHF",
+     "produto": "https://shopee.com.br/product/217661915/46007143394"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech MX Master 4 Haptic Feedback Grafite",
+     "preco": "611.75",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Kabum",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/7fbgL0sZwI",
+     "produto": "https://shopee.com.br/product/1930141978/58221873496"
+    },
+    {
+     "titulo": "Adesivos antiderrapantes para mouse Logitech MX Master 4, absorventes de suor, adesivos para pés de mouse, película para",
+     "preco": "78.4",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "xiuzhenjie.br",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/7pv6XJrwbL",
+     "produto": "https://shopee.com.br/product/1932783738/54221182130"
+    },
+    {
+     "titulo": "Adequado para Logitech MX Master 4 3s caixa de Mouse dedicada à prova d'água à prova de choque bolsa de armazenamento po",
+     "preco": "69.14",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Somesmalla284",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/6fj99AwNy8",
+     "produto": "https://shopee.com.br/product/1797475082/52609694350"
+    },
+    {
+     "titulo": "Mouse Logitech MX Master 4 Grafite Sem Fio - 910-007565",
+     "preco": "754.08",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "TNTinfoLoja",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/6q2ZLTvkdB",
+     "produto": "https://shopee.com.br/product/344381236/49971790469"
+    },
+    {
+     "titulo": "Adequado para Logitech master MX master 4 Mouse capa protetora forro saco portátil protetor Anti-poeira saco de armazena",
+     "preco": "83.86",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Feltstorag888",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/70LzXmv7IE",
+     "produto": "https://shopee.com.br/product/1797475810/46767398220"
+    }
+   ]
+  },
+  "B0DN4RM6X7": {
+   "nome": "Logitech M196",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Mouse Sem Fio Logitech M196 com Conexão Bluetooth - Grafite",
+     "preco": "78.9",
+     "vendas": 15,
+     "nota": "4.9",
+     "loja": "LOJA MULTIGAMES",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/AAJ1Jc53mP",
+     "produto": "https://shopee.com.br/product/308187197/22998365448"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech M196 com Conexão Bluetooth - Grafite",
+     "preco": "78.9",
+     "vendas": 4,
+     "nota": "5",
+     "loja": "zero11vendas",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/AKcRVv4QRS",
+     "produto": "https://shopee.com.br/product/436891982/19399717727"
+    },
+    {
+     "titulo": "MOUSE LOGITECH M196 BLUETOOTH 1000DPI 3 BOTÕES ROSA",
+     "preco": "129",
+     "vendas": 3,
+     "nota": "5",
+     "loja": "AM RIO INFORMATICA",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/AUvriE3n6V",
+     "produto": "https://shopee.com.br/product/343833149/22098898451"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech M196 com Conexão Bluetooth - Grafite",
+     "preco": "78.9",
+     "vendas": 3,
+     "nota": "5",
+     "loja": "AAD VENDAS",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/1CFCvhlPU",
+     "produto": "https://shopee.com.br/product/406785167/23798554790"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech M196 Com Conexão Bluetooth - Rosa",
+     "preco": "119.99",
+     "vendas": 1,
+     "nota": "5",
+     "loja": "Luminous Tech",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/BVfPEh84X",
+     "produto": "https://shopee.com.br/product/1173043318/58216293755"
+    },
+    {
+     "titulo": "Mouse Sem Fio Bluetooth Logitech M196 Ergonômico 1000 DPI Compatível Notebook PC Mac Celular Escritório Grafite",
+     "preco": "78.9",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Loja a Casa Perfeita",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/Lp5bXgUja",
+     "produto": "https://shopee.com.br/product/1652521006/23799866774"
+    },
+    {
+     "titulo": "MOUSE BLUETOOTH LOGITECH M196 ROSA 910-007458",
+     "preco": "79.07",
+     "vendas": 1,
+     "nota": "5",
+     "loja": "bftech.inf.br",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/W8VnqfrOd",
+     "produto": "https://shopee.com.br/product/668573533/23998565745"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech M196 Bluetooth Com Design Ambidestro Compacto E Rastreamento Preciso",
+     "preco": "78",
+     "vendas": 1,
+     "nota": "4",
+     "loja": "SHOPNETSIS",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/gRw09fE3g",
+     "produto": "https://shopee.com.br/product/427210241/58272442169"
+    }
+   ]
+  },
+  "B0CJ3BDN7T": {
+   "nome": "Logitech Pebble 2 M350s",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Mouse Logitech Pebble Mouse 2 M350s, Bluetooth e Pilha Inclusa, Clique Silencioso, Rosa - 910-007048",
+     "preco": "119",
+     "vendas": 6,
+     "nota": "5",
+     "loja": "ITX-GAMER",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/qlMCSwG6q",
+     "produto": "https://shopee.com.br/product/778397589/23194161348"
+    },
+    {
+     "titulo": "MOUSE BLUETOOTH LOGITECH PEBBLE MOUSE 2 M350S BRANCO 910-007047",
+     "preco": "122.02",
+     "vendas": 6,
+     "nota": "5",
+     "loja": "bftech.inf.br",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/gRw09wtRp",
+     "produto": "https://shopee.com.br/product/668573533/58261951404"
+    },
+    {
+     "titulo": "MOUSE BLUETOOTH LOGITECH PEBBLE MOUSE 2 M350S GRAFITE 910-007049",
+     "preco": "143.68",
+     "vendas": 3,
+     "nota": "5",
+     "loja": "bftech.inf.br",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/1BOCb4uzQw",
+     "produto": "https://shopee.com.br/product/668573533/22798218578"
+    },
+    {
+     "titulo": "Mouse Logitech Pebble 2 M350s, Bluetooth, Clique Silencioso, Sem Fio, Branco - 910-007047",
+     "preco": "148.96",
+     "vendas": 2,
+     "nota": "5",
+     "loja": "ITX-GAMER",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/114mOlvclv",
+     "produto": "https://shopee.com.br/product/778397589/22594170826"
+    },
+    {
+     "titulo": "Mouse sem fio Logitech Pebble 2 M350s - Grafite",
+     "preco": "97",
+     "vendas": 1,
+     "nota": "5",
+     "loja": "MEGA FACILITY",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/BVfPEynSm",
+     "produto": "https://shopee.com.br/product/1662882727/58215544922"
+    },
+    {
+     "titulo": "MOUSE SEM FIO LOGITECH M350S PEBBLE 2 BLUETOOTH CLIQUE SILENCIOSO PILHA INCLUSA SLIM GRAFITE",
+     "preco": "169",
+     "vendas": 0,
+     "nota": "5",
+     "loja": "AM RIO INFORMATICA",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/1CFCvzQnl",
+     "produto": "https://shopee.com.br/product/343833149/23693581162"
+    },
+    {
+     "titulo": "Substituição Da Caixa Do Teclado Geekria Para Key-to-Go 2 + M350s Pebble 2 , Bolsa De Transporte Combinada De E Mouse (C",
+     "preco": "100",
+     "vendas": 0,
+     "nota": "4.8",
+     "loja": "Geekria Store",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/W8VnqxWms",
+     "produto": "https://shopee.com.br/product/539640154/28420350313"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech Pebble Mouse 2 M350s - Grafite - 910-007049",
+     "preco": "177",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "HDStore Oficial",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/Lp5bXyA7r",
+     "produto": "https://shopee.com.br/product/507606053/58271600815"
+    }
+   ]
+  },
+  "B09NQNWT76": {
+   "nome": "Logitech Signature M650",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Logitech mouse sem fio signature M650 Compacto Grafite Bluetooth e USB Bolt",
+     "preco": "229.9",
+     "vendas": 3,
+     "nota": "5",
+     "loja": "Rainer Bellarde dos Santos",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/6q2ZLUvLZF",
+     "produto": "https://shopee.com.br/product/763928528/58215342722"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech Signature M650, 2000 DPI, Compacto, 5 Botões, Silencioso, Bluetooth, USB, Rose - 910-006251",
+     "preco": "210.42",
+     "vendas": 1,
+     "nota": "0",
+     "loja": "Kabum",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/70LzXnuiEI",
+     "produto": "https://shopee.com.br/product/1930141978/58220452255"
+    },
+    {
+     "titulo": "Mouse Logitech Signature M650 Bolt  Bluetooth  Grafite",
+     "preco": "266.7",
+     "vendas": 1,
+     "nota": "5",
+     "loja": "8&3 Tech",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/7AfPk6u4tL",
+     "produto": "https://shopee.com.br/product/1624042075/58210628368"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech Signature M650 L 2000 DPI, Design Padrão, 5 Botões, Silencioso, Bluetooth, Grafite - 910 - 006231",
+     "preco": "223.52",
+     "vendas": 1,
+     "nota": "0",
+     "loja": "Kabum",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/60TSLxyWG8",
+     "produto": "https://shopee.com.br/product/1930141978/58270468076"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech Signature M650 2000 DPI Compacto 5 Botões Silencioso Bluetooth USB Cinza 910-006250",
+     "preco": "239.2",
+     "vendas": 1,
+     "nota": "5",
+     "loja": "Login Informática",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/6AmsYGxsvB",
+     "produto": "https://shopee.com.br/product/538090019/58269975509"
+    },
+    {
+     "titulo": "Mouse sem fio Logitech Signature M650 Left 910-006234",
+     "preco": "259.51",
+     "vendas": 1,
+     "nota": "5",
+     "loja": "8&3 Tech",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/6L6IkZxFaE",
+     "produto": "https://shopee.com.br/product/1624042075/58210623262"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech Signature M650 L Left - Grafite - 910-006234",
+     "preco": "289.12",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "HDStore Oficial",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/6VPiwswcFH",
+     "produto": "https://shopee.com.br/product/507606053/58271596745"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech Signature M650 - Grafite - 910-006250",
+     "preco": "288.68",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "HDStore Oficial",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/5LDlYk13c4",
+     "produto": "https://shopee.com.br/product/507606053/58271560820"
+    }
+   ]
+  },
+  "B0DB5CDRHV": {
+   "nome": "Logitech POP Mouse",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Combo Teclado E Mouse Sem Fio Logitech Pop Icon Branco",
+     "preco": "434.98",
+     "vendas": 1,
+     "nota": "5",
+     "loja": "LOJA MULTIGAMES",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/2La9zETjXD",
+     "produto": "https://shopee.com.br/product/308187197/55468870213"
+    },
+    {
+     "titulo": "Kit Mouse E Teclado Logitech Pop Icon Sem Fio Grafite - 920-013056",
+     "preco": "530.78",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "HDStore Oficial",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/BVfPFbyvo",
+     "produto": "https://shopee.com.br/product/507606053/58250028954"
+    },
+    {
+     "titulo": "Combo Teclado E Mouse Sem Fio Logitech Pop Icon Branco Silencioso Bluetooth",
+     "preco": "429.44",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "AAD VENDAS",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/1CFCwccGn",
+     "produto": "https://shopee.com.br/product/406785167/47218885362"
+    },
+    {
+     "titulo": "Kit Mouse E Teclado Logitech Pop Icon Sem Fio Branco - 920-013057",
+     "preco": "517.53",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "HDStore Oficial",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/W8VnraiFu",
+     "produto": "https://shopee.com.br/product/507606053/23994615973"
+    },
+    {
+     "titulo": "Combo Teclado E Mouse Sem Fio Logitech Pop Icon Branco com digitação macia e silenciosa",
+     "preco": "429.9",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "zero11vendas",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/Lp5bYbLat",
+     "produto": "https://shopee.com.br/product/436891982/44484996343"
+    },
+    {
+     "titulo": "Geekria geekria adequado para teclado mecânico Logitech POP de 84 teclas, teclado protetor portátil, Mouse, bolsa de tec",
+     "preco": "141.67",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "GeekriaOff535",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/qlMCTZRa0",
+     "produto": "https://shopee.com.br/product/1868613539/46913361506"
+    },
+    {
+     "titulo": "Geekria Logitech Logitech POP Bolsa de mouse portátil fofa sem fio para mouse",
+     "preco": "87.25",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "GeekriaOff535",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/gRw0Aa4uz",
+     "produto": "https://shopee.com.br/product/1868613539/50215896035"
+    }
+   ]
+  },
+  "B0C6K2DH73": {
+   "nome": "Logitech MX Anywhere 3S",
+   "guia": "mouse-2026.html",
+   "shopeeErro": "[{\"message\":\"error [10000]: System Error\",\"path\":[\"productOfferV2\"],\"extensions\":{\"code\":10000,\"message\":\"System Error\"}}]"
+  },
+  "B0DL79986T": {
+   "nome": "Apple Magic Mouse",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "MOUSE BLUETOOTH ESTILO MAGIC MOUSE BATERIA RECARREGÁVEL - Estilo Magic Mouse para APPLE  Macbook e Windows Design Ergonô",
+     "preco": "144.99",
+     "vendas": 8,
+     "nota": "4.8",
+     "loja": "DeTudoUmPoucoStore",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/W8Vns1WXa",
+     "produto": "https://shopee.com.br/product/341241142/9913394306"
+    },
+    {
+     "titulo": "Case Para Apple Magic Mouse Estojo Fino Proteção Transporte",
+     "preco": "42.99",
+     "vendas": 6,
+     "nota": "5",
+     "loja": "FRATELIÊH",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/Lp5bZ29sZ",
+     "produto": "https://shopee.com.br/product/1861282507/58213037849"
+    },
+    {
+     "titulo": "Apple Magic Mouse Dock, Base Ergonômica De 2a E 3a Geração",
+     "preco": "35",
+     "vendas": 6,
+     "nota": "4.4",
+     "loja": "Mundo 3D Brasil",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/qlMCU0Frg",
+     "produto": "https://shopee.com.br/product/581933715/58259957080"
+    },
+    {
+     "titulo": "Estojo Fino Para Apple Magic Mouse Proteção Viagem Premium",
+     "preco": "42.9",
+     "vendas": 4,
+     "nota": "4.3",
+     "loja": "FRATELIÊH",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/gRw0B0tCf",
+     "produto": "https://shopee.com.br/product/1861282507/58213042029"
+    },
+    {
+     "titulo": "Adequado para Capa Protetora de Rato Apple Mouse Mouse Magic Mouse1 /2 Generation Protetora de Rato Capa Protetora",
+     "preco": "14.4",
+     "vendas": 1,
+     "nota": "4.9",
+     "loja": "miqiao01.br",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/1BOCb5yzBm",
+     "produto": "https://shopee.com.br/product/358854062/24964988169"
+    },
+    {
+     "titulo": "Apple Magic Mouse 2 Cinza Espacial",
+     "preco": "949",
+     "vendas": 2,
+     "nota": "5",
+     "loja": "Rivau BR",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/114mOmzcWl",
+     "produto": "https://shopee.com.br/product/1360571160/23199278856"
+    },
+    {
+     "titulo": "Teclado Apple Magic Keyboard Numeric Keypad Touch ID",
+     "preco": "2199",
+     "vendas": 2,
+     "nota": "5",
+     "loja": "Rivau BR",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/9V3KWPTGHQ",
+     "produto": "https://shopee.com.br/product/1360571160/58202897456"
+    },
+    {
+     "titulo": "Estojo Case Fino para Apple Magic Mouse Proteção para Transporte e Viagem com Design Compacto",
+     "preco": "44.1",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Latem Variedades",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/9KjuK6TtcP",
+     "produto": "https://shopee.com.br/product/590382430/58267365895"
+    }
+   ]
+  },
+  "B08K9FRH7N": {
+   "nome": "Fortrek Crusader",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Fonte ATX 500W Fortrek Crusader PT Bivolt 110V/220V Silenciosa Potente Para PC Gamer e Escritório Alta Performance",
+     "preco": "137.99",
+     "vendas": 92,
+     "nota": "4.9",
+     "loja": "Lua Eletro Oficial",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/1W12ziJmfD",
+     "produto": "https://shopee.com.br/product/1451745706/49358159113"
+    },
+    {
+     "titulo": "Fonte ATX 500W Fortrek Crusader Bivolt",
+     "preco": "129",
+     "vendas": 36,
+     "nota": "5",
+     "loja": "EasyTech DF",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/2La9zFGbyO",
+     "produto": "https://shopee.com.br/product/1854145879/58218299920"
+    },
+    {
+     "titulo": "Mouse Gamer Fortrek Crusader 12800Dpi Preto",
+     "preco": "59.89",
+     "vendas": 24,
+     "nota": "5",
+     "loja": "Cathitec",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/2VtaBYFydR",
+     "produto": "https://shopee.com.br/product/457381861/22893516427"
+    },
+    {
+     "titulo": "Mouse Gamer Fortrek Crusader 12800 DPI RGB Preto 1000Hz Huano A825 5 Botões + Scroll USB 70526",
+     "preco": "73.9",
+     "vendas": 19,
+     "nota": "5",
+     "loja": "Sou Commerce",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/20xJadHseM",
+     "produto": "https://shopee.com.br/product/1153847515/23393622832"
+    },
+    {
+     "titulo": "Mouse Gamer Rgb Fortrek Crusader White Edition 12800dpi",
+     "preco": "90.4",
+     "vendas": 9,
+     "nota": "4.9",
+     "loja": "Sou Commerce",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/2BGjmwHFJP",
+     "produto": "https://shopee.com.br/product/1153847515/21598003324"
+    },
+    {
+     "titulo": "Fonte Gamer ATX Fortrek Crusader 500W",
+     "preco": "143.65",
+     "vendas": 4,
+     "nota": "4.9",
+     "loja": "Ideal Informática",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/Lp5bZOE24",
+     "produto": "https://shopee.com.br/product/341608683/19497624022"
+    },
+    {
+     "titulo": "Mouse Gamer Fortrek Crusader, RGB Rainbow, 12800 DPI, 5 Botões Programáveis, Branco",
+     "preco": "99.99",
+     "vendas": 1,
+     "nota": "5",
+     "loja": "Terabyte Oficial",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/W8VnsNah7",
+     "produto": "https://shopee.com.br/product/1552226494/58270139950"
+    },
+    {
+     "titulo": "Headset Gamer Fortrek Crusader, RGB, Drives 50mm - 70555",
+     "preco": "105.87",
+     "vendas": 1,
+     "nota": "5",
+     "loja": "Kabum",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/1CFCxPUi2",
+     "produto": "https://shopee.com.br/product/1930141978/58272280666"
+    }
+   ]
+  },
+  "B08GS763C5": {
+   "nome": "Logitech G203 LIGHTSYNC",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Mouse gamer Logitech G203 6 Botões programáveis Rgb Lightsync 8000 Dpi Preto",
+     "preco": "158",
+     "vendas": 15,
+     "nota": "5",
+     "loja": "AM RIO INFORMATICA",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/7VIG8kISYw",
+     "produto": "https://shopee.com.br/product/343833149/3266471415"
+    },
+    {
+     "titulo": "Mouse Gamer Logitech G203 LIGHTSYNC RGB, 6 Botões Programáveis, Até 8.000 DPI, Preto - 910-005793",
+     "preco": "94.11",
+     "vendas": 4,
+     "nota": "5",
+     "loja": "Kabum",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/7KypwRJ5tv",
+     "produto": "https://shopee.com.br/product/1930141978/23399866819"
+    },
+    {
+     "titulo": "Mouse Gamer Logitech G203 LIGHTSYNC RGB, 6 Botões Programáveis, Até 8.000 DPI, Branco - 910-005794",
+     "preco": "151.76",
+     "vendas": 3,
+     "nota": "5",
+     "loja": "Kabum",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/5qA29gOnwe",
+     "produto": "https://shopee.com.br/product/1930141978/58271961047"
+    },
+    {
+     "titulo": "Mouse Gamer Logitech G203, Lightsync, DPI, 8.000, 6 botões programáveis, Preto, Sem Fio - 910-005793",
+     "preco": "159",
+     "vendas": 2,
+     "nota": "5",
+     "loja": "ITX-GAMER",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/5fqbxNPRHd",
+     "produto": "https://shopee.com.br/product/778397589/43165242310"
+    },
+    {
+     "titulo": "Mouse Gamer Logitech G203 LIGHTSYNC RGB, 6 Botões Programáveis, Até 8.000 DPI, Lilás - 910-005852",
+     "preco": "124.99",
+     "vendas": 2,
+     "nota": "5",
+     "loja": "Kabum",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/5VXBl4Q4cc",
+     "produto": "https://shopee.com.br/product/1930141978/58221934706"
+    },
+    {
+     "titulo": "Mouse Gamer Logitech G203 Lightsync Rgb Até 8.000 Dpi Branco",
+     "preco": "170.91",
+     "vendas": 2,
+     "nota": "5",
+     "loja": "LOJA MULTIGAMES",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/5LDlYlQhxb",
+     "produto": "https://shopee.com.br/product/308187197/50711491820"
+    },
+    {
+     "titulo": "Mouse Gamer Logitech G203 Lightsync Rgb Até 8.000 Dpi Branco Original",
+     "preco": "172.8",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "zero11vendas",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/6VPiwuMGaq",
+     "produto": "https://shopee.com.br/product/436891982/58261750090"
+    },
+    {
+     "titulo": "Mouse Gamer Logitech G203 Lightsync 8000dpi 6 botões programáveis LED RGB",
+     "preco": "159.9",
+     "vendas": 0,
+     "nota": "5",
+     "loja": "Acha_MIX",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/6L6IkbMtvp",
+     "produto": "https://shopee.com.br/product/1738007770/58205029274"
+    }
+   ]
+  },
+  "B09HZF2NDR": {
+   "nome": "Logitech G305 LIGHTSPEED",
+   "guia": "mouse-2026.html",
+   "shopeeErro": "[{\"message\":\"error [10000]: System Error\",\"path\":[\"productOfferV2\"],\"extensions\":{\"code\":10000,\"message\":\"System Error\"}}]"
+  },
+  "B07JM7DR7K": {
+   "nome": "Logitech G502 HERO",
+   "guia": "mouse-2026.html",
+   "shopeeErro": "[{\"message\":\"error [10000]: System Error\",\"path\":[\"productOfferV2\"],\"extensions\":{\"code\":10000,\"message\":\"System Error\"}}]"
+  },
+  "B07W8X4F48": {
+   "nome": "Logitech G703 LIGHTSPEED",
+   "guia": "mouse-2026.html",
+   "shopeeErro": "[{\"message\":\"error [10000]: System Error\",\"path\":[\"productOfferV2\"],\"extensions\":{\"code\":10000,\"message\":\"System Error\"}}]"
+  },
+  "B0CJ9RGJ18": {
+   "nome": "Logitech G PRO X SUPERLIGHT 2",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Mouse Feet Esp Tiger ICE V2 * Logitech G Pro X Superlight 2 / SE / SuperStrike",
+     "preco": "59.9",
+     "vendas": 16,
+     "nota": "4.9",
+     "loja": "Util_&_Cia",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/BVfPHJZjl",
+     "produto": "https://shopee.com.br/product/667753974/18998589557"
+    },
+    {
+     "titulo": " Filme de aderência para Logitech GPW Gen 2, antiderrapante e à prova de suor, protetor para G PRO X SUPERLIGHT.",
+     "preco": "18.01",
+     "vendas": 7,
+     "nota": "5",
+     "loja": "Value Choice",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/Lp5baIwOo",
+     "produto": "https://shopee.com.br/product/230709939/43021901152"
+    },
+    {
+     "titulo": "Mouse Feet Esp Tiger ICE V2 * Logitech G PRO X SUPERLIGHT 2 DEX",
+     "preco": "59.9",
+     "vendas": 7,
+     "nota": "4.8",
+     "loja": "Util_&_Cia",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/W8VntIJ3r",
+     "produto": "https://shopee.com.br/product/667753974/22198844838"
+    },
+    {
+     "titulo": "Cabo Usb C Para Mouse Logitech G Pro X Superlight 2 G502 X Preto Reposição Compatível Paracord Gamer",
+     "preco": "51.9",
+     "vendas": 2,
+     "nota": "0",
+     "loja": "Casa do Periférico 2",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/gRw0CHfiu",
+     "produto": "https://shopee.com.br/product/1869015447/58218117597"
+    },
+    {
+     "titulo": "Mouse Gamer Sem Fio Logitech G Pro X Superlight 2 USB Branco - 910-006637",
+     "preco": "1059.9",
+     "vendas": 1,
+     "nota": "5",
+     "loja": "Logitech",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/qlMCVH2Nx",
+     "produto": "https://shopee.com.br/product/1242225817/53258556980"
+    },
+    {
+     "titulo": "Mouse Feet Tiger ICE / Arc 1 (Logitech G Pro X Superlight 2 / Superstrike 2 e 3 )",
+     "preco": "56.9",
+     "vendas": 0,
+     "nota": "5",
+     "loja": "A little bit Everything",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/114mOoGP30",
+     "produto": "https://shopee.com.br/product/428109213/23892356812"
+    },
+    {
+     "titulo": "Mouse Gamer Sem Fio Logitech G Pro X Superlight 2 USB Branco - 910-006637",
+     "preco": "1175.02",
+     "vendas": 1,
+     "nota": "0",
+     "loja": "datamakerautomacao",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/1BOCb7Fli3",
+     "produto": "https://shopee.com.br/product/1856404131/58267780514"
+    },
+    {
+     "titulo": "Mouse Feet Tiger Ice Para Logitech G Pro X Superlight 2 Skate Teflon Reposição Compatível Gamer",
+     "preco": "64.9",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Casa do Periférico",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/9V3KWQk2ng",
+     "produto": "https://shopee.com.br/product/293414139/22899675875"
+    }
+   ]
+  },
+  "B07FLZ3XSK": {
+   "nome": "Trust Verto",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Mouse Gamer Vertical Trust Ergonômico Verto LED Azul USB 1600dpi Branco - T22885",
+     "preco": "99",
+     "vendas": 1,
+     "nota": "5",
+     "loja": "Abre Alas",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/AUvriH2Zwj",
+     "produto": "https://shopee.com.br/product/379563847/23397602448"
+    },
+    {
+     "titulo": "Mouse Trust Verto Vertical Ergonômico LED Azul 6 Botões",
+     "preco": "94.11",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Kabum",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/9zzb7M4Txe",
+     "produto": "https://shopee.com.br/product/1930141978/58270541198"
+    }
+   ]
+  },
+  "B0CM6FSPY3": {
+   "nome": "UGREEN Vertical Sem Fio",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Rato Vertical UGREEN Ergonômico 4000DPI Sem Fio Silent Click Mouse Para PC Portátil Windows Mac OS",
+     "preco": "98.9",
+     "vendas": 95,
+     "nota": "4.9",
+     "loja": "Ugreen Official Shop",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/7pv6XNQ4FM",
+     "produto": "https://shopee.com.br/product/218996205/16299683306"
+    },
+    {
+     "titulo": "UGREEN Vertical 4000DPI 2.4G Ergonômico Sem Fio Silencioso Clique Mouse 4 Velocidades Ajustável 10M Transmissão Estável",
+     "preco": "98.9",
+     "vendas": 41,
+     "nota": "4.8",
+     "loja": "Ugreen Official Shop",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/7fbgL4QhaL",
+     "produto": "https://shopee.com.br/product/218996205/27521092491"
+    },
+    {
+     "titulo": "MOUSE SEM FIO ERGONOMICO VERTICAL PRETO MU008 UGREEN - 25444",
+     "preco": "131.71",
+     "vendas": 22,
+     "nota": "4.9",
+     "loja": "bftech.inf.br",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/7VIG8lRKvK",
+     "produto": "https://shopee.com.br/product/668573533/58206095713"
+    },
+    {
+     "titulo": "Mouse ergonômico vertical UGREEN MU008 sem fio (Bluetooth 5.0), 5 botões e DPI ajustável, Clique Silencioso",
+     "preco": "134",
+     "vendas": 2,
+     "nota": "5",
+     "loja": "Imagem Hitech Oficial",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/7KypwSRyGJ",
+     "produto": "https://shopee.com.br/product/1344289546/55621310995"
+    },
+    {
+     "titulo": "Mouse Vertical Ergonômico UGREEN 4000 DPI 2.4G Sem Fio 4 Níveis de DPI Rosa e Preto",
+     "preco": "249.99",
+     "vendas": 1,
+     "nota": "5",
+     "loja": "Balla Shop",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/7AfPk9SbbI",
+     "produto": "https://shopee.com.br/product/422081275/58217502174"
+    },
+    {
+     "titulo": "Mouse Bluetooth Ergonômico Vertical Ugreen Sem Fio",
+     "preco": "250",
+     "vendas": 0,
+     "nota": "5",
+     "loja": "Wolf Prin3D",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/70LzXqTEwH",
+     "produto": "https://shopee.com.br/product/330889848/20497664013"
+    },
+    {
+     "titulo": "Mouse sem Fio Ugreen Ergonomico Vertical - 4000dpi - USB, Bluetooth e 2.4Ghz - Preto - 25444",
+     "preco": "149.88",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Oficina dos Bits",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/6q2ZLXTsHG",
+     "produto": "https://shopee.com.br/product/598339660/58271657282"
+    },
+    {
+     "titulo": "Mouse Vertical Ugreen MU008 Sem Fio Bluetooth 2.4G Ergônico",
+     "preco": "160.99",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "RODE_BR",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/6fj99EUVcF",
+     "produto": "https://shopee.com.br/product/1163359442/58202172414"
+    }
+   ]
+  },
+  "B0DJ1QD7SL": {
+   "nome": "Logitech ERGO M575S",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Mouse Sem Fio Logitech Trackball ERGO M575S Preto - 910-007031",
+     "preco": "389",
+     "vendas": 4,
+     "nota": "5",
+     "loja": "Logitech",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/1BOCb8BRfe",
+     "produto": "https://shopee.com.br/product/1242225817/23698179606"
+    },
+    {
+     "titulo": "Logitech ERGO M575S Rato Óptico Ergonômico com Bola de Polegar Sem Fio, 2000 DPI, Bluetooth, Botão Silencioso, 5 Botões",
+     "preco": "276.24",
+     "vendas": 2,
+     "nota": "4.6",
+     "loja": "Choice Oficial",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/114mOpC50d",
+     "produto": "https://shopee.com.br/product/1006215031/46067466670"
+    },
+    {
+     "titulo": "Mouse Trackball Logitech ERGO M575S, Silencioso, Sem Fio, Bluetooth, Controle de Polegar, Rastreamento Preciso,",
+     "preco": "407",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Brand Choice",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/BVfPIFFhU",
+     "produto": "https://shopee.com.br/product/1672861664/55519362843"
+    },
+    {
+     "titulo": "Logitech ERGO M575S Mouse Óptico Sem Fio Trackball Ergonômico, Bluetooth, Clique Silencioso, Controle Preciso, Receptor",
+     "preco": "407",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Brand Choice",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/1CFCzFt2T",
+     "produto": "https://shopee.com.br/product/1672861664/45269858983"
+    },
+    {
+     "titulo": "Adequado para Logitech MX ERGO S Trackball caixa à prova de choque sem fio Bluetooth Mouse saco de armazenamento m575s s",
+     "preco": "66.73",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "HengxinDig209",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/W8VnuDz1a",
+     "produto": "https://shopee.com.br/product/1797475565/52413137003"
+    },
+    {
+     "titulo": "Logitech ERGO M575S Mouse Trackball Sem Fio Bluetooth SilentTouch Controle com Polegar Sensor de Precisão Receptor USB",
+     "preco": "407",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Brand Choice",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/Lp5bbEcMZ",
+     "produto": "https://shopee.com.br/product/1672861664/54469834586"
+    },
+    {
+     "titulo": "Logitech ERGO M575 S Rato Óptico Ergonômico com Bola de Rastreamento Sem Fio 2000 DPI Bluetooth Botão Silencioso 5",
+     "preco": "232.96",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Brand Choice",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/4qHUxrxUES",
+     "produto": "https://shopee.com.br/product/1672861664/57167428951"
+    },
+    {
+     "titulo": "Rato de Trackball Ergonômico Logitech ERGO M575S Sem Fio Bluetooth, Toque Silencioso, Rastreamento Preciso, Controle por",
+     "preco": "407",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Brand Choice",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/4fy4lYy7ZR",
+     "produto": "https://shopee.com.br/product/1672861664/50769843843"
+    }
+   ]
+  },
+  "B09J1TB35S": {
+   "nome": "Logitech Lift",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Novo Mouse Sem Fio Logitech Lift, 4000 DPI, 6 Botões, Bluetooth, Ergonômico,",
+     "preco": "339.15",
+     "vendas": 7,
+     "nota": "5",
+     "loja": "Goiás Distribuidora",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/8VAnKc0e6V",
+     "produto": "https://shopee.com.br/product/1353580401/58260713934"
+    },
+    {
+     "titulo": "Mouse sem fio Logitech Lift Vertical Grafite Design Ergonomico Destro",
+     "preco": "389.9",
+     "vendas": 3,
+     "nota": "5",
+     "loja": "Rainer Bellarde dos Santos",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/8fUDWv00lY",
+     "produto": "https://shopee.com.br/product/763928528/20198199353"
+    },
+    {
+     "titulo": "Mouse Logitech Lift Vertical Business 910-006497",
+     "preco": "359.99",
+     "vendas": 4,
+     "nota": "5",
+     "loja": "8&3 Tech",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/8pndjDzNQb",
+     "produto": "https://shopee.com.br/product/1624042075/58213429989"
+    },
+    {
+     "titulo": "Novo Mouse Sem Fio Logitech Lift, 4000 DPI, 6 Botões, Bluetooth br",
+     "preco": "336.75",
+     "vendas": 2,
+     "nota": "4.9",
+     "loja": "Goiás Distribuidora",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/9073vWyk5e",
+     "produto": "https://shopee.com.br/product/1353580401/58210930296"
+    },
+    {
+     "titulo": "MOUSE SEM FIO LOGITECH LIFT ROSE - 910-006472",
+     "preco": "429.79",
+     "vendas": 1,
+     "nota": "0",
+     "loja": "bftech.inf.br",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/9AQU7py6kh",
+     "produto": "https://shopee.com.br/product/668573533/23794074547"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech Lift 4000 DPI Ergonômico Branco",
+     "preco": "309.99",
+     "vendas": 1,
+     "nota": "0",
+     "loja": "Kabum",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/9KjuK8xTPk",
+     "produto": "https://shopee.com.br/product/1930141978/58220452692"
+    },
+    {
+     "titulo": "Mouse Vertical Ergonômico Logitech Lift Grafite Sem Fio 4000 DPI Punho Natural",
+     "preco": "373.71",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "AAD VENDAS",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/9V3KWRwq4n",
+     "produto": "https://shopee.com.br/product/406785167/58256862555"
+    },
+    {
+     "titulo": "MOUSE LOGITECH SEM FIO LIFT VERTICAL 4000 DPI 6 BOTÕES BLUETOOTH E USB GRAFITE",
+     "preco": "468",
+     "vendas": 0,
+     "nota": "5",
+     "loja": "AM RIO INFORMATICA",
+     "tipoLoja": [
+      2
+     ],
+     "url": "https://s.shopee.com.br/9fMkikwCjq",
+     "produto": "https://shopee.com.br/product/343833149/19457810558"
+    }
+   ]
+  },
+  "B0DFGJ4FHH": {
+   "nome": "Logitech MX Ergo S",
+   "guia": "mouse-2026.html",
+   "shopeeErro": "[{\"message\":\"error [10000]: System Error\",\"path\":[\"productOfferV2\"],\"extensions\":{\"code\":10000,\"message\":\"System Error\"}}]"
+  },
+  "B07PNKGKBX": {
+   "nome": "Logitech MX Vertical",
+   "guia": "mouse-2026.html",
+   "shopee": [
+    {
+     "titulo": "Valuemalls-br Substituição de bolsa de mouse rígido EVA para Logitech MX Vertical Ergonômico Pequeno Compacto Estojo de",
+     "preco": "39.72",
+     "vendas": 1,
+     "nota": "0",
+     "loja": "valuemalls.br",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/AUvriIF1wg",
+     "produto": "https://shopee.com.br/product/1830060322/53219136623"
+    },
+    {
+     "titulo": "Mouse Logitech Mx Vertical 2 Graphite - 910-005449",
+     "preco": "621.85",
+     "vendas": 0,
+     "nota": "5",
+     "loja": "HDStore Oficial",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/AKcRVzFfHf",
+     "produto": "https://shopee.com.br/product/507606053/23194764199"
+    },
+    {
+     "titulo": "Mouse Logitech MX Vertical 4 Botões s/Fio 4000DPI Grafite",
+     "preco": "630.9",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "lojagigantec",
+     "tipoLoja": [
+      1
+     ],
+     "url": "https://s.shopee.com.br/9V3KWSIpyW",
+     "produto": "https://shopee.com.br/product/1668186272/58215939818"
+    },
+    {
+     "titulo": "Mouse Logitech MX Vertical Sem Fio Ergonômico",
+     "preco": "866.67",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "eletronica_santana",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/9KjuK9JTJV",
+     "produto": "https://shopee.com.br/product/705539327/58264937988"
+    },
+    {
+     "titulo": "Mouse Logitech MX Vertical - 910-005447",
+     "preco": "788",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "Tendinfo",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/9pgAv4HZIc",
+     "produto": "https://shopee.com.br/product/224975532/3352260445"
+    },
+    {
+     "titulo": "Mouse Sem Fio Logitech Mx Vertical Com Design Ergonômico",
+     "preco": "422.37",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "MEGA FACILITY",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/9fMkilICdb",
+     "produto": "https://shopee.com.br/product/1662882727/58213420013"
+    },
+    {
+     "titulo": "Adesivos antiderrapantes para pés de mouse vertical Logitech MX Vertical, absorventes de suor, modelo WDHA, sucesso de v",
+     "preco": "85.7",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "xiuzhenjie.br",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/8pndjELNKS",
+     "produto": "https://shopee.com.br/product/1932783738/55721168187"
+    },
+    {
+     "titulo": "Adequado para Logitech MX vertical sem fio vertical Mouse saco de armazenamento viagem portátil caixa protetora saco cas",
+     "preco": "71.64",
+     "vendas": 0,
+     "nota": "0",
+     "loja": "yijiaxiaodian310",
+     "tipoLoja": [],
+     "url": "https://s.shopee.com.br/8fUDWvM0fR",
+     "produto": "https://shopee.com.br/product/1917594307/47966230912"
+    }
+   ]
+  }
+ }
+}
