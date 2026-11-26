@@ -1,0 +1,39 @@
+# TechAprovado — procura os produtos dos guias no catálogo do Mercado Livre (API oficial).
+# Só roda na mão. Grava data/candidatos-ml.json para revisão; não mexe no site.
+name: Buscar Mercado Livre (catálogo)
+on:
+  workflow_dispatch:
+    inputs:
+      guias:
+        description: 'Páginas a buscar, separadas por vírgula (vazio = todos os guias)'
+        required: false
+        default: ''
+permissions:
+  contents: write
+concurrency:
+  group: buscar-ml
+  cancel-in-progress: false
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Buscar no catálogo
+        env:
+          GUIAS: ${{ inputs.guias }}
+          ML_APP_ID: ${{ secrets.ML_APP_ID }}
+          ML_SECRET: ${{ secrets.ML_SECRET }}
+        run: node scripts/buscar-ml.mjs
+      - name: Salvar
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git config user.name "techaprovado-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/candidatos-ml.json data/ml-token.enc
+            git commit -m "Candidatos Mercado Livre (catálogo) para revisão"
+            git pull --rebase origin main && git push
+          fi
