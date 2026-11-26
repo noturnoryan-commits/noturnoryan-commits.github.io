@@ -6,7 +6,7 @@
 //   ALI_APP_KEY, ALI_APP_SECRET, ALI_TRACKING_ID  (AliExpress Open Platform / Portals)
 // Variável opcional GUIAS: lista separada por vírgula (ex.: "mouse-2026.html,teclado-2026.html").
 
-import { readFileSync, writeFileSync, readdirSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 'node:fs';
 import { createHash, createHmac } from 'node:crypto';
 
 const env = process.env;
@@ -75,14 +75,23 @@ const temShopee = env.SHOPEE_APP_ID && env.SHOPEE_SECRET;
 const temAli = env.ALI_APP_KEY && env.ALI_APP_SECRET && env.ALI_TRACKING_ID;
 if (!temShopee && !temAli) { console.error('Nenhuma chave configurada.'); process.exit(1); }
 
-const saida = { gerado: new Date().toISOString(), produtos: {} };
+// Junta com o arquivo anterior: rodar guia por guia não apaga o que já foi buscado.
+const ARQ = 'data/candidatos-lojas.json';
+const saida = existsSync(ARQ) ? JSON.parse(readFileSync(ARQ, 'utf8')) : { produtos: {} };
+saida.gerado = new Date().toISOString();
+// A Shopee às vezes responde "System Error 10000" quando recebe muitas chamadas: tenta de novo com espera maior.
+async function comRepeticao(fn, tentativas = 4) {
+  for (let i = 1; ; i++) {
+    try { return await fn(); } catch (e) { if (i >= tentativas || !/10000|System Error|429|fetch failed/.test(String(e.message || e))) throw e; await pausa(4000 * i); }
+  }
+}
 for (const p of produtos.values()) {
-  const item = { nome: p.nome, guia: p.guia };
-  if (temShopee) { try { item.shopee = await shopee(p.nome); } catch (e) { item.shopeeErro = String(e.message || e); } await pausa(1200); }
+  const item = { nome: p.nome, guia: p.guia, buscado: new Date().toISOString().slice(0, 10) };
+  if (temShopee) { try { item.shopee = await comRepeticao(() => shopee(p.nome)); } catch (e) { item.shopeeErro = String(e.message || e); } await pausa(2000); }
   if (temAli) { try { item.aliexpress = await aliexpress(p.nome); } catch (e) { item.aliexpressErro = String(e.message || e); } await pausa(1200); }
   saida.produtos[p.asin] = item;
 }
 mkdirSync('data', { recursive: true });
-writeFileSync('data/candidatos-lojas.json', JSON.stringify(saida, null, 1));
-const erros = Object.values(saida.produtos).filter(x => x.shopeeErro || x.aliexpressErro).length;
+writeFileSync(ARQ, JSON.stringify(saida, null, 1));
+const erros = [...produtos.keys()].map(a => saida.produtos[a]).filter(x => x.shopeeErro || x.aliexpressErro).length;
 console.log(`Gravado data/candidatos-lojas.json (${erros} produtos com erro)`);
