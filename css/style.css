@@ -2613,3 +2613,19 @@ body::before{
 .deal-actions .deal-btn:not(.deal-btn-full) .deal-name-long{display:none}.deal-actions .deal-btn:not(.deal-btn-full) .deal-name-short{display:inline}
 @media (max-width:600px){.deal-actions .deal-btn-full .deal-btn-long{display:none}}
 @media (max-width:600px){.deal-actions .deal-btn:not(.deal-btn-full) [aria-hidden="true"]{display:none}.deal-actions .deal-btn:not(.deal-btn-full){padding-left:4px;padding-right:4px}}
+
+/* Lojas parceiras (home, 26/11/2026). Logo só da KaBuM!, fornecido pela Awin (Termos Awin 10.1);
+   Amazon, Shopee e Mercado Livre só com o nome em texto (regras de marca de cada programa). */
+.partners-section{padding:8px 0 48px}
+.partners-section>.container{max-width:1240px}
+.partners-section h2{font-size:1.5rem;margin-bottom:4px}
+.partners-section .section-sub{margin:4px 0 0}
+.partners-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:18px}
+.partner-card{display:flex;flex-direction:column;align-items:center;gap:8px;padding:18px 14px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);color:var(--text);text-decoration:none;text-align:center;transition:border-color .15s,transform .15s}
+.partner-card:hover,.partner-card:focus-visible{border-color:var(--accent);transform:translateY(-2px);color:var(--text)}
+.partner-mark{display:flex;align-items:center;justify-content:center;width:100%;max-width:170px;height:64px;border-radius:10px;background:#fff;color:#111;font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
+.partner-logo img{display:block;width:auto;max-width:100%;height:auto;max-height:60px}
+.partner-desc{font-size:.88rem;color:var(--text-muted);line-height:1.35}
+.partner-go{margin-top:auto;font-size:.85rem;font-weight:700;color:var(--accent-yellow)}
+@media (max-width:900px){.partners-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:360px){.partners-grid{gap:10px}.partner-card{padding:14px 8px}.partner-mark{font-size:1rem}}
