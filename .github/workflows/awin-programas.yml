@@ -1,0 +1,36 @@
+# TechAprovado — lista os programas aprovados na Awin (rodar na mão).
+name: Programas Awin
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: awin-programas
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Listar programas aprovados
+        env:
+          AWIN_API_TOKEN: ${{ secrets.AWIN_API_TOKEN }}
+        run: node scripts/awin-programas.mjs
+      - name: Salvar no repositório (se mudou)
+        run: |
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git config user.name "techaprovado-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/
+            git commit -m "Programas Awin: conferência"
+            git pull --rebase && git push
+          else
+            echo "Nada novo para salvar."
+          fi
