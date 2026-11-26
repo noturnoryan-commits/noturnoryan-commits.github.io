@@ -1,0 +1,28 @@
+# TechAprovado — gera link de afiliado da Shopee para uma página (rodar na mão). O link sai no log.
+name: Link Shopee
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'Página da Shopee (padrão: página inicial)'
+        required: false
+        default: 'https://shopee.com.br/'
+
+permissions:
+  contents: read
+
+jobs:
+  link:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Gerar link
+        env:
+          SHOPEE_APP_ID: ${{ secrets.SHOPEE_APP_ID }}
+          SHOPEE_SECRET: ${{ secrets.SHOPEE_SECRET }}
+          URL_ORIGEM: ${{ inputs.url }}
+        run: node scripts/shopee-link.mjs
