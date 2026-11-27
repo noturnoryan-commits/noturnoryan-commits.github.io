@@ -1,57 +1,9 @@
 {
   "loja": "KaBuM!",
   "fonte": "Awin Promotions API",
-  "atualizado": "2026-11-26T19:31:45.643Z",
-  "total": 38,
+  "atualizado": "2026-11-27T19:25:46.902Z",
+  "total": 34,
   "promocoes": [
-    {
-      "id": 4189419,
-      "tipo": "cupom",
-      "titulo": "5% OFF no Headset Sem Fio Pulse EL",
-      "descricao": "5% OFF no Headset Sem Fio Pulse EL",
-      "regras": ".",
-      "inicio": "2026-11-25T03:00:00+00:00",
-      "fim": "2026-11-27T01:00:00+00:00",
-      "cupom": "PULSE5OFF",
-      "exclusivo": false,
-      "link": "https://www.awin1.com/cread.php?awinmid=17729&awinaffid=3148451&ued=https%3A%2F%2Fwww.kabum.com.br%2Fproduto%2F1008206%2Fheadset-sem-fio-pulse-el"
-    },
-    {
-      "id": 4189439,
-      "tipo": "cupom",
-      "titulo": "10% OFF em produtos selecionados Nintendo",
-      "descricao": "10% OFF em produtos selecionados Nintendo",
-      "regras": ".",
-      "inicio": "2026-11-25T03:00:00+00:00",
-      "fim": "2026-11-27T15:00:00+00:00",
-      "cupom": "BFNINTENDO",
-      "exclusivo": false,
-      "link": "https://www.awin1.com/cread.php?awinmid=17729&awinaffid=3148451&ued=https%3A%2F%2Fwww.kabum.com.br%2Fpromocao%2FCP1BFNINTENDO"
-    },
-    {
-      "id": 4189433,
-      "tipo": "cupom",
-      "titulo": "15% OFF em produtos selecionados da campanha Play Classic",
-      "descricao": "15% OFF em produtos selecionados da campanha Play Classic",
-      "regras": ".",
-      "inicio": "2026-11-25T03:00:00+00:00",
-      "fim": "2026-11-27T15:00:00+00:00",
-      "cupom": "PLAYCLASSIC",
-      "exclusivo": false,
-      "link": "https://www.awin1.com/cread.php?awinmid=17729&awinaffid=3148451&ued=https%3A%2F%2Fwww.kabum.com.br%2Fpromocao%2FCP1PLAYCLASSIC"
-    },
-    {
-      "id": 4189426,
-      "tipo": "cupom",
-      "titulo": "R$ 45 OFF no Controle Husky Hunter Sem Fio RGB",
-      "descricao": "R$ 45 OFF no Controle Husky Hunter Sem Fio RGB",
-      "regras": ".",
-      "inicio": "2026-11-25T03:00:00+00:00",
-      "fim": "2026-11-27T15:00:00+00:00",
-      "cupom": "JOGAHUSKY",
-      "exclusivo": false,
-      "link": "https://www.awin1.com/cread.php?awinmid=17729&awinaffid=3148451&ued=https%3A%2F%2Fwww.kabum.com.br%2Fproduto%2F761443%2Fcontrole-husky-hunter-sem-fio-compativel-com-pc-android-ios-24-botoes-programaveis-rgb-preto-hjk002pt"
-    },
     {
       "id": 4189330,
       "tipo": "promocao",
